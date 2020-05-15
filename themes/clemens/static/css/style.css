@@ -290,6 +290,7 @@ article header h1 a {
 
 article img {
     max-width: 100%;
+    
     display: block;
     height: auto;
     margin: 0 auto .5em;
@@ -351,12 +352,21 @@ footer {
     border-top: thin solid #f1f1f1;
     margin-top: 3em;
     font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    margin-top: 2em;
+    max-width: 100%;
+    text-align: left;
+    margin-bottom: 2em;
 }
 
 footer nav {
     margin-top: 2em;
     max-width: 100%;
-    text-align: left;
+    text-align: right;
     margin-bottom: 2em;
 }
 
@@ -364,6 +374,8 @@ footer nav a {
     color: #333;
     margin-left: 2em;
 }
+
+
 
 /* Media Queries */
 
