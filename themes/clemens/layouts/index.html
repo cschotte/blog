@@ -1,0 +1,24 @@
+{{ define "main" }}
+    <div class="homepage-content">
+        {{ .Content }}
+    </div>
+
+    {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{ range (.Paginate $pages).Pages }}
+    <article class="post-list">
+        <header> 
+            <h1>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h1>
+        </header>
+
+        <div class="content">
+            {{ .Summary | safeHTML }}
+        </div>
+        
+        {{ partial "articleInfoFull.html" . }}
+    </article>
+    {{ end }}
+    {{ partial "pagination.html" . }}
+
+{{ end }}

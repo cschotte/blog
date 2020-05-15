@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Clemens"
+license = "MIT"
+licenselink = "https://github.com/cschotte/ClemensNotes/Blog/themes/clemens/blob/master/LICENSE"
+description = "Theme for ClemensNotes's blog"
+homepage = "https://clemensnotes.com/"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Clemens Schotte"
+  homepage = "https://clemensnotes.com/"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""

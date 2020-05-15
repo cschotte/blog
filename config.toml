@@ -1,0 +1,43 @@
+baseURL = "https://clemens.ms/"
+languageCode = "en-us"
+title = "Clemens Schotte"
+
+theme = "clemens"
+
+enableEmoji = true
+paginate = 5
+
+[author]
+  name = "Clemens Schotte"
+
+[params]
+   author = "Clemens Schotte"
+   description = "Clemens Schotte Blog about technology."
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "archive"
+    name = "Archive"
+    url = "/post/"
+    weight = 3
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[markup]
+  [markup.highlight]
+    style = "vs"
