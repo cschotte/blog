@@ -1,6 +1,7 @@
 baseURL = "https://clemens.ms/"
 languageCode = "en-us"
 title = "Clemens Schotte"
+copyright = "Copyright by Clemens Schotte"
 
 theme = "clemens"
 
@@ -20,13 +21,9 @@ paginate = 5
     url = "/about/"
     weight = 1
   [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
-    weight = 2
-  [[menu.main]]
     name = "Blog"
     url = "/blog/"
-    weight = 3
+    weight = 2
 
   [[menu.footer]]
     name = "Privacy policy"
