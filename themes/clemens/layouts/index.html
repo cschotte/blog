@@ -13,10 +13,11 @@
         </header>
 
         <div class="content">
-            {{ .Summary | safeHTML }}
+            {{ .Summary | safeHTML }} [<a href="{{ .RelPermalink }}">more</a>]
         </div>
-        
+
         {{ partial "articleInfoFull.html" . }}
+
     </article>
     {{ end }}
     {{ partial "pagination.html" . }}

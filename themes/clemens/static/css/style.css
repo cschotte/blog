@@ -360,7 +360,6 @@ footer p {
     margin-top: 2em;
     max-width: 100%;
     text-align: left;
-    margin-bottom: 2em;
 }
 
 footer nav {
@@ -419,6 +418,24 @@ footer nav a {
     }
 
     header nav a {
+        margin-left: 5%;
+    }
+
+    footer {
+        display: block;
+    }
+
+    footer nav {
+        max-width: 100%;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    footer nav a:first-of-type {
+        margin-left: 0;
+    }
+
+    footer nav a {
         margin-left: 5%;
     }
 }

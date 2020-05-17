@@ -16,27 +16,33 @@ paginate = 5
 
 [menu]
   [[menu.main]]
-    identifier = "about"
     name = "About"
     url = "/about/"
     weight = 1
-
   [[menu.main]]
-    identifier = "tags"
     name = "Tags"
     url = "/tags/"
     weight = 2
-
   [[menu.main]]
-    identifier = "archive"
-    name = "Archive"
-    url = "/post/"
+    name = "Blog"
+    url = "/blog/"
+    weight = 3
+
+  [[menu.footer]]
+    name = "Privacy policy"
+    url = "/privacy-policy/"
+    weight = 1
+  [[menu.footer]]
+    name = "Terms of use"
+    url = "/terms-of-use/"
+    weight = 2
+  [[menu.footer]]
+    name = "Contact"
+    url = "/contact-clemens-schotte/"
     weight = 3
 
 [taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
+  tag = "tags"
 
 [markup]
   [markup.highlight]

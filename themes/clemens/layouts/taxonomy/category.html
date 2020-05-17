@@ -16,11 +16,12 @@
             {{ .Summary }}
         </div>
         {{ partial "articleInfoDate.html" . }}
-      <!--   {{ if .Truncated }}
+         {{ if .Truncated }}
             <div class="read-more">
                 <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
             </div>
-        {{ end }} -->
+        {{ end }}
+        
     </article>
     {{ end }}
 

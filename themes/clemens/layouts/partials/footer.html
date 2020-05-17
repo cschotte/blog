@@ -2,7 +2,7 @@
     &copy; {{ now.Year }} {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}{{end}}
 </p>
 <nav>
-    <a href="/privacy-policy/">Privacy policy</a>
-    <a href="/terms-of-use/">Terms of use</a>
-    <a href="/contact-clemens-schotte/">Contact</a>
+    {{ range .Site.Menus.footer }}
+    <a href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
 </nav>
