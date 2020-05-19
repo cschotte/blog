@@ -262,16 +262,11 @@ article header h1 a {
 }
 
 .article-date {
-    white-space: nowrap;
-}
-
-.article-categories {
     display: inline;
-    list-style-type: none;
-    padding: 0;
+    margin-right: 1em;
 }
 
-.article-categories li {
+.article-readingtime {
     display: inline;
     margin-right: 1em;
 }

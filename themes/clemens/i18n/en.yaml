@@ -7,6 +7,9 @@ theme:
 readMore:
   other: "read more"
 
+minuteRead:
+  other: "minute read"
+
 toNewPosts:
   other: "to new posts"
 

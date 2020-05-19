@@ -2,7 +2,7 @@
 
     {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{ range (.Paginate $pages).Pages }}
-    <article class="post">
+    <article class="post-list">
         <header> 
             <h1>
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>

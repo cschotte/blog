@@ -8,6 +8,8 @@ theme = "clemens"
 enableEmoji = true
 paginate = 5
 
+googleAnalytics = "UA-XXXXXXXXX-X"
+
 [author]
   name = "Clemens Schotte"
 
@@ -37,10 +39,6 @@ paginate = 5
     name = "Contact"
     url = "/contact-clemens-schotte/"
     weight = 3
-
-[taxonomies]
-  tag = "tags"
-  category = "categories"
 
 [markup]
   [markup.highlight]
