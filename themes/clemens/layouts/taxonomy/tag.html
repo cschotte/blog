@@ -4,6 +4,7 @@
     <div class="article-info">
         <a href="{{ "tags/" | absURL }}">{{ i18n "toAllTags" | humanize}}</a>
     </div>
+
     {{ range .Data.Pages }}
     <article class="post-list">
         <header> 
@@ -11,17 +12,18 @@
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </h1>
         </header>
+
+        {{ partial "articleInfoDate.html" . }}
         
         <div class="content">
-            {{ .Summary }}
+            <p>{{ .Summary | safeHTML }}</p>
         </div>
-        {{ partial "articleInfoDate.html" . }}
+        
          {{ if .Truncated }}
             <div class="read-more">
                 <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
             </div>
         {{ end }}
-
     </article>
     {{ end }}
 

@@ -9,13 +9,13 @@
                     <li><a href="{{ "categories/" | absURL }}{{ . }}">{{ . }}</a></li>
                 {{ end }}
             </ul>
-            {{ end }}
-            {{ if .Params.tags }}
-                <ul class="article-tags">
-                    {{ range .Params.tags }}
-                        <li><a href="{{ "tags/" | absURL }}{{ . | urlize}}">#{{ . }}</a></li>
-                    {{ end }}
-                </ul>
+        {{ end }}
+        {{ if .Params.tags }}
+            <ul class="article-tags">
+                {{ range .Params.tags }}
+                    <li><a href="{{ "tags/" | absURL }}{{ . | urlize}}">#{{ . }}</a></li>
+                {{ end }}
+            </ul>
         {{ end }}
     </div>
 </div>

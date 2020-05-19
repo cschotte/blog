@@ -16,7 +16,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
-<link rel="stylesheet" href="/css/style.css?rnd={{ now.Unix }}" />
+<link rel="stylesheet" href="/css/style.css" />
 
 {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
     {{ template "_internal/opengraph.html" . }}

@@ -2,8 +2,7 @@
     &#x1F9B8; <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
 </h1>
 <nav>
-    {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-    <a class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+    <a href="{{ .URL }}">{{ .Name }}</a>
     {{ end }}
 </nav>

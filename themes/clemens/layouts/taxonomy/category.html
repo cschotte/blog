@@ -2,8 +2,9 @@
 
     <h1>{{ i18n "category" | humanize }}: {{ .Title }}</h1>
     <div class="article-info">
-        <a href="{{ "categories/" | absURL }}">{{ i18n "toAllCategories" | humanize }}</a>
+        <a href="{{ "categories/" | absURL }}">{{ i18n "toAllCategories" | humanize}}</a>
     </div>
+
     {{ range .Data.Pages }}
     <article class="post-list">
         <header> 
@@ -12,16 +13,17 @@
             </h1>
         </header>
 
-        <div class="content">
-            {{ .Summary }}
-        </div>
         {{ partial "articleInfoDate.html" . }}
+        
+        <div class="content">
+            <p>{{ .Summary | safeHTML }}</p>
+        </div>
+        
          {{ if .Truncated }}
             <div class="read-more">
                 <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
             </div>
         {{ end }}
-        
     </article>
     {{ end }}
 
