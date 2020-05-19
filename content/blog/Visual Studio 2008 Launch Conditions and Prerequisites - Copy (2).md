@@ -2,7 +2,6 @@
 title: "Visual Studio 2008 Launch Conditions and Prerequisites"
 date: 2007-08-15
 tags: ["Visual Studio"]
-categories: ["Programming"]
 draft: false
 ---
 

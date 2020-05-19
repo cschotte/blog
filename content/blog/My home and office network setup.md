@@ -1,8 +1,7 @@
 ---
 title: "My Home and Office Network Setup"
-date: 2020-05-18T13:29:59+02:00
+date: 2020-05-18
 tags: ["UniFi", "Wi-Fi", "Internet"]
-categories: ["Networking"]
 draft: false
 ---
 
