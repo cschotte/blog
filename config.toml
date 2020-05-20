@@ -8,7 +8,7 @@ theme = "clemens"
 enableEmoji = true
 paginate = 5
 
-googleAnalytics = "UA-XXXXXXXXX-X"
+googleAnalytics = "UA-43077951-19"
 
 [author]
   name = "Clemens Schotte"
