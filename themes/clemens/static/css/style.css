@@ -165,8 +165,39 @@ ul ol, ol ol, ul ul {
     margin: 0em 2em;
 }
 
-/* Header */
+/* Hero */
 
+.hero {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 40em;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: rgb(229, 0, 76);
+    font-weight: 300;
+}
+
+.icons a:first-child {
+    padding: 4px 4px 4px 0;
+  }
+  
+.icons a {
+padding: 4px;
+}
+
+.hero-left {
+    width: 15em;;
+}
+
+.hero-right {
+width: 25em;
+}
+
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
