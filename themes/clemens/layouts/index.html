@@ -2,8 +2,10 @@
 
 <div class="hero">
     <div class="hero-left">
-        <img src="/media/clemens.jpg" style="max-width: 50%; border-radius: 50%; ">
-        <h2 class="subtitle">Hi! I'm Clemens, a Developer, Technical Evangelist and public speaker.</h2>
+        <h2 class="subtitle">
+            <img src="/media/clemens.jpg">
+        </h2>
+        
         <div class="icons">
             
             <a href="mailto:clemens@clemens.ms?subject=I%20do%20not%20know%20you">
@@ -118,6 +120,8 @@
     </div>
 
     <div class="hero-right">
+
+        <h2 class="subtitle">Hi! I'm Clemens, a Developer, Technical Evangelist and public speaker.</h2>
         
         {{ .Content }}
         
@@ -148,5 +152,7 @@
         {{ end }}
     </article>
     {{ end }}
+
+    {{ partial "pagination.html" . }}
 
 {{ end }}
