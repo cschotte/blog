@@ -35,10 +35,6 @@ googleAnalytics = "UA-43077951-19"
     name = "Terms of use"
     url = "/terms-of-use/"
     weight = 2
-  [[menu.footer]]
-    name = "Contact"
-    url = "/contact-clemens-schotte/"
-    weight = 3
 
 [markup]
   [markup.highlight]

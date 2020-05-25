@@ -15,11 +15,11 @@ In the Netherlands we are blest with fast and affordable internet, we have optio
 
 ## Networking equipment
 
-All my networking equipment is from [Ubiquiti](https://www.ui.com/) and I use their [UniFi](https://www.ui.com/products/#unifi) product line. My choice  for Ubiquiti/UniFi comes from the experience I had in the past. UniFi gives me professional control over my network and still is easy to use. You need at least a Security Gateway (USG), a Switch with PoE and one or more Access Points (AP) to start. The control software you can run on your computer, but I recommend to use a Cloud Key (Gen2). All my AP's are getting the power from the network cable (Power over Ethernet), so no need to have additional power cables. My network is fully managed using the Cloud Key (Gen2) Plus. An extra benefit is that it gives me lots of insides and it is easy to manage.
+All my networking equipment is from [Ubiquiti](https://www.ui.com/) and I use their [UniFi](https://www.ui.com/products/#unifi) product line. My choice  for Ubiquiti/UniFi comes from the experience I had in the past. UniFi gives me professional control over my network and still is easy to use. You need at least a Security Gateway (USG), a Switch with PoE and one or more Access Points (AP) to start. The control software you can run on your computer, but I recommend to use a Cloud Key (Gen2). All my AP's are getting their power from the network cable (Power over Ethernet), so no need to have additional power cables. My network is fully managed using the Cloud Key (Gen2) Plus. An extra benefit is that it gives me lots of insides and it is easy to manage.
 
 ![Network devices](/media/UniFi_network_devices.png)
 
-Normally the Internet connection comes with a modem and built-in Wi-Fi router that is placed nearby the front door. Not the best place in the house and fare away from the office. These ‘modems’ are also not the best quality and have a limited Wi-Fi range. If possible remove this device from your network or set it in bridge mode.
+Normally the Internet connection comes with a modem and built-in Wi-Fi router that is placed nearby the front door. Not the best place in the house and fare away from the office. These ‘modems’ are also not the best quality and have a limited Wi-Fi range. If possible remove this device from your network or set it in bridge mode. [Read more about how](/blog/kpn-fiber-connection-with-ubiquiti-usg-iptv-and-ipv6/).
 
 ![Basic network](/media/UniFi_basic_network.png)
 
@@ -38,7 +38,7 @@ Colors I used for the patch cables are:
 
 ## Access points
 
-In the rest of the house, I have multiple access points and the office is fully wired. This gives me very good Wi-Fi coverage in and around the house. Using the Map functionality in the controller software I can check where I have blind spots in my house. (Below picture is an example and is not my house)
+In the rest of the house, I have multiple access points and the office is fully wired. This gives me very good Wi-Fi coverage in and around the house. Using the Map functionality in the controller software I can check where I have blind spots in my house. (Below picture is an example)
 
 ![Wi-Fi Floorplan](/media/UniFi_floorplan.png)
 
