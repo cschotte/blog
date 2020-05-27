@@ -1,6 +1,7 @@
 ---
 title: "Privacy Policy"
 date: 2020-05-07
+comment: false
 ---
 
 The Clemens Blog (“**Clemens Blog**,” “**we**,” “**us**,” or “**our**”) website is committed to protecting your privacy. This Privacy Policy (“Policy”) describes how we collect, use, store, process, and share your information in relation to the Clemens Blog website ([https://clemens.ms/](/)) (the “**Site**”). By accessing, browsing, or using the Site, you expressly consent to the collection, use, storage, processing, and disclosure of your information, including personally identifiable information, as described in this Policy. IF YOU DO NOT AGREE WITH THIS POLICY, DO NOT ACCESS OR USE THE SITE. This Policy is part of and incorporated into the [Terms of Use](/terms-of-use) governing your use of the Site. Parts of the Terms of Use affect this Policy, so please be sure to review the Terms of Use prior to using the Site. Capitalized terms used but not defined herein have the definitions set forth in the Terms of Use.
