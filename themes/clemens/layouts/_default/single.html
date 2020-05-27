@@ -15,7 +15,9 @@
     </article>
     
     {{ if .Site.DisqusShortname }}
+    <div style="border-top: thin solid #f1f1f1; margin-top: 3em;">
         {{ template "_internal/disqus.html" . }}
+    </div>
     {{ end }}
 
 {{ end }}

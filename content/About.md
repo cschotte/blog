@@ -1,5 +1,12 @@
 ---
-title: "About Me"
+title: "About me"
+date: 2020-05-01T11:04:49+08:00
+draft: false
+
+lightgallery: true
+
+math:
+  enable: true
 ---
 
 My name is **Clemens Schotte**. I'm a [developer](https://github.com/cschotte), a dedicated and enthusiastic [storyteller](/blog/) with a passion for technology and [social interaction](https://twitter.com/cschotte). I blog about technology, gadgets, code, the web and everything I'm interested in. I love to teach, motivate, and entertain people with technical details. I'm knowledgeable on Microsoft and Open Source technology and like to engage with people to exchange ideas and experiences. I'm spontaneous, flexible, and solve problems. I love the constant flow of innovation and new possibilities.
