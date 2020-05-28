@@ -13,6 +13,6 @@ You can follow me on [Twitter](https://twitter.com/cschotte), [LinkedIn](https:/
 
 > **Disclaimer:** The opinions expressed herein are my own and personal opinion and do not represent my employer’s view in any way.
 
-# Background
+## Background
 
 After graduating in 2002 from The Hague University, I started working as a software developer and created websites and web-related applications using PHP and C#. In 2007 I started working for [Microsoft](https://www.microsoft.com/) as Dev Consultant, and from 2013 to 2017 I was Technical Evangelist. After 10 years working for Microsoft, I joined [Dropbox](https://www.dropbox.com/) as Solutions Architect. In 2019 I rejoined Microsoft as Cloud & Apps Specialist where I still work. Interested to know more about what I did, have a look at my [LinkedIn](https://www.linkedin.com/in/cschotte/) profile.

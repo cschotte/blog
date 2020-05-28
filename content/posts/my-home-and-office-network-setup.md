@@ -52,6 +52,6 @@ In the rest of the house, I have multiple access points and the office is fully 
 
 ## Optimize Wi-Fi throughput
 
-To get the maximum Wi-Fi throughput, you need to change the Channel Width. I did this only for the 5G radios where I changed the Channel Width to VHT80 or VHT160. By default the Channel Width is VHT40 what is good for dense networks with a lot of clients, like a public place (what is not my home).
+To get the maximum Wi-Fi throughput, you need to change the Channel Width. I did this only for the 5G radios where I changed the Channel Width to VHT80 or VHT160. By default, Channel Width is VHT40 what is good for dense networks with a lot of clients, like a public place (what is not my home).
 
 ![Wi-Fi AP Channel Width](/images/my-home-and-office-network-setup/UniFi_AP_ChannelWidth.png)

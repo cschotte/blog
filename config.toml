@@ -153,7 +153,7 @@ enableEmoji = true
   # date format
   dateFormat = "2006-01-02"
   # website images for Open Graph and Twitter Cards
-  images = ["/logo.png"]
+  images = ["/icons/logo.png"]
 
   # Header config
   [params.header]
@@ -290,37 +290,21 @@ enableEmoji = true
         # Disqus shortname to use Disqus in posts
         shortname = "clemens-ms"
 
-    # Third-party library config
-    [params.page.library]
-      [params.page.library.css]
-        # someCSS = "some.css"
-        # located in "assets/" 位于 "assets/"
-        # Or 或者
-        # someCSS = "https://cdn.example.com/some.css"
-      [params.page.library.js]
-        # someJavascript = "some.js"
-        # located in "assets/" 位于 "assets/"
-        # Or 或者
-        # someJavascript = "https://cdn.example.com/some.js"
     # SEO config
-    # SEO 配置
     [params.page.seo]
       # Publisher info
-      # 出版者信息
       [params.page.seo.publisher]
         name = "Clemens Schotte"
         [params.page.seo.publisher.logo]
-          url = "logo.png"
-          width = 127
-          height = 40
+          url = "/icons/logo.png"
+          width = 192
+          height = 192
       # Logo info
-      # Logo 信息
       [params.page.seo.logo]
-        url = "logo.png"
-        width = 127
-        height = 40
+        url = "/icons/logo.png"
+        width = 192
+        height = 192
       # Image info
-      # 图片信息
       [params.page.seo.image]
         url = "cover.png"
         width = 800
