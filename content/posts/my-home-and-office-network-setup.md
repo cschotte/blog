@@ -17,7 +17,7 @@ Working from home, I use [Microsoft Teams](https://teams.microsoft.com/) for onl
 
 ## Internet
 
-In the Netherlands we are blest with fast and affordable internet, we have options like cable, fiber, and VSDL. For my home and office, I use a 500/500 Mbit fiber connection from my local ISP (KPN). Running [Speedtest](https://www.speedtest.net/) and [Fast](https://fast.com/) (from Netflix) gives me a good understanding of how fast it is.
+In the Netherlands we are blessed with fast and affordable internet, we have options like cable, fiber, and VSDL. For my home and office, I use a 500/500 Mbit fiber connection from my local ISP (KPN). Running [Speedtest](https://www.speedtest.net/) and [Fast](https://fast.com/) (from Netflix) gives me a good understanding of how fast it is.
 
 ![Speedtest](/images/my-home-and-office-network-setup/UniFi_speedtest.png)
 
@@ -27,13 +27,13 @@ All my networking equipment is from [Ubiquiti](https://www.ui.com/), and I use t
 
 ![Network devices](/images/my-home-and-office-network-setup/UniFi_network_devices.png)
 
-Usually, the Internet connection comes with a modem with a built-in Wi-Fi router and is placed near the front door, which is not the best place in the house, and they fare away from the office. These 'modems' are also not the best quality and have a limited Wi-Fi range. If possible, remove this device from your network or set it in bridge mode. Read more about how.
+Usually, the Internet connection comes with a modem with a built-in Wi-Fi router and is placed near the front door, which is not the best place in the house, and they far away from the office. These 'modems' are also not the best quality and have a limited Wi-Fi range. If possible, remove this device from your network or set it in bridge mode. Read more about how.
 
 ![Basic network](/images/my-home-and-office-network-setup/UniFi_basic_network.png)
 
 ## Networking cables
 
-When building my house last year, I wired all my rooms and ceilings with **CAT6 UTP** networking cables. All networking cables come together nearby the front door ware also the Internet connection (fiber) is entering the house. I created a mini networking cabinet where I have my switching and security gateway networking equipment.
+When building my house last year, I wired all my rooms and ceilings with **CAT6** networking cables. All networking cables come together nearby the front door where also the Internet connection (fiber) is entering the house. I created a mini networking cabinet where I have my switching and security gateway networking equipment.
 
 ![My network rack cabinet](/images/my-home-and-office-network-setup/UniFi_network_rack_cabinet.jpg)
 
