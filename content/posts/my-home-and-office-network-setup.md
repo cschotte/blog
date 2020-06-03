@@ -27,7 +27,7 @@ All my networking equipment is from [Ubiquiti](https://www.ui.com/), and I use t
 
 ![Network devices](/images/my-home-and-office-network-setup/UniFi_network_devices.png)
 
-Usually, the Internet connection comes with a modem with a built-in Wi-Fi router and is placed near the front door, which is not the best place in the house, and they far away from the office. These 'modems' are also not the best quality and have a limited Wi-Fi range. If possible, remove this device from your network or set it in bridge mode. Read more about how.
+Usually, the Internet connection comes with a modem with a built-in Wi-Fi router and is placed near the front door, which is not the best place in the house, and they far away from the office. These 'modems' are also not the best quality and have a limited Wi-Fi range. If possible, remove this device from your network or set it in bridge mode. [Read more about how](/kpn-fiber-connection-with-ubiquiti-usg-iptv-and-ipv6/).
 
 ![Basic network](/images/my-home-and-office-network-setup/UniFi_basic_network.png)
 
