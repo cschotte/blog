@@ -1,6 +1,5 @@
 ---
 title: "KPN Fiber Connection with Ubiquiti USG, IPTV and IPv6"
-description: "How to set up a KPN fiber connection directly to a Ubiquiti Security Gateway (USG)."
 author: "Clemens Schotte"
 date: 2020-05-25T14:11:58+02:00
 

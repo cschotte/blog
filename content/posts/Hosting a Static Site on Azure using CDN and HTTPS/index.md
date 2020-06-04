@@ -1,6 +1,5 @@
 ---
 title: "Hosting a Static Site on Azure using CDN and HTTPS"
-description: "You can host your static website from a Azure Storage account, and when you combine this with Azure Content Delivery Network (CDN) your site is lightning fast and available worldwide."
 author: "Clemens Schotte"
 date: 2020-05-28T14:11:58+02:00
 

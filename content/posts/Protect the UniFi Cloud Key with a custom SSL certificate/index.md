@@ -1,6 +1,5 @@
 ---
 title: "Protect the UniFi Cloud Key with a custom SSL certificate"
-description: "Protect the UniFi Cloud Key with a custom SSL certificate"
 author: "Clemens Schotte"
 date: 2020-06-03T14:40:58+02:00
 

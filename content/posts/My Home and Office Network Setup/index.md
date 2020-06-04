@@ -1,6 +1,5 @@
 ---
 title: "My Home and Office Network Setup"
-description: "Want to know how I set up my home and office network for a fast and rock-solid connection?"
 author: "Clemens Schotte"
 date: 2020-05-18T14:11:58+02:00
 
