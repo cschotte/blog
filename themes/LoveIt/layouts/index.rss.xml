@@ -9,7 +9,7 @@
         <description>
             {{- .Site.Params.description | default .Site.Title -}}
         </description>
-        <generator>Clemens Schotte Blog</generator>
+        <generator>Hugo -- gohugo.io</generator>
         {{- with .Site.LanguageCode -}}
             <language>
                 {{- . -}}
