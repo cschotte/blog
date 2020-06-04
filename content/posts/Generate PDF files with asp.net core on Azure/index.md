@@ -4,7 +4,7 @@ description: ""
 author: "Clemens Schotte"
 date: 2020-06-04T11:28:58+02:00
 
-tags: ["Azure", "PDF", "C#", "WebApp"]
+tags: ["Azure", "PDF", "asp.net", "WebApp"]
 categories: ["Cloud", "Programming"]
 
 resources:
