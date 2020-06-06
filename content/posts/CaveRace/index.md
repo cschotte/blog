@@ -3,7 +3,7 @@ title: "CaveRace"
 author: "Clemens Schotte"
 date: 2020-06-04T15:30:00+02:00
 
-tags: ["Game", "MSDOS", "C"]
+tags: ["Gaming", "MSDOS", "C"]
 categories: ["Retro"]
 
 resources:
