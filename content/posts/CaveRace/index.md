@@ -26,7 +26,7 @@ You can **[download](caverace-1.2-dos.zip)** the 16-bit MS-DOS version of CaveRa
 
 ## Story
 
-On the planed Eldora, there are miners collecting gold and diamonds. When the miners get unexpected visitors from outer space, the mining of precious minerals is in danger. The only defense the miners have is here explosions they use to make a way inside the mines and caves. CaveRace is a game where you collect as much as possible precious minerals and destroy all alien visitors.
+On the planed Eldora, there are miners collecting gold and diamonds. When the miners get unexpected visitors from outer space, the mining of precious minerals is in danger. The only defense the miners have is their explosions to make a way inside the mines and caves. CaveRace is a game where you collect as much as possible precious minerals and destroy all alien visitors.
 
 | Planed Eldora                | Collect treasure                  | Alien visitors      |
 | ---------------------------- | --------------------------------- | ------------------- |
