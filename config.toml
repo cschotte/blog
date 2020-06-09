@@ -132,7 +132,7 @@ enableEmoji = true
         [languages.en.params.home.posts]
           enable = true
           # special amount of posts in each home posts page
-          paginate = 6
+          paginate = 8
       # Social config in home page
       [languages.en.params.social]
         GitHub = "cschotte"
@@ -247,7 +247,7 @@ enableEmoji = true
       maxShownLines = 10
     # KaTeX mathematical formulas config (KaTeX https://katex.org/)
     [params.page.math]
-      enable = false
+      enable = true
       # default block delimiter is $$ ... $$ and \\[ ... \\]
       blockLeftDelimiter = ""
       blockRightDelimiter = ""
@@ -336,7 +336,7 @@ enableEmoji = true
     [params.analytics.google]
       id = "UA-43077951-19"
       # whether to anonymize IP
-      anonymizeIP = true
+      anonymizeIP = false
 
   # Cookie consent config
   [params.cookieconsent]
