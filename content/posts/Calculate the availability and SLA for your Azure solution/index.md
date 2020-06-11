@@ -3,7 +3,7 @@ title: "Calculate the availability and SLA for your Azure solution"
 author: "Clemens Schotte"
 date: 2020-06-09T11:00:00+02:00
 
-tags: [""]
+tags: ["Azure", "Availability", "SLA", "Website"]
 categories: ["Cloud"]
 
 resources:
@@ -58,9 +58,9 @@ This results in that our whole infrastructure has an availability of **99.94%**.
 
 ## Services in Parallel
 
-When services are in **parallel**, the situation changes. The availability doesn’t depend on the services together. For the solution were services A and B in parallel to be available, $A\ \cup\ B$ (The symbol $\cup$ means ‘or’) needs to be available. When one of them is down, the solution is still available.
+When services are in **parallel**, the situation changes. The availability doesn’t depend on the services together. For the solution were services $A$ and $B$ in parallel to be available, $A\ \cup\ B$ (The symbol $\cup$ means ‘or’) needs to be available. When one of them is down, the solution is still available.
 
-To calculate the availability of this solution, we need to know the probability that a service is not available. The probability that service A is not available is defined as:
+To calculate the availability of this solution, we need to know the probability that a service is not available. The probability that service $A$ is not available is defined as:
 
 > $P\left(\lnot A\right)=1-P\left(A\right)$
 
