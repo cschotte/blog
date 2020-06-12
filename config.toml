@@ -119,9 +119,9 @@ enableEmoji = true
           # URL of avatar shown in home page
           avatarURL = "/images/clemens.jpg"
           # title shown in home page (HTML format is supported)
-          title = "Hi! I'm Clemens,"
+          title = "Hi! I'm Clemens Schotte,"
           # subtitle shown in home page
-          subtitle = "a developer, technical evangelist and public speaker."
+          subtitle = "Cloud & Apps specialist, Developer, Technical Evangelist, and public speaker."
           # whether to use typeit animation for subtitle
           typeit = false
           # whether to show social links
@@ -140,7 +140,7 @@ enableEmoji = true
         Twitter = "cschotte"
         Instagram = "clemens_schotte"
         Youtubelegacy = "clemensschotte"
-        Email = "clemens@clemens.ms"
+        Email = "contact@clemens.ms"
         RSS = true
 
 [params]

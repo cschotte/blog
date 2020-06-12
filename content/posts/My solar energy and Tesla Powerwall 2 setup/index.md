@@ -56,4 +56,4 @@ The combination of the solar and the Powerwall gives me an excellent performance
 
 ## Conclusion
 
-I'm pleased with the setup and performance, but they're also some small downsides I did not know before. In the Netherlands, the Tesla Powerwall 2 does not have all the functionality I was expecting, like by loss of grid electricity, the Powerwall can't be used or baying cheap electricity from the grid when there is no sun.
+I'm pleased with the setup and performance, but they're also some small downsides I did not know before. In the Netherlands, the Tesla Powerwall 2 does not have all the functionality I was expecting, like by loss of grid electricity, the Powerwall can't be used or buying cheap electricity from the grid when there is no sun.
