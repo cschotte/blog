@@ -244,7 +244,7 @@ enableEmoji = true
       # whether to show the copy button of the code block
       copy = true
       # the maximum number of lines of displayed code by default
-      maxShownLines = 10
+      maxShownLines = 25
     # KaTeX mathematical formulas config (KaTeX https://katex.org/)
     [params.page.math]
       enable = true
@@ -325,9 +325,6 @@ enableEmoji = true
   [params.verification]
     google = ""
     bing = ""
-    yandex = ""
-    pinterest = ""
-    baidu = ""
 
   # Analytics config
     [params.analytics]

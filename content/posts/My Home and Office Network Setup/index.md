@@ -49,7 +49,7 @@ Colors I used for the patch cables are:
 
 I have multiple access points, on every floor at least 1. The UniFi access points give me excellent Wi-Fi coverage in and around the house. Using the Map functionality in the controller software, I can check where I have blind spots in my house (Below picture is an example). All other devices are hardwired, like in the office.
 
-![Wi-Fi Floorplan](UniFi_floorplan.png)
+![Wi-Fi Floorplan](UniFi_floorplan.jpg)
 
 ## Optimize Wi-Fi throughput
 
