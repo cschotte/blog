@@ -22,7 +22,7 @@ After all those years, my Amiga needs some care. Specialty the capacitors on the
 
 ## Workbench
 
-The **AmigaOS** is called **Workbench**. By default, the Amiga 1200 comes with version 3.0. When upgrading the AmigaOS, you need also to update the Kickstart ROM (this is what the Amiga starts). In 2018 [Workbench version 3.1.4](https://www.hyperion-entertainment.com/index.php/where-to-buy/direct-downloads/188-amigaos-314) came out, whats adds new capabilities, like lager harddisks (4GB+), and fixes bugs from the past. So I ordered this new version, including the Kickstart ROMs. In 2019 update 1 came out, so in the end, I now have **Workbench 3.1.4.1** running.
+The **AmigaOS** is called **Workbench**. By default, the Amiga 1200 comes with version 3.0. When upgrading the AmigaOS, you need also to update the Kickstart ROM (this is what the Amiga starts). In 2018 [Workbench version 3.1.4](https://www.hyperion-entertainment.com/index.php/where-to-buy/direct-downloads/188-amigaos-314) came out, what adds new capabilities, like lager hard disks (4GB+), and fixes bugs from the past. So, I ordered this new version, including the Kickstart ROMs. In 2019 update 1 came out, so in the end, I now have **Workbench 3.1.4.1** running.
 
 ![Workbench](workbench.jpg)
 
@@ -36,7 +36,7 @@ Upgrading the [Kickstart](https://en.wikipedia.org/wiki/Kickstart_(Amiga)) ROMs 
 
 ## Software
 
-The most software I have is on disks. Every disk has only a capacity of 880KB and is getting older. So I need a way to backup all my software. The Amiga 1200 (and also the 600) has a PCMCIA port. I used this port to add a memory card adaptor. With the transfer tool, I copied all my disks to this memory card in an ADF (Amiga Disk File) format. I also made a backup of all the software on the old hard disk. Making a backup is just copying all the files; no special software needed.
+The most software I have is on disks. Every disk has only a capacity of 880KB and is getting older. So, I need a way to backup all my software. The Amiga 1200 (and the 600) has a PCMCIA port. I used this port to add a memory card adaptor. With the transfer tool, I copied all my disks to this memory card in an ADF (Amiga Disk File) format. I also made a backup of all the software on the old hard disk. Making a backup is just copying all the files; no special software needed.
 
 ![Amiga boot screen](boot.png)
 
