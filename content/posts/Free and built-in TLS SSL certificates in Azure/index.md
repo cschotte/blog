@@ -29,7 +29,7 @@ Wait, there is [Let's Encrypt](https://letsencrypt.org/), its free! Why are you 
 
 It should be easy and free to enable SSL/TSL certificates in Azure. This was the number one question on [UserVoice feedback](https://feedback.azure.com/forums/170024-additional-services). Microsoft implemented this Built-In free certificate option for some services, like Azure [CDN](https://azure.microsoft.com/en-us/services/cdn/), [Front Door](https://azure.microsoft.com/en-us/services/frontdoor/), [Application Gateway](https://azure.microsoft.com/en-us/services/application-gateway/), etc. When you put one of those services in front of your web site (like what I did with [this blog](/)), you can enable an auto-renewable Built-In certificate for free.
 
-![enable TSL certificates](tls.png)
+![enable TLS certificates](tls.png)
 
 > "[Custom Domain HTTPS feature](https://docs.microsoft.com/en-us/azure/cdn/cdn-custom-ssl) enables you to deliver content to your users securely over your own domain. This is done by encrypting the data between the CDN and your users' clients (typically web browsers) via TLS protocol (which is a successor of the SSL protocol) using a certificate. Using our "CDN managed certificate" capability, you can enable this feature with just a few clicks and have Azure CDN completely take care of certificate management tasks such as its renewal. You can also bring your own certificate (stored in Azure Key vault ) or even purchase a new certificate through Key vault and have Azure CDN use that certificate for securing the content delivery."
 
