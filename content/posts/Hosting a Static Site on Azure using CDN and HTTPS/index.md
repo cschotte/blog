@@ -28,7 +28,7 @@ But there is also another option, which is cheaper and is very fast. You can als
 
 ## Storage Account
 
-We start by creating a normal general-purpose storage account in Azure. Use a unique name and choose a location close to yourself. I live in the Netherlands, so West Europe is, in my case, the best option. Replication I don’t need, so locally redundant, is the cheapest for me.
+We start by creating a general-purpose storage account in Azure. Use a unique name and choose a location close to yourself. I live in the Netherlands, so West Europe is, in my case, the best option. Replication I don’t need, so locally redundant, is the cheapest for me.
 
 Next, we need to **enable the Static website option** in the storage account, and which also gives us the primary endpoint URL we need later.
 
@@ -42,7 +42,7 @@ Let’s test if the files are visible in the browser. Use the primary endpoint U
 
 ## Content Delivery Network (CDN)
 
-To make your website fast and responsive, is it to have it close to your visitors. Visitors from the US and Australia are far from West Europe, so by using a CDN, the content is as closeby as possible. Azure CDN has [130 point-of-presence (POP) locations](https://docs.microsoft.com/en-us/azure/cdn/cdn-pop-locations) worldwide worldwide.
+To make your website fast and responsive, host it closeby your visitors. Visitors from the US and Australia are far from West Europe, so by using a CDN, the content is as closeby as possible. Azure CDN has [130 point-of-presence (POP) locations](https://docs.microsoft.com/en-us/azure/cdn/cdn-pop-locations) worldwide.
 
 Creating an Azure CDN is easy, give it a unique name and point it to the primary endpoint URL from the Storage account we had created earlier.
 
