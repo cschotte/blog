@@ -138,9 +138,9 @@ enableEmoji = true
         GitHub = "cschotte"
         Linkedin = "cschotte"
         Twitter = "cschotte"
-        Instagram = "clemens_schotte"
-        Youtubelegacy = "clemensschotte"
-        Email = "contact@clemens.ms"
+        #Instagram = "clemens_schotte"
+        #Youtubelegacy = "clemensschotte"
+        #Email = "contact@clemens.ms"
         RSS = true
 
 [params]
