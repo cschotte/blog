@@ -4,7 +4,7 @@ author: "Clemens Schotte"
 date: 2021-03-18T14:50:00+02:00
 
 tags: ["Azure", "Microservices", "AKS", "IaC", "DevOps"]
-categories: ["Programming", "Cloud"]
+categories: ["DevOps"]
 
 resources:
 - name: "featured-image"
@@ -91,7 +91,7 @@ Cloud-native systems embrace microservices, a popular architectural style for co
 * Each runs in its own process and communicates with others using standard communication protocols.
 * They compose together to form an application.
 
-#### Why microservices?
+### Why microservices?
 
 Microservices provide agility. Each microservice has an autonomous lifecycle and can evolve independently and deploy frequently. You don't have to wait for a quarterly release to deploy new features or updates. You can update a small area of a complex application with less risk of disrupting the entire system. Each microservice can scale independently. Instead of scaling the entire application as a single unit, you scale out only those services that require more processing power or network bandwidth. This fine-grained approach to scaling provides for greater control of your system and reduces overall costs as you scale portions of your system, not everything.
 

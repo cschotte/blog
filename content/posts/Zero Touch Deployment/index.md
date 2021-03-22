@@ -4,7 +4,7 @@ author: "Clemens Schotte"
 date: 2021-03-16T09:29:00+02:00
 
 tags: ["Azure", "DevOps", "ALM", "IaC"]
-categories: ["Programming", "Cloud"]
+categories: ["DevOps"]
 
 resources:
 - name: "featured-image"
