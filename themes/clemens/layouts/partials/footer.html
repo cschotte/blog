@@ -1,8 +1,0 @@
-<p>
-    &copy; {{ now.Year }} {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}{{end}}
-</p>
-<nav>
-    {{ range .Site.Menus.footer }}
-    <a href="{{ .URL }}">{{ .Name }}</a>
-    {{ end }}
-</nav>
