@@ -144,3 +144,5 @@ Applying these practices, you have radically evolved how to ship software. Many 
 ### Dapr
 
 [Dapr](https://dapr.io/) is a new framework that adds cloud-native capabilities and patterns to other popular language frameworks like Node.js, Python, Java, and .Net/C#. Dapr especially shines for interservice communication between microservices and state stores. For example, Dapr adds a side car pattern that adds resiliency, retries, and service discovery between HTTP and gRPC based microservices without having to fully implement a service mesh or write lower-level logic to handle. Dapr adds high scale and availability bindings to state stores and messaging services like CosmosDB, Redis, or Kafka.
+
+![Dapr](dapr.png)
