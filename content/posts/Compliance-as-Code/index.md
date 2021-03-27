@@ -109,7 +109,7 @@ In this example, we will query for the Storage Accounts. The object returned wil
 
 To ensure the specification is met, we need to add assertions based on the specification. These assertions should validate that the properties are set correctly on the deployed Azure Resource.
 
-```ps1
+```powershell
 # adls.acceptance.spec.ps1
 
 $adls = Get-AzStorageAccount -Name $resource.Name -ResourceGroupName $resource.ResourceGroupName
