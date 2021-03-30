@@ -156,7 +156,7 @@ Blueprints are a declarative way to orchestrate the deployment of various resour
 
 The Azure Blueprints service is backed by the globally distributed Azure Cosmos DB. Blueprint objects are replicated to multiple Azure regions. This replication provides low latency, high availability, and consistent access to your blueprint objects, regardless of which region Azure Blueprints deploys your resources to.
 
-{% youtube cQ9D-d6KkMY %}
+{{< youtube cQ9D-d6KkMY >}}
 
 ### How it's different from ARM templates
 
