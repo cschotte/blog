@@ -39,8 +39,9 @@ You can use many declarative [infrastructure deployment technologies](https://do
 
 [Hashicorp Terraform](https://www.terraform.io/) is an open-source tool for provisioning and managing cloud infrastructure. It codifies infrastructure in configuration files that describe the topology of cloud resources. These resources include virtual machines, storage accounts, and networking interfaces. The Terraform CLI provides a simple mechanism to deploy and version the configuration files to Azure.
 
-* [Terraform with Azure](https://docs.microsoft.com/en-us/azure/developer/terraform/overview)
-* [Using Terraform together with Azure, Azure Pipelines & GitHub Actions](https://geekzter.medium.com/using-terraform-with-azure-azure-pipelines-github-actions-86e043bd0d9e)
+> **See also:**
+> * [Terraform with Azure](https://docs.microsoft.com/en-us/azure/developer/terraform/overview)
+> * [Using Terraform together with Azure, Azure Pipelines & GitHub Actions](https://geekzter.medium.com/using-terraform-with-azure-azure-pipelines-github-actions-86e043bd0d9e)
 
 Infrastructure as Code with Terraform has become pervasive for provisioning cloud infrastructure. Azure engineering has invested in Terraform AzureRM provider as a first-party control plane, of equal importance to Azure-Cli and PowerShell, for Azure. As companies mature in their use of Terraform, there is an increasing need to apply DevOps practices to their IaC development to increase velocity and reduce Mean-Time-To-Recover from failures.
 
