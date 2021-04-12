@@ -71,7 +71,7 @@ enableEmoji = true
       # site description
       description = "Clemens Schotte Blog about technology."
       # site keywords
-      keywords = ["clemens", "blog", "microsoft", "azure", "cloud", "web"]
+      keywords = ["clemens", "blog", "microsoft", "azure", "cloud", "web", "navatron"]
       # App icon config
       [languages.en.params.app]
         # optional site title override for the app when added to an iOS home screen or Android launcher
@@ -286,7 +286,7 @@ enableEmoji = true
       enable = true
       # Disqus comment config (https://disqus.com/)
       [params.page.comment.disqus]
-        enable = true
+        enable = false
         # Disqus shortname to use Disqus in posts
         shortname = "clemens-ms"
 

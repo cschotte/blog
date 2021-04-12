@@ -1,0 +1,993 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "actionGroups_Application_Insights_Smart_Detection_name": {
+      "type": "String"
+    },
+    "components_clemens_api_externalid": {
+      "type": "String"
+    },
+    "components_clemens_externalid": {
+      "type": "String"
+    },
+    "components_clemens_go_externalid": {
+      "type": "String"
+    },
+    "components_clemens_web_externalid": {
+      "type": "String"
+    },
+    "dnszones_caverace_com_name": {
+      "type": "String"
+    },
+    "dnszones_clemens_ms_name": {
+      "type": "String"
+    },
+    "profiles_clemens_name": {
+      "type": "String"
+    },
+    "smartdetectoralertrules_failure_anomalies___clemens_api_name": {
+      "type": "String"
+    },
+    "smartdetectoralertrules_failure_anomalies___clemens_go_name": {
+      "type": "String"
+    },
+    "smartdetectoralertrules_failure_anomalies___clemens_name": {
+      "type": "String"
+    },
+    "smartdetectoralertrules_failure_anomalies___clemens_web_name": {
+      "type": "String"
+    },
+    "storageAccounts_clemensblog_name": {
+      "type": "String"
+    },
+    "vaults_clemens_keyvault_name": {
+      "type": "String"
+    }
+  },
+  "resources": [
+    {
+      "apiVersion": "2020-09-01",
+      "kind": "cdn",
+      "location": "WestUs",
+      "name": "[parameters('profiles_clemens_name')]",
+      "properties": {},
+      "sku": {
+        "name": "Standard_Microsoft"
+      },
+      "type": "Microsoft.Cdn/profiles"
+    },
+    {
+      "apiVersion": "2019-06-01",
+      "location": "Global",
+      "name": "[parameters('actionGroups_Application_Insights_Smart_Detection_name')]",
+      "properties": {
+        "armRoleReceivers": [
+          {
+            "name": "Monitoring Contributor",
+            "roleId": "749f88d5-cbae-40b8-bcfc-e573ddc772fa",
+            "useCommonAlertSchema": true
+          },
+          {
+            "name": "Monitoring Reader",
+            "roleId": "43d0d8ad-25c7-4714-9337-8ba259a9fe05",
+            "useCommonAlertSchema": true
+          }
+        ],
+        "automationRunbookReceivers": [],
+        "azureAppPushReceivers": [],
+        "azureFunctionReceivers": [],
+        "emailReceivers": [],
+        "enabled": true,
+        "groupShortName": "SmartDetect",
+        "itsmReceivers": [],
+        "logicAppReceivers": [],
+        "smsReceivers": [],
+        "voiceReceivers": [],
+        "webhookReceivers": []
+      },
+      "type": "microsoft.insights/actionGroups"
+    },
+    {
+      "apiVersion": "2020-04-01-preview",
+      "location": "westeurope",
+      "name": "[parameters('vaults_clemens_keyvault_name')]",
+      "properties": {
+        "accessPolicies": [
+          {
+            "objectId": "3315d2e2-13fd-4a26-a981-d1df3760de38",
+            "permissions": {
+              "certificates": [],
+              "keys": [],
+              "secrets": [
+                "Get"
+              ]
+            },
+            "tenantId": "9be79373-29bb-4b8a-a999-495ad397f5ae"
+          },
+          {
+            "objectId": "18d2423e-a5f6-441c-98e6-e765d08b636e",
+            "permissions": {
+              "certificates": [
+                "Get",
+                "List",
+                "Update",
+                "Create",
+                "Import",
+                "Delete",
+                "Recover",
+                "Backup",
+                "Restore",
+                "ManageContacts",
+                "ManageIssuers",
+                "GetIssuers",
+                "ListIssuers",
+                "SetIssuers",
+                "DeleteIssuers"
+              ],
+              "keys": [
+                "Get",
+                "List",
+                "Update",
+                "Create",
+                "Import",
+                "Delete",
+                "Recover",
+                "Backup",
+                "Restore"
+              ],
+              "secrets": [
+                "Get",
+                "List",
+                "Set",
+                "Delete",
+                "Recover",
+                "Backup",
+                "Restore"
+              ]
+            },
+            "tenantId": "9be79373-29bb-4b8a-a999-495ad397f5ae"
+          },
+          {
+            "objectId": "679ae3d1-6049-45bd-9752-6acab57ebfa6",
+            "permissions": {
+              "certificates": [],
+              "keys": [],
+              "secrets": [
+                "Get",
+                "List"
+              ]
+            },
+            "tenantId": "9be79373-29bb-4b8a-a999-495ad397f5ae"
+          }
+        ],
+        "enableRbacAuthorization": false,
+        "enableSoftDelete": true,
+        "enabledForDeployment": false,
+        "enabledForDiskEncryption": false,
+        "enabledForTemplateDeployment": false,
+        "provisioningState": "Succeeded",
+        "sku": {
+          "family": "A",
+          "name": "Standard"
+        },
+        "softDeleteRetentionInDays": 90,
+        "tenantId": "9be79373-29bb-4b8a-a999-495ad397f5ae",
+        "vaultUri": "[concat('https://', parameters('vaults_clemens_keyvault_name'), '.vault.azure.net/')]"
+      },
+      "type": "Microsoft.KeyVault/vaults"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "location": "global",
+      "name": "[parameters('dnszones_caverace_com_name')]",
+      "properties": {
+        "zoneType": "Public"
+      },
+      "type": "Microsoft.Network/dnszones"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "location": "global",
+      "name": "[parameters('dnszones_clemens_ms_name')]",
+      "properties": {
+        "zoneType": "Public"
+      },
+      "type": "Microsoft.Network/dnszones"
+    },
+    {
+      "apiVersion": "2021-01-01",
+      "kind": "StorageV2",
+      "location": "westeurope",
+      "name": "[parameters('storageAccounts_clemensblog_name')]",
+      "properties": {
+        "accessTier": "Hot",
+        "encryption": {
+          "keySource": "Microsoft.Storage",
+          "services": {
+            "blob": {
+              "enabled": true,
+              "keyType": "Account"
+            },
+            "file": {
+              "enabled": true,
+              "keyType": "Account"
+            }
+          }
+        },
+        "largeFileSharesState": "Disabled",
+        "networkAcls": {
+          "bypass": "AzureServices",
+          "defaultAction": "Allow",
+          "ipRules": [],
+          "virtualNetworkRules": []
+        },
+        "supportsHttpsTrafficOnly": true
+      },
+      "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+      },
+      "type": "Microsoft.Storage/storageAccounts"
+    },
+    {
+      "apiVersion": "2019-06-01",
+      "dependsOn": [
+        "[resourceId('microsoft.insights/actionGroups', parameters('actionGroups_Application_Insights_Smart_Detection_name'))]"
+      ],
+      "location": "global",
+      "name": "[parameters('smartdetectoralertrules_failure_anomalies___clemens_name')]",
+      "properties": {
+        "actionGroups": {
+          "groupIds": [
+            "[resourceId('microsoft.insights/actionGroups', parameters('actionGroups_Application_Insights_Smart_Detection_name'))]"
+          ]
+        },
+        "description": "Failure Anomalies notifies you of an unusual rise in the rate of failed HTTP requests or dependency calls.",
+        "detector": {
+          "description": "Detects if your application experiences an abnormal rise in the rate of HTTP requests or dependency calls that are reported as failed. The anomaly detection uses machine learning algorithms and occurs in near real time, therefore there's no need to define a frequency for this signal.<br/></br/>To help you triage and diagnose the problem, an analysis of the characteristics of the failures and related telemetry is provided with the detection. This feature works for any app, hosted in the cloud or on your own servers, that generates request or dependency telemetry - for example, if you have a worker role that calls <a class=\"ext-smartDetecor-link\" href=\\\"https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics#trackrequest\\\" target=\\\"_blank\\\">TrackRequest()</a> or <a class=\"ext-smartDetecor-link\" href=\\\"https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics#trackdependency\\\" target=\\\"_blank\\\">TrackDependency()</a>.<br/><br/><a class=\"ext-smartDetecor-link\" href=\\\"https://docs.microsoft.com/azure/azure-monitor/app/proactive-failure-diagnostics\\\" target=\\\"_blank\\\">Learn more about Failure Anomalies</a><br><br><b>A note about your data privacy:</b><br><br>The service is entirely automatic and only you can see these notifications. <a class=\\\"ext-smartDetecor-link\\\" href=\\\"https://docs.microsoft.com/en-us/azure/azure-monitor/app/data-retention-privacy\\\" target=\\\"_blank\\\">Read more about data privacy</a><br><br>Smart Alerts conditions can't be edited or added for now.",
+          "id": "FailureAnomaliesDetector",
+          "name": "Failure Anomalies",
+          "supportedResourceTypes": [
+            "ApplicationInsights"
+          ]
+        },
+        "frequency": "PT1M",
+        "scope": [
+          "[parameters('components_clemens_externalid')]"
+        ],
+        "severity": "Sev3",
+        "state": "Enabled"
+      },
+      "type": "microsoft.alertsmanagement/smartdetectoralertrules"
+    },
+    {
+      "apiVersion": "2019-06-01",
+      "dependsOn": [
+        "[resourceId('microsoft.insights/actionGroups', parameters('actionGroups_Application_Insights_Smart_Detection_name'))]"
+      ],
+      "location": "global",
+      "name": "[parameters('smartdetectoralertrules_failure_anomalies___clemens_api_name')]",
+      "properties": {
+        "actionGroups": {
+          "groupIds": [
+            "[resourceId('microsoft.insights/actionGroups', parameters('actionGroups_Application_Insights_Smart_Detection_name'))]"
+          ]
+        },
+        "description": "Failure Anomalies notifies you of an unusual rise in the rate of failed HTTP requests or dependency calls.",
+        "detector": {
+          "description": "Detects if your application experiences an abnormal rise in the rate of HTTP requests or dependency calls that are reported as failed. The anomaly detection uses machine learning algorithms and occurs in near real time, therefore there's no need to define a frequency for this signal.<br/></br/>To help you triage and diagnose the problem, an analysis of the characteristics of the failures and related telemetry is provided with the detection. This feature works for any app, hosted in the cloud or on your own servers, that generates request or dependency telemetry - for example, if you have a worker role that calls <a class=\"ext-smartDetecor-link\" href=\\\"https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics#trackrequest\\\" target=\\\"_blank\\\">TrackRequest()</a> or <a class=\"ext-smartDetecor-link\" href=\\\"https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics#trackdependency\\\" target=\\\"_blank\\\">TrackDependency()</a>.<br/><br/><a class=\"ext-smartDetecor-link\" href=\\\"https://docs.microsoft.com/azure/azure-monitor/app/proactive-failure-diagnostics\\\" target=\\\"_blank\\\">Learn more about Failure Anomalies</a><br><br><b>A note about your data privacy:</b><br><br>The service is entirely automatic and only you can see these notifications. <a class=\\\"ext-smartDetecor-link\\\" href=\\\"https://docs.microsoft.com/en-us/azure/azure-monitor/app/data-retention-privacy\\\" target=\\\"_blank\\\">Read more about data privacy</a><br><br>Smart Alerts conditions can't be edited or added for now.",
+          "id": "FailureAnomaliesDetector",
+          "name": "Failure Anomalies",
+          "supportedResourceTypes": [
+            "ApplicationInsights"
+          ]
+        },
+        "frequency": "PT1M",
+        "scope": [
+          "[parameters('components_clemens_api_externalid')]"
+        ],
+        "severity": "Sev3",
+        "state": "Enabled"
+      },
+      "type": "microsoft.alertsmanagement/smartdetectoralertrules"
+    },
+    {
+      "apiVersion": "2019-06-01",
+      "dependsOn": [
+        "[resourceId('microsoft.insights/actionGroups', parameters('actionGroups_Application_Insights_Smart_Detection_name'))]"
+      ],
+      "location": "global",
+      "name": "[parameters('smartdetectoralertrules_failure_anomalies___clemens_go_name')]",
+      "properties": {
+        "actionGroups": {
+          "groupIds": [
+            "[resourceId('microsoft.insights/actionGroups', parameters('actionGroups_Application_Insights_Smart_Detection_name'))]"
+          ]
+        },
+        "description": "Failure Anomalies notifies you of an unusual rise in the rate of failed HTTP requests or dependency calls.",
+        "detector": {
+          "description": "Detects if your application experiences an abnormal rise in the rate of HTTP requests or dependency calls that are reported as failed. The anomaly detection uses machine learning algorithms and occurs in near real time, therefore there's no need to define a frequency for this signal.<br/></br/>To help you triage and diagnose the problem, an analysis of the characteristics of the failures and related telemetry is provided with the detection. This feature works for any app, hosted in the cloud or on your own servers, that generates request or dependency telemetry - for example, if you have a worker role that calls <a class=\"ext-smartDetecor-link\" href=\\\"https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics#trackrequest\\\" target=\\\"_blank\\\">TrackRequest()</a> or <a class=\"ext-smartDetecor-link\" href=\\\"https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics#trackdependency\\\" target=\\\"_blank\\\">TrackDependency()</a>.<br/><br/><a class=\"ext-smartDetecor-link\" href=\\\"https://docs.microsoft.com/azure/azure-monitor/app/proactive-failure-diagnostics\\\" target=\\\"_blank\\\">Learn more about Failure Anomalies</a><br><br><b>A note about your data privacy:</b><br><br>The service is entirely automatic and only you can see these notifications. <a class=\\\"ext-smartDetecor-link\\\" href=\\\"https://docs.microsoft.com/en-us/azure/azure-monitor/app/data-retention-privacy\\\" target=\\\"_blank\\\">Read more about data privacy</a><br><br>Smart Alerts conditions can't be edited or added for now.",
+          "id": "FailureAnomaliesDetector",
+          "name": "Failure Anomalies",
+          "supportedResourceTypes": [
+            "ApplicationInsights"
+          ]
+        },
+        "frequency": "PT1M",
+        "scope": [
+          "[parameters('components_clemens_go_externalid')]"
+        ],
+        "severity": "Sev3",
+        "state": "Enabled"
+      },
+      "type": "microsoft.alertsmanagement/smartdetectoralertrules"
+    },
+    {
+      "apiVersion": "2019-06-01",
+      "dependsOn": [
+        "[resourceId('microsoft.insights/actionGroups', parameters('actionGroups_Application_Insights_Smart_Detection_name'))]"
+      ],
+      "location": "global",
+      "name": "[parameters('smartdetectoralertrules_failure_anomalies___clemens_web_name')]",
+      "properties": {
+        "actionGroups": {
+          "groupIds": [
+            "[resourceId('microsoft.insights/actionGroups', parameters('actionGroups_Application_Insights_Smart_Detection_name'))]"
+          ]
+        },
+        "description": "Failure Anomalies notifies you of an unusual rise in the rate of failed HTTP requests or dependency calls.",
+        "detector": {
+          "description": "Detects if your application experiences an abnormal rise in the rate of HTTP requests or dependency calls that are reported as failed. The anomaly detection uses machine learning algorithms and occurs in near real time, therefore there's no need to define a frequency for this signal.<br/></br/>To help you triage and diagnose the problem, an analysis of the characteristics of the failures and related telemetry is provided with the detection. This feature works for any app, hosted in the cloud or on your own servers, that generates request or dependency telemetry - for example, if you have a worker role that calls <a class=\"ext-smartDetecor-link\" href=\\\"https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics#trackrequest\\\" target=\\\"_blank\\\">TrackRequest()</a> or <a class=\"ext-smartDetecor-link\" href=\\\"https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics#trackdependency\\\" target=\\\"_blank\\\">TrackDependency()</a>.<br/><br/><a class=\"ext-smartDetecor-link\" href=\\\"https://docs.microsoft.com/azure/azure-monitor/app/proactive-failure-diagnostics\\\" target=\\\"_blank\\\">Learn more about Failure Anomalies</a><br><br><b>A note about your data privacy:</b><br><br>The service is entirely automatic and only you can see these notifications. <a class=\\\"ext-smartDetecor-link\\\" href=\\\"https://docs.microsoft.com/en-us/azure/azure-monitor/app/data-retention-privacy\\\" target=\\\"_blank\\\">Read more about data privacy</a><br><br>Smart Alerts conditions can't be edited or added for now.",
+          "id": "FailureAnomaliesDetector",
+          "name": "Failure Anomalies",
+          "supportedResourceTypes": [
+            "ApplicationInsights"
+          ]
+        },
+        "frequency": "PT1M",
+        "scope": [
+          "[parameters('components_clemens_web_externalid')]"
+        ],
+        "severity": "Sev3",
+        "state": "Enabled"
+      },
+      "type": "microsoft.alertsmanagement/smartdetectoralertrules"
+    },
+    {
+      "apiVersion": "2020-09-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Cdn/profiles', parameters('profiles_clemens_name'))]"
+      ],
+      "location": "WestUs",
+      "name": "[concat(parameters('profiles_clemens_name'), '/', parameters('profiles_clemens_name'))]",
+      "properties": {
+        "contentTypesToCompress": [
+          "application/eot",
+          "application/font",
+          "application/font-sfnt",
+          "application/javascript",
+          "application/json",
+          "application/opentype",
+          "application/otf",
+          "application/pkcs7-mime",
+          "application/truetype",
+          "application/ttf",
+          "application/vnd.ms-fontobject",
+          "application/xhtml+xml",
+          "application/xml",
+          "application/xml+rss",
+          "application/x-font-opentype",
+          "application/x-font-truetype",
+          "application/x-font-ttf",
+          "application/x-httpd-cgi",
+          "application/x-javascript",
+          "application/x-mpegurl",
+          "application/x-opentype",
+          "application/x-otf",
+          "application/x-perl",
+          "application/x-ttf",
+          "font/eot",
+          "font/ttf",
+          "font/otf",
+          "font/opentype",
+          "image/svg+xml",
+          "text/css",
+          "text/csv",
+          "text/html",
+          "text/javascript",
+          "text/js",
+          "text/plain",
+          "text/richtext",
+          "text/tab-separated-values",
+          "text/xml",
+          "text/x-script",
+          "text/x-component",
+          "text/x-java-source"
+        ],
+        "deliveryPolicy": {
+          "rules": [
+            {
+              "actions": [
+                {
+                  "name": "UrlRedirect",
+                  "parameters": {
+                    "@odata.type": "#Microsoft.Azure.Cdn.Models.DeliveryRuleUrlRedirectActionParameters",
+                    "customHostname": "clemens.ms",
+                    "customPath": "/caverace",
+                    "destinationProtocol": "Https",
+                    "redirectType": "PermanentRedirect"
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "name": "RequestUri",
+                  "parameters": {
+                    "@odata.type": "#Microsoft.Azure.Cdn.Models.DeliveryRuleRequestUriConditionParameters",
+                    "matchValues": [
+                      "caverace.com"
+                    ],
+                    "negateCondition": false,
+                    "operator": "Contains",
+                    "transforms": [
+                      "Lowercase"
+                    ]
+                  }
+                }
+              ],
+              "name": "caverace",
+              "order": 1
+            },
+            {
+              "actions": [
+                {
+                  "name": "UrlRedirect",
+                  "parameters": {
+                    "@odata.type": "#Microsoft.Azure.Cdn.Models.DeliveryRuleUrlRedirectActionParameters",
+                    "customHostname": "clemens.ms",
+                    "destinationProtocol": "Https",
+                    "redirectType": "PermanentRedirect"
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "name": "RequestScheme",
+                  "parameters": {
+                    "@odata.type": "#Microsoft.Azure.Cdn.Models.DeliveryRuleRequestSchemeConditionParameters",
+                    "matchValues": [
+                      "HTTPS"
+                    ],
+                    "negateCondition": true,
+                    "operator": "Equal"
+                  }
+                }
+              ],
+              "name": "http2https",
+              "order": 2
+            },
+            {
+              "actions": [
+                {
+                  "name": "UrlRedirect",
+                  "parameters": {
+                    "@odata.type": "#Microsoft.Azure.Cdn.Models.DeliveryRuleUrlRedirectActionParameters",
+                    "customHostname": "clemens.ms",
+                    "destinationProtocol": "Https",
+                    "redirectType": "PermanentRedirect"
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "name": "RequestUri",
+                  "parameters": {
+                    "@odata.type": "#Microsoft.Azure.Cdn.Models.DeliveryRuleRequestUriConditionParameters",
+                    "matchValues": [
+                      "www"
+                    ],
+                    "negateCondition": false,
+                    "operator": "BeginsWith",
+                    "transforms": [
+                      "Lowercase"
+                    ]
+                  }
+                }
+              ],
+              "name": "www2root",
+              "order": 3
+            }
+          ]
+        },
+        "geoFilters": [],
+        "isCompressionEnabled": true,
+        "isHttpAllowed": true,
+        "isHttpsAllowed": true,
+        "originGroups": [],
+        "originHostHeader": "clemensblog.z6.web.core.windows.net",
+        "origins": [
+          {
+            "name": "clemensblog-blob-core-windows-net",
+            "properties": {
+              "enabled": true,
+              "hostName": "clemensblog.z6.web.core.windows.net",
+              "httpPort": 80,
+              "httpsPort": 443,
+              "originHostHeader": "clemensblog.blob.core.windows.net",
+              "priority": 1,
+              "weight": 1000
+            }
+          }
+        ],
+        "queryStringCachingBehavior": "IgnoreQueryString",
+        "urlSigningKeys": []
+      },
+      "type": "Microsoft.Cdn/profiles/endpoints"
+    },
+    {
+      "apiVersion": "2019-09-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.KeyVault/vaults', parameters('vaults_clemens_keyvault_name'))]"
+      ],
+      "location": "westeurope",
+      "name": "[concat(parameters('vaults_clemens_keyvault_name'), '/clemens')]",
+      "properties": {
+        "attributes": {
+          "enabled": true,
+          "exp": 1620431999,
+          "nbf": 1588723200
+        }
+      },
+      "type": "Microsoft.KeyVault/vaults/keys"
+    },
+    {
+      "apiVersion": "2020-04-01-preview",
+      "dependsOn": [
+        "[resourceId('Microsoft.KeyVault/vaults', parameters('vaults_clemens_keyvault_name'))]"
+      ],
+      "location": "westeurope",
+      "name": "[concat(parameters('vaults_clemens_keyvault_name'), '/clemens')]",
+      "properties": {
+        "attributes": {
+          "enabled": true,
+          "exp": 1620431999,
+          "nbf": 1588723200
+        },
+        "contentType": "application/x-pkcs12"
+      },
+      "type": "Microsoft.KeyVault/vaults/secrets"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/dnszones', parameters('dnszones_clemens_ms_name'))]"
+      ],
+      "name": "[concat(parameters('dnszones_clemens_ms_name'), '/autodiscover')]",
+      "properties": {
+        "CNAMERecord": {
+          "cname": "autodiscover.outlook.com"
+        },
+        "TTL": 3600,
+        "targetResource": {}
+      },
+      "type": "Microsoft.Network/dnszones/CNAME"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/dnszones', parameters('dnszones_caverace_com_name'))]"
+      ],
+      "name": "[concat(parameters('dnszones_caverace_com_name'), '/cdnverify')]",
+      "properties": {
+        "CNAMERecord": {
+          "cname": "cdnverify.clemens.azureedge.net"
+        },
+        "TTL": 3600,
+        "targetResource": {}
+      },
+      "type": "Microsoft.Network/dnszones/CNAME"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/dnszones', parameters('dnszones_clemens_ms_name'))]"
+      ],
+      "name": "[concat(parameters('dnszones_clemens_ms_name'), '/@')]",
+      "properties": {
+        "MXRecords": [
+          {
+            "exchange": "clemens-ms.mail.protection.outlook.com",
+            "preference": 0
+          }
+        ],
+        "TTL": 3600,
+        "targetResource": {}
+      },
+      "type": "Microsoft.Network/dnszones/MX"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/dnszones', parameters('dnszones_caverace_com_name'))]"
+      ],
+      "name": "[concat(parameters('dnszones_caverace_com_name'), '/@')]",
+      "properties": {
+        "NSRecords": [
+          {
+            "nsdname": "ns1-01.azure-dns.com."
+          },
+          {
+            "nsdname": "ns2-01.azure-dns.net."
+          },
+          {
+            "nsdname": "ns3-01.azure-dns.org."
+          },
+          {
+            "nsdname": "ns4-01.azure-dns.info."
+          }
+        ],
+        "TTL": 172800,
+        "targetResource": {}
+      },
+      "type": "Microsoft.Network/dnszones/NS"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/dnszones', parameters('dnszones_clemens_ms_name'))]"
+      ],
+      "name": "[concat(parameters('dnszones_clemens_ms_name'), '/@')]",
+      "properties": {
+        "NSRecords": [
+          {
+            "nsdname": "ns1-07.azure-dns.com."
+          },
+          {
+            "nsdname": "ns2-07.azure-dns.net."
+          },
+          {
+            "nsdname": "ns3-07.azure-dns.org."
+          },
+          {
+            "nsdname": "ns4-07.azure-dns.info."
+          }
+        ],
+        "TTL": 172800,
+        "targetResource": {}
+      },
+      "type": "Microsoft.Network/dnszones/NS"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/dnszones', parameters('dnszones_caverace_com_name'))]"
+      ],
+      "name": "[concat(parameters('dnszones_caverace_com_name'), '/@')]",
+      "properties": {
+        "SOARecord": {
+          "email": "azuredns-hostmaster.microsoft.com",
+          "expireTime": 2419200,
+          "host": "ns1-01.azure-dns.com.",
+          "minimumTTL": 300,
+          "refreshTime": 3600,
+          "retryTime": 300,
+          "serialNumber": 1
+        },
+        "TTL": 3600,
+        "targetResource": {}
+      },
+      "type": "Microsoft.Network/dnszones/SOA"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/dnszones', parameters('dnszones_clemens_ms_name'))]"
+      ],
+      "name": "[concat(parameters('dnszones_clemens_ms_name'), '/@')]",
+      "properties": {
+        "SOARecord": {
+          "email": "azuredns-hostmaster.microsoft.com",
+          "expireTime": 2419200,
+          "host": "ns1-07.azure-dns.com.",
+          "minimumTTL": 300,
+          "refreshTime": 3600,
+          "retryTime": 300,
+          "serialNumber": 1
+        },
+        "TTL": 3600,
+        "targetResource": {}
+      },
+      "type": "Microsoft.Network/dnszones/SOA"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/dnszones', parameters('dnszones_clemens_ms_name'))]"
+      ],
+      "name": "[concat(parameters('dnszones_clemens_ms_name'), '/@')]",
+      "properties": {
+        "TTL": 3600,
+        "TXTRecords": [
+          {
+            "value": [
+              "v=spf1 include:spf.protection.outlook.com -all"
+            ]
+          },
+          {
+            "value": [
+              "google-site-verification=WfHDN9lM8jtXeCwmnUw_ahaTTYp3i-glveZhl8PEK_E"
+            ]
+          }
+        ],
+        "targetResource": {}
+      },
+      "type": "Microsoft.Network/dnszones/TXT"
+    },
+    {
+      "apiVersion": "2021-01-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_clemensblog_name'))]"
+      ],
+      "name": "[concat(parameters('storageAccounts_clemensblog_name'), '/default')]",
+      "properties": {
+        "cors": {
+          "corsRules": []
+        },
+        "deleteRetentionPolicy": {
+          "enabled": false
+        }
+      },
+      "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+      },
+      "type": "Microsoft.Storage/storageAccounts/blobServices"
+    },
+    {
+      "apiVersion": "2021-01-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_clemensblog_name'))]"
+      ],
+      "name": "[concat(parameters('storageAccounts_clemensblog_name'), '/default')]",
+      "properties": {
+        "cors": {
+          "corsRules": []
+        },
+        "protocolSettings": {
+          "smb": {}
+        }
+      },
+      "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+      },
+      "type": "Microsoft.Storage/storageAccounts/fileServices"
+    },
+    {
+      "apiVersion": "2021-01-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_clemensblog_name'))]"
+      ],
+      "name": "[concat(parameters('storageAccounts_clemensblog_name'), '/default')]",
+      "properties": {
+        "cors": {
+          "corsRules": []
+        }
+      },
+      "type": "Microsoft.Storage/storageAccounts/queueServices"
+    },
+    {
+      "apiVersion": "2021-01-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_clemensblog_name'))]"
+      ],
+      "name": "[concat(parameters('storageAccounts_clemensblog_name'), '/default')]",
+      "properties": {
+        "cors": {
+          "corsRules": []
+        }
+      },
+      "type": "Microsoft.Storage/storageAccounts/tableServices"
+    },
+    {
+      "apiVersion": "2020-09-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]",
+        "[resourceId('Microsoft.Cdn/profiles', parameters('profiles_clemens_name'))]"
+      ],
+      "name": "[concat(parameters('profiles_clemens_name'), '/', parameters('profiles_clemens_name'), '/caverace-com')]",
+      "properties": {
+        "hostName": "caverace.com"
+      },
+      "type": "Microsoft.Cdn/profiles/endpoints/customdomains"
+    },
+    {
+      "apiVersion": "2020-09-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]",
+        "[resourceId('Microsoft.Cdn/profiles', parameters('profiles_clemens_name'))]"
+      ],
+      "name": "[concat(parameters('profiles_clemens_name'), '/', parameters('profiles_clemens_name'), '/', parameters('profiles_clemens_name'), '-ms')]",
+      "properties": {
+        "hostName": "clemens.ms"
+      },
+      "type": "Microsoft.Cdn/profiles/endpoints/customdomains"
+    },
+    {
+      "apiVersion": "2020-09-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]",
+        "[resourceId('Microsoft.Cdn/profiles', parameters('profiles_clemens_name'))]"
+      ],
+      "name": "[concat(parameters('profiles_clemens_name'), '/', parameters('profiles_clemens_name'), '/www-caverace-com')]",
+      "properties": {
+        "hostName": "www.caverace.com"
+      },
+      "type": "Microsoft.Cdn/profiles/endpoints/customdomains"
+    },
+    {
+      "apiVersion": "2020-09-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]",
+        "[resourceId('Microsoft.Cdn/profiles', parameters('profiles_clemens_name'))]"
+      ],
+      "name": "[concat(parameters('profiles_clemens_name'), '/', parameters('profiles_clemens_name'), '/www-', parameters('profiles_clemens_name'), '-ms')]",
+      "properties": {
+        "hostName": "www.clemens.ms"
+      },
+      "type": "Microsoft.Cdn/profiles/endpoints/customdomains"
+    },
+    {
+      "apiVersion": "2020-09-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]",
+        "[resourceId('Microsoft.Cdn/profiles', parameters('profiles_clemens_name'))]"
+      ],
+      "name": "[concat(parameters('profiles_clemens_name'), '/', parameters('profiles_clemens_name'), '/', parameters('profiles_clemens_name'), 'blog-blob-core-windows-net')]",
+      "properties": {
+        "enabled": true,
+        "hostName": "clemensblog.z6.web.core.windows.net",
+        "httpPort": 80,
+        "httpsPort": 443,
+        "originHostHeader": "clemensblog.blob.core.windows.net",
+        "priority": 1,
+        "weight": 1000
+      },
+      "type": "Microsoft.Cdn/profiles/endpoints/origins"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/dnszones', parameters('dnszones_caverace_com_name'))]",
+        "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]"
+      ],
+      "name": "[concat(parameters('dnszones_caverace_com_name'), '/@')]",
+      "properties": {
+        "TTL": 3600,
+        "targetResource": {
+          "id": "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]"
+        }
+      },
+      "type": "Microsoft.Network/dnszones/A"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/dnszones', parameters('dnszones_clemens_ms_name'))]",
+        "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]"
+      ],
+      "name": "[concat(parameters('dnszones_clemens_ms_name'), '/@')]",
+      "properties": {
+        "TTL": 3600,
+        "targetResource": {
+          "id": "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]"
+        }
+      },
+      "type": "Microsoft.Network/dnszones/A"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/dnszones', parameters('dnszones_caverace_com_name'))]",
+        "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]"
+      ],
+      "name": "[concat(parameters('dnszones_caverace_com_name'), '/@')]",
+      "properties": {
+        "TTL": 3600,
+        "targetResource": {
+          "id": "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]"
+        }
+      },
+      "type": "Microsoft.Network/dnszones/AAAA"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/dnszones', parameters('dnszones_clemens_ms_name'))]",
+        "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]"
+      ],
+      "name": "[concat(parameters('dnszones_clemens_ms_name'), '/@')]",
+      "properties": {
+        "TTL": 3600,
+        "targetResource": {
+          "id": "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]"
+        }
+      },
+      "type": "Microsoft.Network/dnszones/AAAA"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/dnszones', parameters('dnszones_caverace_com_name'))]",
+        "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]"
+      ],
+      "name": "[concat(parameters('dnszones_caverace_com_name'), '/www')]",
+      "properties": {
+        "TTL": 3600,
+        "targetResource": {
+          "id": "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]"
+        }
+      },
+      "type": "Microsoft.Network/dnszones/CNAME"
+    },
+    {
+      "apiVersion": "2018-05-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/dnszones', parameters('dnszones_clemens_ms_name'))]",
+        "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]"
+      ],
+      "name": "[concat(parameters('dnszones_clemens_ms_name'), '/www')]",
+      "properties": {
+        "TTL": 3600,
+        "targetResource": {
+          "id": "[resourceId('Microsoft.Cdn/profiles/endpoints', parameters('profiles_clemens_name'), parameters('profiles_clemens_name'))]"
+        }
+      },
+      "type": "Microsoft.Network/dnszones/CNAME"
+    },
+    {
+      "apiVersion": "2021-01-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts/blobServices', parameters('storageAccounts_clemensblog_name'), 'default')]",
+        "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_clemensblog_name'))]"
+      ],
+      "name": "[concat(parameters('storageAccounts_clemensblog_name'), '/default/$web')]",
+      "properties": {
+        "defaultEncryptionScope": "$account-encryption-key",
+        "denyEncryptionScopeOverride": false,
+        "publicAccess": "None"
+      },
+      "type": "Microsoft.Storage/storageAccounts/blobServices/containers"
+    },
+    {
+      "apiVersion": "2021-01-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts/blobServices', parameters('storageAccounts_clemensblog_name'), 'default')]",
+        "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_clemensblog_name'))]"
+      ],
+      "name": "[concat(parameters('storageAccounts_clemensblog_name'), '/default/azure-webjobs-hosts')]",
+      "properties": {
+        "defaultEncryptionScope": "$account-encryption-key",
+        "denyEncryptionScopeOverride": false,
+        "publicAccess": "None"
+      },
+      "type": "Microsoft.Storage/storageAccounts/blobServices/containers"
+    },
+    {
+      "apiVersion": "2021-01-01",
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts/fileServices', parameters('storageAccounts_clemensblog_name'), 'default')]",
+        "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_clemensblog_name'))]"
+      ],
+      "name": "[concat(parameters('storageAccounts_clemensblog_name'), '/default/clemens-apia562')]",
+      "properties": {
+        "accessTier": "TransactionOptimized",
+        "enabledProtocols": "SMB",
+        "shareQuota": 5120
+      },
+      "type": "Microsoft.Storage/storageAccounts/fileServices/shares"
+    }
+  ],
+  "variables": {}
+}
