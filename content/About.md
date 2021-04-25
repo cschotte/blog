@@ -7,9 +7,9 @@ lightgallery: true
 comment: false
 ---
 
-My name is **Clemens Schotte**. I’m a Cloud & Apps specialist, a [developer](https://github.com/cschotte), a technical evangelist, and a dedicated and [enthusiastic storyteller](https://clemens.ms/) with a passion for technology and [social interaction](https://twitter.com/cschotte). I blog about technology, gadgets, code, the web, and everything that interest me. I love to teach, motivate, and entertain people with technical details. I’m knowledgeable about Microsoft and Open Source technology. I like to engage with people to exchange ideas and experiences. I’m spontaneous, flexible, and solve problems. I love the constant flow of innovation and new possibilities.
+My name is **Clemens Schotte**. I’m a Cloud & Apps specialist, a [developer](https://github.com/cschotte), a technical evangelist, and a dedicated and [enthusiastic storyteller](https://clemens.ms/) with a passion for technology and [social interaction](https://twitter.com/cschotte). I blog about technology, gadgets, code, the web, and everything that interests me. I love to teach, motivate, and entertain people with technical details. I’m knowledgeable about Microsoft and Open Source technology. I like to engage with people to exchange ideas and experiences. I’m spontaneous, flexible, and solve problems. I love the constant flow of innovation and new possibilities.
 
-You can follow me on [Twitter](https://twitter.com/cschotte), [LinkedIn](https://www.linkedin.com/in/cschotte/), [YouTube](https://www.youtube.com/user/clemensschotte) or subscribe to my [blog's RSS feed](/index.xml).
+You can follow me on [Twitter](https://twitter.com/cschotte), [LinkedIn](https://www.linkedin.com/in/cschotte/), [YouTube](https://www.youtube.com/user/clemensschotte) or subscribe to my [blog's RSS feed](https://clemens.ms/index.xml).
 
 > **Disclaimer:** The opinions expressed herein are my own and personal opinion and do not represent my employer’s view in any way.
 
