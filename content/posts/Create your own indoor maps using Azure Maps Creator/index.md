@@ -8,7 +8,7 @@ categories: ["Cloud"]
 
 resources:
 - name: "featured-image"
-  src: "featured-image.png"
+  src: "featured-image.jpg"
 
 draft: false
 lightgallery: true
