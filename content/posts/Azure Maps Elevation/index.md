@@ -1,5 +1,5 @@
 ---
-title: "Do I get wet feeds? Draw a flood map using Azure Maps Elevation API"
+title: "Do I get wet feeds? Draw a flood map using Azure Maps Elevation"
 author: "Clemens Schotte"
 date: 2021-06-14T20:10:00+02:00
 
@@ -127,5 +127,4 @@ datasource.setShapes(points);
 
 ## Example code
 
-This sample shows how to get elevations in a grid pattern with a bounding box. Try out this Elevation API [Code Sample](https://azuremapscodesamples.azurewebsites.net/REST%20Services/Elevations%20by%20bounding%20box.html). 
-
+This [Code Sample](https://azuremapscodesamples.azurewebsites.net/REST%20Services/Elevations%20by%20bounding%20box.html) shows how to get elevations in a grid pattern with a bounding box. Try it out!
