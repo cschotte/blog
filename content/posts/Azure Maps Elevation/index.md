@@ -1,5 +1,5 @@
 ---
-title: "Do I get wet feeds? Draw a flood map using Azure Maps Elevation"
+title: "Do I get wet feet? Draw a flood map using Azure Maps Elevation"
 author: "Clemens Schotte"
 date: 2021-06-14T20:10:00+02:00
 
@@ -16,7 +16,7 @@ lightgallery: true
 
 ## Introduction
 
-When you are living in the Netherlands you are used to that, nearly 26% of its land falling below sea level, and about 50% is just only exceeding 1 m (3.3 ft) above. The Dutch people have lived many centuries battling the water, not only from the sea but also from her rivers. To protect the land the Dutch have built many sophisticated protecting- and management systems to handle the water, like the [Delta Works](https://www.bing.com/search?q=Dutch%20Delta%20Works). Building only a dike or dam is not enough. Today we have won, but we know that we cannot rust, climate change (heavy rain showers) and sea levels are rising globally. Do we (or you) get wet feeds in the future?
+When you are living in the Netherlands you are used to that, nearly 26% of its land falling below sea level, and about 50% is just only exceeding 1 m (3.3 ft) above. The Dutch people have lived many centuries battling the water, not only from the sea but also from her rivers. To protect the land the Dutch have built many sophisticated protecting- and management systems to handle the water, like the [Delta Works](https://www.bing.com/search?q=Dutch%20Delta%20Works). Building only a dike or dam is not enough. Today we have won, but we know that we cannot rust, climate change (heavy rain showers) and sea levels are rising globally. Do we (or you) get wet feet in the future?
 
 To start, we need to know which areas of land are almost below sea level so that we can plan and take additional actions. To make this visible we can use [Azure Maps](https://azure.microsoft.com/en-us/services/azure-maps/) and use the [Azure Maps Elevation Service](https://azure.microsoft.com/en-us/updates/azure-maps-elevation-service-is-now-generally-available/) to make a basic flood map. The Azure Maps Elevation Service provides pole-to-pole coverage with <4M absolute and <2m relative accuracy. The elevation data represents a digital terrain model (DTM), man-made entities (e.g., buildings) are artificially flattened, and elevation is measured to the ground surface.
 
