@@ -73,7 +73,7 @@ az webapp create -g rg-azdevops -p plan-azdevops -n azdevops -r "DOTNET|5.0"
 
 ```cmd
 az webapp config appsettings set -g rg-azdevops -n azdevops --settings azDevOpsPat=<your token>
-az webapp config appsettings set -g rg-azdevops -n azdevops --settings azDevOpsPat=https://dev.azure.com/<yourorgname>
+az webapp config appsettings set -g rg-azdevops -n azdevops --settings azDevOpsUri=https://dev.azure.com/<yourorgname>
 ```
 
 6. Set the `always-on` future we need for the WebJob
@@ -86,7 +86,9 @@ az webapp config set -g rg-azdevops -n azdevops --always-on true
 
 Did you download the Azure DevOps Dashboard [Release.zip](https://github.com/cschotte/Azure-DevOps-Dashboard/raw/main/Release.zip) package? After the installation we also run the WebJob for the first time, this can take a while depending on how many projects you have in your Azure DevOps organization account.
 
-```Azure CLI
+> **Authentication** In the release package authentication is disabled! Please register your application first in your Azure Active Directory by following the steps described [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v2-aspnet-core-webapp). You only need to update the **appsettings.json** inside the release package.
+
+```cmd
 az webapp deployment source config-zip -g rg-azdevops -n azdevops --src Release.zip
 
 az webapp webjob triggered run -n azdevops -g rg-azdevops --webjob-name Webjob
@@ -130,3 +132,7 @@ To automate tasks, you can use the API to connect to Excel, Microsoft Power Auto
     }
 ]
 ```
+
+## Source Code
+
+Alle source code can be found on [GitHub](https://github.com/cschotte/Azure-DevOps-Dashboard).
