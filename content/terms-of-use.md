@@ -4,7 +4,7 @@ date: 2020-05-07
 comment: false
 ---
 
-Welcome to the Clemens Blog (“**Clemens Blog**,” “**we**,” “**us**,” or “**our**”) website, ([https://clemens.ms](/)) (the "**Site**"). These Terms of Use (“**Terms**”) are a legal agreement between you, a user of the site (“**you**” or “**your**”), and Clemens Blog that governs your use of the Site, including all related webpages, and downloadable materials, information, photos, or other documentation (“**Content**”) that appears on the Site. Your access to the Site is conditioned upon your acceptance of these Terms and our Privacy Policy, which is incorporated into these Terms by this reference. Please read our Terms of Use and Privacy Policy carefully. IF YOU DO NOT AGREE WITH THESE TERMS, YOU SHOULD NOT ACCESS OR USE THE SITE OR REGISTER TO BECOME A Clemens Blog INSIDER.
+Welcome to the Clemens Blog (“**Clemens Blog**,” “**we**,” “**us**,” or “**our**”) website, ([https://clemens.ms/](/)) (the "**Site**"). These Terms of Use (“**Terms**”) are a legal agreement between you, a user of the site (“**you**” or “**your**”), and Clemens Blog that governs your use of the Site, including all related webpages, and downloadable materials, information, photos, or other documentation (“**Content**”) that appears on the Site. Your access to the Site is conditioned upon your acceptance of these Terms and our Privacy Policy, which is incorporated into these Terms by this reference. Please read our Terms of Use and Privacy Policy carefully. IF YOU DO NOT AGREE WITH THESE TERMS, YOU SHOULD NOT ACCESS OR USE THE SITE OR REGISTER TO BECOME A Clemens Blog INSIDER.
 
 ## 1. Privacy Policy
 
