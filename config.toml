@@ -19,7 +19,7 @@ enableEmoji = true
     # default amount of posts in each pages
     paginate = 12
     # [UA-XXXXXXXX-X] google analytics code
-    googleAnalytics = "UA-43077951-19"
+    googleAnalytics = ""
     # copyright description used only for seo schema
     copyright = "Copyright by Clemens Schotte."
     # Menu config
@@ -328,10 +328,10 @@ enableEmoji = true
 
   # Analytics config
     [params.analytics]
-    enable = true
+    enable = false
     # Google Analytics
     [params.analytics.google]
-      id = "UA-43077951-19"
+      id = ""
       # whether to anonymize IP
       anonymizeIP = false
 
