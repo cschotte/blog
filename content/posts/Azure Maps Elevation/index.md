@@ -4,7 +4,7 @@ author: "Clemens Schotte"
 date: 2021-06-14T20:10:00+02:00
 
 tags: ["Azure", "Maps", "Elevation", "AzureMaps"]
-categories: ["Cloud"]
+categories: ["Geospatial"]
 
 resources:
 - name: "featured-image"
