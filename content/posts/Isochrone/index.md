@@ -1,5 +1,5 @@
 ---
-title: "Calculate an isochrone to target your customers"
+title: "Use Azure Maps to calculate an isochrone to reach your customers"
 author: "Clemens Schotte"
 date: 2021-09-21T15:00:00+02:00
 
@@ -14,7 +14,7 @@ draft: false
 lightgallery: true
 ---
 
-Imagine you are a store owner and like to target customers that live within a 15-minute drive from your store. You could draw a circle on a map, but it will not tell you the time it will take for the customer to get to your store. For example, a customer living near a motorway can live further away from the store than a customer living on the other side of the city. An **isochrone** is a curve (an area on a map) of equal travel time representing the travel time it will take to get to a specific point (your store, in this case). Calculating an isochrone correctly, including all the variables like traffic, road, and vehicle conditions, is very hard to do by yourself.
+Imagine you are a store owner and would like to target customers that live within a 15-minute drive from your store with advertising for your weekly specials. You could draw a circle on a map, guessing that is about 15 minutes away, but it will not truly represent the time it will take for customers to get to your store. For example, a customer living near a major transit route can live further away from the store than a customer living in a less well-served part of the city. To meet this need, an **isochrone** is a polygon (an area on a map) of expected travel time. It represents the locations that will take the specified time, or less, it will take to get to a specific point (your store, in this case). Estimating an isochrone correctly, including all the variables like traffic, road, and vehicle conditions, is very hard to do by yourself!
 
 ![isochrone in London](london.jpg)
 
