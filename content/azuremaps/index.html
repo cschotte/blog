@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Azure Maps Sample</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Add references to the Azure Maps Map control JavaScript and CSS files -->
+    <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css" />
+    <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
+
+    <!-- Add a reference to the Azure Maps Services Module JavaScript file -->
+    <script src="https://atlas.microsoft.com/sdk/javascript/service/2/atlas-service.min.js"></script>
+
+    <script type='text/javascript'>
+        var map, searchURL, datasource, popup, lastSearchPosition;
+        var minSearchZoom = 15;           // The minium zoom level the user must be zoomed into before POI data is searched/displayed.
+        var minSearchCenterOffset = 200;  // The minimum distance in meters the map center mush move before a new search is done.
+        var maxSearchResults = 500;       // The maximum number of points of interests that will be queried on each update. The service has a limit of 100 results, but additional results can be accesed by paging through the results.
+
+        function GetMap() {
+            // Initialize an Azure Map instance
+            map = new atlas.Map('myMap', {
+                center: [-0.076083, 51.508120],
+                zoom: 16,
+                pitch: 60,
+                showBuildingModels: true,
+                view: 'Auto',
+                // Add authentication details for connecting to Azure Maps.
+                authOptions: {
+                    authType: 'subscriptionKey',
+                    subscriptionKey: 'QSL8_GWZnHoPnQ88ej7Nd84Mr5SCtvYGJN60UXz8H2M'
+                }
+            });
+
+            // Use MapControlCredential to share authentication between a map control and the service module.
+            var pipeline = atlas.service.MapsURL.newPipeline(new atlas.service.MapControlCredential(map));
+
+            // Create an instance of the SearchURL client.
+            searchURL = new atlas.service.SearchURL(pipeline);
+
+            // Wait for map resources to be ready before loading controls.
+            map.events.add('ready', function () {
+                // Add Map Style control
+                map.controls.add(new atlas.control.StyleControl(), {
+                    position: 'top-right'
+                });
+
+                // Add Traffic control
+                map.controls.add(new atlas.control.TrafficControl(), {
+                    position: 'top-right'
+                });
+
+                // Add Traffic legend control
+                map.controls.add(new atlas.control.TrafficLegendControl(), {
+                    position: 'bottom-left'
+                });
+
+                // Add Zoom control
+                map.controls.add(new atlas.control.ZoomControl(), {
+                    position: 'top-right'
+                });
+
+                // Add Pitch control
+                map.controls.add(new atlas.control.PitchControl(), {
+                    position: 'top-right'
+                });
+
+                // Add Compass control
+                map.controls.add(new atlas.control.CompassControl(), {
+                    position: 'top-right'
+                });
+
+                // Create a data source to add point of interest data to
+                datasource = new atlas.source.DataSource();
+                map.sources.add(datasource);
+
+                // Add a bubble layer to render the points of interests
+                var poiLayer = new atlas.layer.BubbleLayer(datasource, null, {
+                    minZoom: minSearchZoom,
+
+                    //Set the color based on the category code: https://docs.microsoft.com/en-us/azure/azure-maps/supported-search-categories
+                    color: [
+                        'match',
+                        ['get', 'code', ['at', 0, ['get', 'classifications', ['get', 'poi']]]],
+                        'SHOP', 'PURPLE',
+                        'RESTAURANT', 'yellow',
+                        'CAFE_PUB', 'green',
+                        'PARKING_GARAGE', 'lightblue',
+                        'CASH_DISPENSER', 'limegreen',
+                        'PUBLIC_TRANSPORT_STOP', 'blue',
+                        'NIGHTLIFE', 'pink',
+                        //Default color. Set to 'transparent' to hide all other categories.
+                        'gray'
+                    ]
+                });
+                map.layers.add(poiLayer);
+
+                // Add an event to get nearby POI when the map has finished moving.
+                map.events.add('moveend', getNearbyPoi);
+
+                // Load points of interests for the initial map view.
+                getNearbyPoi();
+
+                // Create a reusable popup.
+                popup = new atlas.Popup();
+
+                // Add a click event to the poi layer.
+                map.events.add('click', poiLayer, poiClicked);
+            });
+        }
+
+        function getNearbyPoi() {
+            var camera = map.getCamera();
+
+            if (!lastSearchPosition || (Math.ceil(camera.zoom) >= minSearchZoom &&
+                atlas.math.getDistanceTo(lastSearchPosition, camera.center) >= minSearchCenterOffset)) {
+
+                // Store the center to reduce the number of searches done as the map moves.
+                lastSearchPosition = camera.center;
+
+                // Perform the search.
+                performSearch(camera.center, 0);
+            }
+        }
+
+        function performSearch(center, offset) {
+            // Make a query for nearby points of interest.
+            searchURL.searchNearby(atlas.service.Aborter.timeout(3000), center, {
+                ofs: offset * 100,
+                limit: 100,
+                radius: 5000,
+                view: 'Auto'
+            }).then(results => {
+                var data = results.geojson.getFeatures();
+
+                // If offset is 0, remove previous data, check the response to see if there are more results to page through.
+                if (results.summary.offset == 0) {
+                    // Replace all data on the map with the new data.
+                    datasource.setShapes(data);
+
+                    // Calculate the number of pages
+                    var maxPages = Math.ceil(Math.min(maxSearchResults, results.summary.totalResults) / 100);
+
+                    // Make requests for the other pages.
+                    for (var oft = 1; oft <= maxPages; oft++) {
+                        performSearch(center, oft);
+                    }
+                } else {
+                    // Add the results to the data source.
+                    datasource.add(data);
+                }
+            });
+        }
+
+        function poiClicked(e) {
+
+            // Make sure the event occurred on a point feature.
+            if (e.shapes && e.shapes.length > 0 && e.shapes[0].getType() === 'Point') {
+                var properties = e.shapes[0].getProperties();
+
+                // Using the properties, create HTML to fill the popup with useful information.
+                var html = ['<div style="padding:10px;"><span style="font-size:14px;font-weight:bold;">'];
+                var addressInTitle = false;
+
+                if (properties.type === 'POI' && properties.poi && properties.poi.name) {
+                    html.push(properties.poi.name);
+                } else if (properties.address && properties.address.freeformAddress) {
+                    html.push(properties.address.freeformAddress);
+                    addressInTitle = true;
+                }
+
+                html.push('</span><br/>');
+
+                if (!addressInTitle && properties.address && properties.address.freeformAddress) {
+                    html.push(properties.address.freeformAddress, '<br/>');
+                }
+
+                html.push('<b>Type: </b>', properties.type, '<br/>');
+
+                if (properties.entityType) {
+                    html.push('<b>Entity Type: </b>', properties.entityType, '<br/>');
+                }
+
+                if (properties.type === 'POI' && properties.poi) {
+                    if (properties.poi.phone) {
+                        html.push('<b>Phone: </b>', properties.poi.phone, '<br/>');
+                    }
+
+                    if (properties.poi.url) {
+                        html.push('<b>URL: </b>', properties.poi.url, '<br/>');
+                    }
+
+                    if (properties.poi.classifications) {
+                        html.push('<b>Classifications:</b><br/>');
+                        for (var i = 0; i < properties.poi.classifications.length; i++) {
+                            for (var j = 0; j < properties.poi.classifications[i].names.length; j++) {
+                                html.push(' - ', properties.poi.classifications[i].names[j].name, '<br/>');
+                            }
+                        }
+                    }
+
+                }
+
+                html.push('</div>');
+
+                // Set the popup options.
+                popup.setOptions({
+                    // Update the content of the popup.
+                    content: html.join(''),
+
+                    // Update the position of the popup with the pins coordinate.
+                    position: e.shapes[0].getCoordinates()
+                });
+
+                // Open the popup.
+                popup.open(map);
+            }
+        }
+    </script>
+</head>
+<body onload="GetMap()">
+    <div id="myMap" style="position:relative;width:100%;min-width:290px;height:600px;"></div>
+</body>
+</html>
