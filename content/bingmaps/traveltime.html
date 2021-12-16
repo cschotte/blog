@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TravelTime</title>
+    <meta charset="utf-8" />
+    <script type='text/javascript'>
+    var map, searchArea, url;
+
+    function GetMap()
+    {
+        map = new Microsoft.Maps.Map('#myMap', {
+            center: new Microsoft.Maps.Location(47.614907, -122.193876),
+            zoom: 11
+        });
+
+        //Load the Spatial Math module.
+        Microsoft.Maps.loadModule('Microsoft.Maps.SpatialMath');
+    }
+
+    function isochroneSearch() {
+        //Show the loading icon.
+        document.getElementById('loadingIcon').style.display = '';
+
+        //Remove previous search area and set pushpin states back to normal.
+        if (searchArea) {
+            map.entities.remove(searchArea);
+        }
+
+        //Create the REST isochrone query URL.
+        url = 'https://dev.virtualearth.net/REST/v1/Routes/Isochrones?&optimize=time&travelMode=transit'; //transit
+
+        //Use the center of the map as the waypoint for the isochrone.
+        var center = map.getCenter();
+        url += '&waypoint=' + center.latitude + ',' + center.longitude;
+
+        //Set the max time parameter for the isochrone query in minutes.
+        url += '&timeUnit=minute&maxTime=' + document.getElementById('driveTime').value;    
+
+        //Add key to query for authenication. 
+        url += '&key=';
+        map.getCredentials(getIsochrone);
+    }
+
+    function getIsochrone(sessionKey) {
+        url += sessionKey;
+        callRestServiceCORS(url, function (data) {
+            //Hide loading icon.
+            document.getElementById('loadingIcon').style.display = 'none';
+
+            //Parse the REST response into polygon objects.
+            searchArea = getIsochronePolygons(data);
+
+            if (searchArea) {
+                //Add the isochrone polygon to the map for visualization.
+                map.entities.push(searchArea);
+            } else {
+                alert('Unable to generate isochrone.');
+            }
+        }, function (error) {
+            alert('An error occured when requesting the isochrone.');
+
+            //Hide loading icon.
+            document.getElementById('loadingIcon').style.display = 'none';
+        });
+    }
+
+    function getIsochronePolygons(data) {
+        if (data &&
+            data.resourceSets &&
+            data.resourceSets.length > 0 &&
+            data.resourceSets[0].resources &&
+            data.resourceSets[0].resources.length > 0 &&
+            data.resourceSets[0].resources[0].polygons) {
+
+            var polyData = data.resourceSets[0].resources[0].polygons;
+            var polygons = [];
+
+            for (var i = 0; i < polyData.length; i++) {
+                var rings = [];
+
+                for (var j = 0; j < polyData[i].coordinates.length; j++) {
+                    var ring = [];
+
+                    for (var k = 0; k < polyData[i].coordinates[j].length; k++) {
+                        ring.push(new Microsoft.Maps.Location(polyData[i].coordinates[j][k][0], polyData[i].coordinates[j][k][1]));
+                    }
+
+                    //Need atleast 3 locations in a ring to create a polygon.
+                    if (ring.length >= 3) {
+                        rings.push(ring);
+                    }
+                }
+
+                if (rings.length > 0) {
+                    polygons.push(new Microsoft.Maps.Polygon(rings));
+                }
+            }
+
+            if (polygons.length > 0) {
+                return polygons;
+            }
+        }
+
+        return null;
+    }
+
+    function callRestServiceCORS(requestUrl, callback, errorCallback) {
+        if (callback) {
+            var http = new XMLHttpRequest();
+            http.open("GET", requestUrl, true);
+
+            http.onreadystatechange = function () {
+                if (http.readyState == 4 && http.status == 200) {
+                    //Request was successful, do something with it.
+                    var result = JSON.parse(http.responseText);
+
+                    callback(result);
+                }
+            }
+
+            http.onerror = errorCallback;
+
+            http.send();
+        }
+    }
+    </script>
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AtegBGv5ypW91WzlndzenCBTE7EhxXQn4VE_IZs-c76S6G0htdP0sgoPJQl86d0n' async defer></script>
+</head>
+<body>
+    <div id="myMap" style="position:relative;width:800px;height:600px;"></div>
+
+    <img id="loadingIcon" src="loadingIcon.gif" style="position:absolute;top:250px;left:350px;display:none;"/>
+
+    <br/>
+    TravelTime: 
+    <select id="driveTime">
+        <option value="10" selected="selected">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+    </select> minutes
+    
+    <input type="button" value="Isochrone Search" onclick="isochroneSearch()"/>
+
+</body>
+</html>
