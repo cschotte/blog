@@ -30,13 +30,15 @@ The Bing Maps key is mainly used to determine the usage and allow access to Bing
 
 ![Bing Maps Key Security Settings](security-settings.jpg)
 
-Your key is now protected but is still visible in your website code. A best practice is **never to store any keys or certificates in source code**. So how do I hide my Bing Maps key?
+Your key is now protected but is still visible in your website code. So how do I hide my Bing Maps key?
+
+> A best practice is **never to store any keys or certificates in source code**. 
 
 ## Hiding
 
-To hide the Bing Maps key, you create a simple [API endpoint](https://github.com/Azure-Samples/AzureMapsCodeSamples/blob/vnext/Services/SampleFunctions/GetBingMapsKey.cs) that will only return the Bing Maps key if the request comes from a trusted referral URL. The [Bing Maps Samples](https://samples.bingmapsportal.com/) site is a good example that uses this approach.
+To hide the Bing Maps key, you create a simple API endpoint that will only return the Bing Maps key if the request comes from a trusted referral URL. The [Bing Maps Samples](https://samples.bingmapsportal.com/) site is a good example that uses this approach.
 
-In this example we are using an Anonymous [Azure Function](https://azure.microsoft.com/en-us/services/functions/) written in C# that returns the Bing Maps key: 
+In this example we are using an Anonymous HttpTrigger [Azure Function](https://azure.microsoft.com/en-us/services/functions/) written in C# that returns the Bing Maps key: 
 
 ```csharp
 public static class GetBingMapsKey
