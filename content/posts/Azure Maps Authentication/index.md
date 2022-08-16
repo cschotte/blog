@@ -1,5 +1,5 @@
 ---
-title: "Azure Maps Web Application Authentication the right way"
+title: "Azure Maps Web Application Authentication"
 author: "Clemens Schotte"
 date: 2022-08-15T15:15:30+02:00
 
