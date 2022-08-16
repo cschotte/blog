@@ -1,5 +1,5 @@
 ---
-title: "Azure Maps Authentication the right way"
+title: "Azure Maps Web Application Authentication the right way"
 author: "Clemens Schotte"
 date: 2022-08-15T15:15:30+02:00
 
@@ -16,23 +16,24 @@ lightgallery: true
 
 ## Introduction
 
-One of the requirements when building a business application is that only authenticated users can access it. So how do you use [Azure Maps](https://azuremaps.com/) in combination with authentication and authorization? When you are reading our [Azure Maps docs](https://docs.azuremaps.com/), you find that we support [many different authentication scenarios](https://docs.microsoft.com/azure/azure-maps/azure-maps-authentication), which makes it hard for some developers to implement. This blogpost will focus on the most requested scenario for Azure Maps: Have a .NET web application with an embedded Azure Maps web control where only authenticated users can see the website and use the map. Follow me step by step.
+One of the requirements when building a business application, which may give access to private business data, is that only authenticated employees or agents be able to see that data. So how can you use [Azure Maps](https://azuremaps.com/) in combination with authentication and authorization to ensure only the people that should be allowed have access?
+
+Our [Azure Maps docs](https://docs.azuremaps.com/) describe in detail [many different authentication scenarios](https://docs.microsoft.com/azure/azure-maps/azure-maps-authentication) but the complexity can make it seem difficult to implement. This blog post will focus on our most requested authentication scenario for Azure Maps. Use the following step by step guidance to have a .NET web application embedded Azure Maps web control where only authenticated users can see the website and use the map.
 
 ## Prerequisites
 
-In this article, we make use of .NET 6.0 and the C# programming language, download, and install the latest version of .NET from https://dot.net/.
+In this article, we use the following resources:
 
-To make it easier to edit source code, we also recommend installing Visual Studio Code, which is a lightweight but powerful source code editor from Microsoft https://code.visualstudio.com/.
-
-Before you can use Azure Maps, you need to sign up for a free Azure subscription, what you can do here https://azure.microsoft.com/free.
-
-And as last, install the Azure Command-Line Interface (CLI) tools. Read here [How to install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli).
+* .NET 6.0 and the C# programming language. You can download, and install the latest version of .NET from https://dot.net/
+* To make it easier to edit source code, we also recommend installing Visual Studio Code Edition, which is a lightweight but powerful source code editor from Microsoft https://code.visualstudio.com/
+* Before you can use Azure Maps, you will need to sign up for a free Azure subscription, at https://azure.microsoft.com/free
+* And finally, install the Azure Command-Line Interface (CLI) tools. Read here [How to install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli).
 
 ## 1. Basic Web Application with Azure Maps
 
-First, we start with a basic .NET web application and Azure Maps. No authentication yet, that will come in the next paragraph. This first step will use an Azure Maps Key (a ‘shared Key authentication’ or subscription key) that should **not** be used in production. An Azure Maps Key has complete control over your Azure Maps resource. In the next paragraph, we will remove this key and replace this with managed identities for Azure resources.
+Let's start with a basic .NET web application and Azure Maps. No authentication yet, that will come in the next paragraph. This first step will use an Azure Maps Key (a ‘shared Key authentication’ or subscription key) that should **not** be used in production. An Azure Maps Key has complete control over your Azure Maps resource. In the next paragraph, we will remove this key and replace this with managed identities for Azure resources.
 
-We start by creating a folder and adding a new web application to it, and we then open the newly created web application in Visual Studio Code. Start PowerShell (or any other terminal) and enter the following commands:
+Create a folder, we called ours `AzureMapsDemo`, and add a new web application to it. Then open the newly created web application in Visual Studio Code. Start PowerShell (or any other terminal) and enter the following commands:
 
 ```cmd
 mkdir AzureMapsDemo
@@ -157,8 +158,7 @@ az webapp identity assign -n web-azuremaps -g rg-azuremaps
 az role assignment create --assignee "[PRINCIPAL_ID]" --role "Azure Maps Data Reader" --scope "/subscriptions/[YOUR_AZURE_SUBSCRIPTION_ID]/resourceGroups/rg-azuremaps/providers/Microsoft.Maps/accounts/map-azuremaps"
 ```
 
-> **Hint** to get your Azure subscription Id use the following command:
-> `az account subscription list`
+> **Hint** to get your Azure subscription Id use the following command: `az account subscription list`
 
 2.4 To get the access token from Azure Active Directory (AAD) back to the client (the web browser), we will create a simple proxy API forwarding this access token. We start by creating an API controller in our web application and adding the `GetAzureMapsToken()` method.
 
@@ -387,4 +387,4 @@ az maps account update -n map-azuremaps -g rg-azuremaps --disable-local-auth tru
 
 ## 4. Conclusion
 
-When we have done all the steps in this step-by-step article, you have a protected web application in combination with Azure Maps that uses of Azure Active Directory, Azure role-based access control ([Azure RBAC](https://docs.microsoft.com/azure/role-based-access-control/overview)), and [Azure Maps tokens](https://docs.microsoft.com/azure/azure-maps/azure-maps-authentication). I recommend that you read our [Authentication best practices](https://docs.microsoft.com/azure/azure-maps/authentication-best-practices) and Azure Maps documentation. As an example, the [Azure Maps Samples](https://samples.azuremaps.com/) website uses most of the steps described in this article. Happy coding.
+When we have done all the steps in this step-by-step article, you have a protected web application in combination with Azure Maps that uses of Azure Active Directory, Azure role-based access control ([Azure RBAC](https://docs.microsoft.com/azure/role-based-access-control/overview)), and [Azure Maps tokens](https://docs.microsoft.com/azure/azure-maps/azure-maps-authentication). I recommend that you read our [Authentication best practices](https://docs.microsoft.com/azure/azure-maps/authentication-best-practices) and Azure Maps documentation. Also the [Azure Maps Samples](https://samples.azuremaps.com/) website offers so great ideas, with source code on Github, and uses most of the steps described in this article. Happy coding!
