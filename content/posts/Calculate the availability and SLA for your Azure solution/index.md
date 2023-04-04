@@ -74,7 +74,7 @@ Here, we used the definition when a service is not available and the *multiplica
 
 ![Multiple regions](multiple_regions.png)
 
-> $P(Primary\ or\ Secondary\ is\ up)\ =\ 1\ -\ (1\ -\ P(Primary\ is\ up))\ \cdot\ (1\ -\ P(Secondary\ is\ up))\\\\\ =\ 1\ -\ (1\ -\ 99.94)\ \cdot\ (1\ -\ 99.94)\\\\\ =\ 1\ -\ 0.06 \cdot\ 0.06\\\\\ =\ 1\ -\ 0.000036\\\\\ =\ 99.9964$
+> $P(Primary\ or\ Secondary\ is\ up)\ =\ 1\ -\ (1\ -\ P(Primary\ is\ up))\ \cdot\ (1\ -\ P(Secondary\ is\ up))\\\\\ =\ 1\ -\ (1\ -\ 99.94)\ \cdot\ (1\ -\ 99.94)\\\\\ =\ 1\ -\ 0.06 \cdot\ 0.06\\\\\ =\ 1\ -\ 0.000036\\\\\ =\ 99.999964$
 
 We can boost the availability of a solution by implementing a multi-region failover. This increases the complexity and cost of the solution.
 
