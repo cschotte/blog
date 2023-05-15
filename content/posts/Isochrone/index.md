@@ -89,6 +89,6 @@ We now can target those customers with store-specific offers and promotions.
 
 What schools are within a 20-minute walk from my home? What available jobs are within a 30-minute transit commute? Where you are located and what is near you brings context to the choice of where you want to live and Azure Maps Isochrone API can help you bring that location intelligence into your applications.
 
-* [Azure Maps Isochrone Samples](https://azuremapscodesamples.azurewebsites.net/?search=Isochrone)
+* [Azure Maps Isochrone Samples](https://samples.azuremaps.com/?search=Isochrone)
 * [Best practices for Azure Maps Search Service](https://docs.microsoft.com/en-us/azure/azure-maps/how-to-use-best-practices-for-search)
 * [Search for a location using Azure Maps Search services](https://docs.microsoft.com/en-us/azure/azure-maps/how-to-search-for-address)

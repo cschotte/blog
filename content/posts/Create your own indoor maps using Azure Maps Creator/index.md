@@ -48,4 +48,4 @@ The process after the drawing package creation is very straightforward. You uplo
 
 The [Azure Maps Web SDK](https://docs.microsoft.com/en-us/azure/azure-maps/) includes the Indoor Maps module. This module offers extended functionalities to the Azure Maps **Map Control library**. The Indoor Maps module renders indoor maps created in Creator. It integrates widgets, such as floor picker, that help users visualize the different floors. The Indoor Maps module also supports dynamic map styling. For a step-by-step walkthrough to implement feature stateset dynamic styling in an application, see [Use the Indoor Map module](https://docs.microsoft.com/en-us/azure/azure-maps/how-to-use-indoor-module).
 
-If you like to see what more is possible with the Azure Maps Web Control, there is a sample gallery with a collection of 270 code samples. See the [Azure Maps Web SDK Samples](https://azuremapscodesamples.azurewebsites.net/).
+If you like to see what more is possible with the Azure Maps Web Control, there is a sample gallery with a collection of 270 code samples. See the [Azure Maps Web SDK Samples](https://samples.azuremaps.com/).

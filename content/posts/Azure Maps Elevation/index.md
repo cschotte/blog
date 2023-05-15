@@ -18,6 +18,8 @@ lightgallery: true
 
 When you are living in the Netherlands you are used to that, nearly 26% of its land falling below sea level, and about 50% is just only exceeding 1 m (3.3 ft) above. The Dutch people have lived many centuries battling the water, not only from the sea but also from her rivers. To protect the land the Dutch have built many sophisticated protecting- and management systems to handle the water, like the [Delta Works](https://www.bing.com/search?q=Dutch%20Delta%20Works). Building only a dike or dam is not enough. Today we have won, but we know that we cannot rust, climate change (heavy rain showers) and sea levels are rising globally. Do we (or you) get wet feet in the future?
 
+> **Important** The Azure Maps Elevation services and Render V2 DEM tiles have been retired and will no longer be available and supported after 5 May 2023. All other Azure Maps APIs, Services and TilesetIDs are unaffected by this retirement. For more details, see [Elevation Services Retirement](https://azure.microsoft.com/en-us/updates/azure-maps-elevation-apis-and-render-v2-dem-tiles-will-be-retired-on-5-may-2023/)
+
 To start, we need to know which areas of land are almost below sea level so that we can plan and take additional actions. To make this visible we can use [Azure Maps](https://azure.microsoft.com/en-us/services/azure-maps/) and use the [Azure Maps Elevation Service](https://azure.microsoft.com/en-us/updates/azure-maps-elevation-service-is-now-generally-available/) to make a basic flood map. The Azure Maps Elevation Service provides pole-to-pole coverage with <4M absolute and <2m relative accuracy. The elevation data represents a digital terrain model (DTM), man-made entities (e.g., buildings) are artificially flattened, and elevation is measured to the ground surface.
 
 ## What do we need?
@@ -125,6 +127,3 @@ Now we only need to overwrite the points to the data source, and we have a flood
 datasource.setShapes(points);
 ```
 
-## Example code
-
-This [Code Sample](https://azuremapscodesamples.azurewebsites.net/REST%20Services/Elevations%20by%20bounding%20box.html) shows how to get elevations in a grid pattern with a bounding box. Try it out!
