@@ -21,7 +21,7 @@ The diverse roles I have held at Microsoft reflect my ability to tackle complex 
 
 As I look to the future, I am excited to continue this journey of innovation and discovery. At Microsoft, we will redefine the limits of technology and create transformative experiences that resonate across the globe.
 
-Let's connect. You can find me on [LinkedIn](https://www.linkedin.com/in/cschotte/), or through the insights shared on [my blog's feed](https://clemens.ms/).
+Let's connect. You can find me on [LinkedIn](https://www.linkedin.com/in/cschotte/), or through the insights shared on [my blog](https://clemens.ms/).
 
 Best regards,
 *Clemens Schotte*

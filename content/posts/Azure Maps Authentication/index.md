@@ -24,7 +24,7 @@ Our [Azure Maps docs](https://docs.azuremaps.com/) describe in detail [many diff
 
 In this article, we use the following resources:
 
-* .NET 6.0 and the C# programming language. You can download, and install the latest version of .NET from https://dot.net/
+* .NET 8.0 and the C# programming language. You can download, and install the latest version of .NET from https://dot.net/
 * To make it easier to edit source code, we also recommend installing Visual Studio Code Edition, which is a lightweight but powerful source code editor from Microsoft https://code.visualstudio.com/
 * Before you can use Azure Maps, you will need to sign up for a free Azure subscription, at https://azure.microsoft.com/free
 * And finally, install the Azure Command-Line Interface (CLI) tools. Read here [How to install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli).
@@ -58,8 +58,8 @@ Next, we need to add the Azure Maps web control to the Home view, open the file 
 
 @section Scripts
 {
-    <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" />
-    <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
+    <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/3/atlas.min.css" />
+    <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/3/atlas.min.js"></script>
 
     <script>
         var map;
@@ -138,12 +138,12 @@ This means that the web application can request a short-lived token to get acces
 
 We start by creating an Azure Web App where our web application will be hosted and running. This Azure Web App then needs to have rights to get a token for Azure Maps, which we will forward using the token proxy API we create in the below steps.
 
-2.1 Create an app service plan and web app, and change the unique name and the location for your needs.
+2.1 Create an app service plan and web app, and **change the unique name** `web-azuremaps` and the location for your needs.
 
 ```cmd
 az appservice plan create -g rg-azuremaps -n plan-azuremaps -l westeurope
 
-az webapp create -g rg-azuremaps -p plan-azuremaps -n web-azuremaps -r "dotnet:6"
+az webapp create -g rg-azuremaps -p plan-azuremaps -n web-azuremaps -r "dotnet:8"
 ```
 
 2.2 Next, we create a system-assigned identity for this web app. When finished, we are presented with the `principalId`, we need this in the next step. To make it simple, you can see the system-assigned identity as an account Azure manages.
@@ -192,7 +192,7 @@ public class ApiController : Controller
 }
 ```
 
-2.7 Now that we have our token API proxy, we only need to change the authentication options for the Azure Maps Web Control. Replace in the file `Views/Home/index.cshtml` the authOptions with the following:
+2.7 Now that we have our token API proxy, we only need to change the authentication options for the Azure Maps Web Control. **Replace** in the file `Views/Home/index.cshtml` the authOptions with the following:
 
 ```js
 // Add authentication details for connecting to Azure Maps.
@@ -224,7 +224,7 @@ az maps account show -n map-azuremaps -g rg-azuremaps
 ```cmd
 dotnet publish --configuration Release
 
-Compress-Archive -Path bin\Release\net6.0\publish\* -DestinationPath release1.zip
+Compress-Archive -Path bin\Release\net8.0\publish\* -DestinationPath release1.zip
 ```
 
 2.10 Then we publish our release package to the Azure Web App.
@@ -366,7 +366,7 @@ az account tenant list
 ```cmd
 dotnet publish --configuration Release
 
-Compress-Archive -Path bin\Release\net6.0\publish\* -DestinationPath release2.zip
+Compress-Archive -Path bin\Release\net8.0\publish\* -DestinationPath release2.zip
 ```
 
 3.8 Then we publish our release package to the Azure Web App.
