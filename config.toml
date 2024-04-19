@@ -105,8 +105,8 @@ enableEmoji = true
         absoluteURL = false
         [languages.en.params.search.algolia]
           index = "Clemens Blog"
-          appID = "2DJR4CV3AZ"
-          searchKey = "73ab94a77511643d61613d0d8ba67efc"
+          appID = "VU76M9FXHV"
+          searchKey = "2e47734dce6881ec4fdef07e0cd2729d"
       # Home page config
       [languages.en.params.home]
         # amount of RSS pages
@@ -137,7 +137,7 @@ enableEmoji = true
       [languages.en.params.social]
         GitHub = "cschotte"
         Linkedin = "cschotte"
-        Twitter = "cschotte"
+        #Twitter = "cschotte"
         #Instagram = "clemens_schotte"
         #Youtubelegacy = "clemensschotte"
         #Email = "contact@clemens.ms"
