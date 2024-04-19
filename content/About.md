@@ -1,18 +1,29 @@
 ---
 title: "About me"
-date: 2021-03-15T11:04:49+08:00
+date: 2024-04-19
 draft: false
 
 lightgallery: true
 comment: false
 ---
 
-My name is **Clemens Schotte**. I’m a Sr. Program Manager [@Microsoft](https://www.microsoft.com/) in the Maps & Geospatial Product Group, an [Azure Maps](http://www.azuremaps.com/) Advocate, a [developer](https://github.com/cschotte), and a dedicated and [enthusiastic storyteller](https://clemens.ms/) with a passion for technology and [social interaction](https://twitter.com/cschotte). I blog about technology, gadgets, code, the web, space science and everything that interests me. I love to teach, motivate, and entertain people with technical details. I’m knowledgeable about Microsoft and Open Source technology. I like to engage with people to exchange ideas and experiences. I’m spontaneous, flexible, and I love the constant flow of innovation and new possibilities.
+Hi, I am **Clemens Schotte**. My passion for technology and innovation has been the cornerstone of my career, guiding me through a remarkable journey within [Microsoft](https://www.microsoft.com/), currently as **Senior Program Manager** in the Maps & Local Product Group.
 
-You can follow me on [Twitter](https://twitter.com/cschotte), [LinkedIn](https://www.linkedin.com/in/cschotte/), [YouTube](https://www.youtube.com/user/clemensschotte) or subscribe to my [blog's RSS feed](https://clemens.ms/index.xml).
+Since embarking on this path after my graduation from The Hague University in 2002, I have dedicated over two decades to the pursuit of technological excellence. My early years as a **software developer**, where I crafted dynamic web solutions using PHP and C#, laid the foundation for a career characterized by impactful innovation.
 
-> **Disclaimer:** The opinions expressed on this site are my own and personal opinion and do not represent my employer’s view in any way.
+Joining Microsoft in 2007 as a **Consultant**, I had the privilege of architecting solutions that not only spurred business growth but also paved the way for transformative change. This role evolved into that of a **Technical Evangelist** between 2013 and 2017, during which I led initiatives to empower developers and nurture a culture of innovation.
 
-## Background
+My tenure at Dropbox as a **Solutions Architect** further refined my strategic and leadership skills, focusing on delivering customer-centric solutions. Returning to Microsoft in 2019, I brought back a wealth of knowledge and fresh perspectives, which have been instrumental in advancing our [Azure Maps](http://www.azuremaps.com/) services to new heights of excellence.
 
-After graduating in 2002 from The Hague University, I started working as a software developer and created websites and web-related applications using PHP and C#. In 2007 I started working for [Microsoft](https://www.microsoft.com/) as Dev Consultant, and from 2013 to 2017, I was an Technical Evangelist. After ten years of working for Microsoft, I joined [Dropbox](https://www.dropbox.com/) as Solutions Architect. In 2019 I rejoined Microsoft, currently working as a Sr. Program Manager in the Maps & Geospatial Product Group, where I work with customers and developers on Microsoft's Maps & Geospatial services. Interested to know more about what I did, have a look at my [LinkedIn profile](https://www.linkedin.com/in/cschotte/).
+The diverse roles I have held at Microsoft reflect my ability to tackle complex challenges, foster collaboration, and devise strategic roadmaps that push the boundaries of what is possible.
+
+![Microsoft](/images/microsoft.jpg)
+
+As I look to the future, I am excited to continue this journey of innovation and discovery. At Microsoft, we will redefine the limits of technology and create transformative experiences that resonate across the globe.
+
+Let's connect. You can find me on [LinkedIn](https://www.linkedin.com/in/cschotte/), or through the insights shared on [my blog's feed](https://clemens.ms/).
+
+Best regards,
+*Clemens Schotte*
+
+> **Please note:** The opinions expressed are my own and do not necessarily represent those of Microsoft.
