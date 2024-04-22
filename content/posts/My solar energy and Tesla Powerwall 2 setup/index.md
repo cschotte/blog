@@ -41,16 +41,32 @@ To know what is going on with my energy installation, I use the **Tesla App** (i
 
 ## Performance
 
-The combination of the solar and the Powerwall gives me an excellent performance. In the table below, you can see the performance I had in the last half-year.
+The combination of the solar and the Powerwall gives me an excellent performance. In the table below, you can see the performance I had in the year 2020.
 
 | Month         | Solar  | Powerwall | Total |
 | ------------- | ------ | --------- | ----- |
-| January 2020  | 9%     | 6%        | 15%   |
-| February 2020 | 17%    | 12%       | 29%   |
-| March 2020    | 31%    | 40%       | 71%   |
-| April 2020    | 45%    | 53%       | 98%   |
-| May 2020      | 50%    | 47%       | 97%   |
-| June 2020     | 45%    | 44%       | 89%   |
+| January 2020  | 10%    | 5%        | 15%   |
+| February 2020 | 18%    | 10%       | 28%   |
+| March 2020    | 32%    | 37%       | 69%   |
+| April 2020    | 41%    | 54%       | 95%   |
+| May 2020      | 44%    | 53%       | 97%   |
+| June 2020     | 44%    | 48%       | 92%   |
+| July 2020     | 42%    | 44%       | 86%   |
+| August 2020   | 41%    | 44%       | 85%   |
+| Setpember 2020 | 33%   | 35%       | 68%   |
+| October 2020  | 17%    | 6%        | 23%   |
+| November 2020 | 14%    | 8%        | 22%   |
+| December 2020 | 7%     | 2%        | 9%    |
+
+and also by year:
+
+| Year          | Solar  | Powerwall | Total |
+| ------------- | ------ | --------- | ----- |
+| 2019          | 31%    | 31%       | 62%   |
+| 2020          | 31%    | 26%       | 57%   |
+| 2021          | 29%    | 24%       | 53%   |
+| 2022          | 15%    | 18%       | 33%   |
+| 2023          | 16%    | 43%       | 59%   |
 
 ![Performance solar and Powerwall](usage_performance.jpg)
 

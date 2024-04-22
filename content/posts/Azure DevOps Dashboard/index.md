@@ -66,14 +66,14 @@ az group create -l westeurope -n rg-azdevops
 ```cmd
 az appservice plan create -g rg-azdevops -n plan-azdevops -l westeurope
 
-az webapp create -g rg-azdevops -p plan-azdevops -n azdevops -r "dotnet:6"
+az webapp create -g rg-azdevops -p plan-azdevops -n azdevops -r "dotnet:8"
 ```
 
 5. Add your Azure DevOps URL and personal access token (PAT)
 
 ```cmd
-az webapp config appsettings set -g rg-azdevops -n azdevops --settings azDevOpsPat=<your token>
-az webapp config appsettings set -g rg-azdevops -n azdevops --settings azDevOpsUri=https://dev.azure.com/<yourorgname>
+az webapp config appsettings set -g rg-azdevops -n azdevops --settings azDevOpsPat="<your token>"
+az webapp config appsettings set -g rg-azdevops -n azdevops --settings azDevOpsUri="https://dev.azure.com/<yourorgname>"
 ```
 
 6. Set the `always-on` future we need for the WebJob
