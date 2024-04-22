@@ -1,7 +1,7 @@
 ---
 title: "Cloud-native development with containers and microservices"
 author: "Clemens Schotte"
-date: 2021-03-18T14:50:00+02:00
+date: 2021-03-18
 
 tags: ["Azure", "Microservices", "AKS", "IaC", "DevOps"]
 categories: ["DevOps"]

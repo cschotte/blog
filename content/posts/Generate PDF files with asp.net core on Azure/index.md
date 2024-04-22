@@ -1,9 +1,9 @@
 ---
 title: "Generate PDF files with asp.net core on Azure"
 author: "Clemens Schotte"
-date: 2020-06-04T11:28:58+02:00
+date: 2020-06-04
 
-tags: ["Azure", "PDF", "asp.net", "WebApp"]
+tags: ["Azure", "PDF", "ASP.net", "WebApp"]
 categories: ["Cloud", "Programming"]
 
 resources:

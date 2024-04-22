@@ -1,9 +1,9 @@
 ---
 title: "Lowering Your Energy Bill: How Combining Dynamic Pricing and Home Battery Storage Can Save You Money"
 author: "Clemens Schotte"
-date: 2023-01-23T14:14:00+02:00
+date: 2023-01-23
 
-tags: ["Energy savings", "Dynamic pricing", "Home battery storage", "Renewable energy sources"]
+tags: ["Energy", "Dynamic pricing", "Home battery", "Renewable energy"]
 categories: ["Energy"]
 
 resources:

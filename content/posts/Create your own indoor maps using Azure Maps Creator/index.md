@@ -1,9 +1,9 @@
 ---
 title: "Create your own indoor maps using Azure Maps Creator"
 author: "Clemens Schotte"
-date: 2021-06-07T22:44:00+02:00
+date: 2021-06-07
 
-tags: ["Azure", "Maps", "IndoorMaps", "AzureMaps"]
+tags: ["Azure", "Maps", "Indoor Maps", "Azure Maps"]
 categories: ["Geospatial"]
 
 resources:

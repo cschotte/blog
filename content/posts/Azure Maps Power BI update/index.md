@@ -1,9 +1,9 @@
 ---
 title: "Azure Maps Power BI update"
 author: "Clemens Schotte"
-date: 2022-03-22T15:00:00+02:00
+date: 2022-03-22
 
-tags: ["Azure", "Maps", "PowerBI", "AzureMaps"]
+tags: ["Azure", "Maps", "Power BI", "Azure Maps"]
 categories: ["Geospatial"]
 
 resources:
@@ -49,3 +49,5 @@ To create a pie chart, follow these steps:
 For detailed instructions on these new features, explore our **Power BI Azure Maps "How To" guides**:
 - [Geocoder feature](https://docs.microsoft.com/en-us/azure/azure-maps/power-bi-visual-geocode)
 - [Pie chart layer](https://docs.microsoft.com/en-us/azure/azure-maps/power-bi-visual-add-pie-chart-layer)
+
+> This blog post was initially written by me for the [Azure Maps Tech Blog](https://blog.azuremaps.com).

@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps Dashboard"
 author: "Clemens Schotte"
-date: 2021-06-15T16:50:00+02:00
+date: 2021-06-15
 
 tags: ["Azure", "DevOps", "Dashboard", "WebApp"]
 categories: ["DevOps"]

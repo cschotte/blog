@@ -3,7 +3,7 @@ title: "Azure Maps REST SDKs"
 author: "Clemens Schotte"
 date: 2022-11-02
 
-tags: ["Azure", "Maps", "SDK", "REST", "AzureMaps"]
+tags: ["Azure", "Maps", "SDK", "REST", "Azure Maps"]
 categories: ["Geospatial"]
 
 resources:
@@ -62,3 +62,5 @@ In the above code snippet, you create a `MapsSearchClient` object using your Azu
 To run your application, go to the project folder and execute `dotnet run` in PowerShell.
 
 More information you can read in the [Azure Maps REST SDK Developer Guide](https://learn.microsoft.com/en-us/azure/azure-maps/rest-sdk-developer-guide). Happy coding!
+
+> This blog post was initially written by me for the [Azure Maps Tech Blog](https://blog.azuremaps.com).

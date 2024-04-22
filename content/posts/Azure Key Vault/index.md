@@ -1,7 +1,7 @@
 ---
 title: "Azure Key Vault"
 author: "Clemens Schotte"
-date: 2021-03-15T15:10:00+02:00
+date: 2021-03-15
 
 tags: ["Azure", "Secrets", "keys", "Certificates"]
 categories: ["Cloud"]

@@ -1,7 +1,7 @@
 ---
 title: "Calculate the availability and SLA for your Azure solution"
 author: "Clemens Schotte"
-date: 2020-06-09T11:00:00+02:00
+date: 2020-06-09
 
 tags: ["Azure", "Availability", "SLA", "Website"]
 categories: ["Cloud"]

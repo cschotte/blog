@@ -1,9 +1,9 @@
 ---
 title: "WiFi Calling"
 author: "Clemens Schotte"
-date: 2020-07-16T13:30:00+02:00
+date: 2020-07-16
 
-tags: ["WiFi", "Mobile", "WiFiCalling"]
+tags: ["WiFi", "Mobile", "Phone"]
 categories: ["Network"]
 
 resources:

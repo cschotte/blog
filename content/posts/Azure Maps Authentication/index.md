@@ -1,9 +1,9 @@
 ---
 title: "Azure Maps Web Application Authentication"
 author: "Clemens Schotte"
-date: 2022-08-15T15:15:30+02:00
+date: 2022-08-15
 
-tags: ["Azure", "Maps", "Authentication", "Managed Identities"]
+tags: ["Azure", "Maps", "Authentication", "Managed Identities", "Azure Maps"]
 categories: ["Cloud", "Geospatial"]
 
 resources:
@@ -388,3 +388,5 @@ az maps account update -n map-azuremaps -g rg-azuremaps --disable-local-auth tru
 ## Conclusion
 
 When we have done all the steps in this step-by-step article, you have a protected web application in combination with Azure Maps that uses of Azure Active Directory, Azure role-based access control ([Azure RBAC](https://docs.microsoft.com/azure/role-based-access-control/overview)), and [Azure Maps tokens](https://docs.microsoft.com/azure/azure-maps/azure-maps-authentication). I recommend that you read our [Authentication best practices](https://docs.microsoft.com/azure/azure-maps/authentication-best-practices) and Azure Maps documentation. Also the [Azure Maps Samples](https://samples.azuremaps.com/) website offers so great ideas, with source code on Github, and uses most of the steps described in this article. Happy coding!
+
+> This blog post was initially written by me for the [Azure Maps Tech Blog](https://blog.azuremaps.com).

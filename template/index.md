@@ -1,9 +1,9 @@
 ---
 title: ""
 author: "Clemens Schotte"
-date: 2021-10-11T15:00:00+02:00
+date: 2024-01-01
 
-tags: ["Azure", "Maps", "PowerBI", "AzureMaps"]
+tags: ["Azure", "Maps", "", "AzureMaps"]
 categories: ["Geospatial"]
 
 resources:

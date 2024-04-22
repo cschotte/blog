@@ -1,9 +1,9 @@
 ---
 title: "Use Azure Maps to calculate an isochrone to reach your customers"
 author: "Clemens Schotte"
-date: 2021-09-21T15:00:00+02:00
+date: 2021-09-21
 
-tags: ["Azure", "Maps", "Isochrone", "AzureMaps"]
+tags: ["Azure", "Maps", "Isochrone", "Azure Maps"]
 categories: ["Geospatial"]
 
 resources:
@@ -92,3 +92,5 @@ What schools are within a 20-minute walk from my home? What available jobs are w
 * [Azure Maps Isochrone Samples](https://samples.azuremaps.com/?search=Isochrone)
 * [Best practices for Azure Maps Search Service](https://docs.microsoft.com/en-us/azure/azure-maps/how-to-use-best-practices-for-search)
 * [Search for a location using Azure Maps Search services](https://docs.microsoft.com/en-us/azure/azure-maps/how-to-search-for-address)
+
+> This blog post was initially written by me for the [Azure Maps Tech Blog](https://blog.azuremaps.com).

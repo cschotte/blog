@@ -1,9 +1,9 @@
 ---
 title: "Introducing the Heat Map Layer in Azure Maps Visual for Power BI"
 author: "Clemens Schotte"
-date: 2021-10-11T15:00:00+02:00
+date: 2021-10-11
 
-tags: ["Azure", "Maps", "PowerBI", "AzureMaps"]
+tags: ["Azure", "Maps", "Power BI", "Azure Maps"]
 categories: ["Geospatial"]
 
 resources:
@@ -36,3 +36,5 @@ The heatmap formatting pane (Format) empowers users to tailor their visualizatio
 6. **Layer Arrangement:** Arrange the heat map layer position relative to other layers (e.g., 3D bar chart, bubble layers). Create cohesive visualizations that tell a compelling story.
 
 With the new Heat Map layer, you can unlock deeper insights from your data and enhance your Power BI reports. Try it out today and discover the hidden patterns within your geographical data!
+
+> This blog post was initially written by me for the [Azure Maps Tech Blog](https://blog.azuremaps.com).

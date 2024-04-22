@@ -1,9 +1,9 @@
 ---
-title: "Managed identities for Azure Maps"
+title: "Managed Identities for Azure Maps"
 author: "Clemens Schotte"
-date: 2021-10-31T15:00:00+02:00
+date: 2021-10-31
 
-tags: ["Azure", "Maps", "Authentication", "AzureMaps"]
+tags: ["Azure", "Maps", "Authentication", "Azure Maps"]
 categories: ["Geospatial"]
 
 resources:
@@ -93,3 +93,5 @@ authOptions: {
 ```
 
 I hope this blog helped you with setting up Managed Identities in the Azure Portal. If you need a step-by-step guide on how to use managed identities and authorization in a .NET web application, read my [Azure Maps Web Application Authentication](/azure-maps-authentication/) blog. 
+
+> This blog post was initially written by me for the [Azure Maps Tech Blog](https://blog.azuremaps.com).

@@ -1,7 +1,7 @@
 ---
 title: "KPN Fiber Connection with Ubiquiti USG, IPTV and IPv6"
 author: "Clemens Schotte"
-date: 2020-05-25T14:11:58+02:00
+date: 2020-05-25
 
 tags: ["UniFi", "Internet", "Fiber"]
 categories: ["Network"]

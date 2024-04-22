@@ -1,9 +1,9 @@
 ---
 title: "Azure Maps Weather Services adds three new services"
 author: "Clemens Schotte"
-date: 2022-01-27T19:00:00+02:00
+date: 2022-01-27
 
-tags: ["Azure", "Maps", "Weather", "AzureMaps"]
+tags: ["Azure", "Maps", "Weather", "Azure Maps"]
 categories: ["Geospatial"]
 
 resources:
@@ -62,3 +62,5 @@ Tropical storms, also known as hurricanes, cyclones, or typhoons depending on th
 ![Tropical Storms](featured-image.jpg)
 
 All the [Azure Maps Weather APIs](https://docs.microsoft.com/rest/api/maps/weather/) can be found in the documenation.
+
+> This blog post was initially written by me for the [Azure Maps Tech Blog](https://blog.azuremaps.com).
