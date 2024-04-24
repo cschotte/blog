@@ -4,7 +4,7 @@ author: "Clemens Schotte"
 date: 2024-04-11
 
 tags: ["Program Manager", "Microsoft", "Product Development", "Azure Maps"]
-categories: ["Work"]
+categories: ["Business"]
 
 resources:
 - name: "featured-image"
