@@ -16,7 +16,7 @@ lightgallery: true
 
 **CaveRace** is a classic maze-based video game I developed back in **1997** with some other students. Inspired on a game, I played on my Commodore Amiga, called **Dyna Blaster** [(Bomberman)](https://en.wikipedia.org/wiki/Bomberman_(1990_video_game)).
 
-| Forest level               | Winter level               | Winter level             |
+| Forest level               | Winter level               | Lava level             |
 | -------------------------- | -------------------------- | -------------------      |
 | ![Forest level](demo1.png) | ![Winter level](demo2.png) | ![Lava level](demo3.png) |
 
