@@ -90,7 +90,7 @@ The complete Multi-Itinerary Optimization Sample [source code](https://github.co
 
 With the matrix data in hand, it's time to decide the delivery sequence. This is where [NVIDIA cuOpt](https://docs.nvidia.com/cuopt/) shines, optimizing the order of delivery for each vehicle based on capacity, demand, and operational hours—without needing any sensitive location or customer data, thus addressing privacy concerns.
 
-> See our [how-to guide](https://docs.azuremaps.com) how to set up and create a solution with NVIDIA cuOpt and Azure Maps.
+> See our [how-to guide](https://learn.microsoft.com/azure/azure-maps/itinerary-optimization-service) how to set up and create a solution with NVIDIA cuOpt and Azure Maps.
 
 ### Step Three: Real-World Route Mapping
 
@@ -107,6 +107,6 @@ Depot 2: Vehicle D -> Stop 9 -> Stop 10 -> Depot 2
 
 [![Multi-Itinerary Optimization Sample](screenshot.jpg)](https://samples.azuremaps.com/?sample=multi-itinerary-optimization)
 
-**Are you ready to deliver?** Get started with the Azure Maps and NVIDIA cuOpt to optimize your delivery needs. Read our [how-to guide](https://docs.azuremaps.com) and start delivering to your customers quicker.
+**Are you ready to deliver?** Get started with the Azure Maps and NVIDIA cuOpt to optimize your delivery needs. Read our [how-to guide](https://learn.microsoft.com/azure/azure-maps/itinerary-optimization-service) and start delivering to your customers quicker.
 
 > This blog post was initially written by me for the [Azure Maps Tech Blog](https://blog.azuremaps.com).
