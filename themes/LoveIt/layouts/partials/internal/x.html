@@ -1,0 +1,8 @@
+{{- $id := .Get 0 -}}
+{{- if $id -}}
+<blockquote class="x-tweet">
+    <p><a href="https://x.com/i/status/{{ $id }}" target="_blank" rel="noopener noreferrer">View post on X</a></p>
+</blockquote>
+{{- else -}}
+    {{- errorf "x shortcode requires a tweet ID" -}}
+{{- end -}}
