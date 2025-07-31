@@ -44,34 +44,29 @@ az account set --subscription "<YOUR_SUBSCRIPTION_ID_OR_NAME>"
 ## 1. Variables - Pick a region and a few names
 
 ```powershell
-# Region close to me (Netherlands)
+# Location
 $LOCATION = "westeurope"
 
-# Resource names (lightweight)
+# Resource group and environment
 $RG        = "n8n-lite-rg"
 $ENV_NAME  = "n8n-lite-env"
 $APP_NAME  = "n8n-lite"
 
-# Storage account & share (must be globally unique)
+# Storage account (globally unique)
 $rand      = Get-Random -Maximum 99999
 $SA        = "n8nfiles$rand"
 $SHARE     = "n8nshare"
 
-# Basic auth for n8n editor
+# Auth for n8n editor
 $N8N_BASIC_USER = "admin"
+$chars = (48..57 + 65..90 + 97..122)
+$N8N_BASIC_PASSWORD = -join (1..24 | ForEach-Object { [char]($chars | Get-Random) })
 
-# Generate a decent random password and a 32-byte hex encryption key
-# (No OpenSSL needed; this is pure PowerShell/.NET)
+# 32-byte encryption key
 Add-Type -AssemblyName System.Security
 $bytes = New-Object byte[] 32
 [Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($bytes)
 $N8N_ENCRYPTION_KEY = ($bytes | ForEach-Object { $_.ToString("x2") }) -join ""
-
-$chars = (48..57 + 65..90 + 97..122)
-$N8N_BASIC_PASSWORD = -join (1..24 | ForEach-Object { [char]($chars | Get-Random) })
-
-# Convenience
-$SUBID   = az account show --query id -o tsv
 ```
 
 ## 2. Resource group and cheap persistent storage (Azure Files)
@@ -114,6 +109,7 @@ az containerapp env create `
 Attach the Azure File share to the environment once:
 
 ```powershell
+# Attach the Azure File share
 az containerapp env storage set `
   --resource-group $RG `
   --name $ENV_NAME `
@@ -126,34 +122,9 @@ az containerapp env storage set `
 
 ## 4. Deploy n8n
 
-We’ll protect the editor with basic auth, set an encryption key, and expose port 5678. Because Container Apps CLI storage flags vary across versions, I first create the app without the mount, then apply a tiny YAML patch to add the volume. This works reliably on Windows regardless of your container extension version.
+We’ll protect the editor with basic auth, set an encryption key, and expose port 5678. Because Container Apps CLI storage flags vary across versions, We’ll use a YAML definition so everything (environment, mounts, secrets, variables) is configured before n8n starts for the first time.
 
-Create the app:
-
-```powershell
-az containerapp create `
-  --name $APP_NAME `
-  --resource-group $RG `
-  --environment $ENV_NAME `
-  --image n8nio/n8n:latest `
-  --ingress external --target-port 5678 `
-  --cpu 0.25 --memory 0.5Gi `
-  --min-replicas 0 --max-replicas 1 `
-  --secrets `
-      n8n-basic-password="$N8N_BASIC_PASSWORD" `
-      n8n-encryption-key="$N8N_ENCRYPTION_KEY" `
-  --env-vars `
-      N8N_BASIC_AUTH_ACTIVE=true `
-      N8N_BASIC_AUTH_USER=$N8N_BASIC_USER `
-      N8N_BASIC_AUTH_PASSWORD=secretref:n8n-basic-password `
-      N8N_ENCRYPTION_KEY=secretref:n8n-encryption-key `
-      N8N_PROTOCOL=https `
-      N8N_PORT=5678 `
-      N8N_DIAGNOSTICS_ENABLED=false `
-      N8N_USER_FOLDER=/home/node/.n8n | Out-Null
-```
-
-Now mount the Azure File share by updating the app with a short YAML file. First get the environment resource ID:
+First get the environment resource ID:
 
 ```powershell
 $ENV_ID = az containerapp env show `
@@ -162,7 +133,7 @@ $ENV_ID = az containerapp env show `
   --query id -o tsv
 ```
 
-Create `n8n-mount.yaml` with a PowerShell here‑string. This YAML only adds the volume and mount; it doesn’t change your secrets or other settings.
+Create `n8n-mount.yaml` with a PowerShell here‑string.
 
 ```powershell
 $yaml = @"
@@ -174,6 +145,12 @@ properties:
     ingress:
       external: true
       targetPort: 5678
+    secrets:
+      - name: n8n-basic-password
+        value: $N8N_BASIC_PASSWORD
+      - name: n8n-encryption-key
+        value: $N8N_ENCRYPTION_KEY
+    activeRevisionsMode: Single
   template:
     containers:
       - name: n8n
@@ -181,23 +158,44 @@ properties:
         env:
           - name: N8N_USER_FOLDER
             value: /home/node/.n8n
+          - name: N8N_BASIC_AUTH_ACTIVE
+            value: "true"
+          - name: N8N_BASIC_AUTH_USER
+            value: $N8N_BASIC_USER
+          - name: N8N_BASIC_AUTH_PASSWORD
+            value: secretref:n8n-basic-password
+          - name: N8N_ENCRYPTION_KEY
+            value: secretref:n8n-encryption-key
+          - name: N8N_PROTOCOL
+            value: https
+          - name: N8N_PORT
+            value: "5678"
+          - name: N8N_DIAGNOSTICS_ENABLED
+            value: "false"
+          - name: WEBHOOK_URL
+            value: ""
+          - name: N8N_HOST
+            value: ""
+        resources:
+          cpu: 0.25
+          memory: 0.5Gi
         volumeMounts:
           - mountPath: /home/node/.n8n
             volumeName: n8nfiles
-    scale:
-      minReplicas: 0
-      maxReplicas: 1
     volumes:
       - name: n8nfiles
         storageType: AzureFile
         storageName: n8nfiles
+    scale:
+      minReplicas: 0
+      maxReplicas: 1
 "@
-$yaml | Out-File -FilePath .\n8n-mount.yaml -Encoding utf8
+$yaml | Out-File -FilePath .\n8n-deploy.yaml -Encoding utf8
 
-az containerapp update `
+az containerapp create `
   --resource-group $RG `
   --name $APP_NAME `
-  --yaml .\n8n-mount.yaml | Out-Null
+  --yaml .\n8n-deploy.yaml | Out-Null
 ```
 
 ![Infra](infra.png)
