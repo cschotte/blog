@@ -14,230 +14,248 @@ draft: false
 lightgallery: true
 ---
 
-I wanted a tiny, inexpensive backend to experiment with a AI chat agent on my blog. No Kubernetes, no managed databases, no monthly surprises. In this post I’ll show exactly how I stood up **n8n** on **Azure Container Apps** using **SQLite** and an **Azure Files** mount so everything persists, and scales to zero when idle. This is the infrastructure piece. In my next post I’ll walk through how I built the AI chat agent itself and wired the blog UI to n8n.
+## A lightweight Azure backend for my AI agent
 
-One Container App runs the official `n8nio/n8n` image. I let n8n use SQLite (the default) and put its working folder on Azure Files so my workflows and credentials survive restarts and image updates. I skip Log Analytics to keep costs near zero and rely on the free `*.azurecontainerapps.io` domain for TLS. It’s enough for a personal blog agent and private testing, and I can swap SQLite for PostgreSQL later without changing the overall shape.
+Over the past few weeks, I’ve been exploring different ways to power a personal AI agent for my blog, one that can answer questions about me, my background, and my work using context I provide. I wanted a simple, secure, and cost-effective backend that I fully control and can iterate on fast.
 
-## What you need
+**n8n** is a powerful open-source automation tool that’s perfect for wiring together APIs and logic without having to spin up tons of infrastructure. 
 
-I’m doing this from Windows with PowerShell and the Azure CLI. Make sure you have:
+But first, I needed to get n8n up and running on Azure.
 
-Azure CLI up to date:
+This blog post documents exactly how I did it: deploying n8n on **Azure Container Apps**, connecting it securely to Azure Database for **PostgreSQL** Flexible Server, and setting everything up to follow best practices like private networking, basic auth, encryption, and persistent workflows.
+
+## What you’ll need
+
+Before I could start stitching together containers and databases, I needed to make sure my local environment was ready. For me, that meant working from my Windows machine using PowerShell (my go-to shell for anything Azure-related). I wanted this setup to be clean, repeatable, and fully self-contained, without depending on extra tooling or scripts from elsewhere.
+
+The goal was to keep things simple but robust. With just a few PowerShell commands and the Azure CLI, I’d provision a complete backend in the cloud that felt lightweight yet production-grade.
+
+At the core of this setup is a single Azure Container App running the official `n8nio/n8n` image. It’s backed by a PostgreSQL Flexible Server that lives securely inside a private VNet. Every connection is internal. Every service knows its place. Nothing is exposed unless I want it to be.
+
+If you’re ready to follow along, all you really need is an updated Azure CLI, the Container Apps extension, and a PowerShell window. That’s where we begin:
 
 ```powershell
 az upgrade --yes
-```
-
-The Container Apps extension:
-
-```powershell
 az extension add --name containerapp --upgrade
-```
-
-Sign in and select the subscription you want to use:
-
-```powershell
 az login
 az account set --subscription "<YOUR_SUBSCRIPTION_ID_OR_NAME>"
 ```
 
-## 1. Variables - Pick a region and a few names
+## 1. Define your variables
+
+This code defines all the values we’ll use: region, resource names, credentials, and secrets. Random values are generated for passwords and encryption keys so you never have to hardcode them.
 
 ```powershell
-# Location
-$LOCATION = "westeurope"
+# Region close to me (Netherlands)
+$LOCATION = "northeurope"
 
-# Resource group and environment
-$RG        = "n8n-lite-rg"
+# Resource names (lightweight but persistent)
+$RG        = "n8n"
 $ENV_NAME  = "n8n-lite-env"
 $APP_NAME  = "n8n-lite"
+$VNET_NAME = "n8n-vnet"
+$SUBNET_NAME = "n8n-subnet"
+$POSTGRES_SUBNET_NAME = "postgres-subnet"
 
-# Storage account (globally unique)
-$rand      = Get-Random -Maximum 99999
-$SA        = "n8nfiles$rand"
-$SHARE     = "n8nshare"
+# PostgreSQL Flexible Server (required for n8n best practices)
+$POSTGRES_SERVER = "n8n-postgres-$(Get-Random -Maximum 99999)"
+$POSTGRES_DB = "n8n"
+$POSTGRES_USER = "n8nadmin"
 
-# Auth for n8n editor
+# Basic auth for n8n editor
 $N8N_BASIC_USER = "admin"
-$chars = (48..57 + 65..90 + 97..122)
-$N8N_BASIC_PASSWORD = -join (1..24 | ForEach-Object { [char]($chars | Get-Random) })
 
-# 32-byte encryption key
+# Generate a strong random password for PostgreSQL and a 32-byte hex encryption key
 Add-Type -AssemblyName System.Security
 $bytes = New-Object byte[] 32
 [Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($bytes)
 $N8N_ENCRYPTION_KEY = ($bytes | ForEach-Object { $_.ToString("x2") }) -join ""
+
+$chars = (48..57 + 65..90 + 97..122)
+$N8N_BASIC_PASSWORD = -join (1..24 | ForEach-Object { [char]($chars | Get-Random) })
+$POSTGRES_PASSWORD = -join (1..24 | ForEach-Object { [char]($chars | Get-Random) })
 ```
 
-## 2. Resource group and cheap persistent storage (Azure Files)
+## 2. Provision secure networking
+
+We’ll create a virtual network and two subnets: one for Container Apps and one for PostgreSQL. Each is delegated to the correct Azure service for secure, private communication.
 
 ```powershell
+Write-Host "`nCreating resource group..." -ForegroundColor Cyan
 az group create --name $RG --location $LOCATION | Out-Null
 
-az storage account create `
-  --resource-group $RG `
-  --name $SA `
-  --location $LOCATION `
-  --sku Standard_LRS `
-  --kind StorageV2 | Out-Null
+# Create VNet for secure communication (following best practices)
+Write-Host "Creating secure virtual network..." -ForegroundColor Cyan
+az network vnet create --resource-group $RG --name $VNET_NAME --location $LOCATION --address-prefixes 10.0.0.0/16 | Out-Null
 
-$SA_KEY = az storage account keys list `
-  --resource-group $RG `
-  --account-name $SA `
-  --query "[0].value" -o tsv
+# Create subnet for Container Apps
+az network vnet subnet create --resource-group $RG --vnet-name $VNET_NAME --name $SUBNET_NAME --address-prefixes 10.0.0.0/23 | Out-Null
 
-az storage share create `
-  --name $SHARE `
-  --account-name $SA `
-  --account-key $SA_KEY | Out-Null
+# Create separate subnet for PostgreSQL
+az network vnet subnet create --resource-group $RG --vnet-name $VNET_NAME --name $POSTGRES_SUBNET_NAME --address-prefixes 10.0.2.0/24 | Out-Null
+
+# Delegate Container Apps subnet
+Write-Host "Delegating subnet to Container Apps..." -ForegroundColor Cyan
+az network vnet subnet update --resource-group $RG --vnet-name $VNET_NAME --name $SUBNET_NAME --delegations Microsoft.App/environments | Out-Null
+
+# Delegate PostgreSQL subnet
+Write-Host "Delegating subnet to PostgreSQL..." -ForegroundColor Cyan
+az network vnet subnet update --resource-group $RG --vnet-name $VNET_NAME --name $POSTGRES_SUBNET_NAME --delegations Microsoft.DBforPostgreSQL/flexibleServers | Out-Null
+
+$SUBNET_ID = az network vnet subnet show --resource-group $RG --vnet-name $VNET_NAME --name $SUBNET_NAME --query id -o tsv
+
+Write-Host "✓ Secure network created with separate delegated subnets" -ForegroundColor Green
 ```
 
-This file share will back `/home/node/.n8n`, which is where n8n stores workflows, credentials, and the local SQLite file. That makes upgrades and restarts safe.
+## 3. Create a secure PostgreSQL server
 
-## 3. Create a Container Apps environment
-
-To keep costs minimal, I create the environment without wiring Log Analytics. You can attach it later if you want.
+n8n officially recommends PostgreSQL for production. Here we deploy a private Flexible Server inside the delegated subnet. No public access, no internet exposure.
 
 ```powershell
+Write-Host "`nCreating secure PostgreSQL Flexible Server..." -ForegroundColor Cyan
+
+# Create PostgreSQL with VNet integration (secure, no public access)
+az postgres flexible-server create `
+  --resource-group $RG `
+  --name $POSTGRES_SERVER `
+  --location $LOCATION `
+  --admin-user $POSTGRES_USER `
+  --admin-password $POSTGRES_PASSWORD `
+  --sku-name Standard_B1ms `
+  --tier Burstable `
+  --storage-size 32 `
+  --version 14 `
+  --vnet $VNET_NAME `
+  --subnet $POSTGRES_SUBNET_NAME `
+  --yes | Out-Null
+
+# Create the n8n database
+Write-Host "Creating n8n database..." -ForegroundColor Cyan
+az postgres flexible-server db create `
+  --resource-group $RG `
+  --server-name $POSTGRES_SERVER `
+  --database-name $POSTGRES_DB | Out-Null
+
+Write-Host "✓ Secure PostgreSQL server created: $POSTGRES_SERVER" -ForegroundColor Green
+```
+
+## 4. Set up the Container Apps environment
+
+Azure Container Apps supports full VNet integration, great for security and compliance. I disable Log Analytics to save costs and keep things simple.
+
+```powershell
+Write-Host "`nCreating secure Container Apps environment..." -ForegroundColor Cyan
 az containerapp env create `
   --resource-group $RG `
   --name $ENV_NAME `
   --location $LOCATION `
+  --infrastructure-subnet-resource-id $SUBNET_ID `
   --logs-destination none | Out-Null
+
+Write-Host "✓ Secure Container Apps environment created" -ForegroundColor Green
 ```
 
-Attach the Azure File share to the environment once:
+## 5. Deploy the n8n container
+
+This is where it all comes together. We deploy the latest n8n image and configure all secrets and environment variables, including:	Basic auth credentials, PostgreSQL connection string, Encryption key, TLS (automatically provided by Azure) and 	Static scaling (1 replica)
 
 ```powershell
-# Attach the Azure File share
-az containerapp env storage set `
-  --resource-group $RG `
-  --name $ENV_NAME `
-  --storage-name n8nfiles `
-  --azure-file-account-name $SA `
-  --azure-file-account-key $SA_KEY `
-  --azure-file-share-name $SHARE `
-  --access-mode ReadWrite | Out-Null
-```
-
-## 4. Deploy n8n
-
-We’ll protect the editor with basic auth, set an encryption key, and expose port 5678. Because Container Apps CLI storage flags vary across versions, We’ll use a YAML definition so everything (environment, mounts, secrets, variables) is configured before n8n starts for the first time.
-
-First get the environment resource ID:
-
-```powershell
-$ENV_ID = az containerapp env show `
-  --resource-group $RG `
-  --name $ENV_NAME `
-  --query id -o tsv
-```
-
-Create `n8n-mount.yaml` with a PowerShell here‑string.
-
-```powershell
-$yaml = @"
-type: Microsoft.App/containerApps
-name: $APP_NAME
-properties:
-  managedEnvironmentId: $ENV_ID
-  configuration:
-    ingress:
-      external: true
-      targetPort: 5678
-    secrets:
-      - name: n8n-basic-password
-        value: $N8N_BASIC_PASSWORD
-      - name: n8n-encryption-key
-        value: $N8N_ENCRYPTION_KEY
-    activeRevisionsMode: Single
-  template:
-    containers:
-      - name: n8n
-        image: n8nio/n8n:latest
-        env:
-          - name: N8N_USER_FOLDER
-            value: /home/node/.n8n
-          - name: N8N_BASIC_AUTH_ACTIVE
-            value: "true"
-          - name: N8N_BASIC_AUTH_USER
-            value: $N8N_BASIC_USER
-          - name: N8N_BASIC_AUTH_PASSWORD
-            value: secretref:n8n-basic-password
-          - name: N8N_ENCRYPTION_KEY
-            value: secretref:n8n-encryption-key
-          - name: N8N_PROTOCOL
-            value: https
-          - name: N8N_PORT
-            value: "5678"
-          - name: N8N_DIAGNOSTICS_ENABLED
-            value: "false"
-          - name: WEBHOOK_URL
-            value: ""
-          - name: N8N_HOST
-            value: ""
-        resources:
-          cpu: 0.25
-          memory: 0.5Gi
-        volumeMounts:
-          - mountPath: /home/node/.n8n
-            volumeName: n8nfiles
-    volumes:
-      - name: n8nfiles
-        storageType: AzureFile
-        storageName: n8nfiles
-    scale:
-      minReplicas: 0
-      maxReplicas: 1
-"@
-$yaml | Out-File -FilePath .\n8n-deploy.yaml -Encoding utf8
+Write-Host "`nDeploying n8n container app..." -ForegroundColor Cyan
 
 az containerapp create `
-  --resource-group $RG `
   --name $APP_NAME `
-  --yaml .\n8n-deploy.yaml | Out-Null
+  --resource-group $RG `
+  --environment $ENV_NAME `
+  --image n8nio/n8n:latest `
+  --ingress external --target-port 5678 `
+  --cpu 1.0 --memory 2.0Gi `
+  --min-replicas 1 --max-replicas 1 `
+  --secrets `
+      n8n-basic-password="$N8N_BASIC_PASSWORD" `
+      n8n-encryption-key="$N8N_ENCRYPTION_KEY" `
+      postgres-password="$POSTGRES_PASSWORD" `
+  --env-vars `
+      DB_TYPE=postgresdb `
+      DB_POSTGRESDB_HOST="$POSTGRES_SERVER.postgres.database.azure.com" `
+      DB_POSTGRESDB_PORT=5432 `
+      DB_POSTGRESDB_DATABASE=$POSTGRES_DB `
+      DB_POSTGRESDB_USER=$POSTGRES_USER `
+      DB_POSTGRESDB_PASSWORD=secretref:postgres-password `
+      DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED=false `
+      DB_POSTGRESDB_CONNECTION_TIMEOUT=30000 `
+      DB_POSTGRESDB_POOL_SIZE=5 `
+      N8N_BASIC_AUTH_ACTIVE=true `
+      N8N_BASIC_AUTH_USER=$N8N_BASIC_USER `
+      N8N_BASIC_AUTH_PASSWORD=secretref:n8n-basic-password `
+      N8N_ENCRYPTION_KEY=secretref:n8n-encryption-key `
+      N8N_PROTOCOL=https `
+      N8N_PORT=5678 `
+      N8N_DIAGNOSTICS_ENABLED=false `
+      N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true `
+      GENERIC_TIMEZONE="Europe/Amsterdam" `
+      TRUST_PROXY=true | Out-Null
+
+Write-Host "✓ n8n container app deployed securely" -ForegroundColor Green
 ```
 
-![Infra](infra.png)
+## 6. Configure webhooks and URL
 
-Grab the public hostname and tell n8n what to use for webhooks and host:
+After deployment, we extract the public FQDN and configure n8n’s internal variables like WEBHOOK_URL and N8N_HOST.
 
 ```powershell
+# Get the public hostname and configure webhook URLs
+Write-Host "`nConfiguring webhooks..." -ForegroundColor Cyan
 $APP_FQDN = az containerapp show `
   --resource-group $RG `
   --name $APP_NAME `
   --query "properties.configuration.ingress.fqdn" -o tsv
 
+# Update webhook and host configuration
 az containerapp update `
   --resource-group $RG `
   --name $APP_NAME `
   --set-env-vars WEBHOOK_URL="https://$APP_FQDN" N8N_HOST="$APP_FQDN" | Out-Null
 
-"Open n8n at: https://$APP_FQDN"
+Write-Host "✓ Webhook configuration complete" -ForegroundColor Green
 ```
 
-Open that URL in your browser. Finish the first‑run screen in n8n and you’re ready to create workflows.
+## 7. Final output and login details
 
-## 5. A quick smoke test and where the data lives
-
-All of n8n’s working state, including the SQLite file and encrypted credentials, lives under `/home/node/.n8n`, which is mounted to your Azure File share. You can prove it by opening the Azure Portal an look into folder:
-
-![Azure Files](n8nfiles.png)
-
-## 6. Pointing a simple blog chat box at n8n
-
-The chat agent itself will come in the next post, but the plumbing is straightforward. In n8n, create a workflow that starts with a Webhook node (POST, JSON), does your AI logic, and ends with a Return node. Activate the workflow and copy its Production URL (it will look like `https://<your-fqdn>/webhook/<id>`).
-
-## 7. Costs, tweaks, and cleanup
-
-This setup is about as lean as Azure gets for a durable web app. There is no managed database to pay for, the Container App scales to zero, and the Azure File share at tiny sizes costs cents per month. You also get a free HTTPS hostname under `*.azurecontainerapps.io`. When you’re done experimenting and want to save even more, delete the resource group:
+Summary of everything you need to access and manage the n8n instance, including login credentials.
 
 ```powershell
-az group delete --name $RG --yes --no-wait
+Write-Host "`n=== n8n Secure Deployment Complete ===" -ForegroundColor Green -BackgroundColor Black
+Write-Host "`nn8n URL: https://$APP_FQDN" -ForegroundColor Cyan
+Write-Host "Username: $N8N_BASIC_USER" -ForegroundColor Yellow
+Write-Host "Password: $N8N_BASIC_PASSWORD" -ForegroundColor Yellow
+
+Write-Host "`nPostgreSQL Details (Private Network):" -ForegroundColor Cyan
+Write-Host "Server: $POSTGRES_SERVER.postgres.database.azure.com" -ForegroundColor Yellow
+Write-Host "Database: $POSTGRES_DB" -ForegroundColor Yellow
+Write-Host "User: $POSTGRES_USER" -ForegroundColor Yellow
+Write-Host "Password: $POSTGRES_PASSWORD" -ForegroundColor Yellow
 ```
 
-If you later outgrow SQLite, switch to Azure Database for PostgreSQL Flexible Server and add the `DB_*` environment variables, everything else stays the same. If you want richer diagnostics, attach a Log Analytics workspace and update the environment with `--logs-customer-id` and `--logs-key`.
+## Connecting my AI chat agent to n8n
 
-## What’s next
+At this point in the setup, I finally had what I needed: a secure, self-hosted instance of n8n, always-on, neatly tucked into a private Azure network, and ready to receive input. But this wasn’t just about deploying a container or setting up PostgreSQL correctly. I was building the backend for something more personal, an intelligent agent that could talk to visitors on my blog, understand who I am, what I’ve worked on, and respond as if it were me.
 
-In the next post I’ll show how I built the AI chat agent workflow in n8n, how I load a small profile and blog context, and how I return streaming or chunked responses to make the chat feel instant. With this infra in place, you can iterate rapidly without worrying about ops or cost.
+That’s the vision behind **ClemensGPT**.
+
+Inside n8n, it all starts with a workflow triggered by a webhook. This is the entry point, the moment someone on my website types a message into the chat box, and the request flows through the cloud, landing inside my n8n container. From there, the magic begins.
+
+The workflow parses the message, routes it through a series of logic steps and returns a thoughtful, contextual response. The actual chat interface on the blog is nothing more than HTML and JavaScript calling the right endpoint, but behind the curtain, there’s a full orchestration engine at work.
+
+This is what excites me most about building with n8n and Azure, every piece is composable, flexible, and private by design. I can iterate fast, fine-tune workflows in real time, and integrate anything from OpenAI to my own MCP server or blog metadata store.
+
+The infrastructure is now invisible. All that’s left is the experience.
+
+## Conclusion
+
+When I started this project, I just wanted a way to play with ideas, I needed something small and cheap. But what I ended up creating is the foundation for something much bigger, an extensible, secure automation engine that powers a real-time AI assistant tied to my digital identity.
+
+This wasn’t just about running n8n in a container. It was about control. About learning. About giving shape to an idea I had late one night "**what if my blog could talk back?**"
+
+The beauty of this approach is that I’m not limited to just one agent. Tomorrow, I can build another focused on developer tools, or Azure Maps APIs, or even automating parts of my work. With n8n as the backend and Azure AI as the brain, the possibilities are wide open.
+
+In the next post, I’ll show how I designed **ClemensGPT** itself, how I injected memory and personality into the responses, streamed tokens for instant feedback, and fine-tuned everything to reflect my voice. But for now, the backend is alive. The pipes are connected. The agent is listening.
