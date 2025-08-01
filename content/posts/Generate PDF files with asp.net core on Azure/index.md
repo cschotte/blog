@@ -24,7 +24,7 @@ What I need is a View that returns a PDF and not HTML what it usually does. The 
 
 I start by creating an invoice controller and a correlated view, where I can design an invoice in HTML.
 
-```c#
+```csharp
 public class InvoiceController : Controller
 {
     public IActionResult Index()
@@ -54,7 +54,7 @@ An easy way to interact with the wkhtmltopdf command-line tool is to use the [Ro
 
 First, we need to tell Rotativa where to find the wkhtmltopdf tool. Add the following line to `Startup.cs`
 
-```c#
+```csharp
 public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 {
     ...
@@ -65,7 +65,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 Next, we create a new action result in our InvoiceController that will return the PDF file. This new action result 'IndexAsPDF' will reuse the View we already had created. 
 
-```c#
+```csharp
 public class InvoiceController : Controller
 {
     ...

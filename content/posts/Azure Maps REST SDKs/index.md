@@ -28,7 +28,7 @@ dotnet add package Azure.Maps.Search --prerelease
 
 The following code snippet demonstrates how, in a simple console application, to import the `Azure.Maps.Search` package and perform a fuzzy search on “Starbucks” near Seattle. In the `Program.cs` file add the following code:
 
-```cscharp
+```csharp
 using Azure; 
 using Azure.Core.GeoJson; 
 using Azure.Maps.Search; 
