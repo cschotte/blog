@@ -75,8 +75,3 @@ jobs:
             --profile-name ${{ secrets.AZURE_CDN_PROFILE_NAME }} \
             --name ${{ secrets.AZURE_CDN_ENDPOINT_NAME }} \
             --content-paths "/*"
-
-    - name: Deployment status
-      run: |
-        echo "✅ Deployment completed successfully!"
-        echo "🌐 Website URL: https://${{ secrets.AZURE_STORAGE_ACCOUNT }}.z6.web.core.windows.net/"

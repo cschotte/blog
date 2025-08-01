@@ -1,0 +1,56 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Hugo: Build and Serve",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "runtimeExecutable": "hugo",
+            "runtimeArgs": [
+                "server",
+                "--buildDrafts",
+                "--buildFuture",
+                "--disableFastRender",
+                "--ignoreCache",
+                "--watch"
+            ],
+            "env": {
+                "HUGO_ENVIRONMENT": "development"
+            },
+            "serverReadyAction": {
+                "pattern": "Web Server is available at (https?://[^\\s]+)",
+                "uriFormat": "%s",
+                "action": "openExternally"
+            },
+            "presentation": {
+                "hidden": false,
+                "group": "Hugo",
+                "order": 1
+            }
+        },
+        {
+            "name": "Hugo: Build Production",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "runtimeExecutable": "hugo",
+            "runtimeArgs": [
+                "--minify",
+                "--gc",
+                "--environment",
+                "production"
+            ],
+            "env": {
+                "HUGO_ENVIRONMENT": "production"
+            },
+            "presentation": {
+                "hidden": false,
+                "group": "Hugo",
+                "order": 2
+            }
+        }
+    ]
+}

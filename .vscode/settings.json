@@ -1,0 +1,25 @@
+{
+    "files.associations": {
+        "*.html": "html",
+        "*.md": "markdown",
+        "*.toml": "toml",
+        "*.yaml": "yaml",
+        "*.yml": "yaml"
+    },
+    "files.exclude": {
+        "**/public": true,
+        "**/resources": true,
+        "**/.hugo_build.lock": true
+    },
+    "search.exclude": {
+        "**/public": true,
+        "**/resources": true
+    },
+    "hugo.server": {
+        "renderToDisk": false,
+        "buildDrafts": true,
+        "buildFuture": true
+    },
+    "markdown.preview.breaks": true,
+    "markdown.preview.linkify": true
+}
