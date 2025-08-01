@@ -44,7 +44,8 @@ class Theme {
 
     initRaw() {
         Util.forEach(document.querySelectorAll('[data-raw]'), $raw => {
-            $raw.innerHTML = this.data[$raw.id];
+            // Use textContent instead of innerHTML to prevent XSS
+            $raw.textContent = this.data[$raw.id];
         });
     }
 
@@ -463,11 +464,20 @@ class Theme {
         this._mermaidOnSwitchTheme = this._mermaidOnSwitchTheme || (() => {
             const $mermaidElements = document.getElementsByClassName('mermaid');
             if ($mermaidElements.length) {
-                mermaid.initialize({startOnLoad: false, theme: this.isDark ? 'dark' : 'neutral', securityLevel: 'loose'});
+                mermaid.initialize({startOnLoad: false, theme: this.isDark ? 'dark' : 'neutral', securityLevel: 'strict'});
                 Util.forEach($mermaidElements, $mermaid => {
                     mermaid.render('mermaid-svg-' + $mermaid.id, this.data[$mermaid.id])
                         .then(({ svg }) => {
-                            $mermaid.innerHTML = svg;
+                            // Clear existing content first
+                            $mermaid.textContent = '';
+                            // Create a temporary container to safely parse the SVG
+                            const tempDiv = document.createElement('div');
+                            tempDiv.innerHTML = svg;
+                            const svgElement = tempDiv.querySelector('svg');
+                            if (svgElement) {
+                                // Only append the SVG element if it exists and is valid
+                                $mermaid.appendChild(svgElement);
+                            }
                         });
                 });
             }
