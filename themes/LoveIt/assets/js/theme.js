@@ -78,7 +78,7 @@ var Theme = /*#__PURE__*/function () {
     value: function initRaw() {
       var _this = this;
       Util.forEach(document.querySelectorAll('[data-raw]'), function ($raw) {
-        $raw.innerHTML = _this.data[$raw.id];
+        $raw.textContent = _this.data[$raw.id];
       });
     }
   }, {
@@ -556,12 +556,21 @@ var Theme = /*#__PURE__*/function () {
           mermaid.initialize({
             startOnLoad: false,
             theme: _this6.isDark ? 'dark' : 'neutral',
-            securityLevel: 'loose'
+            securityLevel: 'strict'
           });
           Util.forEach($mermaidElements, function ($mermaid) {
             mermaid.render('mermaid-svg-' + $mermaid.id, _this6.data[$mermaid.id]).then(function (_ref9) {
               var svg = _ref9.svg;
-              $mermaid.innerHTML = svg;
+              // Clear existing content first
+$mermaid.textContent = '';
+// Create a temporary container to safely parse the SVG
+const tempDiv = document.createElement('div');
+tempDiv.innerHTML = svg;
+const svgElement = tempDiv.querySelector('svg');
+if (svgElement) {
+    // Only append the SVG element if it exists and is valid
+    $mermaid.appendChild(svgElement);
+}
             });
           });
         }
