@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 Working from home, I use [Microsoft Teams](https://teams.microsoft.com/) for online meetings. Some of my colleges and customers have an unreliable Internet connection at their homes. Most of the time, the problems are with their Wi-Fi what results in audio or video dropouts during online meetings. In this blog post, I outline my home and office network and Internet setup for a fast and rock-solid connection.

@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 Modern buildings are well isolated, which isn't good if you are making a mobile phone call. Outside your house or office, the cellular signal is perfect, but inside it is another story, dropped calls, low-quality sound, etc. Even when your carrier has high coverage, there are situations inside buildings that prevent you from making a call.

@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 There are many libraries and services to generate PDF files for asp.net core web applications. There are excellent commercial solutions out there, but if you need a free solution, it gets harder. Some libraries are hard to use, or others are limited in functionality. I need a free, easy to use, and quick solution to generate PDF files on an [Azure Web App](https://azure.microsoft.com/en-us/services/app-service/web/).

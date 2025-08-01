@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 I learned all my basic computer and programming skills on Commodore computers, like the **C64**, **Amiga 500**, and **1200**. Twenty-eight years ago, I upgraded my **Amiga 1200** with a faster processor ([Motorola 68030](https://en.wikipedia.org/wiki/Motorola_68030)) and extra memory (4 megabytes). I also added an FPU (Motorola 68882), a realtime clock, and an internal hard disk (120 megabytes), which is still working correctly in 2020 (wow). At that time, this was a fast Amiga.

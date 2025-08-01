@@ -11,7 +11,7 @@ resources:
   src: "featured-image.png"
 
 draft: false
-lightgallery: true
+
 ---
 
 Most websites don’t need a dynamically generated page for every visitor; it is slow, expensive, and requires continuous updates to be secure. A static site is fast and reliable. I hear you thinking; this is old school, most websites are interactive and are using a CMS in some kind to manage their content.

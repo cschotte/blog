@@ -3,7 +3,7 @@ title: "About me"
 date: 2024-04-19
 draft: false
 
-lightgallery: true
+
 comment: false
 ---
 

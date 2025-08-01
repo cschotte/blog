@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 In today’s AI era, you’ve likely interacted with Microsoft Copilot, ChatGPT, or Claude.ai, tools powered by advanced **Large Language Models** (LLMs). These models excel at understanding and generating human-like text based on vast amounts of training data. However, while LLMs are impressive at reasoning and answering general questions, they fall short when it comes to performing real-world tasks or retrieving live, domain-specific information.

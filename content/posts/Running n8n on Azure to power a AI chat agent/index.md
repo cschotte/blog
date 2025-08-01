@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 ## A lightweight Azure backend for my AI agent
@@ -235,6 +235,10 @@ Write-Host "Database: $POSTGRES_DB" -ForegroundColor Yellow
 Write-Host "User: $POSTGRES_USER" -ForegroundColor Yellow
 Write-Host "Password: $POSTGRES_PASSWORD" -ForegroundColor Yellow
 ```
+
+In the Azure Portal it looks like this:
+
+![Infra n8n](infra.png)
 
 ## Connecting my AI chat agent to n8n
 

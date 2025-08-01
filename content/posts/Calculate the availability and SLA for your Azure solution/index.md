@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 Microsoft provides for most Azure services an [Service Level Agreements](https://azure.microsoft.com/en-us/support/legal/sla/) (SLA), where you can find the availability for that services. The availability has a rage from **99.9%** to **100%** or no range at all (for some free services).

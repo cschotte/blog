@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 [Azure Maps Weather Services](https://docs.microsoft.com/rest/api/maps/weather), which became generally available in **April 2021**, has recently expanded its offerings with three new services: **Historical Weather**, **Air Quality**, and **Tropical Storms**. These additions empower developers and companies to enhance their capabilities when it comes to weather data.

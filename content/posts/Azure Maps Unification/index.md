@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
  
 We are thrilled to announce the unification of **Bing Maps for Enterprise** (BME) with **Azure Maps**, marking a significant milestone in our geospatial services at Microsoft. [Azure Maps](https://azuremaps.com/) now boasts a robust stack of geospatial offerings, leveraging the powerful capabilities of Microsoft Maps, which also drives [Bing Maps](https://bingmaps.com/) (our consumer maps experience). Over the past year, our team has dedicated significant time and effort to combine the strengths of Bing Maps for Enterprise into Azure Maps, enhancing our global quality and coverage.

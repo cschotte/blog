@@ -11,7 +11,7 @@ resources:
   src: "featured-image.png"
 
 draft: false
-lightgallery: true
+
 ---
 
 When connecting to the **UniFi Cloud Key Controller**, you need to know the IP-address and port number (default 8443). In my situation, the IP-address is 192.168.1.64

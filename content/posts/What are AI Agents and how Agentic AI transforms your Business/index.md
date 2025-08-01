@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 AI is no longer an abstract promise of the future. It’s here, embedded into enterprise workflows, products, and decision-making processes. From Microsoft Copilot to ChatGPT and domain-specific assistants, businesses are adopting AI at an unprecedented pace. But too often, "AI" is used as a catch-all term for a wide range of technologies. To lead the next transformation wave, organizations must move beyond generic AI adoption and toward *agentic AI*, a more autonomous, goal-driven form of AI that’s ready to take on real work.

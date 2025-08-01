@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 In my last blog post, I talked about [my Home and Office Network Setup](/my-home-and-office-network-setup/) and explained that the default modem/router/Wi-Fi device you get from your ISP is not the best thing to have in your network. In this blog post, I explain what I did to directly connect my KPN fiber connection to my Ubiquiti Security Gateway (USG).

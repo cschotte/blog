@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 In many enterprise organizations, there are strict processes for privacy, access, and handling of personally identifiable information (PII). Azure Maps is a global Azure service, which means it is available worldwide (except for China and South Korea), but it also needs to store metadata and logs somewhere. In addition, Azure Maps Creator is an addon for private indoor maps that also holds map data. So, where do we keep this data?

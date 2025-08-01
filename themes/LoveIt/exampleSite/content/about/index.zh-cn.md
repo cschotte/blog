@@ -5,7 +5,7 @@ draft: false
 description: "关于 LoveIt"
 images: ["/Apple-Devices-Preview.png"]
 
-lightgallery: true
+
 
 math:
   enable: true

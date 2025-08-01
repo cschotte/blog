@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 Enhancing your **Azure Maps** with a custom **WebGL layer** opens up a realm of possibilities for rendering dynamic 2D and 3D data. While Azure Maps provides a robust set of built-in features, there are times when you may require a more tailored solution. This is where the power of a custom WebGL layer shines.

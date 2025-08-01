@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 Imagine you are a store owner and would like to target customers that live within a 15-minute drive from your store with advertising for your weekly specials. You could draw a circle on a map, guessing that is about 15 minutes away, but it will not truly represent the time it will take for customers to get to your store. For example, a customer living near a major transit route can live further away from the store than a customer living in a less well-served part of the city. To meet this need, an **isochrone** is a polygon (an area on a map) of expected travel time. It represents the locations that will take the specified time, or less, it will take to get to a specific point (your store, in this case). Estimating an isochrone correctly, including all the variables like traffic, road, and vehicle conditions, is very hard to do by yourself!

@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 We are thrilled to announce the addition of the **Heat Map layer** option to the **Azure Maps Visual** in **Power BI**. This powerful feature allows you to visualize data density using various colors, highlighting data “hot spots” on a map. Whether you’re analyzing customer behavior, regional performance, or statistical trends, the heat map provides valuable insights.

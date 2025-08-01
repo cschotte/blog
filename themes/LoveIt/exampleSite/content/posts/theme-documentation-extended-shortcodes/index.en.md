@@ -17,7 +17,7 @@ resources:
 tags: ["shortcodes"]
 categories: ["documentation"]
 
-lightgallery: true
+
 
 math:
   enable: true

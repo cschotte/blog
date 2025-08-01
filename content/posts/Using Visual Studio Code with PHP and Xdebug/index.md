@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 This post describes how to set up, run, and debug **PHP** code with **Visual Studio Code** running on Windows.

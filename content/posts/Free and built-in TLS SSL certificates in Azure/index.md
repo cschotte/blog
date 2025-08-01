@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 Today, when a website does not have an **SSL/TSL certificate**, web browsers give you a warning `not secure`. This warning not only scares people but also gives you a disadvantage in search engine ranking. On Azure, web sites have a default https-enabled URL, like `https://sitename.azurewebsites.net/`, but when you have a vanity domain configured, you are missing this secure connection. Luckily there are some free SSL/TLS certificate options to explore. 

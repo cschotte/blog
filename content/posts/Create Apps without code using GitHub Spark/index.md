@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 Imagine this: you work at a company, and you have a clear idea for a web app, something like a custom expense tracking tool that fits exactly the way your team works. You’ve tried off-the-shelf products, but they always miss the mark. The alternative, building your own application, is usually time-consuming, expensive, and requires getting developers involved early on. But what if you could prototype your idea, adjust the UI, change the data model, and publish it, all without writing a single line of code?

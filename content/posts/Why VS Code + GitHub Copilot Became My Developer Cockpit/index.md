@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 The first time I connected Visual Studio Code with GitHub Copilot, I expected party tricks. I got something closer to a new way of working. It wasn’t that code appeared by magic. It was that the little frictions, like the boilerplate, the glue code, the tests I knew I should write but kept postponing, stopped dominating my day. VS Code had already been my editor of choice for its ergonomics and extensibility; Copilot turned that editor into a cockpit where intention became motion. This post is my field report: what I actually run, how I prompt, where it saves time, and where I still slow down and think.

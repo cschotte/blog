@@ -15,7 +15,7 @@ resources:
 tags: ["content", "Markdown"]
 categories: ["documentation"]
 
-lightgallery: true
+
 
 toc:
   auto: false
@@ -90,7 +90,7 @@ featuredImagePreview: ""
 hiddenFromHomePage: false
 hiddenFromSearch: false
 twemoji: false
-lightgallery: true
+
 ruby: true
 fraction: true
 fontawesome: true

@@ -16,7 +16,7 @@ tags: ["emoji"]
 categories: ["Markdown"]
 
 twemoji: false
-lightgallery: true
+
 ---
 
 Emoji 可以通过多种方式在 Hugo 项目中启用.

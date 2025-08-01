@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 The **Azure Maps Power BI Visual** provides a rich set of data visualizations to enhance your data with location context. In the March release of Power BI, the Azure Maps visual introduces two new tools: **Geocoding capabilities** and a **Pie Chart layer**.

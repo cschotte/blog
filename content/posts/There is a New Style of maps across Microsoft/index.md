@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 We are excited to announce that we have developed a **new and improved style** for our maps across Microsoft. [Azure Maps](https://azuremaps.com/) now utilizes the same **vector tiles** and **satellite imagery** directly as our other Microsoft mapping platforms, including our [Bing Maps](https://bingmaps.com/) consumer site and more. This updated style introduces a fresh **cartographic identity** across Microsoft, focusing on enhancing usability, information clarity, and aesthetic appeal.

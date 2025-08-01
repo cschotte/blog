@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 While [Azure Maps](https://azuremaps.com/) is known for great use cases around visualizing and interacting with a map and location data, you probably also need secure and reliable storage for that data that offers the flexibility to query your (location) data. In this blog post, we explore the different options for storing and querying geospatial data in Azure, including Azure Cosmos DB, Azure SQL Database, and Azure Blob Storage. Storing and querying geospatial data in Azure is a powerful and flexible way to manage and analyze large sets of geographic information.

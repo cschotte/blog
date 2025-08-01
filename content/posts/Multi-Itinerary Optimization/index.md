@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 The logistics industry constantly seeks efficiency in routing vehicles to deliver goods. This is where the **Vehicle Routing Problem** (VRP) and **Pickup and Delivery Problems** (PDP) come into the picture as both are sophisticated extensions of the classic Traveling Salesperson Problem (TSP). The TSP poses a simple yet challenging question: *"What is the most efficient route that visits each destination once and returns to the starting point?"* This problem is not just academic; it has practical applications in logistics, where optimizing routes can lead to substantial savings in time and costs.

@@ -11,7 +11,7 @@ resources:
   src: "featured-image.png"
 
 draft: false
-lightgallery: true
+
 ---
 
 ## Introduction

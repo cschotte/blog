@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 Have you ever wondered what it's like to be a **Program Manager** (PM) at [Microsoft](https://www.microsoft.com/)? As someone who often fields this question, I'd like to offer some insights into the fascinating world of **product development** and **customer-centric decision-making** that defines the role of a PM at one of the world's leading tech companies.

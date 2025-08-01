@@ -16,7 +16,7 @@ tags: ["emoji"]
 categories: ["Markdown"]
 
 twemoji: false
-lightgallery: true
+
 ---
 
 Emoji can be enabled in a Hugo project in a number of ways.

@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 Azure Maps is more than just a Map on your website. It is a complete enterprise solution for location-aware solutions. For example, you can do (reverse) geocoding of customer addresses and use an isochrone to find out withs customers a close to your store or get weather conditions for all your past sales data to know withs products sell best by rain or hot weather or get the correct time-zone for your customer by translating an IP-address to a location and get the time-zone information, or you need to know what the travel time is between two or more locations. So many scenarios and use cases you can make location aware with Azure Maps.

@@ -11,7 +11,7 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-lightgallery: true
+
 ---
 
 In the evolving landscape of remote work and [sustainability](https://www.microsoft.com/en-us/sustainability/approach), the optimization of physical spaces has become increasingly important. Microsoft is at the forefront of this transformation, utilizing [Azure Maps Creator](https://aka.ms/azuremapscreator) to enhance the management of its diverse global workspaces. This product is essential for facilities managers, providing dynamic, interactive indoor mapping solutions that allow for real-time assessment of space and resources, quick response to critical issues, and seamless adaptation to the needs of a hybrid workforce—all while minimizing environmental impact.
