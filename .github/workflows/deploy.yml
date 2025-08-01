@@ -77,9 +77,8 @@ jobs:
             --pattern "*.html" \
             --content-cache-control "public, max-age=3600"
 
-    - name: Purge Azure CDN (if using CDN)
+    - name: Purge Azure CDN
       uses: azure/cli@v2
-      if: ${{ secrets.AZURE_CDN_PROFILE_NAME && secrets.AZURE_CDN_ENDPOINT_NAME }}
       with:
         inlineScript: |
           az cdn endpoint purge \
