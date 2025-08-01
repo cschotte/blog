@@ -3,7 +3,8 @@ name: Build and Deploy Hugo site to Azure Blob Storage
 on:
   push:
     branches:
-      - main
+      - master  # Changed from main to master to match your repo
+  workflow_dispatch:  # Allow manual triggers
 
 jobs:
   build-and-deploy:
@@ -15,14 +16,41 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Fetch full history for Hugo's .GitInfo
 
-    - name: Install Hugo CLI
-      run: |
-        wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: ${{ env.HUGO_VERSION }}
+        extended: true
+
+    - name: Cache Hugo modules
+      uses: actions/cache@v4
+      with:
+        path: /tmp/hugo_cache
+        key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+        restore-keys: |
+          ${{ runner.os }}-hugomod-
 
     - name: Build the website
       run: |
-        hugo --minify
+        hugo --minify --gc --environment production
+      env:
+        HUGO_CACHEDIR: /tmp/hugo_cache
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: hugo-public
+        path: public/
+        retention-days: 7
+
+    - name: Login to Azure
+      uses: azure/login@v2
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Upload to Azure Blob Storage
       uses: azure/cli@v2
@@ -30,7 +58,37 @@ jobs:
         inlineScript: |
           az storage blob upload-batch \
             --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
-            --account-key ${{ secrets.AZURE_STORAGE_KEY }} \
+            --auth-mode login \
             --destination \$web \
             --source ./public \
-            --overwrite
+            --overwrite \
+            --pattern "*" \
+            --content-cache-control "public, max-age=31536000" \
+            --verbose
+
+    - name: Set cache control for HTML files
+      uses: azure/cli@v2
+      with:
+        inlineScript: |
+          az storage blob update-batch \
+            --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
+            --auth-mode login \
+            --destination \$web \
+            --pattern "*.html" \
+            --content-cache-control "public, max-age=3600"
+
+    - name: Purge Azure CDN (if using CDN)
+      uses: azure/cli@v2
+      if: ${{ secrets.AZURE_CDN_PROFILE_NAME && secrets.AZURE_CDN_ENDPOINT_NAME }}
+      with:
+        inlineScript: |
+          az cdn endpoint purge \
+            --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
+            --profile-name ${{ secrets.AZURE_CDN_PROFILE_NAME }} \
+            --name ${{ secrets.AZURE_CDN_ENDPOINT_NAME }} \
+            --content-paths "/*"
+
+    - name: Deployment status
+      run: |
+        echo "✅ Deployment completed successfully!"
+        echo "🌐 Website URL: https://${{ secrets.AZURE_STORAGE_ACCOUNT }}.z6.web.core.windows.net/"
