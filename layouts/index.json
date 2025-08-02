@@ -1,17 +1,5 @@
 {{/* Homepage JSON output for Azure AI Search vector store */}}
-{
-  "id": {{ .RelPermalink | jsonify }},
-  "title": {{ .Site.Title | jsonify }},
-  "description": {{ .Site.Params.description | default .Description | jsonify }},
-  "content": {{ .Content | plainify | jsonify }},
-  "url": {{ .Permalink | jsonify }},
-  "relative_url": {{ .RelPermalink | jsonify }},
-  "date": {{ .Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-  "type": "homepage",
-  "language": {{ .Site.Language.Lang | jsonify }},
-  "kind": {{ .Kind | jsonify }},
-  "searchable_content": {{ printf "%s %s" .Site.Title (.Content | plainify) | jsonify }},
-  "all_pages": [
+[
     {{- $pages := where .Site.RegularPages "Draft" "!=" true -}}
     {{- range $index, $page := $pages -}}
       {{- if $index -}},{{- end }}
@@ -38,13 +26,4 @@
         "summary": {{ $page.Summary | plainify | jsonify }}
       }
     {{- end }}
-  ],
-  "pageCount": {{ len $pages }},
-  "site": {
-    "title": {{ .Site.Title | jsonify }},
-    "baseURL": {{ .Site.BaseURL | jsonify }},
-    "language": {{ .Site.Language.Lang | jsonify }}
-  },
-  "@timestamp": {{ now.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-  "@type": "homepage"
-}
+]
