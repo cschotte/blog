@@ -11,7 +11,6 @@ resources:
   src: "featured-image.jpg"
 
 draft: false
-
 ---
 
 Saving the planet a little bit while trying out new technology is fantastic, and in the end, it will save me also some money. When building my house last year, I invested in solar energy. The sun delivers me free electricity during the day, especially around noon, but I use it mainly at the end of the day and the beginning of the evening. Most of my solar energy goes to the public energy grid, and I need to repurchase it in the evening. This buying back makes no send to me. I like to use my own 'free' solar energy, so I need a way to store it. After some research, I selected the [Tesla Powerwall 2](https://www.tesla.com/powerwall) for my energy storage, not only for the best capacity, but my energy company ([Eneco](https://www.eneco.nl)) had a good deal (2.500,- euro cashback). In the Netherlands, I can also get the tax back I paid for the solar and Tesla Powerwall 2 energy installation, an extra savings of 21%. The investment is still high, but after 5 or 6 years, it should be making money.
