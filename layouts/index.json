@@ -1,0 +1,50 @@
+{{/* Homepage JSON output for Azure AI Search vector store */}}
+{
+  "id": {{ .RelPermalink | jsonify }},
+  "title": {{ .Site.Title | jsonify }},
+  "description": {{ .Site.Params.description | default .Description | jsonify }},
+  "content": {{ .Content | plainify | jsonify }},
+  "url": {{ .Permalink | jsonify }},
+  "relative_url": {{ .RelPermalink | jsonify }},
+  "date": {{ .Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "type": "homepage",
+  "language": {{ .Site.Language.Lang | jsonify }},
+  "kind": {{ .Kind | jsonify }},
+  "searchable_content": {{ printf "%s %s" .Site.Title (.Content | plainify) | jsonify }},
+  "all_pages": [
+    {{- $pages := where .Site.RegularPages "Draft" "!=" true -}}
+    {{- range $index, $page := $pages -}}
+      {{- if $index -}},{{- end }}
+      {
+        "id": {{ $page.RelPermalink | jsonify }},
+        "title": {{ $page.Title | jsonify }},
+        "description": {{ $page.Description | default $page.Summary | jsonify }},
+        "content": {{ $page.Content | plainify | jsonify }},
+        "url": {{ $page.Permalink | jsonify }},
+        "relative_url": {{ $page.RelPermalink | jsonify }},
+        "date": {{ $page.Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+        "publishDate": {{ $page.PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+        "lastmod": {{ $page.Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+        "categories": {{ $page.Params.categories | default slice | jsonify }},
+        "tags": {{ $page.Params.tags | default slice | jsonify }},
+        "featured": {{ $page.Params.featured | default false }},
+        "draft": {{ $page.Draft }},
+        "type": {{ $page.Type | jsonify }},
+        "section": {{ $page.Section | jsonify }},
+        "wordCount": {{ $page.WordCount }},
+        "readingTime": {{ $page.ReadingTime }},
+        "keywords": {{ delimit (union ($page.Params.tags | default slice) ($page.Params.categories | default slice)) "," | jsonify }},
+        "searchable_content": {{ printf "%s %s %s %s" $page.Title $page.Description ($page.Content | plainify) (delimit ($page.Params.tags | default slice) " ") | jsonify }},
+        "summary": {{ $page.Summary | plainify | jsonify }}
+      }
+    {{- end }}
+  ],
+  "pageCount": {{ len $pages }},
+  "site": {
+    "title": {{ .Site.Title | jsonify }},
+    "baseURL": {{ .Site.BaseURL | jsonify }},
+    "language": {{ .Site.Language.Lang | jsonify }}
+  },
+  "@timestamp": {{ now.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "@type": "homepage"
+}
