@@ -1,5 +1,5 @@
 ---
-title: "Resume Clemens Schotte "
+title: "Resume Clemens Schotte"
 date: 2025-08-02
 draft: false
 
@@ -23,6 +23,7 @@ For insights on AI, AI Agents, Agentic AI, developer tools, and programming lang
 ### Microsoft - Senior Program Manager - Azure Maps
 
 September 2021 – current (Redmond, Washington, United States (Remote from the Netherlands))
+
 As Senior Program Manager for Azure Maps, I provided strategic direction for the product and its underlying geospatial services platform within Microsoft Azure. I translated customer needs, market trends, and emerging technologies into concrete product enhancements and new capabilities.
 
 Using customer feedback, market analysis, and competitive insights, I defined clear priorities that balanced short-term user needs with long-term business objectives. My decisions were consistently informed by technical feasibility, customer impact, and commercial value to ensure optimal return on investment (ROI).
