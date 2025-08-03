@@ -5,6 +5,7 @@
       {{- if $index -}},{{- end }}
       {
         "id": {{ $page.RelPermalink | jsonify }},
+        "id_hash": {{ $page.RelPermalink | md5 | jsonify }},
         "title": {{ $page.Title | jsonify }},
         "description": {{ $page.Description | default $page.Summary | jsonify }},
         "content": {{ $page.Content | plainify | jsonify }},
