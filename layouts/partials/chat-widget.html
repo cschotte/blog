@@ -1,0 +1,26 @@
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'https://api.clemens.ms/webhook/070147ce-4deb-41d6-9648-5e61532d80c4/chat',
+
+        i18n: {
+            en: {
+                title: 'Hello! I\'m ClemensGPT',
+                subtitle: '',
+                footer: '',
+                getStarted: 'New Conversation',
+                inputPlaceholder: 'Type your question..',
+            },
+        },
+
+        // Initial messages
+        initialMessages: [
+            'Hello! I\'m ClemensGPT',
+            'I\'m your AI assistant for clemens.ms. I can help you explore Clemens\' blog posts, learn about his work with Azure, AI agents, and other technologies, or answer technical questions. What would you like to know?'
+        ],
+
+    });
+</script>
