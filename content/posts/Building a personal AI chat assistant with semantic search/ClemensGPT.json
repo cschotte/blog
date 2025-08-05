@@ -1,0 +1,593 @@
+{
+  "name": "ClemensGPT",
+  "nodes": [
+    {
+      "parameters": {
+        "public": true,
+        "mode": "webhook",
+        "options": {
+          "allowedOrigins": "https://clemens.ms"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -160,
+        352
+      ],
+      "id": "89cd4021-fe1f-4437-8ef6-ffe3b662d794",
+      "name": "When chat message received",
+      "webhookId": "070147ce-4deb-41d6-9648-5e61532d80c4"
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o",
+        "options": {
+          "maxTokens": 1000
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatAzureOpenAi",
+      "typeVersion": 1,
+      "position": [
+        -16,
+        576
+      ],
+      "id": "d95398db-b5f0-4d28-9b65-601b1a9dfce5",
+      "name": "Azure OpenAI Chat Model",
+      "credentials": {
+        "azureOpenAiApi": {
+          "id": "nth2SzJ0CDUbdfjw",
+          "name": "Azure Open AI account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        160,
+        576
+      ],
+      "id": "34b15146-64f9-46e9-98ad-9aa96f436176",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "=# System Instructions\n\nYou are ClemensGPT, a helpful, trustworthy, and knowledgeable AI assistant for the personal website and blog of Clemens Schotte (https://clemens.ms).\n\n# Purpose\n\nHelp visitors to:\n•\tUnderstand who Clemens Schotte is and what he does.\n•\tExplore blog posts; summarize, explain, or compare their contents.\n•\tDive deeper into technologies he uses (e.g., Azure, AI agents, n8n, GitHub Copilot, MCP, Azure Maps).\n•\tGet clarity on ongoing and past projects (including ClemensGPT) and prior work (e.g., Microsoft).\n•\tAnswer technical questions and, when needed, use tools to retrieve or synthesize current information.\n\n# What You Know / Preferred Sources\n\nYou are trained with or may access:\n•\tPublic content from https://clemens.ms (blog posts, project pages, summaries), use the search tool\n•\tClemens Schotte’s public bio and LinkedIn profile, use the search tool.\n•\tTopics frequently covered by Clemens:\n  -\tAzure (Container Apps, Functions, OpenAI, Networking)\n  - AI Agents, Semantic Kernel, n8n workflows\n  - Microsoft Azure Maps (routing, geospatial services)\n  - GitHub tools (Copilot, DevOps, Spark)\n  - MCP (Model Context Protocol) servers and tool integrations\n  - Secure cloud architectures for EU/enterprise customers\n•\tAny additional sources/tools wired into this agent.\n\n# sites\n* linkedin (https://www.linkedin.com/in/cschotte/)\n* GitHub (https://github.com/cschotte)\n\n# Microsoft\n\nClemens works at Micosoft as Senior Program Manager for the product Azure Maps. He still works there today.\n\n# NavaTron\n\nDo not mention anything about NavaTron (navatron.com)\n\n# Guardrail\n\nNever invent facts about Clemens. If a detail is missing or uncertain, ask a concise clarifying question or say you don’t have that information.\n\n# Personality & Tone\n•\tFriendly, professional, concise.\n•\tInsightful but not verbose; focus on the user’s goal.\n•\tSlightly conversational or humorous when the user is casual.\n•\tCite/point to sources (URLs or post titles) when you summarize or claim something specific.\n\n# Answering Guidelines\n•\tAlways begin by restating the user’s goal in one short sentence to confirm understanding.\n•\tIf a tool is likely to improve accuracy or freshness, use it first, then answer.\n•\tFor summaries: provide a 2–3 sentence overview, then optional bullets (Key points, Tech stack, Why it matters).\n•\tFor how-to/architecture answers: give a short outline first, then numbered steps or a minimal example.\n•\tWhen users ask about time (“latest”, “today”), include the exact date from the tool result and clarify the timezone (Europe/Amsterdam).\n•\tPrefer content from https://clemens.ms. If referencing external sources, state they are external and explain why they’re relevant.\n•\tIf information is missing, ask a single, precise follow-up question.\n•\tKeep replies scannable: short paragraphs, bullets, code blocks only when needed.\n\n# Safety & Accuracy\n•\tDo not disclose private or unlinked information.\n•\tDo not guess about Clemens’s employment, availability, or contacts; direct users to contact him direcly by e-mail: clemens@navatron.com.\n•\tIf a claim depends on a specific post, include the post title and link.\n\n# Tools:\n•\tAlways use the Azure AI Search Index tool to search for answers.\n•\tUse memory to maintain conversation context across turns.\n\n# Useful Dynamic Inserts\n•\tNow (ISO): {{ new Date().toISOString() }}\n•\tToday (YYYY-MM-DD): {{ new Date().toISOString().slice(0,10) }}\n•\tSite: https://clemens.ms\n•\tOwner: Clemens Schotte\n\n# Examples of Queries You Handle Well\n•\t“Who is Clemens Schotte and what does he do?”\n•\t“Summarize his latest blog post.” → Use list_latest(1) then get_post(url)\n•\t“Explain how he runs n8n on Azure.”\n•\t“What is the Azure Maps Store Locator project and why does it matter?”\n•\t“How can I use Azure Maps securely like he describes?”\n•\t“What is an MCP server, and how does he use it with AI agents?”\n\n# Output Format\n•\tDefault to the user’s language if detectable; otherwise use English.\n•\tUse clean Markdown with headings and bullets.\n•\tInclude links for any posts or docs you reference.\n•\tKeep most answers under 8–12 sentences unless the user asks for a deep dive.\n\n# When You Don’t Know\n\nIf you cannot find the answer in the available tools/sources, say so clearly, offer to look it up (if tools permit), or ask one targeted question to proceed."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.1,
+      "position": [
+        32,
+        352
+      ],
+      "id": "06b7cc5a-fd0c-4282-bb87-8590adb7ad93",
+      "name": "Clemens AI Agent",
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        -48
+      ],
+      "id": "9aca1288-d817-4e1d-bb3e-04367788eb92",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "url": "https://clemens.ms/index.json",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        64,
+        -48
+      ],
+      "id": "5ea7a720-e8db-4b0b-b624-bb5b4cd3458e",
+      "name": "Get All Pages"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        816,
+        -48
+      ],
+      "id": "1c3e7d1c-4b6d-4823-8ca3-85e008949034",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a0d5ef86-0c97-4179-8c51-a07480ccba01",
+              "name": "id",
+              "value": "={{ $json.id_hash }}",
+              "type": "string"
+            },
+            {
+              "id": "539e240a-f88f-4d6c-919c-4f7c1346d88c",
+              "name": "title",
+              "value": "={{ $json.title }}",
+              "type": "string"
+            },
+            {
+              "id": "5a5da48c-915b-4c2a-8453-e9b17aa753b1",
+              "name": "content",
+              "value": "={{ $json.content }}",
+              "type": "string"
+            },
+            {
+              "id": "9ad64c45-9636-42c8-b415-eb14dc271506",
+              "name": "url",
+              "value": "={{ $json.url }}",
+              "type": "string"
+            },
+            {
+              "id": "046d3f46-32f3-475a-8fa2-f116562dc5ef",
+              "name": "keywords",
+              "value": "={{ $json.keywords }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        512,
+        48
+      ],
+      "id": "edfce422-ac79-407a-b59c-4ac569db4007",
+      "name": "Prep Fields"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a78b6c8f-a41d-451c-9d0d-30a1a8e19081",
+              "name": "data[0].embedding",
+              "value": "={{ $json.data[0].embedding }}",
+              "type": "array"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        512,
+        -144
+      ],
+      "id": "7736b5a4-74a3-4e6f-9620-c85b2f8b05ba",
+      "name": "Embeddings"
+    },
+    {
+      "parameters": {
+        "content": "## Upload my Blog content to Azure AI Search Index",
+        "height": 416,
+        "width": 1488
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -224,
+        -208
+      ],
+      "typeVersion": 1,
+      "id": "91438216-a3a1-4749-badd-61cef72286e2",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## ClemensGPT",
+        "height": 544,
+        "width": 752
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -224,
+        240
+      ],
+      "typeVersion": 1,
+      "id": "a66c46b3-ad84-4920-9566-7afd40073293",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://cleme-mdunqsnd-eastus2.cognitiveservices.azure.com/openai/deployments/text-embedding-3-small/embeddings",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "api-version",
+              "value": "2023-05-15"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "input",
+              "value": "={{ $json.content }}"
+            },
+            {
+              "name": "model",
+              "value": "text-embedding-3-small"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        288,
+        -144
+      ],
+      "id": "2ca31bda-d050-4ceb-aee6-d90b90c09368",
+      "name": "Generate embeddings",
+      "credentials": {
+        "azureOpenAiApi": {
+          "id": "nth2SzJ0CDUbdfjw",
+          "name": "Azure Open AI account"
+        },
+        "httpHeaderAuth": {
+          "id": "xLj2uaobS6RAJWNe",
+          "name": "text-embedding-3-small"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://clemens.search.windows.net/indexes/clemens/docs/index",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "api-version",
+              "value": "2025-05-01-preview"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"value\": [\n    {\n     \"@search.action\": \"mergeOrUpload\",\n     \"id\": {{ JSON.stringify($json.id) }},\n     \"title\": {{ JSON.stringify($json.title) }},\n     \"content\": {{ JSON.stringify($json.content) }},\n     \"url\": {{ JSON.stringify($json.url) }},\n     \"keywords\": {{ JSON.stringify($json.keywords) }},\n     \"vector\": [\n        {{ $json.data[0].embedding }}\n      ]\n   }\n  ]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1024,
+        -48
+      ],
+      "id": "18eac442-432b-48d2-81d0-494e09d20b21",
+      "name": "Upload embeddings to Vector Store",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "SJNE4kVouUb2i5MX",
+          "name": "clemens Search service"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "4dbf40a5-423c-4e4d-9ee9-b3e69141c5ed",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        608,
+        336
+      ],
+      "id": "f97e07e9-a07c-4f8b-b6b7-b75f9baafcca",
+      "name": "Webhook",
+      "webhookId": "4dbf40a5-423c-4e4d-9ee9-b3e69141c5ed"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Query vector store",
+        "method": "POST",
+        "url": "https://api.clemens.ms/webhook/4dbf40a5-423c-4e4d-9ee9-b3e69141c5ed",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "content",
+              "value": "={{ $json.chatInput }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        352,
+        576
+      ],
+      "id": "cc44968c-3a38-4354-af1c-3a5eeaaea45f",
+      "name": "Invoke Query Vector Store Webhook"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://cleme-mdunqsnd-eastus2.cognitiveservices.azure.com/openai/deployments/text-embedding-3-small/embeddings",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "api-version",
+              "value": "2023-05-15"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "input",
+              "value": "={{ $json.body.content }}"
+            },
+            {
+              "name": "model",
+              "value": "text-embedding-3-small"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        816,
+        336
+      ],
+      "id": "e0d09068-63a7-4bda-9b9e-19ccddfd12bd",
+      "name": "Generate embedding",
+      "credentials": {
+        "azureOpenAiApi": {
+          "id": "nth2SzJ0CDUbdfjw",
+          "name": "Azure Open AI account"
+        },
+        "httpHeaderAuth": {
+          "id": "xLj2uaobS6RAJWNe",
+          "name": "text-embedding-3-small"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "## Vector Store Search",
+        "height": 272,
+        "width": 688
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        576,
+        240
+      ],
+      "typeVersion": 1,
+      "id": "9a5fb462-01b3-451c-a336-691d8d1093b3",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://clemens.search.windows.net/indexes/clemens/docs/search",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "api-version",
+              "value": "2025-05-01-preview"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"search\": \"{{ $('Webhook').item.json.body.content }}\",\n  \"queryType\": \"semantic\",\n  \"semanticConfiguration\": \"clemens\",\n  \"vectorQueries\": [\n    {\n      \"vector\": [{{ $json.data[0].embedding }}],\n      \"fields\": \"vector\",\n      \"k\": 30,\n      \"kind\": \"vector\"\n    }\n  ],\n  \"select\": \"id,title,content,keywords,url\",\n  \"top\": 3\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1024,
+        336
+      ],
+      "id": "ae9105ea-bb9d-4118-885e-4ef686029ccd",
+      "name": "Query Azure AI Search Index1",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "SJNE4kVouUb2i5MX",
+          "name": "clemens Search service"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Clemens AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Azure OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Clemens AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Clemens AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get All Pages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get All Pages": {
+      "main": [
+        [
+          {
+            "node": "Generate embeddings",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Prep Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Upload embeddings to Vector Store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prep Fields": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Embeddings": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate embeddings": {
+      "main": [
+        [
+          {
+            "node": "Embeddings",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Invoke Query Vector Store Webhook": {
+      "ai_tool": [
+        [
+          {
+            "node": "Clemens AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Generate embedding",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate embedding": {
+      "main": [
+        [
+          {
+            "node": "Query Azure AI Search Index1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Query Azure AI Search Index1": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "de9080e0-dd78-4246-898b-f330c4385515",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "bbe0c6dfc1c93248c009821e55624e7bb28f6e67f3f1b7a2a532022816147d46"
+  },
+  "id": "S6J4WPiZgNARunch",
+  "tags": []
+}
