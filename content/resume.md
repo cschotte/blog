@@ -4,11 +4,13 @@ date: 2025-08-02
 draft: false
 
 comment: false
+
+tags: ["Resume", "CV", "About", "Profile"]
 ---
 
 # Clemens Schotte 
-The Hague, Netherlands
-clemens@navatron.com | https://clemens.ms/ | https://linkedin.com/in/cschotte/ | https://github.com/cschotte
+
+The Hague, Netherlands | clemens@navatron.com | https://clemens.ms/ | https://linkedin.com/in/cschotte/ | https://github.com/cschotte
 
 ## Profile
 
@@ -18,7 +20,7 @@ Strong advocate for AI-enabled developer tools, including GitHub Copilot and Vis
 
 For insights on AI, AI Agents, Agentic AI, developer tools, and programming languages, visit my blog at [clemens.ms](https://clemens.ms)
 
-## Experience
+## Experience / Work
 
 ### Microsoft - Senior Program Manager - Azure Maps
 
@@ -115,18 +117,20 @@ By collaborating closely with design and project teams, I delivered stable, high
 
 ## Additional Activities
 
-### Member – Microsoft Netherlands Workers’ Council
+### Member of Microsoft Netherlands Workers’ Council
 
 2011 – 2014
 
 As a member of the Workers’ Council at Microsoft Netherlands, I actively contributed to representing employees on matters related to labor conditions, employee well-being, and organizational policies. Established in 2008, the council empowers employees to influence their working environment. My efforts focused on promoting transparency, fostering dialogue, and strengthening collaboration between staff and management.
 Board Member - Computer Club Zeeland
 
+### Board member of Computer Club Zeeland
+
 1991 - 1999
 
 As a board member of Computer Club Zeeland, I was responsible for the strategic direction and organizational activities of the association. I played an active role in promoting knowledge sharing and building a strong community for technology and computer enthusiasts. Under my joint leadership, the club evolved into a regional platform for digital education and collaboration.
 
-## Education
+## Education / School
 
 ### The Hague University of Applied Sciences
 

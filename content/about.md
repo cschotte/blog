@@ -4,6 +4,8 @@ date: 2024-04-19
 draft: false
 
 comment: false
+
+tags: ["Resume", "CV", "About", "Profile"]
 ---
 
 Hi, I am **Clemens Schotte**. My passion for technology and innovation has been the cornerstone of my career, guiding me through a remarkable journey within [Microsoft](https://www.microsoft.com/), currently as **Senior Program Manager** in the Maps & Local Product Group.
