@@ -8,9 +8,7 @@ author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "The music shortcode embeds a responsive music player based on APlayer and MetingJS library."
 images: []
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featuredImage: "featured-image.png"
 
 tags: ["shortcodes"]
 categories: ["documentation"]

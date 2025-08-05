@@ -6,9 +6,7 @@ date: 2020-06-17
 tags: ["Amiga", "A1200", "Workbench", "AmigaOS", "Retro Computing", "Commodore", "Kickstart"]
 categories: ["Retro"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

@@ -8,9 +8,7 @@ author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "music shortcode 基于 APlayer 和 MetingJS 库提供了一个内嵌的响应式音乐播放器."
 images: []
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featuredImage: "featured-image.png"
 
 tags: ["shortcodes"]
 categories: ["documentation"]

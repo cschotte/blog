@@ -6,9 +6,7 @@ date: 2022-03-22
 tags: ["Azure", "Maps", "Power BI", "Azure Maps"]
 categories: ["Geospatial"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

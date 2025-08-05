@@ -6,9 +6,7 @@ date: 2025-07-28
 tags: ["GitHub", "AI", "WebApp", "Spark"]
 categories: ["AI"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

@@ -6,9 +6,7 @@ date: 2020-05-18
 tags: ["UniFi", "WiFi", "Internet"]
 categories: ["Network"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

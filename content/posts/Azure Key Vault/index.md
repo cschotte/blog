@@ -6,9 +6,7 @@ date: 2021-03-15
 tags: ["Azure", "Secrets", "keys", "Certificates"]
 categories: ["Cloud"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featuredImage: "featured-image.png"
 
 draft: false
 

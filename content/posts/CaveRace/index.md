@@ -6,9 +6,7 @@ date: 2020-06-04
 tags: ["Gaming", "MS-DOS", "C", "Retro Computing", "16 Bit"]
 categories: ["Retro"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

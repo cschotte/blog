@@ -6,9 +6,7 @@ date: 2023-01-20
 tags: ["Azure", "Maps", "Database", "Azure Maps"]
 categories: ["Geospatial"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

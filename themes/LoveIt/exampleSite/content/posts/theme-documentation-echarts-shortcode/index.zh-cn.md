@@ -8,9 +8,7 @@ author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "echarts shortcode 使用 ECharts 库提供数据可视化的功能."
 images: []
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 tags: ["shortcodes"]
 categories: ["documentation"]

@@ -6,9 +6,7 @@ date: 2023-01-23
 tags: ["Energy", "Dynamic pricing", "Home battery", "Renewable energy"]
 categories: ["Energy"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

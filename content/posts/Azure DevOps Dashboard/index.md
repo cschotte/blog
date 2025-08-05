@@ -6,9 +6,7 @@ date: 2021-06-15
 tags: ["Azure", "DevOps", "Dashboard", "WebApp"]
 categories: ["DevOps"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featuredImage: "featured-image.png"
 
 draft: false
 

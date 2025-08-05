@@ -6,9 +6,7 @@ date: 2022-10-11
 tags: ["Azure", "Maps", "WebGL", "Azure Maps"]
 categories: ["Geospatial"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

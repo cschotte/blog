@@ -6,9 +6,7 @@ date: 2021-03-18
 tags: ["Azure", "Microservices", "AKS", "IaC", "DevOps"]
 categories: ["DevOps"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

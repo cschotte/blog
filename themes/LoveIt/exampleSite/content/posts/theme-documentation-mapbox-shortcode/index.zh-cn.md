@@ -8,9 +8,7 @@ author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "mapbox shortcode 使用 Mapbox GL JS 库提供互动式地图的功能."
 images: []
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 tags: ["shortcodes"]
 categories: ["documentation"]

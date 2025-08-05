@@ -8,9 +8,7 @@ author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "Discover what the Hugo - LoveIt theme is all about and the core-concepts behind it."
 images: []
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 tags: ["installation", "configuration"]
 categories: ["documentation"]

@@ -8,9 +8,7 @@ author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "The mapbox shortcode supports interactive maps in Hugo with Mapbox GL JS library."
 images: []
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 tags: ["shortcodes"]
 categories: ["documentation"]

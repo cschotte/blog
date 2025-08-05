@@ -6,9 +6,7 @@ date: 2021-09-21
 tags: ["Azure", "Maps", "Isochrone", "Azure Maps"]
 categories: ["Geospatial"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

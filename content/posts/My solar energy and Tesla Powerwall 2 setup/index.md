@@ -6,9 +6,7 @@ date: 2020-06-11
 tags: ["Solar", "Tesla", "Powerwall", "Energy"]
 categories: ["Energy"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 ---

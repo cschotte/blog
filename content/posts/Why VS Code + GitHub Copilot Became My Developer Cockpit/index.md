@@ -6,9 +6,7 @@ date: 2025-07-29
 tags: ["AI", "GitHub", "Copilot", "VSCode"]
 categories: ["Programming"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

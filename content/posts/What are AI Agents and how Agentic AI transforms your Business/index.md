@@ -6,9 +6,7 @@ date: 2025-07-24
 tags: ["AI", "MCP", "LLM", "Azure Maps"]
 categories: ["AI"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

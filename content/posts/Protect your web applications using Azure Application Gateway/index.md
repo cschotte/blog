@@ -6,9 +6,7 @@ date: 2021-04-06
 tags: ["Azure", "Website", "Gateway", "Firewall"]
 categories: ["Cloud"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

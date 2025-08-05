@@ -8,9 +8,7 @@ author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "Find out how to create and organize your content quickly and intuitively in LoveIt theme."
 images: []
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 tags: ["content", "Markdown"]
 categories: ["documentation"]

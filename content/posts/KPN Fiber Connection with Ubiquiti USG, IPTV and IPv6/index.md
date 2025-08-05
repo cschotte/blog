@@ -6,9 +6,7 @@ date: 2020-05-25
 tags: ["UniFi", "Internet", "Fiber"]
 categories: ["Network"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

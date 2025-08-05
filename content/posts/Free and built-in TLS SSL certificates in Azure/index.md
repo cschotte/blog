@@ -6,9 +6,7 @@ date: 2020-06-18
 tags: ["Azure", "SSL", "TLS", "Free", "HTTPS"]
 categories: ["Cloud"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

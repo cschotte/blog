@@ -6,9 +6,7 @@ date: 2021-10-31
 tags: ["Azure", "Maps", "Authentication", "Azure Maps"]
 categories: ["Geospatial"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

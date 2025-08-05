@@ -6,9 +6,7 @@ date: 2022-01-27
 tags: ["Azure", "Maps", "Weather", "Azure Maps"]
 categories: ["Geospatial"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

@@ -6,9 +6,7 @@ date: 2024-04-11
 tags: ["Program Manager", "Microsoft", "Product Development", "Azure Maps"]
 categories: ["Business"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

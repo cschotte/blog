@@ -6,9 +6,7 @@ date: 2020-07-16
 tags: ["WiFi", "Mobile", "Phone"]
 categories: ["Network"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

@@ -6,9 +6,7 @@ date: 2020-06-08
 tags: ["PHP", "VSCode"]
 categories: ["Programming"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

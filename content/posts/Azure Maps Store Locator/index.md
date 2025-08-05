@@ -6,9 +6,7 @@ date: 2023-10-16
 tags: ["Azure", "Maps", "Store Locator", "Azure Maps"]
 categories: ["Geospatial"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

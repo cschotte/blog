@@ -6,9 +6,7 @@ date: 2020-06-03
 tags: ["UniFi", "SSL", "CloudKey", "HTTPS"]
 categories: ["Network"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featuredImage: "featured-image.png"
 
 draft: false
 

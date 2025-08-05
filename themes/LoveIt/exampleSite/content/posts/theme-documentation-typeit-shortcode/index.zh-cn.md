@@ -8,9 +8,7 @@ author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "typeit shortcode 基于 TypeIt 库提供了打字动画."
 images: []
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featuredImage: "featured-image.png"
 
 tags: ["shortcodes"]
 categories: ["documentation"]

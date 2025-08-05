@@ -6,9 +6,7 @@ date: 2022-08-15
 tags: ["Azure", "Maps", "Authentication", "Managed Identities", "Azure Maps"]
 categories: ["Cloud", "Geospatial"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

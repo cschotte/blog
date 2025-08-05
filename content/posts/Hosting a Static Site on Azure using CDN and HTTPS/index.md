@@ -6,9 +6,7 @@ date: 2020-05-28
 tags: ["Azure", "Website", "CDN", "Storage Account"]
 categories: ["Cloud"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featuredImage: "featured-image.png"
 
 draft: false
 

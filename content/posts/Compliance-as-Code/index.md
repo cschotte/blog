@@ -6,9 +6,7 @@ date: 2021-03-22
 tags: ["Azure", "DevOps", "IaC", "Testing"]
 categories: ["DevOps"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

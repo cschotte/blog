@@ -6,9 +6,7 @@ date: 2021-06-14
 tags: ["Azure", "Maps", "Elevation", "Azure Maps"]
 categories: ["Geospatial"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

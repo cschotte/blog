@@ -8,9 +8,7 @@ author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "The typeit shortcode provides typing animation based on TypeIt library."
 images: []
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featuredImage: "featured-image.png"
 
 tags: ["shortcodes"]
 categories: ["documentation"]

@@ -6,9 +6,7 @@ date: 2025-08-05
 tags: ["Commodore", "Amiga", "C64", "Retro Computing", "A1200"]
 categories: ["Retro"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 comment: true
 draft: false

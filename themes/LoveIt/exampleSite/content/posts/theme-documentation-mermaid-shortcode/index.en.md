@@ -8,9 +8,7 @@ author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "The mermaid shortcode supports diagrams in Hugo with Mermaid library."
 images: []
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featuredImage: "featured-image.png"
 
 tags: ["shortcodes"]
 categories: ["documentation"]

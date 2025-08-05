@@ -6,9 +6,7 @@ date: 2023-03-27
 tags: ["Azure", "Maps", "Indoor Maps", "Azure Maps"]
 categories: ["Geospatial"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

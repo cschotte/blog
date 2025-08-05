@@ -6,9 +6,7 @@ date: 2024-05-21
 tags: ["Azure", "Maps", "Bing", "Azure Maps"]
 categories: ["Geospatial"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 

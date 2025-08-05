@@ -6,9 +6,7 @@ date: 2025-08-02
 tags: ["AI", "MCP", "Azure Maps", "Podcast"]
 categories: ["AI"]
 
-resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+featuredImage: "featured-image.jpg"
 
 draft: false
 ---
