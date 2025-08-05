@@ -8,7 +8,6 @@ categories: ["Retro"]
 
 featuredImage: "featured-image.jpg"
 
-comment: true
 draft: false
 ---
 
