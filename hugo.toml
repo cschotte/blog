@@ -105,7 +105,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
-  gitRepo = "hhttps://github.com/cschotte/Blog"
+  gitRepo = "https://github.com/cschotte/Blog"
   # which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
   # 哪种哈希函数用来 SRI, 为空时表示不使用 SRI
@@ -514,7 +514,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # Comment config
     # 评论系统设置
     [params.page.comment]
-      enable = false
+      enable = true
       # Disqus comment config (https://disqus.com/)
       # Disqus 评论系统设置 (https://disqus.com/)
       [params.page.comment.disqus]
@@ -547,7 +547,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         recordIP = true
         highlight = true
         enableQQ = false
-        serverURLs = "https://navatron.com"
+        serverURLs = "https://clemens.ms"
         # emoji data file name, default is "google.yml"
         # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
         # located in "themes/LoveIt/assets/lib/valine/emoji/" directory
@@ -599,14 +599,12 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       [params.page.comment.giscus]
         # You can refer to the official documentation of giscus to use the following configuration.
         # 你可以参考官方文档来使用下列配置
-        enable = false
-        repo = ""
-        repoId = ""
-        category = "Announcements"
-        categoryId = ""
-        # automatically adapt the current theme i18n configuration when empty
-        # 为空时自动适配当前主题 i18n 配置
-        lang = ""
+        enable = true
+        repo = "cschotte/Blog"
+        repoId = "MDEwOlJlcG9zaXRvcnkyNjQxNDAwNjE="  # Get this from giscus.app
+        category = "General"
+        categoryId = "DIC_kwDOD751Hc4Ctzrh"  # Get this from giscus.app
+        lang = "en"
         mapping = "pathname"
         reactionsEnabled = "1"
         emitMetadata = "0"
@@ -768,6 +766,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # whether to use HTML tags directly in the document
       # 是否在文档中直接使用 HTML 标签
       unsafe = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+      wrapStandAloneImageWithinParagraph = false
   # Table Of Contents settings
   # 目录设置
   [markup.tableOfContents]
@@ -777,9 +780,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 # Sitemap config
 # 网站地图配置
 [sitemap]
-  changefreq = "weekly"
+  changefreq = "daily"
   filename = "sitemap.xml"
   priority = 0.5
+  
+# Add robots.txt generation
+[params.robots]
+  enable = true
 
 # Permalinks config (https://gohugo.io/content-management/urls/#permalinks)
 # Permalinks 配置 (https://gohugo.io/content-management/urls/#permalinks)
@@ -820,3 +827,87 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   term = ["HTML", "RSS"]
+
+# Security config
+[security]
+  enableInlineShortcodes = false
+  [security.exec]
+    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
+    osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
+  [security.funcs]
+    getenv = ['^HUGO_']
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']
+
+# Build config for better performance
+[build]
+  writeStats = true
+  
+[caches]
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = "10m"
+  [caches.getcsv]
+    dir = ":cacheDir/:project"
+    maxAge = "10m"
+  [caches.images]
+    dir = ":resourceDir/_gen"
+    maxAge = "720h"
+  [caches.assets]
+    dir = ":resourceDir/_gen"
+    maxAge = "720h"
+
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      keepCSS2 = true
+      precision = 0
+    [minify.tdewolff.html]
+      keepComments = false
+      keepConditionalComments = true
+      keepDefaultAttrVals = true
+      keepDocumentTags = true
+      keepEndTags = true
+      keepQuotes = false
+      keepWhitespace = false
+    [minify.tdewolff.js]
+      keepVarNames = false
+      precision = 0
+    [minify.tdewolff.json]
+      precision = 0
+    [minify.tdewolff.svg]
+      precision = 0
+    [minify.tdewolff.xml]
+      keepWhitespace = false
+
+[imaging]
+  resampleFilter = "CatmullRom"
+  quality = 85
+  anchor = "Smart"
+  
+  [imaging.exif]
+    includeFields = ""
+    excludeFields = "GPS|Exif"
+    disableDate = false
+    disableLatLong = true
+
+[frontmatter]
+  date = [":default", ":filename", ":fileModTime"]
+  lastmod = [":fileModTime", ":default"]
+  publishDate = [":default", ":filename", ":fileModTime"]
+  expiryDate = [":default"]
+
+# RSS config
+[params.rss]
+  enable = true
+  fullContent = true
+  summary = true
+  limit = 20

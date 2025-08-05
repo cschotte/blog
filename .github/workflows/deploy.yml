@@ -6,6 +6,10 @@ on:
       - master  # Changed from main to master to match your repo
   workflow_dispatch:  # Allow manual triggers
 
+permissions:
+  contents: read
+  id-token: write  # Required for OIDC authentication
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -38,6 +42,14 @@ jobs:
         hugo --minify --gc --environment production
       env:
         HUGO_CACHEDIR: /tmp/hugo_cache
+
+    - name: Verify build integrity
+      run: |
+        # Check if critical files exist
+        test -f public/index.html || exit 1
+        test -f public/sitemap.xml || exit 1
+        # Verify no sensitive files are included
+        find public -name "*.env" -o -name "*.key" -o -name "*.pem" | grep . && exit 1 || true
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4

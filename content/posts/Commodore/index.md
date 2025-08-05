@@ -10,6 +10,7 @@ resources:
 - name: "featured-image"
   src: "featured-image.jpg"
 
+comment: true
 draft: false
 ---
 
