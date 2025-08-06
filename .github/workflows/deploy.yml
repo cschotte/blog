@@ -3,7 +3,7 @@ name: Build and Deploy Hugo site to Azure Blob Storage
 on:
   push:
     branches:
-      - master  # Changed from main to master to match your repo
+      - main  # Changed from main to master to match your repo
   workflow_dispatch:  # Allow manual triggers
 
 permissions:
