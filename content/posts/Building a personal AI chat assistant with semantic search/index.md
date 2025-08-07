@@ -140,7 +140,7 @@ The choice of **mergeOrUpload** allows me to re-run the workflow after publishin
 
 ## Designing the Chat Agent with Tool-Use and Guardrails
 
-The assistant itself runs as an n8n “agent.” Conceptually it’s an orchestrator around a large language model with a single tool: semantic search against my index. I use **GPT-4o** for its reasoning and multi-turn memory. The agent has a compact **system prompt** that sets expectations, instructs the model to always consult the search tool when answering anything about my site, and reminds it to keep responses helpful and grounded. This is the skeleton of that prompt:
+The assistant itself runs as an n8n “agent.” Conceptually it’s an orchestrator around a large language model with a single tool: semantic search against my index. I use **GPT-5-mini** for its reasoning and multi-turn memory. The agent has a compact **system prompt** that sets expectations, instructs the model to always consult the search tool when answering anything about my site, and reminds it to keep responses helpful and grounded. This is the skeleton of that prompt:
 
 ```text
 You are ClemensGPT, a helpful, trustworthy, and knowledgeable AI assistant for the personal website and blog of Clemens Schotte (https://clemens.ms).
