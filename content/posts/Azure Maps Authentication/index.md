@@ -18,6 +18,8 @@ One of the requirements when building a business application, which may give acc
 
 Our [Azure Maps docs](https://docs.azuremaps.com/) describe in detail [many different authentication scenarios](https://docs.microsoft.com/azure/azure-maps/azure-maps-authentication) but the complexity can make it seem difficult to implement. This blog post will focus on our most requested authentication scenario for Azure Maps. Use the following step by step guidance to have a .NET web application embedded Azure Maps web control where only authenticated users can see the website and use the map.
 
+> 🚀 **Updated Resources Available!** For the latest version of this tutorial with updated code samples, improved best practices, and additional security enhancements, check out the companion GitHub repository: **[azure-maps-authentication](https://github.com/cschotte/azure-maps-authentication)**. The repository includes modernized .NET code, enhanced Azure CLI scripts, and additional authentication patterns not covered in this original post.
+
 ## Prerequisites
 
 In this article, we use the following resources:
