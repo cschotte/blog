@@ -22,7 +22,7 @@ When I'm not working on Azure Maps, you'll find me deep in code – building AI 
 
 My path in technology started in 2002 when I graduated from The Hague University with a degree in Information Sciences. I began as a software developer, crafting web solutions with PHP and C#, but my curiosity for emerging technologies quickly led me into consulting and technical evangelism.
 
-I joined Microsoft in 2007 as an Application Platform Consultant and spent the next decade in various technical roles – from Senior Premier Field Engineer working with ISVs like Exact and SDL Tridion, to Senior Technical Evangelist driving adoption of Windows 8 Apps and Microsoft Edge. During this time, I delivered hands-on labs and workshops to thousands of developers across the Netherlands.
+I joined Microsoft in 2007 as an Application Platform Consultant and spent the next decade in various technical roles – from Senior Premier Field Engineer working with ISVs like Exact and SDL Tridion, to Senior Technical Evangelist driving adoption of Windows Phone Apps, Windows 8 Apps, Silverlight and Microsoft Edge. During this time, I delivered hands-on labs and workshops to thousands of developers across the Netherlands.
 
 In 2017, I took a brief detour to Dropbox as a Solutions Architect, where I learned valuable lessons about enterprise collaboration and cloud adoption. But Microsoft called me back in 2019, and I've been here ever since, first as a Cloud Consultant helping organizations like ABN AMRO and Nokia with their digital transformations, and now leading product strategy for Azure Maps.
 
