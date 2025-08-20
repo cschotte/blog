@@ -6,43 +6,46 @@
         "public": true,
         "mode": "webhook",
         "options": {
-          "allowedOrigins": "https://clemens.ms"
+          "allowedOrigins": "https://clemens.ms,https://www.clemens.ms",
+          "responseMode": "lastNode"
         }
       },
       "type": "@n8n/n8n-nodes-langchain.chatTrigger",
       "typeVersion": 1.1,
       "position": [
-        -160,
-        352
+        -576,
+        -64
       ],
-      "id": "89cd4021-fe1f-4437-8ef6-ffe3b662d794",
+      "id": "b273c4bc-aa4f-421c-9e31-6c929e750e5d",
       "name": "When chat message received",
       "webhookId": "070147ce-4deb-41d6-9648-5e61532d80c4"
     },
     {
-      "parameters": {},
+      "parameters": {
+        "sessionKey": "userId"
+      },
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        32,
-        576
+        -384,
+        160
       ],
-      "id": "34b15146-64f9-46e9-98ad-9aa96f436176",
+      "id": "4b977177-528d-45ff-a372-ad922714f66b",
       "name": "Simple Memory"
     },
     {
       "parameters": {
         "options": {
-          "systemMessage": "You are ClemensGPT, Clemens Schotte's blog assistant. Goals: Explain Clemens' work, summarize posts, discuss Azure/AI tech. Sources: clemens.ms content (priority), resume, LinkedIn. Style: Concise, professional, cite URLs. Use Azure AI Search first. Key topics: Azure (Maps, Functions, OpenAI), n8n, AI agents, MCP servers. Constraints: Never invent facts, direct employment questions to clemens@navatron.com. Format: Restate goal, bullet summaries, 8-12 sentences max unless deep dive requested."
+          "systemMessage": "You are ClemensGPT, Clemens' blog assistant. Use the search tool first for any questions about Clemens, his work, or Azure topics. Be concise (max 8 sentences). Cite sources as [title](url). For employment questions, direct to clemens@navatron.com."
         }
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.1,
       "position": [
-        32,
-        352
+        -384,
+        -64
       ],
-      "id": "06b7cc5a-fd0c-4282-bb87-8590adb7ad93",
+      "id": "07aa532b-0427-46ed-ba8f-6b2ecbf19c61",
       "name": "Clemens AI Agent",
       "onError": "continueErrorOutput"
     },
@@ -51,10 +54,10 @@
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
-        -160,
-        -48
+        -576,
+        -464
       ],
-      "id": "9aca1288-d817-4e1d-bb3e-04367788eb92",
+      "id": "b7191a66-32b3-4c3f-88e2-978bd6712d13",
       "name": "When clicking ‘Execute workflow’"
     },
     {
@@ -65,10 +68,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        64,
-        -48
+        -352,
+        -464
       ],
-      "id": "5ea7a720-e8db-4b0b-b624-bb5b4cd3458e",
+      "id": "5dd45023-1755-4ad7-b9c2-ab8ff04662d5",
       "name": "Get All Pages"
     },
     {
@@ -80,10 +83,10 @@
       "type": "n8n-nodes-base.merge",
       "typeVersion": 3.2,
       "position": [
-        816,
-        -48
+        432,
+        -464
       ],
-      "id": "1c3e7d1c-4b6d-4823-8ca3-85e008949034",
+      "id": "15b5114a-cb2e-4087-b3b5-068510721ea7",
       "name": "Merge"
     },
     {
@@ -127,10 +130,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        512,
-        48
+        128,
+        -368
       ],
-      "id": "edfce422-ac79-407a-b59c-4ac569db4007",
+      "id": "f8fc4519-ced7-4060-b055-340136780eaa",
       "name": "Prep Fields"
     },
     {
@@ -150,25 +153,25 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        512,
-        -144
+        128,
+        -560
       ],
-      "id": "7736b5a4-74a3-4e6f-9620-c85b2f8b05ba",
+      "id": "84ad131b-0bee-4394-8b1a-96f63bda1561",
       "name": "Embeddings"
     },
     {
       "parameters": {
         "content": "## Upload my Blog content to Azure AI Search Index",
         "height": 416,
-        "width": 1488
+        "width": 1664
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -224,
-        -208
+        -640,
+        -624
       ],
       "typeVersion": 1,
-      "id": "91438216-a3a1-4749-badd-61cef72286e2",
+      "id": "dd9feb5c-4289-4bd4-bb1c-4e84d2807c58",
       "name": "Sticky Note"
     },
     {
@@ -179,11 +182,11 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -224,
-        240
+        -640,
+        -176
       ],
       "typeVersion": 1,
-      "id": "a66c46b3-ad84-4920-9566-7afd40073293",
+      "id": "fe46152d-a5e6-43b1-bc48-cdf4101b15b0",
       "name": "Sticky Note1"
     },
     {
@@ -219,10 +222,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        288,
-        -144
+        -128,
+        -560
       ],
-      "id": "2ca31bda-d050-4ceb-aee6-d90b90c09368",
+      "id": "beae79ba-509c-43e9-a3f4-f4d771c4d92b",
       "name": "Generate embeddings",
       "credentials": {
         "azureOpenAiApi": {
@@ -258,10 +261,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1024,
-        -48
+        640,
+        -464
       ],
-      "id": "18eac442-432b-48d2-81d0-494e09d20b21",
+      "id": "13caed3f-4716-4e50-b9eb-7e6c7aa52f2d",
       "name": "Upload embeddings to Vector Store",
       "credentials": {
         "httpHeaderAuth": {
@@ -272,127 +275,7 @@
     },
     {
       "parameters": {
-        "httpMethod": "POST",
-        "path": "4dbf40a5-423c-4e4d-9ee9-b3e69141c5ed",
-        "authentication": "headerAuth",
-        "responseMode": "lastNode",
-        "options": {}
-      },
-      "type": "n8n-nodes-base.webhook",
-      "typeVersion": 2,
-      "position": [
-        608,
-        336
-      ],
-      "id": "f97e07e9-a07c-4f8b-b6b7-b75f9baafcca",
-      "name": "Webhook",
-      "webhookId": "4dbf40a5-423c-4e4d-9ee9-b3e69141c5ed",
-      "credentials": {
-        "httpHeaderAuth": {
-          "id": "AJ49bdUrcnZLaajM",
-          "name": "search-webhook"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "toolDescription": "Query vector store",
-        "method": "POST",
-        "url": "https://api.clemens.ms/webhook/4dbf40a5-423c-4e4d-9ee9-b3e69141c5ed",
-        "authentication": "genericCredentialType",
-        "genericAuthType": "httpHeaderAuth",
-        "sendBody": true,
-        "bodyParameters": {
-          "parameters": [
-            {
-              "name": "content",
-              "value": "={{ $json.chatInput }}"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.httpRequestTool",
-      "typeVersion": 4.2,
-      "position": [
-        352,
-        576
-      ],
-      "id": "cc44968c-3a38-4354-af1c-3a5eeaaea45f",
-      "name": "Invoke Query Vector Store Webhook",
-      "credentials": {
-        "httpHeaderAuth": {
-          "id": "AJ49bdUrcnZLaajM",
-          "name": "search-webhook"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "method": "POST",
-        "url": "https://cleme-mdunqsnd-eastus2.cognitiveservices.azure.com/openai/deployments/text-embedding-3-small/embeddings",
-        "authentication": "genericCredentialType",
-        "genericAuthType": "httpHeaderAuth",
-        "sendQuery": true,
-        "queryParameters": {
-          "parameters": [
-            {
-              "name": "api-version",
-              "value": "2023-05-15"
-            }
-          ]
-        },
-        "sendBody": true,
-        "bodyParameters": {
-          "parameters": [
-            {
-              "name": "input",
-              "value": "={{ $json.body.content }}"
-            },
-            {
-              "name": "model",
-              "value": "text-embedding-3-small"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [
-        816,
-        336
-      ],
-      "id": "e0d09068-63a7-4bda-9b9e-19ccddfd12bd",
-      "name": "Generate embedding",
-      "credentials": {
-        "azureOpenAiApi": {
-          "id": "nth2SzJ0CDUbdfjw",
-          "name": "Azure Open AI account"
-        },
-        "httpHeaderAuth": {
-          "id": "xLj2uaobS6RAJWNe",
-          "name": "text-embedding-3-small"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "content": "## Vector Store Search",
-        "height": 272,
-        "width": 688
-      },
-      "type": "n8n-nodes-base.stickyNote",
-      "position": [
-        576,
-        240
-      ],
-      "typeVersion": 1,
-      "id": "9a5fb462-01b3-451c-a336-691d8d1093b3",
-      "name": "Sticky Note2"
-    },
-    {
-      "parameters": {
+        "toolDescription": "Search Clemens' blog content directly from Azure AI Search. Use this tool for any questions about Clemens, his work, projects, Azure expertise, and published content.",
         "method": "POST",
         "url": "https://clemens.search.windows.net/indexes/clemens/docs/search",
         "authentication": "genericCredentialType",
@@ -408,17 +291,19 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"search\": \"{{ $('Webhook').item.json.body.content }}\",\n  \"queryType\": \"semantic\",\n  \"semanticConfiguration\": \"clemens\",\n  \"vectorQueries\": [\n    {\n      \"vector\": [{{ $json.data[0].embedding }}],\n      \"fields\": \"vector\",\n      \"k\": 15,\n      \"kind\": \"vector\"\n    }\n  ],\n  \"select\": \"title,content,url\",\n  \"top\": 2\n}",
-        "options": {}
+        "jsonBody": "={\n  \"search\": \"{{ $json.chatInput }}\",\n  \"queryType\": \"semantic\",\n  \"semanticConfiguration\": \"clemens\",\n  \"select\": \"title,content,url,keywords\",\n  \"top\": 3\n}",
+        "options": {
+          "timeout": 15000
+        }
       },
-      "type": "n8n-nodes-base.httpRequest",
+      "type": "n8n-nodes-base.httpRequestTool",
       "typeVersion": 4.2,
       "position": [
-        1024,
-        336
+        -64,
+        160
       ],
-      "id": "ae9105ea-bb9d-4118-885e-4ef686029ccd",
-      "name": "Query Azure AI Search Index1",
+      "id": "3e1daf9b-2f7d-4192-b086-9c43f9273de4",
+      "name": "Direct Azure Search Tool",
       "credentials": {
         "httpHeaderAuth": {
           "id": "SJNE4kVouUb2i5MX",
@@ -434,10 +319,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatAzureOpenAi",
       "typeVersion": 1,
       "position": [
-        -128,
-        576
+        -544,
+        160
       ],
-      "id": "27d90c97-7482-4a04-93fe-bf76c763daba",
+      "id": "265b47c1-a2ed-4adf-8b03-ecb542b5e66d",
       "name": "Azure OpenAI Chat Model",
       "credentials": {
         "azureOpenAiApi": {
@@ -451,10 +336,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolCalculator",
       "typeVersion": 1,
       "position": [
-        192,
-        576
+        -224,
+        160
       ],
-      "id": "7c98dbe5-0490-4cbc-a2ee-765b6f9b78da",
+      "id": "357cf20b-9f81-400d-a9a7-807a77b72e88",
       "name": "Calculator"
     }
   ],
@@ -553,7 +438,7 @@
         ]
       ]
     },
-    "Invoke Query Vector Store Webhook": {
+    "Direct Azure Search Tool": {
       "ai_tool": [
         [
           {
@@ -562,33 +447,6 @@
             "index": 0
           }
         ]
-      ]
-    },
-    "Webhook": {
-      "main": [
-        [
-          {
-            "node": "Generate embedding",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Generate embedding": {
-      "main": [
-        [
-          {
-            "node": "Query Azure AI Search Index1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Query Azure AI Search Index1": {
-      "main": [
-        []
       ]
     },
     "Azure OpenAI Chat Model": {
@@ -618,7 +476,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "6a4d26c4-9e77-4051-9ac9-38fce689ff2b",
+  "versionId": "912f6289-852f-48bb-b737-b2678d62f1ac",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "bbe0c6dfc1c93248c009821e55624e7bb28f6e67f3f1b7a2a532022816147d46"
