@@ -37,7 +37,7 @@ My approach is hands-on and pragmatic. I believe the best way to understand deve
 - **Cloud Architecture**: Specializing in Azure services, particularly geospatial solutions, Container Apps, and serverless architectures
 - **AI & Agents**: Building practical AI applications, MCP servers, and exploring how LLMs can be enhanced with real-time data
 - **Developer Tools**: Deep expertise in Visual Studio Code, GitHub Copilot, and modern development workflows
-- **Programming Languages**: Primarily C# and .NET, with explorations into Rust, Zig, and TypeScript
+- **Programming Languages**: Primarily C#, .NET and JavaScript with explorations into Rust, Zig, and TypeScript
 - **DevOps & Infrastructure**: Infrastructure as Code, CI/CD pipelines, and zero-touch deployment strategies
 
 ## Beyond Work
