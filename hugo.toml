@@ -359,7 +359,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.analytics]
     # Google Analytics
     [params.analytics.google]
-      id = "437900137"
+      id = "G-4RSBDP58C3"
       # whether to respect the browser’s “do not track” setting
       respectDoNotTrack = false
 
