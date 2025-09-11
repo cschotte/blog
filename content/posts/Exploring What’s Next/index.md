@@ -8,7 +8,7 @@ categories: ["Business"]
 
 featuredImage: "featured-image.jpg"
 
-draft: false
+draft: true
 
 ---
 
