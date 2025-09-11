@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: Production
     env:
-      HUGO_VERSION: 0.148.1
+      HUGO_VERSION: 0.150.0
 
     steps:
     - name: Checkout repository
