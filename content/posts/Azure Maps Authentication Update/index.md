@@ -8,7 +8,7 @@ categories: ["Cloud", "Geospatial"]
 
 featuredImage: "featured-image.jpg"
 
-draft: false
+draft: true
 
 ---
 
