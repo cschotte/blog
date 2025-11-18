@@ -63,5 +63,3 @@ Integrating the store locator into your website requires some HTML and JavaScrip
 The Azure Maps Store Locator empowers you to create and maintain an intuitive location-based search experience to delight your customers. Enhance your online presence today with the power of Azure Maps!
 
 You find the Azure Maps Store Locator source code on [GitHub](https://github.com/Azure-Samples/Azure-Maps-Locator).
-
-> This blog post was initially written by me for the [Azure Maps Tech Blog](https://blog.azuremaps.com).

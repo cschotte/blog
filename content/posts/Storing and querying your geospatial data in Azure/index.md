@@ -52,5 +52,3 @@ To see a sample that pulls Azure Maps and Azure Databases together, see the Micr
 ## Conclusion
 
 Azure offers a variety of options for storing and querying geospatial data, including **Azure Cosmos DB**, **Azure SQL Database**, and **Azure Blob Storage**. Each of these services has its own set of features and capabilities, and choosing the right one will depend on the specific needs of your application. Whether you need low-latency access to real-time data, support for traditional SQL-based querying, or the ability to store and analyze large amounts of unstructured data, Azure has the tools you need to get the job done.
-
-> This blog post was initially written by me for the [Azure Maps Tech Blog](https://blog.azuremaps.com).

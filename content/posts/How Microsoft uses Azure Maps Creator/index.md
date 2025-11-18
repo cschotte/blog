@@ -14,6 +14,8 @@ draft: false
 
 In the evolving landscape of remote work and [sustainability](https://www.microsoft.com/en-us/sustainability/approach), the optimization of physical spaces has become increasingly important. Microsoft is at the forefront of this transformation, utilizing [Azure Maps Creator](https://aka.ms/azuremapscreator) to enhance the management of its diverse global workspaces. This product is essential for facilities managers, providing dynamic, interactive indoor mapping solutions that allow for real-time assessment of space and resources, quick response to critical issues, and seamless adaptation to the needs of a hybrid workforce—all while minimizing environmental impact.
 
+> **Important:** As of 2024, Azure Maps Creator has been deprecated and is no longer available. Microsoft has discontinued this service. If you're looking for indoor mapping solutions, please refer to the [Azure Maps documentation](https://docs.microsoft.com/azure/azure-maps/) for current alternatives and migration guidance.
+
 Azure Maps Creator is not just a product for efficient space management; it's a showcase of Microsoft's commitment to creating exceptional experiences for employees, customers, and partners visiting its buildings. By integrating IoT sensors throughout its facilities, Microsoft can monitor various environmental parameters such as temperature, energy consumption, and occupancy levels. This data, coupled with the capabilities of [Azure Digital Twins](https://learn.microsoft.com/en-us/azure/digital-twins/overview) and [Azure Maps](https://azuremaps.com/), empowers the [Digital Workplace team](https://www.microsoft.com/insidetrack/blog/transforming-microsoft-buildings-with-iot-technology-and-indoor-mapping/) to construct detailed floorplans and data pipelines that support sustainable operations and superior indoor navigation.
 
 ![Azure Maps Creator](AzureMapsCreator.gif)
@@ -25,5 +27,3 @@ Upon arrival at a Microsoft facility, employees are greeted by kiosks equipped w
 ![kiosks](kiosks.jpg)
 
 The integration of Azure Maps Creator into Microsoft's kiosks exemplifies the company's innovative approach to enhancing the workplace experience. It transforms technical building plans into smart, adaptable overlays that offer a wealth of interior data visualization options. To learn more about Azure Maps Creator and its comprehensive capabilities, be sure to explore the [Azure Maps Blog](https://blog.azuremaps.com).
-
-> This blog post was initially written by me for the [Azure Maps Tech Blog](https://blog.azuremaps.com).

@@ -47,5 +47,3 @@ To create a pie chart, follow these steps:
 For detailed instructions on these new features, explore our **Power BI Azure Maps "How To" guides**:
 - [Geocoder feature](https://docs.microsoft.com/en-us/azure/azure-maps/power-bi-visual-geocode)
 - [Pie chart layer](https://docs.microsoft.com/en-us/azure/azure-maps/power-bi-visual-add-pie-chart-layer)
-
-> This blog post was initially written by me for the [Azure Maps Tech Blog](https://blog.azuremaps.com).

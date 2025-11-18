@@ -65,5 +65,3 @@ Developers can also use the **Azure Maps V3 Web Control** in there applications 
 <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/3/atlas.min.css" type="text/css" />
 <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/3/atlas.min.js"></script>
 ```
-
-> This blog post was initially written by me for the [Azure Maps Tech Blog](https://blog.azuremaps.com).

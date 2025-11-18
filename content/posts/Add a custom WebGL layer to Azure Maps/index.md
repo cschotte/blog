@@ -43,5 +43,3 @@ Azure Maps operates on the Spherical Mercator projection (EPSG: 3857), a system 
 - **Three.js**: A versatile, lightweight 3D library that's easy to use across different web browsers.
 
 For those eager to dive into developing their custom WebGL layer, extensive [documentation](https://learn.microsoft.com/en-us/azure/azure-maps/webgl-custom-layer) is available, along with a plethora of [samples](https://samples.azuremaps.com/) showcasing the vast potential of Azure Maps. Explore these resources to kickstart your journey and unlock the full creative power of Azure Maps with custom WebGL layers.
-
-> This blog post was initially written by me for the [Azure Maps Tech Blog](https://blog.azuremaps.com).

@@ -20,6 +20,8 @@ When using [Bing Maps for Enterprise](https://www.microsoft.com/maps) in your so
 <script src="https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key={your bing maps key}"></script>
 ```
 
+> **Important:** Bing Maps for Enterprise has been deprecated and is no longer available. Microsoft has discontinued this service. If you're looking for mapping solutions, please refer to the [Azure Maps documentation](https://docs.microsoft.com/azure/azure-maps/) for current alternatives and migration guidance.
+
 Now your key is open text on your site source code and people who look can find and use your key. Search engines will index your page and, as a result, will also store your key. Is this a problem? Not really.
 
 ## Protecting

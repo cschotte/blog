@@ -33,5 +33,3 @@ More resources about Azure Maps can be found here:
 *	[Azure Maps Samples](https://samples.azuremaps.com)
 *	[Azure Maps Blog](https://blog.azuremaps.com)
 *	[Microsoft Q&A for Azure Maps](https://learn.microsoft.com/en-us/answers/tags/209/azure-maps)
-
-> This blog post was initially written by me for the [Azure Maps Tech Blog](https://blog.azuremaps.com).

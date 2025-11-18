@@ -16,6 +16,8 @@ draft: false
 
 When you are working inside a building, like an office, factory, shopping mall, or something like a museum. There are probably a lot of sensors that can tell you information about that building, like what is the temperature and air quality per room, is there any door open or is there some alarm happening. When you in a big building and you want to know the fastest route to a specific room/store/painting, you probably apricate some help in navigating. These are all smart buildings.
 
+> **Important:** As of 2024, Azure Maps Creator has been deprecated and is no longer available. Microsoft has discontinued this service. If you're looking for indoor mapping solutions, please refer to the [Azure Maps documentation](https://docs.microsoft.com/azure/azure-maps/) for current alternatives and migration guidance.
+
 Using indoor maps will not only help you visualize the building/floorplans and its IoT sensors, but also interact and navigate with it. For example, when you are for the first time in the [Louvre Museum](https://www.bing.com/search?q=paris+louvre+museum) and want to know how to get to the famous [Mona Lisa](https://www.bing.com/search?q=Mona%20Lisa) painting, you can use an interactive indoor map to find and navigate to what you were searching for.
 
 ![Map of the Louvre Museum](louvre-map.jpg)
