@@ -33,7 +33,7 @@ The C64U comes with a USB "cassette drive" preloaded with 100+ games, some class
 
 ![Press Play cassette drive](pressplay.jpg)
 
-And then there’s the Turbo mode. 48MHz! Forty-eight megahertz. My 12-year-old self would have lost his mind. Games load almost instantly. BASIC programs run at speeds that feel impossible. And yet, with a flick of a switch, I can throttle it back to 1MHz, just like the old days.
+And then there’s the Turbo mode. 64MHz! My 12-year-old self would have lost his mind. Games load almost instantly. BASIC programs run at speeds that feel impossible. And yet, with a flick of a switch, I can throttle it back to 1MHz, just like the old days.
 
 ## This Feels Different
 
