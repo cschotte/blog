@@ -1,6 +1,6 @@
 ---
 title: "About me"
-date: 2025-08-14
+date: 2026-02-18
 draft: false
 
 comment: false
@@ -8,55 +8,63 @@ comment: false
 tags: ["Resume", "CV", "About", "Profile"]
 ---
 
-Hi, I'm **Clemens Schotte**, a Senior Program Manager at Microsoft, cloud architect, and passionate developer who has been shaping the future of technology for over two decades.
+Hi, I'm **Clemens Schotte**. I am a software architect, product and engineering leader, and hands-on developer with 25+ years of experience building and scaling enterprise software. I am also the **owner and founder of [NavaTron](https://navatron.com)**.
+
+Most recently, I was **Senior Program Manager for Azure Maps at Microsoft** (2021-2026), where I helped shape product strategy, technical direction, and developer adoption across Microsoft's geospatial platform.
 
 ![Clemens at Microsoft](/images/microsoft.jpg)
 
-## What I Do Today
+## At a Glance
 
-I lead product strategy for **[Azure Maps](https://azuremaps.com/)** at Microsoft, where I help developers and enterprises build location-aware applications that scale globally. My work spans from defining product roadmaps to enabling integrations with Power BI, Microsoft Fabric, and the broader Azure ecosystem. I'm particularly excited about bringing **geospatial intelligence to AI agents** through technologies like the Model Context Protocol (MCP).
+- 25+ years in software engineering, architecture, consulting, and product leadership
+- 17+ years at Microsoft across consulting, evangelism, field engineering, and product roles
+- Owner/founder of **NavaTron**
+- Deep expertise in .NET/C#, Azure, DevOps, cloud modernization, and geospatial systems
+- Strong track record turning complex technical trade-offs into maintainable, production-ready outcomes
 
-When I'm not working on Azure Maps, you'll find me deep in code – building AI chat assistants, creating MCP servers, and exploring how tools like **GitHub Copilot** are transforming the way we develop software. I'm a firm believer that the best product managers write code, understand the developer experience firsthand, and stay close to the technical details.
+## NavaTron
 
-## My Journey
+**NavaTron** is my independent software and consulting company. Through NavaTron, I help organizations design and build practical cloud-native solutions, with a focus on architecture, developer productivity, and real-world delivery.
 
-My path in technology started in 2002 when I graduated from The Hague University with a degree in Information Sciences. I began as a software developer, crafting web solutions with PHP and C#, but my curiosity for emerging technologies quickly led me into consulting and technical evangelism.
+## What I Work On
 
-I joined Microsoft in 2007 as an Application Platform Consultant and spent the next decade in various technical roles – from Senior Premier Field Engineer working with ISVs like Exact and SDL Tridion, to Senior Technical Evangelist driving adoption of Windows Phone Apps, Windows 8 Apps, Silverlight and Microsoft Edge. During this time, I delivered hands-on labs and workshops to thousands of developers across the Netherlands.
+I work at the intersection of **software architecture, cloud platforms, and real-world delivery**. My focus is not just getting code to run, but making sure systems are secure, understandable, maintainable, and operationally reliable.
 
-In 2017, I took a brief detour to Dropbox as a Solutions Architect, where I learned valuable lessons about enterprise collaboration and cloud adoption. But Microsoft called me back in 2019, and I've been here ever since, first as a Cloud Consultant helping organizations like ABN AMRO and Nokia with their digital transformations, and now leading product strategy for Azure Maps.
+## Career Highlights
 
-## What Drives Me
+## Microsoft - Senior Program Manager, Azure Maps (2021-2026)
+- Led product strategy and technical direction for Azure Maps
+- Aligned engineering, marketing, and stakeholder priorities across a complex platform
+- Helped consolidate enterprise mapping capabilities and improve portfolio clarity
+- Continued to contribute hands-on code and developer assets
 
-I'm fascinated by the intersection of **AI, geospatial technology, and developer experience**. Whether it's building an Azure Maps MCP server that gives LLMs spatial intelligence, or creating a personal AI chat assistant for my blog using n8n on Azure Container Apps, I love solving real problems with elegant, composable solutions.
+## Microsoft - Cloud Consultant (2019-2021)
+- Guided large enterprises through Azure migration, DevOps adoption, and modernization
+- Led ABN AMRO's first Azure PaaS workload into production
+- Supported Nokia on cloud architecture, IaC, compliance as code, and zero-touch deployment
 
-My approach is hands-on and pragmatic. I believe the best way to understand developer needs is to be a developer yourself. That's why I maintain active projects on [GitHub](https://github.com/cschotte), write detailed technical blog posts, and experiment with cutting-edge tools like GitHub Copilot, Visual Studio Code, and the latest AI frameworks.
+## Dropbox - Solutions Architect (2017)
+- Led enterprise technical presales in the Benelux
+- Translated complex requirements into practical designs and measurable business outcomes
 
-## Technical Interests
+## Microsoft - Technical Evangelism and Field Engineering (2007-2017)
+- Delivered workshops and labs for thousands of developers
+- Supported major ISVs with deep .NET/C# guidance and incident response
+- Helped bridge product engineering and real-world developer feedback
 
-- **Cloud Architecture**: Specializing in Azure services, particularly geospatial solutions, Container Apps, and serverless architectures
-- **AI & Agents**: Building practical AI applications, MCP servers, and exploring how LLMs can be enhanced with real-time data
-- **Developer Tools**: Deep expertise in Visual Studio Code, GitHub Copilot, and modern development workflows
-- **Programming Languages**: Primarily C#, .NET and JavaScript with explorations into Rust, Zig, and TypeScript
-- **DevOps & Infrastructure**: Infrastructure as Code, CI/CD pipelines, and zero-touch deployment strategies
+## Foundations
 
-## Beyond Work
+My journey started early with a **Commodore 64**, followed by years of coding and computer club projects. I later earned a Bachelor's degree in Information Sciences from The Hague University and have remained deeply technical throughout my career.
 
-When I'm not coding or strategizing about product roadmaps, I'm probably tinkering with my home network setup (featuring a Tesla Powerwall 2 and solar energy system), exploring new automation tools, or sharing insights through my blog and podcast appearances.
-
-I believe in the power of community and knowledge sharing. You'll often find me contributing to open-source projects, speaking at technical events, or mentoring fellow developers. I served on the Microsoft Netherlands Workers' Council from 2011-2014 and was an active board member of Computer Club Zeeland in my earlier years.
+I still build software regularly and keep exploring new tools and languages, including Rust and Zig, while maintaining a strong practical focus on business value and user outcomes.
 
 ## Let's Connect
 
-I'm always excited to discuss Azure Maps, AI agents, developer tools, or any intersection of technology and real-world problem solving. You can find me on:
+I'm always open to discussing software architecture, cloud strategy, geospatial technology, and developer experience. You can find me on:
 
 - **Blog**: [clemens.ms](https://clemens.ms) (where I share deep technical insights)
 - **LinkedIn**: [linkedin.com/in/cschotte](https://www.linkedin.com/in/cschotte/)
 - **GitHub**: [github.com/cschotte](https://github.com/cschotte)
 - **Email**: clemens@navatron.com
 
-Whether you're building the next great location-aware application, exploring AI agents, or just want to chat about the future of developer tools, I'd love to hear from you. The best conversations happen when passionate technologists come together to solve real problems.
-
----
-
-> **Note**: The opinions expressed on this blog and in my public content are my own and do not necessarily represent those of Microsoft.
+Whether you are building new platforms, modernizing existing systems, or navigating difficult architectural decisions, feel free to reach out.
