@@ -78,13 +78,13 @@ jobs:
             --content-cache-control "public, max-age=3600" \
             --verbose
 
-    - name: Purge Azure CDN
+    - name: Purge Azure Front Door
       uses: azure/cli@v2
       with:
         inlineScript: |
-          az cdn endpoint purge \
+          az afd endpoint purge \
             --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
             --profile-name ${{ secrets.AZURE_CDN_PROFILE_NAME }} \
-            --name ${{ secrets.AZURE_CDN_ENDPOINT_NAME }} \
+            --endpoint-name ${{ secrets.AZURE_CDN_ENDPOINT_NAME }} \
             --content-paths "/*" \
             --verbose
