@@ -3,8 +3,8 @@ name: Build and Deploy Hugo site to Azure Blob Storage
 on:
   push:
     branches:
-      - main  # Changed from main to master to match your repo
-  workflow_dispatch:  # Allow manual triggers
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -16,6 +16,10 @@ jobs:
     environment: Production
     env:
       HUGO_VERSION: 0.162.1
+      AZURE_STORAGE_ACCOUNT: clemens
+      AZURE_FRONT_DOOR_RESOURCE_GROUP: rg-navatron-website-prod-we
+      AZURE_FRONT_DOOR_PROFILE_NAME: navatron
+      AZURE_FRONT_DOOR_ENDPOINT_NAME: clemens
 
     steps:
     - name: Checkout repository
@@ -69,7 +73,7 @@ jobs:
       with:
         inlineScript: |
           az storage blob upload-batch \
-            --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
+            --account-name ${{ env.AZURE_STORAGE_ACCOUNT }} \
             --auth-mode login \
             --destination \$web \
             --source ./public \
@@ -82,9 +86,11 @@ jobs:
       uses: azure/cli@v2
       with:
         inlineScript: |
-          az afd endpoint purge \
-            --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
-            --profile-name ${{ secrets.AZURE_CDN_PROFILE_NAME }} \
-            --endpoint-name ${{ secrets.AZURE_CDN_ENDPOINT_NAME }} \
+          if ! az afd endpoint purge \
+            --resource-group ${{ env.AZURE_FRONT_DOOR_RESOURCE_GROUP }} \
+            --profile-name ${{ env.AZURE_FRONT_DOOR_PROFILE_NAME }} \
+            --endpoint-name ${{ env.AZURE_FRONT_DOOR_ENDPOINT_NAME }} \
             --content-paths "/*" \
-            --verbose
+            --verbose; then
+            echo "::warning::Azure Front Door purge failed. The site was uploaded, but cached content may take longer to refresh."
+          fi
