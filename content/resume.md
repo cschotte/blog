@@ -1,6 +1,6 @@
 ---
 title: "Resume Clemens Schotte"
-date: 2025-08-02
+date: 2026-06-04
 draft: false
 
 comment: false
@@ -8,84 +8,122 @@ comment: false
 tags: ["Resume", "CV", "About", "Profile"]
 ---
 
-# Clemens Schotte 
+# Clemens Schotte
 
-The Hague, Netherlands | clemens@navatron.com | https://clemens.ms/ | https://linkedin.com/in/cschotte/ | https://github.com/cschotte
+Senior Product Leader | Program Manager | Technology Architect
+
+The Hague, Netherlands | [clemens@navatron.com](mailto:clemens@navatron.com) | [Blog](https://clemens.ms/) | [LinkedIn](https://linkedin.com/in/cschotte/) | [GitHub](https://github.com/cschotte)
 
 ## Profile
 
-Versatile and forward-thinking Senior Program Manager and Technical Leader with 25+ years of experience in cloud architecture, software development, and developer engagement. Most recently led Microsoft’s Azure Maps geospatial platform and contributed to strategic integrations with Power BI and Fabric. Proven track record in evangelizing emerging technologies, building community engagement, and delivering developer-centric experiences.
+Senior Program Manager, Product Leader, and Technology Architect with 25+ years of experience building and scaling cloud platforms, enterprise software, digital products, and transformation programs. I operate at the intersection of product strategy, engineering, architecture, and business execution helping organizations turn complex technical and organizational challenges into scalable products, platforms, and measurable business outcomes.
 
-Strong advocate for AI-enabled developer tools, including GitHub Copilot and Visual Studio Code, with a deep understanding of how AI transforms the modern development lifecycle. I combine technical credibility with a passion for storytelling, content creation, and empowering developers through education, tooling, and open dialogue.
+My background spans software engineering, cloud architecture, product management, and executive-level program leadership across Microsoft, Dropbox, enterprise customers, government organizations, and technology-driven businesses. Most recently, I led product and program initiatives for Azure Maps, Microsoft's global geospatial platform, helping drive product strategy, platform evolution, customer adoption, and cross-organizational execution.
 
-For insights on AI, AI Agents, Agentic AI, developer tools, and programming languages, visit my blog at [clemens.ms](https://clemens.ms)
+Throughout my career, I have worked closely with engineering teams, architects, executives, customers, and partners to define roadmaps, align stakeholders, manage large-scale initiatives, and deliver solutions that balance customer value, technical excellence, and long-term sustainability.
+
+I bring a combination of strategic thinking and technical depth, with expertise in cloud-native platforms, SaaS products, AI-enabled solutions, APIs, developer platforms, digital transformation, and enterprise software delivery.
+
+### Specialties
+* Product Management & Product Strategy
+* Program & Portfolio Leadership
+* Cloud Architecture & Modernization
+* Enterprise SaaS Platforms
+* AI & Business Process Automation
+* Azure, .NET, APIs & Developer Platforms
+* Digital Transformation & Change Leadership
+* Executive Stakeholder Management
+* Cross-Functional Leadership & Delivery.
 
 ## Experience / Work
 
+### NavaTron - Senior Program / Product Manager
+
+July 2025 – current (Netherlands)
+
+Lead product strategy, program execution, and technology transformation initiatives for enterprise and public-sector organizations, helping connect business objectives, operating models, and technology platforms into scalable digital solutions.
+
+Drive product vision, roadmaps, prioritization, and delivery for SaaS platforms, AI-enabled automation solutions, cloud-native applications, and business process modernization initiatives. Work closely with business stakeholders, engineering teams, architects, and executive leadership to translate complex requirements into actionable strategies and measurable outcomes.
+
+Current focus areas include AI-enabled business automation, enterprise SaaS platforms, cloud-native architectures, route optimization solutions, business process digitization, and Microsoft Dynamics 365 Business Central extensibility and productivity solutions.
+
+Key responsibilities:
+* Define product strategy, roadmaps, priorities, and delivery plans for software and platform initiatives.
+* Lead cross-functional programs involving engineering, business, and executive stakeholders.
+* Guide organizations through cloud modernization, automation, and digital transformation efforts.
+* Align technology investments with business objectives, operational efficiency, and long-term scalability.
+* Drive adoption of AI, data, and automation capabilities to improve productivity and business outcomes.
+* Provide senior-level advisory across Azure, .NET, enterprise integration, security, data platforms, and business applications.
+
 ### Microsoft - Senior Program Manager - Azure Maps
 
-September 2021 – current (Redmond, Washington, United States (Remote from the Netherlands))
+September 2021 – January 2026 (Redmond, Washington, United States - Remote from the Netherlands)
 
-As Senior Program Manager for Azure Maps, I provided strategic direction for the product and its underlying geospatial services platform within Microsoft Azure. I translated customer needs, market trends, and emerging technologies into concrete product enhancements and new capabilities.
+Led product strategy, roadmap execution, and cross-organizational program leadership for Azure Maps, Microsoft's global geospatial platform within Azure.
 
-Using customer feedback, market analysis, and competitive insights, I defined clear priorities that balanced short-term user needs with long-term business objectives. My decisions were consistently informed by technical feasibility, customer impact, and commercial value to ensure optimal return on investment (ROI).
+Owned product and platform priorities across mapping, routing, geocoding, spatial analytics, developer experience, and enterprise integration capabilities. Translated customer requirements, market opportunities, competitive insights, and technical constraints into roadmap decisions that balanced customer value, engineering investment, platform sustainability, and business impact.
 
-Collaboration was central to my role. I worked closely with Product Marketing Managers (PMMs) to align the product roadmap with market demand and strategic goals. At the same time, I maintained active engagement with customers to understand their specific requirements, challenges, and desired outcomes.
+Played a key role in Microsoft's strategic transition from Bing Maps for Enterprise to Azure Maps, helping define migration strategy, platform consolidation priorities, customer adoption plans, and the long-term direction of Microsoft's geospatial platform.
 
-In partnership with engineering teams, I assessed the feasibility of new features and ensured alignment with the broader product vision. I led cross-functional discussions, drove integration with other Microsoft products such as Power BI, Fabric, and Dynamics, and contributed to a consistent and forward-looking product development strategy.
+Worked closely with engineering leadership across the United States and Taiwan, driving alignment across distributed teams while coordinating dependencies between engineering, architecture, product management, support, marketing, sales, and executive stakeholders.
 
-### Microsoft - Cloud Consultant
+Partnered directly with enterprise customers, ISVs, system integrators, government organizations, and strategic Microsoft accounts to understand complex geospatial requirements and translate them into product investments and platform improvements.
+
+Influenced integration opportunities across the broader Microsoft ecosystem, including Power BI, Microsoft Fabric, Dynamics 365, Azure services, developer platforms, and emerging AI-driven business scenarios.
+
+Helped improve engineering focus and execution by clarifying ownership boundaries, reducing portfolio complexity, prioritizing high-value investments, and strengthening long-term platform maintainability.
+
+Acted as a bridge between business and engineering, combining product leadership, technical depth, and customer engagement to drive platform growth, customer adoption, developer satisfaction, and strategic alignment across Microsoft.
+
+
+### Microsoft - Cloud Consultant / Architect 
 
 February 2019 - September 2021 (Netherlands)
 
-As a Cloud Consultant, I supported large enterprise organizations in their transition to the cloud and the acceleration of their digital innovation. My role combined strategic advisory, technical architecture, and program guidance for cloud migration, DevOps adoption, and application modernization on the Azure platform.
+As a Cloud Consultant / Architect at Microsoft, I guided large enterprise organizations through cloud migration, DevOps adoption, and application modernization on Azure, combining strategic advisory with technical architecture and program guidance.
 
-At ABN AMRO, I led the “Modernizing Workloads” initiative, successfully delivering the bank’s first Azure PaaS workload into production. This marked a key milestone that demonstrated the viability of PaaS as a path for enterprise modernization. I also implemented the bank’s first global rollout of the DevOps Dojo, significantly improving the software delivery capabilities of multiple teams and driving a broader DevOps transformation.
+I worked with engineering and leadership teams to improve ways of working, delivery reliability, and long-term maintainability. My role often required aligning business stakeholders, architects, and development teams around practical modernization paths that could be executed safely in complex environments.
 
-At Nokia Networks, I served as the right hand to the program manager within the Architecture and Advisory Support Service, where my work focused on increasing future Azure Consumption Revenue (ACR). I provided strategic guidance on topics such as Azure Application Gateway, Infrastructure as Code (IaC), Compliance as Code, cloud-native development, and zero-touch deployment.
+At ABN AMRO, I led the “Modernizing Workloads” initiative and delivered the bank’s first Azure PaaS workload into production using .NET and C#, demonstrating a repeatable modernization path. I also implemented the bank’s first global rollout of the DevOps Dojo, improving engineering capabilities across teams and accelerating a broader DevOps transformation.
 
-In this role, I advised clients across various industries, including Allego, Siemens, TBI (Water Management), Enza Zaden, Nationale-Nederlanden, Deutsche Bank AG, and many others.
-
-Additionally, I contributed as a DevOps Dojo White Belt trainer and contributor, helping to improve the quality and long-term impact of future DevOps implementations.
+At Nokia Networks, I acted as the right hand to the program manager in the Architecture and Advisory Support Service, advising on Azure Application Gateway, Infrastructure as Code (IaC), Compliance as Code, cloud-native development, and zero-touch deployment. Across engagements, I coached teams on ways of working that improve reliability and maintainability over time.
  
 ### Dropbox - Solutions Architect
 
 February 2017 - December 2017 (Netherlands)
 
-As a Solutions Architect, I was responsible for the technical presales of Dropbox for Enterprise across the Benelux region. I served as both a strategic and technical advisor to the sales team, translating complex customer requirements into effective cloud-based collaboration solutions.
+As a Solutions Architect for strategic accounts at Dropbox, I was responsible for technical presales for Dropbox for Enterprise across the Benelux. I translated complex customer requirements into practical solution designs, partnered closely with sales, and ensured proposals matched both technical needs and business outcomes.
 
-Leveraging my deep knowledge of enterprise IT environments, I positioned Dropbox products, such as Dropbox Paper, as valuable tools within broader digital transformation initiatives. By closely collaborating with customers and the sales team, I ensured that proposed solutions met both technical specifications and strategic business goals.
-
-My contributions led to accelerated customer adoption, long-term client relationships, and measurable revenue growth within the enterprise segment.
+Leveraging deep familiarity with enterprise IT environments, I positioned collaboration capabilities (including Dropbox Paper) within broader digital transformation initiatives. This work strengthened customer relationships, accelerated adoption, and contributed to revenue growth in the enterprise segment.
 
 ### Microsoft - Senior Technical Evangelist
 
 April 2013 - February 2017 (Netherlands)
 
-As a Senior Technical Evangelist, I was responsible for driving adoption of emerging Microsoft platforms, including Windows 8 Apps, Windows Phone, Silverlight, and Microsoft Edge. In this role, I led Developer Relations (DevRel) initiatives focused on strengthening the relationship between Microsoft and the developer community.
+As a Senior Technical Evangelist at Microsoft, I drove adoption of emerging platforms including .NET/C#, Windows 8 Apps, Windows Phone, Silverlight, and Edge, while leading developer relations initiatives that strengthened relationships with the developer community.
 
-I organized and delivered numerous hands-on labs, technical workshops, and large-scale events with over 2,500 attendees, helping developers build innovative and optimized solutions on Microsoft technologies. These efforts directly accelerated platform adoption and increased community engagement.
+I organized and delivered hands-on labs, technical workshops, and large-scale events with over 2,500 attendees, helping developers build optimized, real-world solutions and accelerating platform adoption. I collaborated with software partners (ISVs), startups, and independent developers to share best practices and develop practical use cases.
 
-I also worked closely with software partners (ISVs), startups, and independent developers to share best practices and develop real-world use cases. Acting as a bridge between Microsoft product teams and the developer ecosystem, I collected valuable field feedback and brought it back to engineering, helping to shape Microsoft products in ways that better met user needs and fostered platform innovation.
+Acting as a bridge between field and engineering, I brought structured feedback from customers and developers back to product teams to improve product usability, adoption, and real-world outcomes. This role further strengthened my communication, stakeholder management, and community leadership capabilities.
 
 ### Microsoft – Senior Premier Field Engineer
 
 July 2011 – April 2013 (Netherlands)
 
-As a Senior Premier Field Engineer, I was responsible for providing technical guidance and strategic support to leading Independent Software Vendors (ISVs) in the Netherlands, including Exact, SDL Tridion, and Afas. My focus was on strengthening long-term customer relationships through proactive support, knowledge sharing, and the optimization of Microsoft technologies within complex software environments.
+As a Senior Premier Field Engineer at Microsoft, I provided deep technical guidance (.NET/C#) and strategic support to leading ISVs in the Netherlands, including Exact, SDL Tridion, and AFAS.
 
-I advised ISVs on best practices for implementing Microsoft platforms and technologies, helped resolve technical challenges, and supported migration and optimization projects. By combining deep technical expertise with strategic advisory, I contributed directly to the success of our partners, increased customer satisfaction, and drove sustained adoption of Microsoft solutions within the software industry.
+My focus was on strengthening long-term customer relationships through proactive support, knowledge sharing, and helping partners optimize Microsoft technologies within complex software environments. I advised on best practices, helped resolve technical challenges, and supported migration and optimization efforts, combining hands-on engineering depth with practical stakeholder communication. I also led Sev1/Sev2 incident triage, contributing to operational stability and stronger production support practices.
+
 
 ### Microsoft – Application Platform Consultant
 
 April 2007 – July 2011 (Netherlands)
 
-As an Application Platform Consultant, I delivered high-impact projects for enterprise clients, focusing on application development, DevOps adoption, and software platform modernization. In industries such as media and broadcasting, I helped organizations streamline development processes, modernize platforms, and accelerate digital transformation.
+As an Application Platform Consultant at Microsoft, I delivered enterprise projects focused on application development using the .NET stack (C#, EF, T-SQL, CI/CD), DevOps adoption (TFS, SLAs, quality gates, and test environments), and platform modernization.
 
-My role combined deep technical expertise with strategic advisory. I guided customers in adopting Microsoft technologies to future-proof their development environments, emphasizing scalability, automation, and the integration of CI/CD practices.
-Over the years, I led cloud and modernization initiatives for clients including the Dutch Tax Authority (Belastingdienst), Rabobank, Ziggo, Philips, Reaal, Capgemini, Exact, Centric, Getronics/PinkRoccade, InHolland University, RTL, Talpa, and many others.
+I worked in environments where reliability, process discipline, and stakeholder alignment were critical, helping customers streamline development processes, modernize platforms, and accelerate delivery with stronger engineering practices, automation, and CI/CD.
 
-These engagements consistently centered on cloud architecture, emerging technology adoption, application modernization, and DevOps implementation. My key contribution was the ability to translate business goals into actionable technical solutions with long-lasting organizational impact.
+Over the years, I led cloud and modernization initiatives for clients including the Dutch Tax Authority (Belastingdienst), Rabobank, Ziggo, Philips, Reaal, Capgemini, Exact, Centric, Getronics/PinkRoccade, Inholland University, RTL, and Talpa.
 
 ### LogicaCMG – Software Development Consultant
 

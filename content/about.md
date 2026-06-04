@@ -1,70 +1,125 @@
 ---
-title: "About me"
-date: 2026-02-18
+title: "About Me"
+date: 2026-06-04
 draft: false
-
 comment: false
-
-tags: ["Resume", "CV", "About", "Profile"]
+tags: ["About", "Profile", "Software Architecture", "Engineering Leadership"]
 ---
 
-Hi, I'm **Clemens Schotte**. I am a software architect, product and engineering leader, and hands-on developer with 25+ years of experience building and scaling enterprise software. I am also the **owner and founder of [NavaTron](https://navatron.com)**.
+## About Me
 
-Most recently, I was **Senior Program Manager for Azure Maps at Microsoft** (2021-2026), where I helped shape product strategy, technical direction, and developer adoption across Microsoft's geospatial platform.
+Hi, I'm **Clemens Schotte**.
+
+I'm a software architect, product leader, engineering strategist, and hands-on developer with more than 25 years of experience building software products, cloud platforms, and engineering organizations.
+
+Throughout my career I've had the opportunity to work across startups, global enterprises, and one of the world's largest technology companies. Most recently I served as **Senior Program Manager for Azure Maps at Microsoft**, where I helped shape the strategy and technical direction of Microsoft's global geospatial platform.
+
+Today I work through **NavaTron**, where I focus on software architecture, cloud-native platforms, AI-driven solutions, and helping organizations turn complex ideas into systems that actually deliver value.
+
+What has remained constant throughout my career is a simple belief:
+
+> Great software is not measured by how quickly it is built. It is measured by how well it can be understood, operated, and evolved over time.
 
 ![Clemens at Microsoft](/images/microsoft.jpg)
 
-## At a Glance
+## What This Blog Is About
 
-- 25+ years in software engineering, architecture, consulting, and product leadership
-- 17+ years at Microsoft across consulting, evangelism, field engineering, and product roles
-- Owner/founder of **NavaTron**
-- Deep expertise in .NET/C#, Azure, DevOps, cloud modernization, and geospatial systems
-- Strong track record turning complex technical trade-offs into maintainable, production-ready outcomes
+This blog is where I share lessons learned from more than two decades of building software.
+
+You'll find articles about:
+
+- Software architecture
+- Engineering leadership
+- AI and software development
+- Cloud-native platforms
+- Product strategy
+- Microsoft technologies
+- Developer productivity
+- Real-world engineering challenges
+
+Most articles are based on practical experience rather than theory.
+
+I am particularly interested in the intersection of architecture, AI, and long-term maintainability. As software teams increasingly adopt AI-assisted development, I believe understanding systems is becoming more valuable than simply producing code.
+
+That theme appears frequently throughout my writing.
+
+## My Background
+
+My career spans software engineering, consulting, product management, developer relations, cloud architecture, and platform strategy.
+
+Over the years I have worked with organizations ranging from startups to global enterprises, helping teams modernize applications, migrate to the cloud, scale engineering practices, and build products that serve millions of users.
+
+At Microsoft I spent more than 17 years in various technical and leadership roles, including consulting, field engineering, technical evangelism, and product management.
+
+Some highlights include:
+
+- Senior Program Manager for Azure Maps
+- Leading Azure adoption and modernization initiatives for enterprise customers
+- Supporting large-scale cloud transformations
+- Building developer platforms and technical ecosystems
+- Bridging engineering, product, business, and customer needs
+
+Before Microsoft, and alongside it, I have always remained deeply involved in software development itself.
+
+I still write code.
+
+I still design systems.
+
+And I still enjoy solving difficult technical problems.
 
 ## NavaTron
 
-**NavaTron** is my independent software and consulting company. Through NavaTron, I help organizations design and build practical cloud-native solutions, with a focus on architecture, developer productivity, and real-world delivery.
+NavaTron is where I bring together everything I've learned throughout my career.
 
-## What I Work On
+The company focuses on building practical software solutions on top of modern cloud platforms, with a particular focus on:
 
-I work at the intersection of **software architecture, cloud platforms, and real-world delivery**. My focus is not just getting code to run, but making sure systems are secure, understandable, maintainable, and operationally reliable.
+- AI-powered business automation
+- SaaS platforms
+- Enterprise architecture
+- Microsoft technologies
+- Cloud-native development
+- Logistics and optimization solutions
 
-## Career Highlights
+My goal is not simply to build software. My goal is to build software that remains understandable, maintainable, and valuable years after it is deployed. That sounds obvious. In practice, it is surprisingly rare.
 
-## Microsoft - Senior Program Manager, Azure Maps (2021-2026)
-- Led product strategy and technical direction for Azure Maps
-- Aligned engineering, marketing, and stakeholder priorities across a complex platform
-- Helped consolidate enterprise mapping capabilities and improve portfolio clarity
-- Continued to contribute hands-on code and developer assets
+## How I Think About Technology
 
-## Microsoft - Cloud Consultant (2019-2021)
-- Guided large enterprises through Azure migration, DevOps adoption, and modernization
-- Led ABN AMRO's first Azure PaaS workload into production
-- Supported Nokia on cloud architecture, IaC, compliance as code, and zero-touch deployment
+Technology changes constantly. The fundamentals do not.
 
-## Dropbox - Solutions Architect (2017)
-- Led enterprise technical presales in the Benelux
-- Translated complex requirements into practical designs and measurable business outcomes
+Over the years I've become less interested in frameworks, trends, and hype cycles, and more interested in the principles that survive them.
 
-## Microsoft - Technical Evangelism and Field Engineering (2007-2017)
-- Delivered workshops and labs for thousands of developers
-- Supported major ISVs with deep .NET/C# guidance and incident response
-- Helped bridge product engineering and real-world developer feedback
+I care about:
 
-## Foundations
+- Clear architecture
+- Operational excellence
+- Simplicity
+- Long-term maintainability
+- Engineering discipline
+- Business value
 
-My journey started early with a **Commodore 64**, followed by years of coding and computer club projects. I later earned a Bachelor's degree in Information Sciences from The Hague University and have remained deeply technical throughout my career.
+I believe successful engineering organizations balance innovation with responsibility. AI is a good example. I strongly believe AI will transform software development, but I also believe that architectural thinking, engineering judgment, and accountability become more important—not less—as automation increases.
 
-I still build software regularly and keep exploring new tools and languages, including Rust and Zig, while maintaining a strong practical focus on business value and user outcomes.
+The future belongs to engineers who can understand systems, not just generate code.
+
+## Where It All Started
+
+Like many developers of my generation, my journey started with a home computer. In my case, it was a Commodore 64.
+
+That curiosity eventually led me to study Information Sciences at The Hague University and ultimately into a career that has now spanned more than two decades.
+
+Despite the changing technologies, the motivation remains the same:
+
+I enjoy understanding how things work and building better ways to solve problems.
 
 ## Let's Connect
 
-I'm always open to discussing software architecture, cloud strategy, geospatial technology, and developer experience. You can find me on:
+I always enjoy conversations about software architecture, cloud platforms, AI, engineering leadership, product strategy, and building successful software teams.
+
+You can find me here:
 
 - **Blog**: [clemens.ms](https://clemens.ms) (where I share deep technical insights)
 - **LinkedIn**: [linkedin.com/in/cschotte](https://www.linkedin.com/in/cschotte/)
 - **GitHub**: [github.com/cschotte](https://github.com/cschotte)
 - **Email**: clemens@navatron.com
 
-Whether you are building new platforms, modernizing existing systems, or navigating difficult architectural decisions, feel free to reach out.
+If you're working on a challenging engineering problem, modernizing a platform, evaluating AI adoption, or simply want to exchange ideas, feel free to reach out.
