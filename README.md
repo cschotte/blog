@@ -1,7 +1,5 @@
 # Blog of Clemens Schotte
 
-[![Deploy Status](https://github.com/cschotte/Blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/cschotte/Blog/actions/workflows/deploy.yml)
-
 This is the source code for my personal blog hosted at [clemens.ms](https://clemens.ms). The blog is built with [Hugo](https://gohugo.io/) using the [LoveIt](https://github.com/dillonzq/LoveIt) theme and automatically deployed to Azure using GitHub Actions.
 
 ## 🏗️ Tech Stack
