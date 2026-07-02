@@ -1,0 +1,144 @@
+{
+  "projects": [
+    {
+      "name": "CaveRace",
+      "short_description": "A classic maze-based MS-DOS game originally developed in 1997.",
+      "long_description": "CaveRace is a maze-based video game Clemens Schotte developed in 1997 with other students. It was inspired by Dyna Blaster/Bomberman-style gameplay. The MS-DOS version was written mainly in Borland C 3.1, with some graphics routines in x86 assembly language, and targets VGA 320x200 Mode 13h on MS-DOS. The game includes levels, tile-based graphics originally created on an Amiga using Deluxe Paint, keyboard and mouse input, and a MapEditor. Clemens also notes Windows and Windows Phone 7 versions written in C# using DirectX graphics.",
+      "status": "Open source MS-DOS version available; historical/personal project with later Windows and Windows Phone versions mentioned.",
+      "technologies": [
+        "Borland C 3.1",
+        "C",
+        "x86 assembly",
+        "MS-DOS",
+        "VGA Mode 13h",
+        "C#",
+        "DirectX",
+        "Windows Phone 7"
+      ],
+      "links": [
+        "https://clemens.ms/caverace/"
+      ],
+      "screenshots": [
+        "https://clemens.ms/caverace/demo1.png",
+        "https://clemens.ms/caverace/demo2.png",
+        "https://clemens.ms/caverace/demo3.png",
+        "https://clemens.ms/caverace/eldora.png",
+        "https://clemens.ms/caverace/treasure.png",
+        "https://clemens.ms/caverace/alien.png"
+      ],
+      "repository": "https://github.com/cschotte/caverace"
+    },
+    {
+      "name": "Azure Maps MCP Server",
+      "short_description": "A Model Context Protocol server that exposes Azure Maps capabilities to AI agents.",
+      "long_description": "The Azure Maps MCP Server is a public project described on clemens.ms that connects AI agents and LLM clients to Azure Maps through Model Context Protocol tools. The project uses .NET, Azure Functions isolated worker, dependency injection, Azure Maps SDKs and REST APIs, and a curated tool surface for geospatial tasks such as search, routing, isochrones, static maps, time zones, weather, and road snapping.",
+      "status": "Public repository and blog article available.",
+      "technologies": [
+        ".NET",
+        "C#",
+        "Azure Functions",
+        "Azure Maps",
+        "Model Context Protocol",
+        "GitHub Copilot",
+        "REST APIs"
+      ],
+      "links": [
+        "https://clemens.ms/enabling-geospatial-intelligence-in-llms-with-azure-maps-and-mcp/",
+        "https://clemens.ms/i-built-an-mcp-server-almost-without-writing-code/"
+      ],
+      "screenshots": [
+        "https://clemens.ms/enabling-geospatial-intelligence-in-llms-with-azure-maps-and-mcp/chat.png"
+      ],
+      "repository": "https://github.com/cschotte/azure-maps-mcp"
+    },
+    {
+      "name": "Personal AI Blog Assistant",
+      "short_description": "A semantic-search AI assistant architecture for clemens.ms.",
+      "long_description": "Clemens describes building an AI assistant for his blog using Hugo JSON output, n8n workflows, Azure AI Search, Azure OpenAI embeddings, and semantic/vector search. The assistant is intended to let visitors ask natural-language questions about Clemens, his work, and his blog content while retrieving cited articles.",
+      "status": "Documented as a blog architecture and implementation.",
+      "technologies": [
+        "Hugo",
+        "n8n",
+        "Azure AI Search",
+        "Azure OpenAI",
+        "OpenAI embeddings",
+        "Semantic search",
+        "Vector search"
+      ],
+      "links": [
+        "https://clemens.ms/building-a-personal-ai-chat-assistant-with-semantic-search/",
+        "https://clemens.ms/running-n8n-on-azure-to-power-a-ai-chat-agent/"
+      ],
+      "screenshots": [
+        "https://clemens.ms/building-a-personal-ai-chat-assistant-with-semantic-search/vector.jpg",
+        "https://clemens.ms/building-a-personal-ai-chat-assistant-with-semantic-search/search.jpg",
+        "https://clemens.ms/building-a-personal-ai-chat-assistant-with-semantic-search/ai_agent.jpg"
+      ],
+      "repository": null
+    },
+    {
+      "name": "NavaTron Write",
+      "short_description": "A personal/open-source terminal word processor project in Zig.",
+      "long_description": "NavaTron Write is referenced as a personal/open-source terminal word processor project in Zig. It aligns with Clemens' interest in practical software engineering, editor behavior, and systems programming. Public clemens.ms project details were not found in the current site content.",
+      "status": "TODO: confirm public status and canonical URL.",
+      "technologies": [
+        "Zig",
+        "Terminal UI"
+      ],
+      "links": [],
+      "screenshots": [],
+      "repository": null,
+      "todo": "Add canonical public project page, repository, screenshots, and current status when available."
+    },
+    {
+      "name": "GeoLibre",
+      "short_description": "TODO: Confirm public project details.",
+      "long_description": "GeoLibre was requested for inclusion, but no confirmed public clemens.ms page or repository was identified in the current site content.",
+      "status": "TODO: confirm whether GeoLibre is public and should be included.",
+      "technologies": [],
+      "links": [],
+      "screenshots": [],
+      "repository": null,
+      "todo": "Add factual description, links, technologies, screenshots, and repository if public."
+    },
+    {
+      "name": "Azure Maps Store Locator",
+      "short_description": "A location-based store locator sample using Azure Maps.",
+      "long_description": "Clemens wrote about the Azure Maps Store Locator, a sample architecture that helps customers find nearby business locations using Azure Maps and supporting Azure services. The article links to the Azure Samples repository.",
+      "status": "Documented sample/article.",
+      "technologies": [
+        "Azure Maps",
+        "JavaScript",
+        "REST APIs",
+        "Azure services"
+      ],
+      "links": [
+        "https://clemens.ms/azure-maps-store-locator/"
+      ],
+      "screenshots": [
+        "https://clemens.ms/azure-maps-store-locator/storelocator.gif",
+        "https://clemens.ms/azure-maps-store-locator/architecture.jpg"
+      ],
+      "repository": "https://github.com/Azure-Samples/Azure-Maps-Locator"
+    },
+    {
+      "name": "Azure DevOps Dashboard",
+      "short_description": "A dashboard concept for Azure DevOps visibility.",
+      "long_description": "Clemens published a technical article titled Azure DevOps Dashboard covering dashboarding and architecture around Azure DevOps visibility.",
+      "status": "Documented blog project/article.",
+      "technologies": [
+        "Azure DevOps",
+        "Azure",
+        "WebApp"
+      ],
+      "links": [
+        "https://clemens.ms/azure-devops-dashboard/"
+      ],
+      "screenshots": [
+        "https://clemens.ms/azure-devops-dashboard/dashboard.png",
+        "https://clemens.ms/azure-devops-dashboard/architecture.png"
+      ],
+      "repository": null
+    }
+  ]
+}

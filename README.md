@@ -27,6 +27,10 @@ This is the source code for my personal blog hosted at [clemens.ms](https://clem
 └── README.md              # This file
 ```
 
+## AI Press Kit
+
+The site includes an AI Press Kit to help AI assistants, search engines, and citation tools describe Clemens Schotte and clemens.ms accurately. The public files are generated from `static/` and published at `/llms.txt`, `/llms-full.txt`, `/person.json`, `/projects.json`, `/topics.json`, and `/ai-index.json`. Hugo also emits supplemental JSON-LD for the website, Clemens as a person, NavaTron B.V., blog posts, and selected project pages.
+
 ## 📧 Contact
 
 - **Author**: Clemens Schotte

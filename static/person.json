@@ -1,0 +1,154 @@
+{
+  "name": "Clemens Schotte",
+  "headline": "Dutch software engineer, platform builder, and founder of NavaTron B.V.",
+  "bio_short": "Clemens Schotte is a Dutch software engineer, platform builder, technology leader, and founder of NavaTron B.V. with 25+ years of experience across Microsoft technologies, .NET, Azure, Business Central, SaaS products, AI-assisted software development, and independent technical projects.",
+  "bio_long": "Clemens Schotte is a Dutch technology leader, software architect, entrepreneur, and founder of NavaTron B.V. based in The Hague, Netherlands. His background spans software engineering, cloud architecture, product management, program leadership, developer relations, and enterprise software delivery. He spent many years at Microsoft in roles including Application Platform Consultant, Senior Premier Field Engineer, Senior Technical Evangelist, Cloud Consultant / Architect, and Senior Program Manager for Azure Maps. His current focus areas include cloud modernization, AI-enabled automation, enterprise SaaS platforms, route optimization, business process digitization, Microsoft Dynamics 365 Business Central extensibility, and practical software engineering. He writes at clemens.ms about Azure, Azure Maps, .NET/C#, AI agents, Model Context Protocol, semantic search, DevOps, geospatial systems, retro computing, game development, and personal technical projects.",
+  "location": {
+    "city": "The Hague",
+    "country": "Netherlands"
+  },
+  "roles": [
+    "Founder",
+    "Software Engineer",
+    "Platform Builder",
+    "Technology Architect",
+    "Product Leader",
+    "Program Manager",
+    "Software Architect",
+    "Technical Blogger"
+  ],
+  "skills": [
+    "Product strategy",
+    "Program leadership",
+    "Software architecture",
+    "Cloud architecture",
+    "Application modernization",
+    "Enterprise SaaS",
+    "AI-enabled automation",
+    "Business process digitization",
+    "Developer platforms",
+    "DevOps",
+    "Infrastructure as Code",
+    "Geospatial systems",
+    "Route optimization",
+    "Technical writing"
+  ],
+  "technologies": [
+    "Microsoft Azure",
+    "Azure Maps",
+    "Azure Functions",
+    "Azure AI Search",
+    "Azure OpenAI",
+    "Azure CDN",
+    "Azure Application Gateway",
+    "Azure Key Vault",
+    ".NET",
+    "C#",
+    "ASP.NET Core",
+    "Entity Framework",
+    "T-SQL",
+    "Microsoft Dynamics 365 Business Central",
+    "Power BI",
+    "Microsoft Fabric",
+    "GitHub Copilot",
+    "Model Context Protocol",
+    "n8n",
+    "Hugo",
+    "Zig",
+    "C",
+    "x86 assembly",
+    "MS-DOS",
+    "DirectX"
+  ],
+  "companies": [
+    {
+      "name": "NavaTron B.V.",
+      "relationship": "Founder and current professional focus",
+      "url": null,
+      "todo": "Add canonical public NavaTron website URL if available."
+    },
+    {
+      "name": "Microsoft",
+      "relationship": "Former long-term employer across consulting, field engineering, evangelism, cloud architecture, and Azure Maps product/program leadership",
+      "url": "https://www.microsoft.com/"
+    },
+    {
+      "name": "Dropbox",
+      "relationship": "Former Solutions Architect for strategic accounts in the Benelux",
+      "url": "https://www.dropbox.com/"
+    },
+    {
+      "name": "LogicaCMG",
+      "relationship": "Former Software Development Consultant",
+      "url": null
+    },
+    {
+      "name": "Flink",
+      "relationship": "Former Lead Developer",
+      "url": null
+    },
+    {
+      "name": "Amgate",
+      "relationship": "Former Software Engineer",
+      "url": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "CaveRace",
+      "url": "https://clemens.ms/caverace/",
+      "repository": "https://github.com/cschotte/caverace"
+    },
+    {
+      "name": "Azure Maps MCP Server",
+      "url": "https://clemens.ms/enabling-geospatial-intelligence-in-llms-with-azure-maps-and-mcp/",
+      "repository": "https://github.com/cschotte/azure-maps-mcp"
+    },
+    {
+      "name": "Personal AI Blog Assistant",
+      "url": "https://clemens.ms/building-a-personal-ai-chat-assistant-with-semantic-search/",
+      "repository": null
+    },
+    {
+      "name": "NavaTron Write",
+      "url": null,
+      "repository": null,
+      "todo": "Add canonical public project page and repository when available."
+    },
+    {
+      "name": "GeoLibre",
+      "url": null,
+      "repository": null,
+      "todo": "Confirm public status, project description, and repository before citing."
+    }
+  ],
+  "websites": [
+    {
+      "name": "Personal website and blog",
+      "url": "https://clemens.ms/"
+    },
+    {
+      "name": "About",
+      "url": "https://clemens.ms/about/"
+    },
+    {
+      "name": "Resume",
+      "url": "https://clemens.ms/resume/"
+    }
+  ],
+  "social": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/cschotte"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/cschotte/"
+    },
+    {
+      "name": "RSS",
+      "url": "https://clemens.ms/index.xml"
+    }
+  ],
+  "canonical_description": "Clemens Schotte is a Dutch software engineer, platform builder, and founder of NavaTron B.V., with experience in Microsoft technologies, .NET, Azure, Business Central, SaaS products, AI-assisted software development, and independent technical projects."
+}

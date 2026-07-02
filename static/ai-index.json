@@ -1,0 +1,90 @@
+{
+  "site": {
+    "name": "Clemens Schotte",
+    "url": "https://clemens.ms/",
+    "description": "Personal technical blog and professional website for Clemens Schotte, a Dutch software engineer, platform builder, and founder of NavaTron B.V."
+  },
+  "ai_press_kit": {
+    "llms": "https://clemens.ms/llms.txt",
+    "llms_full": "https://clemens.ms/llms-full.txt",
+    "person": "https://clemens.ms/person.json",
+    "projects": "https://clemens.ms/projects.json",
+    "topics": "https://clemens.ms/topics.json",
+    "ai_index": "https://clemens.ms/ai-index.json"
+  },
+  "feeds": {
+    "rss": "https://clemens.ms/index.xml",
+    "json_content_index": "https://clemens.ms/index.json",
+    "sitemap": "https://clemens.ms/sitemap.xml",
+    "robots": "https://clemens.ms/robots.txt"
+  },
+  "important_pages": [
+    {
+      "name": "Homepage",
+      "url": "https://clemens.ms/"
+    },
+    {
+      "name": "About",
+      "url": "https://clemens.ms/about/"
+    },
+    {
+      "name": "Resume",
+      "url": "https://clemens.ms/resume/"
+    },
+    {
+      "name": "Posts",
+      "url": "https://clemens.ms/posts/"
+    },
+    {
+      "name": "Tags",
+      "url": "https://clemens.ms/tags/"
+    },
+    {
+      "name": "Categories",
+      "url": "https://clemens.ms/categories/"
+    },
+    {
+      "name": "CaveRace",
+      "url": "https://clemens.ms/caverace/"
+    },
+    {
+      "name": "Enabling Geospatial Intelligence in LLMs with Azure Maps and MCP",
+      "url": "https://clemens.ms/enabling-geospatial-intelligence-in-llms-with-azure-maps-and-mcp/"
+    },
+    {
+      "name": "I Built an MCP Server (Almost) Without Writing Code",
+      "url": "https://clemens.ms/i-built-an-mcp-server-almost-without-writing-code/"
+    },
+    {
+      "name": "Building a personal AI chat assistant with semantic search",
+      "url": "https://clemens.ms/building-a-personal-ai-chat-assistant-with-semantic-search/"
+    },
+    {
+      "name": "AI Is Creating a New Kind of Technical Debt",
+      "url": "https://clemens.ms/ai-is-creating-a-new-kind-of-technical-debt/"
+    },
+    {
+      "name": "Why VS Code + GitHub Copilot Became My Developer Cockpit",
+      "url": "https://clemens.ms/why-vs-code-github-copilot-became-my-developer-cockpit/"
+    },
+    {
+      "name": "Multi-Itinerary Optimization",
+      "url": "https://clemens.ms/multi-itinerary-optimization/"
+    },
+    {
+      "name": "Azure Maps Store Locator",
+      "url": "https://clemens.ms/azure-maps-store-locator/"
+    }
+  ],
+  "external_profiles": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/cschotte"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/cschotte/"
+    }
+  ],
+  "canonical_description": "Clemens Schotte is a Dutch software engineer, platform builder, and founder of NavaTron B.V., with experience in Microsoft technologies, .NET, Azure, Business Central, SaaS products, AI-assisted software development, and independent technical projects."
+}

@@ -1,0 +1,105 @@
+{
+  "topics": [
+    {
+      "name": "Microsoft technologies",
+      "description": "Posts and professional background around Microsoft platforms, Azure services, developer tools, Power BI, Microsoft Fabric, Dynamics 365, and engineering practices.",
+      "links": [
+        "https://clemens.ms/tags/microsoft/",
+        "https://clemens.ms/categories/cloud/",
+        "https://clemens.ms/categories/geospatial/"
+      ]
+    },
+    {
+      "name": ".NET/C#",
+      "description": "Clemens has long-running professional experience with .NET and C#, including Microsoft consulting, field engineering, application modernization, Azure Functions, ASP.NET Core, and personal projects.",
+      "links": [
+        "https://clemens.ms/generate-pdf-files-with-asp.net-core-on-azure/",
+        "https://clemens.ms/enabling-geospatial-intelligence-in-llms-with-azure-maps-and-mcp/"
+      ]
+    },
+    {
+      "name": "Azure",
+      "description": "A major blog theme covering Azure cloud architecture, Azure Maps, Azure CDN, Azure Key Vault, Azure Application Gateway, Azure AI Search, Azure Functions, DevOps, and cloud-native development.",
+      "links": [
+        "https://clemens.ms/tags/azure/",
+        "https://clemens.ms/categories/cloud/"
+      ]
+    },
+    {
+      "name": "Business Central",
+      "description": "A current NavaTron focus area listed on Clemens' resume: Microsoft Dynamics 365 Business Central extensibility and productivity solutions.",
+      "links": [
+        "https://clemens.ms/resume/"
+      ],
+      "todo": "Add specific Business Central articles or product pages when published."
+    },
+    {
+      "name": "AI/software engineering",
+      "description": "Posts about AI agents, Model Context Protocol, GitHub Copilot, AI-assisted development, semantic search, n8n, Azure OpenAI, and comprehension debt.",
+      "links": [
+        "https://clemens.ms/categories/ai/",
+        "https://clemens.ms/ai-is-creating-a-new-kind-of-technical-debt/",
+        "https://clemens.ms/why-vs-code-github-copilot-became-my-developer-cockpit/"
+      ]
+    },
+    {
+      "name": "Zig",
+      "description": "A personal engineering interest. Clemens' about page mentions modernizing CaveRace in Zig, and his Copilot article discusses Zig as a language for predictable performance and explicit control.",
+      "links": [
+        "https://clemens.ms/about/",
+        "https://clemens.ms/why-vs-code-github-copilot-became-my-developer-cockpit/"
+      ]
+    },
+    {
+      "name": "Retro computing",
+      "description": "Posts about Commodore, Amiga, C64, MS-DOS, CaveRace, and classic computing hardware/software.",
+      "links": [
+        "https://clemens.ms/categories/retro/",
+        "https://clemens.ms/caverace/",
+        "https://clemens.ms/commodore/",
+        "https://clemens.ms/upgrading-my-amiga-1200-in-the-year-2020/"
+      ]
+    },
+    {
+      "name": "Game development",
+      "description": "Personal game development content centered on CaveRace, including MS-DOS C/assembly development and later Windows/C# versions.",
+      "links": [
+        "https://clemens.ms/caverace/"
+      ]
+    },
+    {
+      "name": "Entrepreneurship",
+      "description": "Clemens' current work as founder of NavaTron B.V., combining product strategy, program leadership, technical architecture, and business execution.",
+      "links": [
+        "https://clemens.ms/about/",
+        "https://clemens.ms/resume/"
+      ]
+    },
+    {
+      "name": "NavaTron",
+      "description": "Clemens' company and current professional focus, including AI-enabled automation, SaaS platforms, cloud-native architecture, route optimization, business process digitization, and Business Central extensibility.",
+      "links": [
+        "https://clemens.ms/resume/"
+      ],
+      "todo": "Add canonical NavaTron website and product links when available."
+    },
+    {
+      "name": "Personal technical notes",
+      "description": "Practical notes on home and office networking, UniFi, KPN fiber, SSL certificates, solar energy, Tesla Powerwall, WiFi calling, PHP debugging, and development workflows.",
+      "links": [
+        "https://clemens.ms/categories/network/",
+        "https://clemens.ms/categories/energy/",
+        "https://clemens.ms/categories/programming/"
+      ]
+    },
+    {
+      "name": "Geospatial and logistics",
+      "description": "Azure Maps, routing, store locators, spatial analytics, indoor maps, map authentication, geospatial data storage, route optimization, and logistics use cases.",
+      "links": [
+        "https://clemens.ms/categories/geospatial/",
+        "https://clemens.ms/multi-itinerary-optimization/",
+        "https://clemens.ms/storing-and-querying-your-geospatial-data-in-azure/"
+      ]
+    }
+  ]
+}
