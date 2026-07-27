@@ -469,6 +469,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 [frontmatter]
   date = [":default", ":filename", ":fileModTime"]
-  lastmod = [":fileModTime", ":default"]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
   publishDate = [":default", ":filename", ":fileModTime"]
   expiryDate = [":default"]
