@@ -2,7 +2,7 @@
 title: "CaveRace: From a 1997 DOS Game to a Modern Rewrite"
 author: "Clemens Schotte"
 date: 2020-06-04
-lastmod: 2026-07-27
+lastmod: 2026-07-28
 
 tags: ["Gaming", "MS-DOS", "Odin", "raylib", "Retro Computing", "Game Development"]
 categories: ["Retro"]
@@ -19,19 +19,19 @@ group of fellow students. We were inspired by **Dyna Blaster**
 game I loved playing on my Commodore Amiga.
 
 Almost thirty years later, I returned to Eldora and rebuilt CaveRace for modern
-computers. **CaveRace 1.5** keeps the original levels, pixel art, bombs,
+computers. **CaveRace 1.5.1** keeps the original levels, pixel art, bombs,
 treasure, and aliens, but now runs natively on Windows and macOS with music,
 sound effects, controller support, and a new story presentation.
 
-## Download CaveRace 1.5
+## Download CaveRace 1.5.1
 
-> **CaveRace 1.5 is the current and recommended version.** Download it for
+> **CaveRace 1.5.1 is the current and recommended version.** Download it for
 > Windows or an Apple silicon Mac and start exploring the caves of Eldora.
 
 | Platform | Download | Package |
 | --- | --- | --- |
-| Windows | **[Download CaveRace 1.5 for Windows](caverace-1.5-windows-amd64.zip)** | 64-bit Windows ZIP |
-| macOS | **[Download CaveRace 1.5 for macOS](caverace-1.5-macos-arm64.zip)** | Apple silicon (ARM64) ZIP |
+| Windows | **[Download CaveRace 1.5.1 for Windows](caverace-1.5.1-windows-amd64.zip)** | 64-bit Windows ZIP |
+| macOS | **[Download CaveRace 1.5.1 for macOS](caverace-1.5.1-macos-arm64.zip)** | Apple silicon (ARM64) ZIP |
 
 On Windows, extract the ZIP and run `CaveRace.exe`. On macOS, extract the ZIP
 and open `CaveRace.app`.
@@ -64,7 +64,7 @@ a new danger.
 
 ## The modern rewrite
 
-CaveRace 1.5 is a from-scratch rewrite in the
+CaveRace 1.5.1 is a from-scratch rewrite in the
 [Odin programming language](https://odin-lang.org/) using Odin's bundled
 [raylib](https://www.raylib.com/) bindings. I wanted the game to feel like the
 original rather than replace it with something unrecognizable. The ten level
@@ -89,7 +89,7 @@ The version numbers represent different development branches, so the 2012 XNA
 | 1.3 | 2002 | 32-bit Windows port using Visual C++ and DirectX 8.1 | [Download for Windows](caverace-1.3-windows-x86.zip) |
 | 1.4 | 2012 | Windows 8 Store app written in C# with SharpDX | Source preserved on [GitHub](https://github.com/cschotte/CaveRace) |
 | 2.0 | 2012 | XNA 4 edition for Windows, Windows Phone, and Xbox 360 | [Download the Windows/XNA archive](caverace-2.0-windows-xna.zip) |
-| **1.5** | **2026** | **Modern Windows and macOS rewrite using Odin and raylib** | **[Windows](caverace-1.5-windows-amd64.zip) · [macOS](caverace-1.5-macos-arm64.zip)** |
+| **1.5.1** | **2026** | **Modern Windows and macOS rewrite using Odin and raylib** | **[Windows](caverace-1.5.1-windows-amd64.zip) · [macOS](caverace-1.5.1-macos-arm64.zip)** |
 
 The Windows Store and XNA editions expanded the game with Forest, Desert,
 Winter, and Lava environments. They are preserved as part of the project's
@@ -174,6 +174,6 @@ Schotte (artwork and concept), Paul Bosselaar and Paul van Croonenburg
 development with artwork by Marijn.
 
 I hope you enjoy returning to Eldora—or discovering it for the first time.
-**[Download CaveRace 1.5 for Windows](caverace-1.5-windows-amd64.zip)** or
-**[download CaveRace 1.5 for macOS](caverace-1.5-macos-arm64.zip)** and let me
+**[Download CaveRace 1.5.1 for Windows](caverace-1.5.1-windows-amd64.zip)** or
+**[download CaveRace 1.5.1 for macOS](caverace-1.5.1-macos-arm64.zip)** and let me
 know how far you get.
