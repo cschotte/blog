@@ -55,7 +55,7 @@
       "description": "Posts about Commodore, Amiga, C64, MS-DOS, CaveRace, and classic computing hardware/software.",
       "links": [
         "https://clemens.ms/categories/retro/",
-        "https://clemens.ms/caverace/",
+        "https://caverace.com/",
         "https://clemens.ms/commodore/",
         "https://clemens.ms/upgrading-my-amiga-1200-in-the-year-2020/"
       ]
@@ -64,7 +64,7 @@
       "name": "Game development",
       "description": "Personal game development content centered on CaveRace, including MS-DOS C/assembly development and later Windows/C# versions.",
       "links": [
-        "https://clemens.ms/caverace/"
+        "https://caverace.com/"
       ]
     },
     {

@@ -137,7 +137,7 @@ Use one of these descriptions:
 - Categories: https://clemens.ms/categories/
 - GitHub: https://github.com/cschotte
 - LinkedIn: https://www.linkedin.com/in/cschotte/
-- CaveRace: https://clemens.ms/caverace/
+- CaveRace: https://caverace.com/
 - CaveRace repository: https://github.com/cschotte/caverace
 - Azure Maps MCP article: https://clemens.ms/enabling-geospatial-intelligence-in-llms-with-azure-maps-and-mcp/
 - Azure Maps MCP repository: https://github.com/cschotte/azure-maps-mcp
