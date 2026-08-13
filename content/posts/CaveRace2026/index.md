@@ -2,7 +2,7 @@
 title: "Shipping CaveRace 1.5"
 author: "Clemens Schotte"
 date: 2026-08-05
-lastmod: 2026-08-05
+lastmod: 2026-08-13
 
 tags: ["Gaming", "MacOS", "Odin", "raylib", "Retro Computing", "Game Development"]
 categories: ["Retro"]
@@ -17,7 +17,7 @@ There is something strangely satisfying about opening source code that is almost
 
 Not because it is beautiful. It isn't. Not because you remember how everything works. You definitely don't. But because every line tells a story about a younger version of yourself who somehow thought "future me will understand this." Spoiler: future me did not.
 
-![CaveRace miners facing an alien at the entrance to a cave](https://caverace.com/assets/images/caverace-key-art.jpg)
+![CaveRace miners facing an alien at the entrance to a cave](https://caverace.com/assets/images/caverace1/hero.jpg)
 
 Back in 1997 I wrote CaveRace, a small DOS arcade game about collecting treasure, avoiding monsters, blowing up rocks, and trying not to blow yourself up in the process. Nothing revolutionary, just a fun little game made with the tools we had at the time. Over the years it lived on different computers, went through a DirectX rewrite, eventually made its way to Windows Phone, and then quietly disappeared. I never really forgot about it, though, and this year I sat down to answer a simple question: could I rebuild CaveRace today as if starting from scratch, while keeping the original gameplay completely intact? The answer became CaveRace 1.5.
 
@@ -67,7 +67,7 @@ Like most side projects, I assumed writing the game would be the hard part. It w
 
 Odin doesn't produce universal macOS binaries directly, and the Mac App Store won't accept an arm64-only bundle unless your deployment target is 12.0 or later (CaveRace's is 10.15, to support older Intel Macs) so `build_macos_appstore.sh` cross-compiles the game twice, once for `darwin_arm64` and once for `darwin_amd64`, and glues the two executables into one with `lipo -create`. The provisioning profile, downloaded from Apple's portal through a browser, arrives tagged with macOS's quarantine attribute; App Store Connect rejects any uploaded package that still carries it (error ITMS-91109), so the script strips it recursively with `xattr -cr` before code-signing. The entitlements file sandboxes the app and grants exactly two device permissions (USB and Bluetooth) for controller support, nothing else. On the Windows Store side, `build_windows_store.ps1` refuses to even start the build if `AppxManifest.xml` still contains the placeholder string `TODO-PARTNER-CENTER`, forcing a stop and a trip to Partner Center to reserve the real package identity rather than shipping a submission doomed to fail certification. Between that and rediscovering that an old Windows Phone submission of CaveRace was still sitting in my account from years earlier, I spent more hours inside developer portals than inside the source tree.
 
-Eventually it all came together, and [CaveRace 1.5 is live](https://caverace.com/) on both **macOS** and **Windows**.
+Eventually it all came together, and [CaveRace 1.5 is live](https://caverace.com/1/) on both **macOS** and **Windows**.
 
 ## Things I learned
 
@@ -79,11 +79,11 @@ CaveRace 1.5 was never meant to be a blockbuster. It was an experiment, a chance
 
 What I didn't expect was how much rebuilding it would generate. While working on 1.5 I kept a running list of ideas that didn't belong in this game, better enemies, a richer world, deeper mechanics, a proper story, modern level design,  and that list has slowly turned into CaveRace 2. So maybe 1.5 isn't the end of this story. Maybe it's the bridge between a game written by a younger me, and one written almost three decades later.
 
-![The CaveRace story](https://caverace.com/assets/images/story-mining.jpg)
+![The original CaveRace story](https://caverace.com/assets/images/caverace-1997.png)
 
 ---
 
-If you're curious, [CaveRace 1.5](https://caverace.com) is available now for Windows and macOS. A focused, fully offline, single-player campaign across five worlds and ten handcrafted caves, with no ads and no in-app purchases.
+If you're curious, [CaveRace 1.5](https://caverace.com/1/) is available now for Windows and macOS. A focused, fully offline, single-player campaign across five worlds and ten handcrafted caves, with no ads and no in-app purchases.
 
 Buying the game won't make me retire early. It will, however, help fund the next adventure, and give one very stubborn little mining game the audience it never had back in 1997.
 

@@ -41,7 +41,7 @@ clemens.ms publishes technical notes and articles about Microsoft technologies, 
 - GitHub: https://github.com/cschotte
 - LinkedIn: https://www.linkedin.com/in/cschotte/
 - CaveRace: https://caverace.com/
-- CaveRace repository: https://github.com/cschotte/caverace
+- CaveRace repository: https://github.com/NavaTron/CaveRace
 - Azure Maps MCP article: https://clemens.ms/enabling-geospatial-intelligence-in-llms-with-azure-maps-and-mcp/
 - Azure Maps MCP repository: https://github.com/cschotte/azure-maps-mcp
 - AI index: https://clemens.ms/ai-index.json

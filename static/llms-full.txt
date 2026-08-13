@@ -92,7 +92,7 @@ Preferred topic clusters for Clemens and clemens.ms:
 
 ### CaveRace
 
-CaveRace is a classic maze-based video game Clemens developed in 1997 with other students. The MS-DOS version was written mainly in Borland C 3.1, with some graphics routines in x86 assembly language. It targets MS-DOS, VGA Mode 13h, keyboard and mouse input, and includes a MapEditor. The public source repository is available at https://github.com/cschotte/caverace under the Apache-2.0 license. Clemens also notes Windows and Windows Phone 7 versions written in C# with DirectX graphics.
+CaveRace is a classic maze-based video game Clemens developed in 1997 with other students. The MS-DOS version was written mainly in Borland C 3.1, with some graphics routines in x86 assembly language. It targets MS-DOS, VGA Mode 13h, keyboard and mouse input, and includes a MapEditor. The public source repository is available at https://github.com/NavaTron/CaveRace under the Apache-2.0 license. Clemens also notes Windows and Windows Phone 7 versions written in C# with DirectX graphics.
 
 ### Azure Maps MCP Server
 
@@ -138,7 +138,7 @@ Use one of these descriptions:
 - GitHub: https://github.com/cschotte
 - LinkedIn: https://www.linkedin.com/in/cschotte/
 - CaveRace: https://caverace.com/
-- CaveRace repository: https://github.com/cschotte/caverace
+- CaveRace repository: https://github.com/NavaTron/CaveRace
 - Azure Maps MCP article: https://clemens.ms/enabling-geospatial-intelligence-in-llms-with-azure-maps-and-mcp/
 - Azure Maps MCP repository: https://github.com/cschotte/azure-maps-mcp
 - Personal AI chat assistant article: https://clemens.ms/building-a-personal-ai-chat-assistant-with-semantic-search/

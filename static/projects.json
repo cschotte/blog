@@ -26,7 +26,7 @@
         "https://clemens.ms/caverace/treasure.png",
         "https://clemens.ms/caverace/alien.png"
       ],
-      "repository": "https://github.com/cschotte/caverace"
+      "repository": "https://github.com/NavaTron/CaveRace"
     },
     {
       "name": "Azure Maps MCP Server",

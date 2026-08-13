@@ -2,7 +2,7 @@
 title: "CaveRace: From a 1997 DOS Game to a Modern Rewrite"
 author: "Clemens Schotte"
 date: 2020-06-04
-lastmod: 2026-08-02
+lastmod: 2026-08-13
 
 tags: ["Gaming", "MS-DOS", "Odin", "raylib", "Retro Computing", "Game Development"]
 categories: ["Retro"]
@@ -26,10 +26,10 @@ sound effects, controller support, and a new story presentation.
 ## Download CaveRace
 
 > **CaveRace is now available from its official website.** Visit
-> [caverace.com](https://caverace.com/) for the latest downloads and start
+> [caverace.com/1](https://caverace.com/1/) for the latest downloads and start
 > exploring the caves of Eldora.
 
-**[Visit the official CaveRace website to download the game](https://caverace.com/)**
+**[Visit the official CaveRace 1 website to get the game](https://caverace.com/1/)**
 
 | Story | Main menu | Controls |
 | --- | --- | --- |
@@ -80,11 +80,11 @@ The version numbers represent different development branches, so the 2012 XNA
 
 | Version | Year | Platform and technology | Availability |
 | --- | ---: | --- | --- |
-| 1.2 | 1997–1998 | Original MS-DOS game, Borland C 3.1 and x86 assembly | [Official website](https://caverace.com/) |
-| 1.3 | 2002 | 32-bit Windows port using Visual C++ and DirectX 8.1 | [Official website](https://caverace.com/) |
-| 1.4 | 2012 | Windows 8 Store app written in C# with SharpDX | Source preserved on [GitHub](https://github.com/cschotte/CaveRace) |
-| 2.0 | 2012 | XNA 4 edition for Windows, Windows Phone, and Xbox 360 | [Official website](https://caverace.com/) |
-| **1.5.1** | **2026** | **Modern Windows and macOS rewrite using Odin and raylib** | **[Official website](https://caverace.com/)** |
+| 1.2 | 1997–1998 | Original MS-DOS game, Borland C 3.1 and x86 assembly | [CaveRace Classics](https://caverace.com/classics/) |
+| 1.3 | 2002 | 32-bit Windows port using Visual C++ and DirectX 8.1 | [CaveRace Classics](https://caverace.com/classics/) |
+| 1.4 | 2012 | Windows 8 Store app written in C# with SharpDX | Source preserved on [GitHub](https://github.com/NavaTron/CaveRace) |
+| 2.0 | 2012 | XNA 4 edition for Windows, Windows Phone, and Xbox 360 | Source preserved on [GitHub](https://github.com/NavaTron/CaveRace) |
+| **1.5.1** | **2026** | **Modern Windows and macOS rewrite using Odin and raylib** | **[CaveRace 1 website](https://caverace.com/1/)** |
 
 The Windows Store and XNA editions expanded the game with Forest, Desert,
 Winter, and Lava environments. They are preserved as part of the project's
@@ -158,7 +158,7 @@ to 30 FPS while the game simulation continues at 60 Hz.
 
 ## Open source and credits
 
-The complete [CaveRace source and version archive](https://github.com/cschotte/CaveRace)
+The complete [CaveRace source and version archive](https://github.com/NavaTron/CaveRace)
 is available on GitHub under the Apache License 2.0. The repository preserves
 the DOS, DirectX, SharpDX, XNA, and Odin codebases together with their original
 assets and build notes.
@@ -169,5 +169,5 @@ Schotte (artwork and concept), Paul Bosselaar and Paul van Croonenburg
 development with artwork by Marijn.
 
 I hope you enjoy returning to Eldora—or discovering it for the first time.
-**[Download CaveRace from the official website](https://caverace.com/)** and let
+**[Get CaveRace 1 from the official website](https://caverace.com/1/)** and let
 me know how far you get.

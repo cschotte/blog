@@ -12,7 +12,7 @@ featuredImage: "featured-image.png"
 draft: false
 ---
 
-I recently started rewriting [CaveRace](/caverace/), a game I originally built in C in 1997. The old version was written for MS-DOS using Borland C, VGA Mode 13h graphics, and a little x86 assembly. Rewriting it is a good excuse to revisit the game and experiment with a modern systems programming language.
+I recently started rewriting [CaveRace](https://caverace.com/1/), a game I originally built in C in 1997. The old version was written for MS-DOS using Borland C, VGA Mode 13h graphics, and a little x86 assembly. Rewriting it is a good excuse to revisit the game and experiment with a modern systems programming language.
 
 For this version, I chose [Odin](https://odin-lang.org/) together with [Raylib](https://www.raylib.com/). Odin feels familiar when coming from C, and its official `vendor` collection already includes Raylib bindings and native libraries. In theory, getting a window on the screen should be as simple as importing Raylib:
 
