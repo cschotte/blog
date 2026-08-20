@@ -26,7 +26,7 @@ In this architecture, the agent receives a goal or task, either via human input,
 
 This level of autonomy is not trivial. It requires careful design choices: prompt engineering, tool chaining, vector search optimization, and guardrails to ensure safety, compliance, and operational efficiency. These agents are not "one prompt away" systems, they are designed, configured, and iterated like software components. And yes, there are platforms that let non-technical users describe what they want and auto-generate a lightweight AI agent. But in my experience leading enterprise-scale transformations, these tools rarely deliver the robustness, observability, and cost-efficiency needed for production-grade systems.
 
-# Agentic AI in Action
+## Agentic AI in Action
 
 Let’s leave the abstract and dive into a real-world example: logistics (knowing me this should be not a surprise). Suppose you run a mid-sized delivery company with hundreds of daily shipments, multiple depots, and a fleet of trucks and drivers. Every evening, your dispatch team prepares the next day’s delivery plan; routes, assignments, departure times. It’s a repetitive, constraint-heavy problem. Now imagine replacing or augmenting that function with an AI Agent.
 

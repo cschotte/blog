@@ -77,31 +77,6 @@
       "repository": null
     },
     {
-      "name": "NavaTron Write",
-      "short_description": "A personal/open-source terminal word processor project in Zig.",
-      "long_description": "NavaTron Write is referenced as a personal/open-source terminal word processor project in Zig. It aligns with Clemens' interest in practical software engineering, editor behavior, and systems programming. Public clemens.ms project details were not found in the current site content.",
-      "status": "TODO: confirm public status and canonical URL.",
-      "technologies": [
-        "Zig",
-        "Terminal UI"
-      ],
-      "links": [],
-      "screenshots": [],
-      "repository": null,
-      "todo": "Add canonical public project page, repository, screenshots, and current status when available."
-    },
-    {
-      "name": "GeoLibre",
-      "short_description": "TODO: Confirm public project details.",
-      "long_description": "GeoLibre was requested for inclusion, but no confirmed public clemens.ms page or repository was identified in the current site content.",
-      "status": "TODO: confirm whether GeoLibre is public and should be included.",
-      "technologies": [],
-      "links": [],
-      "screenshots": [],
-      "repository": null,
-      "todo": "Add factual description, links, technologies, screenshots, and repository if public."
-    },
-    {
       "name": "Azure Maps Store Locator",
       "short_description": "A location-based store locator sample using Azure Maps.",
       "long_description": "Clemens wrote about the Azure Maps Store Locator, a sample architecture that helps customers find nearby business locations using Azure Maps and supporting Azure services. The article links to the Azure Samples repository.",

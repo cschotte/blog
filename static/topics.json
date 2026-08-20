@@ -30,8 +30,7 @@
       "description": "A current NavaTron focus area listed on Clemens' resume: Microsoft Dynamics 365 Business Central extensibility and productivity solutions.",
       "links": [
         "https://clemens.ms/resume/"
-      ],
-      "todo": "Add specific Business Central articles or product pages when published."
+      ]
     },
     {
       "name": "AI/software engineering",
@@ -80,8 +79,7 @@
       "description": "Clemens' company and current professional focus, including AI-enabled automation, SaaS platforms, cloud-native architecture, route optimization, business process digitization, and Business Central extensibility.",
       "links": [
         "https://clemens.ms/resume/"
-      ],
-      "todo": "Add canonical NavaTron website and product links when available."
+      ]
     },
     {
       "name": "Personal technical notes",

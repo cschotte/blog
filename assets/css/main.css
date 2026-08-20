@@ -266,6 +266,14 @@ th { font-weight: 700; border-bottom-width: 2px; }
   gap: var(--space-3);
 }
 
+.site-nav .icon-links a {
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .theme-toggle {
   background: none;
   border: 1px solid var(--color-border);
@@ -530,6 +538,34 @@ main { flex: 1; padding-block: var(--space-5); }
   .post-nav { grid-template-columns: 1fr; }
   .post-nav .next { text-align: start; }
   .profile { flex-direction: column; align-items: flex-start; }
+}
+
+@media print {
+  :root,
+  :root[data-theme="dark"] {
+    --color-bg: #fff;
+    --color-bg-raised: #f5f5f5;
+    --color-text: #111;
+    --color-text-muted: #444;
+    --color-border: #ccc;
+    --color-accent: #6d2a06;
+  }
+
+  .skip-link,
+  .site-header,
+  .site-footer,
+  .post-toc,
+  .share-links,
+  .post-nav,
+  .comments,
+  .copy-code,
+  .anchor-link {
+    display: none !important;
+  }
+
+  main { padding-block: 0; }
+  .container { max-width: none; padding-inline: 0; }
+  .post-body { max-width: none; }
 }
 
 /* Syntax highlighting (generated: hugo gen chromastyles --style=github / github-dark) --- */

@@ -6,13 +6,6 @@
 <div class="post-body"><p>{{ . }}</p></div>
 {{ end }}
 
-{{- if eq .Kind "taxonomy" }}
-<ul class="tag-list">
-  {{- range .Data.Terms.Alphabetical }}
-  <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> <span class="meta">({{ .Count }})</span></li>
-  {{- end }}
-</ul>
-{{- else }}
 {{- $paginator := .Paginate .Pages -}}
 <div class="post-list">
   {{- range $paginator.Pages }}
@@ -20,5 +13,4 @@
   {{- end }}
 </div>
 {{ partial "pagination.html" (dict "Paginator" $paginator) }}
-{{- end }}
 {{ end }}

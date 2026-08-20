@@ -1,13 +1,13 @@
 # Blog of Clemens Schotte
 
-This is the source code for my personal blog hosted at [clemens.ms](https://clemens.ms). The blog is built with [Hugo](https://gohugo.io/) using a small custom theme (no third-party theme dependency) and automatically deployed to Azure using GitHub Actions.
+This is the source code for my personal blog hosted at [clemens.ms](https://clemens.ms). The blog is built with [Hugo](https://gohugo.io/) using a small custom theme (no third-party theme dependency) and hosted on Azure Blob Storage behind Azure Front Door. Deployment configuration is managed outside this repository.
 
 ## Tech Stack
 
 - **Static Site Generator**: [Hugo](https://gohugo.io/) (extended)
 - **Theme**: custom, built in `layouts/` and `assets/` — no third-party theme
-- **Hosting**: Azure Blob Storage with Azure CDN
-- **Deployment**: GitHub Actions
+- **Hosting**: Azure Blob Storage behind Azure Front Door
+- **Deployment**: Managed outside this repository
 - **Domain**: Custom domain [clemens.ms](https://clemens.ms)
 
 ## Project Structure

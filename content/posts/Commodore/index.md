@@ -70,7 +70,7 @@ Those early machines taught me a kind of respect. When you only have 64 KB to pl
 
 Here’s the plot twist I didn’t see coming, [**Commodore is back**](https://www.commodore.net) under Christian “Perifractic” Simpson (yep, the one from [Retro Recipes](https://www.youtube.com/@RetroRecipes)). The first new product is the **Commodore 64 Ultimate**, a modern C64 that isn’t just emulation but the real silicon soul reborn. Of course I bought one. Of course I did. Sometime this year, my first true computer will walk back through my door wearing a new jacket, and I’m not even pretending to be chill about it.
 
-{{< youtube N8r4LRcOXc >}}
+{{< youtube id="N8r4LRcOXc" loading="lazy" >}}
 
 ## READY.
 

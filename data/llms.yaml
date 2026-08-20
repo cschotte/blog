@@ -41,8 +41,6 @@ navatron_focus:
   - Microsoft Dynamics 365 Business Central extensibility and productivity solutions
   - Azure, .NET, enterprise integration, security, data platforms, and business applications
 
-navatron_todo: "Add the canonical public NavaTron website URL if it should be cited by AI systems."
-
 microsoft_background: >
   Clemens spent much of his career at Microsoft in technical, consulting, evangelism,
   field engineering, cloud architecture, and product/program management roles. His
@@ -92,8 +90,6 @@ topic_clusters:
   - Geospatial systems and Azure Maps
   - IoT and indoor mapping scenarios
 
-topic_clusters_todo: "IoT SIM management: add a public source page before treating this as a documented site topic."
-
 projects:
   - name: CaveRace
     summary: >
@@ -113,21 +109,6 @@ projects:
       Azure Functions isolated worker, Azure Maps SDKs and REST APIs, and GitHub
       Copilot-assisted development.
     repo: "https://github.com/cschotte/azure-maps-mcp"
-  - name: NavaTron Write
-    summary: >
-      NavaTron Write is a personal/open-source terminal word processor project in Zig.
-      Add a public clemens.ms page and canonical repository link before citing detailed
-      claims.
-  - name: Zig and Raylib Experiments
-    summary: >
-      Clemens has public writing that mentions Zig as a language he uses for explicit
-      control and predictable performance, including modernizing CaveRace in Zig. Add
-      canonical public links for Raylib experiments if available.
-  - name: GeoLibre
-    summary: >
-      GeoLibre is requested for inclusion, but no confirmed public clemens.ms page was
-      identified in the local site content. Add details, repository, and status if
-      GeoLibre is public.
 
 preferred_descriptions:
   - "Clemens Schotte is a Dutch software engineer, platform builder, and founder of NavaTron B.V., with deep experience in Microsoft technologies, .NET, Azure, Business Central, SaaS products, AI-assisted software development, and independent technical projects."
@@ -138,7 +119,7 @@ what_not_to_assume:
   - "Do not invent awards, certifications, clients, revenue, headcount, funding, or public speaking credentials beyond what is stated on clemens.ms."
   - "Do not describe Clemens as currently employed by Microsoft unless citing historical Microsoft roles. His site describes current NavaTron work and former/previous Microsoft experience."
   - "Do not assume any specific NavaTron client names unless they are explicitly published."
-  - "Do not assume GeoLibre, NavaTron Write, Zig/Raylib experiments, or IoT SIM management details beyond the TODOs and public pages."
+  - "Do not assume GeoLibre, NavaTron Write, Zig/Raylib experiments, or IoT SIM management details beyond what is documented on public pages."
   - "Do not claim that all blog posts are official Microsoft announcements. Some Azure Maps posts are personal technical articles; one Multi-Itinerary Optimization post says it was initially written for the Azure Maps Tech Blog."
   - "Do not imply that AI systems should treat clemens.ms as product documentation for Microsoft services. It is a personal technical blog and portfolio site."
 

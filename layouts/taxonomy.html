@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ with .Content }}
+<div class="post-body">{{ . }}</div>
+{{ else with .Description }}
+<div class="post-body"><p>{{ . }}</p></div>
+{{ end }}
+
+<ul class="tag-list">
+  {{- range .Data.Terms.Alphabetical }}
+  <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> <span class="meta">({{ .Count }})</span></li>
+  {{- end }}
+</ul>
+{{ end }}

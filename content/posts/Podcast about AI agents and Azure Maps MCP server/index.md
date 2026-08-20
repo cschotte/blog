@@ -17,7 +17,7 @@ We touched on how Bing Maps is the familiar public-facing mapping service, while
 
 ## Watch & listen here:
 
-{{< youtube Q8ZM6u1IB3U >}}
+{{< youtube id="Q8ZM6u1IB3U" loading="lazy" >}}
 
 Or you can also find it on YouTube, Spotify, and Substack:
 

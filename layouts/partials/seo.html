@@ -2,6 +2,7 @@
 {{- if .IsHome -}}{{ $title = printf "%s — %s" site.Params.title site.Params.tagline }}{{- else -}}{{ $title = printf "%s — %s" .Title site.Params.title }}{{- end -}}
 {{- $description := .Description | default .Summary | plainify | truncate 200 -}}
 {{- if eq $description "" }}{{ $description = site.Params.description }}{{ end -}}
+{{- $isPost := and .IsPage (eq .Section "posts") -}}
 {{- $image := "" -}}
 {{- with .Params.featuredImage -}}
   {{- with $.Resources.GetMatch . -}}{{ $image = .Permalink }}{{- end -}}
@@ -13,14 +14,17 @@
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $description }}">
 <meta name="author" content="{{ .Params.author | default site.Params.author.name }}">
+{{- if eq .Kind "404" }}
+<meta name="robots" content="noindex">
+{{- end }}
 
-<meta property="og:type" content="{{ if eq .Section "posts" }}article{{ else }}website{{ end }}">
+<meta property="og:type" content="{{ if $isPost }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $description }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ site.Params.title }}">
 <meta property="og:image" content="{{ $image }}">
-{{- if eq .Section "posts" }}
+{{- if $isPost }}
 <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
 <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
 {{- with index (.Params.categories | default slice) 0 }}

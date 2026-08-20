@@ -90,7 +90,7 @@ The Windows Store and XNA editions expanded the game with Forest, Desert,
 Winter, and Lava environments. They are preserved as part of the project's
 history, while 1.5 is the only version under active development.
 
-{{< youtube 4rbRBwpPcKs >}}
+{{< youtube id="4rbRBwpPcKs" loading="lazy" >}}
 
 | Desert and Lava levels | Forest and Winter levels |
 | --- | --- |

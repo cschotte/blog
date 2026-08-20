@@ -5,6 +5,16 @@
   var toggle = document.querySelector(".theme-toggle");
 
   if (toggle) {
+    var updateToggle = function () {
+      var current = root.getAttribute("data-theme");
+      var isDark = current
+        ? current === "dark"
+        : window.matchMedia("(prefers-color-scheme: dark)").matches;
+      toggle.setAttribute("aria-pressed", String(isDark));
+      toggle.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
+    };
+
+    updateToggle();
     toggle.addEventListener("click", function () {
       var current = root.getAttribute("data-theme");
       var isDark = current
@@ -15,6 +25,7 @@
       try {
         localStorage.setItem("theme", next);
       } catch (e) {}
+      updateToggle();
     });
   }
 

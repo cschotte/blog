@@ -5,6 +5,9 @@
 {{- if .Title }}<figure>{{ end -}}
 {{- if $img -}}
 <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .PlainText }}" loading="lazy" decoding="async">
+{{- else if and (strings.HasPrefix .Destination "/") (fileExists (printf "static%s" .Destination)) -}}
+{{- $config := imageConfig (printf "static%s" .Destination) -}}
+<img src="{{ .Destination | safeURL }}" width="{{ $config.Width }}" height="{{ $config.Height }}" alt="{{ .PlainText }}" loading="lazy" decoding="async">
 {{- else -}}
 <img src="{{ .Destination | safeURL }}" alt="{{ .PlainText }}" loading="lazy" decoding="async">
 {{- end -}}

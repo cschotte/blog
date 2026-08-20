@@ -6,9 +6,9 @@
   <a class="post-card-featured-media" href="{{ $page.RelPermalink }}" tabindex="-1" aria-hidden="true">
     {{- $thumb := . -}}
     {{- if in (slice "image/jpeg" "image/png") .MediaType.String -}}
-      {{- $thumb = .Resize "1000x281 webp q75" -}}
+      {{- $thumb = .Fill "1000x281 webp q75" -}}
     {{- end -}}
-    <img src="{{ $thumb.RelPermalink }}" width="1000" height="281" loading="lazy" alt="">
+    <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" loading="lazy" alt="">
   </a>
   {{- end }}
   <div class="post-card-body">

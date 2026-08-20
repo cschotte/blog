@@ -19,7 +19,14 @@
   {{- $image := .Resources.GetMatch "featured-image*" -}}
   {{- with .Params.featuredImage -}}{{ with $.Resources.GetMatch . }}{{ $image = . }}{{ end }}{{- end -}}
   {{- with $image }}
-  <p class="post-featured-image"><img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Title }}" loading="eager"></p>
+  {{- $display := . -}}
+  {{- $small := . -}}
+  {{- if in (slice "image/jpeg" "image/png") .MediaType.String -}}
+    {{- $display = .Process "webp q80" -}}
+    {{- $small = $display -}}
+    {{- if ge .Width 640 -}}{{ $small = .Resize "640x webp q75" }}{{- end -}}
+  {{- end -}}
+  <p class="post-featured-image"><img src="{{ $display.RelPermalink }}"{{ if ne $small.RelPermalink $display.RelPermalink }} srcset="{{ $small.RelPermalink }} 640w, {{ $display.RelPermalink }} {{ $display.Width }}w" sizes="(max-width: 48rem) calc(100vw - 2rem), 46rem"{{ end }} width="{{ $display.Width }}" height="{{ $display.Height }}" alt="{{ $.Title }}" loading="eager" decoding="async" fetchpriority="high"></p>
   {{- end }}
 
   {{- if .TableOfContents }}

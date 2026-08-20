@@ -96,11 +96,6 @@ enableEmoji = true
     startLevel = 2
     endLevel = 3
 
-[sitemap]
-  changefreq = "daily"
-  filename = "sitemap.xml"
-  priority = 0.5
-
 [permalinks]
   posts = ":contentbasename"
 
@@ -149,6 +144,6 @@ enableEmoji = true
 
 [frontmatter]
   date = [":default", ":filename", ":fileModTime"]
-  lastmod = ["lastmod", ":fileModTime", ":default"]
+  lastmod = ["lastmod", ":default"]
   publishDate = [":default", ":filename", ":fileModTime"]
   expiryDate = [":default"]

@@ -1,6 +1,7 @@
 {{- $siteURL := site.BaseURL -}}
 {{- $personID := printf "%s#clemens-schotte" $siteURL -}}
 {{- $websiteID := printf "%s#website" $siteURL -}}
+{{- $blogID := printf "%s#blog" $siteURL -}}
 {{- $navatronID := printf "%s#navatron" $siteURL -}}
 {{- $canonicalDescription := "Clemens Schotte is a Dutch software engineer, platform builder, and founder of NavaTron B.V., with experience in Microsoft technologies, .NET, Azure, Business Central, SaaS products, AI-assisted software development, and independent technical projects." -}}
 {{- $sameAs := slice "https://github.com/cschotte" "https://www.linkedin.com/in/cschotte/" -}}
@@ -37,7 +38,18 @@
     "publisher" (dict "@id" $personID)
     "potentialAction" (dict "@type" "ReadAction" "target" (slice (absURL "/posts/")))
 -}}
-{{- $graph := slice $person $navatron $website -}}
+{{- $blog := dict
+    "@type" "Blog"
+    "@id" $blogID
+    "name" "Clemens Schotte Blog"
+    "url" (absURL "/")
+    "description" site.Params.description
+    "inLanguage" site.Language.Lang
+    "author" (dict "@id" $personID)
+    "publisher" (dict "@id" $personID)
+    "isPartOf" (dict "@id" $websiteID)
+-}}
+{{- $graph := slice $person $navatron $website $blog -}}
 {{- if or .IsHome (and .IsPage (in (slice "about" "resume") .File.BaseFileName)) -}}
     {{- $profile := dict
         "@type" "ProfilePage"
@@ -72,7 +84,7 @@
         "dateModified" (.Lastmod.Format "2006-01-02T15:04:05-07:00")
         "author" (dict "@id" $personID)
         "publisher" (dict "@id" $personID)
-        "isPartOf" (dict "@id" $websiteID)
+        "isPartOf" (dict "@id" $blogID)
         "keywords" (.Params.tags | default slice)
         "articleSection" (.Params.categories | default slice)
     -}}
