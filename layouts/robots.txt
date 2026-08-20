@@ -11,7 +11,3 @@ Allow: /topics.json
 Allow: /ai-index.json
 
 Sitemap: {{ "/sitemap.xml" | absLangURL }}
-
-AI Press Kit: {{ "/llms.txt" | absLangURL }}
-AI Full Profile: {{ "/llms-full.txt" | absLangURL }}
-AI Index: {{ "/ai-index.json" | absLangURL }}

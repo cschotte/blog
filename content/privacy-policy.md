@@ -1,68 +1,131 @@
 ---
 title: "Privacy Policy"
-date: 2024-04-19
+date: 2026-08-20
+lastmod: 2026-08-20
 comment: false
 ---
 
-Clemens Schotte his Blog (“**Clemens's Blog**,” “**we**,” “**us**,” or “**our**”) website is committed to protecting your privacy. This Privacy Policy (“Policy”) describes how we collect, use, store, process, and share your information in relation to the Clemens Schotte his Blog website ([https://clemens.ms/](/)) (the “**Site**”). By accessing, browsing, or using the Site, you expressly consent to the collection, use, storage, processing, and disclosure of your information, including personally identifiable information, as described in this Policy. IF YOU DO NOT AGREE WITH THIS POLICY, DO NOT ACCESS OR USE THE SITE. This Policy is part of and incorporated into the [Terms of Use](/terms-of-use) governing your use of the Site. Parts of the Terms of Use affect this Policy, so please be sure to review the Terms of Use prior to using the Site. Capitalized terms used but not defined herein have the definitions set forth in the Terms of Use.
+This Privacy Policy explains how personal data is handled when you visit [clemens.ms](/) (the "Site"), read an article, use the comments, watch an embedded video, or contact me.
 
-> **Please be aware that Clemens Schotte his Blog and all associated services and systems are housed on servers in the United States. If you are located outside of the United States, information we collect (including cookies) are processed and stored in the United States, which may not offer the same level of privacy protection as the country where you reside or are a citizen. By using the site and providing information to us, you consent to the transfer to and processing of the information in the United States.**
+The Site is a personal technical blog. It does not offer user accounts, a newsletter, purchases, or a contact form, and it does not sell personal data.
 
-## 1. Changes to this Policy
+This Policy applies only to `clemens.ms`. NavaTron B.V.'s website, products, games, and business operations are covered by [NavaTron's separate Privacy Policy](https://navatron.com/privacy/).
 
-We reserve the right to change this Policy at any time, in our sole discretion, upon notice to you. We may give notice by posting the updated Policy on the Site, sending you an email, or by any other reasonable means. You should periodically review this Policy for changes and you can review the most current Policy at any time at: [https://clemens.ms/privacy-policy](/privacy-policy). The updated Policy will govern your use of the Site as of the Effective Date indicated at the top of this Policy. If you do not agree to the updated Policy, you should stop using the Site. Your use of the Site after the Effective Date of the updated version of this Policy will constitute your acceptance of the updated Policy.
+## 1. Who is responsible for your data
 
-## 2. Information collection
+Clemens Schotte is the data controller for processing carried out through the Site.
 
-1. **General.** When you visit the Site, you can browse without submitting any personal information about yourself. We will, however, receive and store some non-personally identifiable information about your visit, as described below. In order to participate in certain functionalities, you may be asked to provide personally identifiable information. Personally identifiable information is information that can identify you, including, for example your name or email address. It will always be your choice, or the choice of anyone acting for you, to provide personally identifiable information.
-2. **Account and login information.** We will collect personally identifiable information from you when you create an Account to become a Clemens Schotte Blog Insider. If you create an Account, you will be asked to provide information about yourself, including, but not limited to, a user name, email address, and password selected by you. If you register for your Account using Social Networking Service credentials, we will collect your credentials in order to identify and log into the third party application or website and will retain your credentials to collect information from the Social Networking Service. For example, if you sign in with your Facebook, Twitter, LinkedIn or Microsoft account, we may collect information from your public profile.
-3. **User content and user discussions.** The Site may allow you to submit comments, photos, videos, or other information (“User Content”) to interactive portions of the Site, including, but not limited to, the user discussion areas of the Site or your Account Profile page (if applicable). You may sign in and participate in the user discussion areas of the Site using your Clemens Schotte Blog Insider account. We may save User Content submitted by you indefinitely and in a profile specific to you.
-4. **Email address collection.** In order to receive certain communications from us, including, but not limited to, our Annual Letter, you may be required to submit your name and email address to us. Any email you receive from us will include an unsubscribe link that will allow you to opt-out of receiving future emails.
-5. **Requests or communications submitted by you.** The Site provides users the option to submit questions, feedback, or comments by filling out a form available under the “Contact” link at the bottom of the page. This form asks for your name and email address and we will use this information to respond to your inquiries. Any communications and contact information that you voluntarily submit to us may be saved indefinitely and in a profile specific to you.
-6. **Automatically collected information.** Similar to other websites, we may collect some information automatically and store it in log files. This collection may include, but is not limited to: your domain name and host for Internet access, the Internet address of the site from which you came, the date and time of your access, your computer’s IP address and information about its operating system, browser, and host, the date and time you access the Site and the pages you visit. We collect this non-identifying information in order to help diagnose problems with our server and to administer the Site. We also use it to gather broad demographic information. If you elect to create an account, this information may be combined with your personal information to service your account or otherwise improve your user experience on the Site. Any such combined information will be treated as personally identifiable information in accordance with this Policy.
+- Email: [clemens@navatron.com](mailto:clemens@navatron.com)
+- Correspondence address: c/o NavaTron B.V., Octavio Pazlaan 5, 2553 DM 's-Gravenhage, the Netherlands
 
-> We may automatically collect information using the following mechanisms:
->
-> *Cookies*. A cookie is a small text file that is stored on a computer for record-keeping purposes. Our third-party analytics providers use cookies to record information about your activities on the Site and to “remember” you when you return to the Site. Some cookies remain on your computer until you delete them. Others, like session ID cookies, expire when you close your browser. You may set your browser setting to attempt to reject cookies and you may still use the Site, however certain features of the Site may not be available if your browser does not accept cookies. See the section “Do not track settings” below for more information on how the Services may respond to your browser settings. We do not control the use of cookies by third parties. Also see the section on “Third party analytics providers” below.
->
-> *Pixels (aka web beacons/web bugs/java script)*. Pixels are tiny graphics with a unique identifier that are used to track the online movements of web users. Unlike cookies, which are stored on a computer’s hard drive, pixels are small graphics that are about the size of the period at the end of the sentence that are embedded invisibly on web pages or in HTML-based emails. Our third-party analytics providers may place pixels on the Site that track what other websites you visit (both before and after visiting the Site). Our third-party analytics providers use information obtained from pixels to help us improve our business and the Site. We do not control the use of pixels by third parties. See the section on “Third party analytics providers” below.
-    
-7. **Third party analytics providers.** We use third parties to help us operate and improve the Site. We may provide these third parties with information we collect and they may collect information from you about your use of the Site. If we provide information to third parties, it will, unless specifically noted otherwise in this Policy, be governed by this Policy and may only be used by those third parties to help us operate or improve our business or the Site and to provide services to us. We do not control information independently collected by third parties and are not responsible for their use of that information.
+The Site is operated by Clemens Schotte in a personal capacity. NavaTron B.V. and NavaTron Holding B.V. do not become controllers for the Site merely because the correspondence address or a `navatron.com` email address is used. Some third-party services described below also process data under their own terms and may act as processors or independent controllers for parts of their processing.
 
-## 3. Information use
+## 2. Data processed when you use the Site
 
-1. **Use of personally identifiable information.** We may use your personally identifiable information, such as your email address, to service your account and to send you promotional or informational emails that you expressly choose (or “opt in”) to receive. You may also receive emails or other communications from us in response to inquiries that you submit using the “Contact” link at the bottom of the home page. When you receive a promotional or informational email from us, the email will contain our contact information and an unsubscribe link that will allow you to opt-out of future emails from us. If you opt-out, you will still continue to receive email responses to your inquiries or other service-related emails related to your Account. We may also use personally identifiable information to resolve disputes; to detect and protect against errors, fraud, and criminal activity; to assist law enforcement; to enforce this Policy and the Terms of Use; or for any other purpose described in this Policy or that we describe to you at the time of collection.
-2. **Use of non-personally identifiable information.** We may use non-personally identifiable information for any lawful purpose, including, but not limited to analyzing trends, administering the Site, tracking users’ movements on the Site, and for management and improvement of the Site. We may also use this information to monitor aggregate metrics such as total number of visitors or pages viewed; or to track submissions in any interactive portion of the Site. We may also combine non-personally identifiable information with non-personally identifiable information collected from other sources.
-3. **Information retention.** We will retain your information indefinitely, or as long as legally required or allowed. We may dispose of any information in our discretion without notice, subject to applicable law. We do not undertake any retention obligations through this statement.
+### Site delivery and security
 
-## 4. Information disclosure
+The Site is a static website hosted on Microsoft Azure Blob Storage in the **West Europe** region and delivered through Azure Front Door's global edge network. The Site's origin content is therefore stored in the European Union, although Front Door may process requests at an edge location near the visitor. When your browser requests a page or file, Microsoft and the hosting infrastructure receive technical request data needed to deliver and protect the Site. This may include:
 
-1. **Affiliated entities or service providers.** We will not sell or rent any of your personal information to third parties for marketing purposes. However, we may disclose your information to any affiliated entity or organization and to agents and service providers. These third parties may include various business service providers or providers that supply support for the Site or otherwise are working directly with us. Use of information by affiliated entities and organizations will be subject to this Policy or an agreement that is at least as restrictive as this Policy. For information on the use of information by agents and service providers, also see the “Third Party Analytics Providers” Section above.
-2. **Campaign partners.** We may, with your consent, share your personal information with third party campaign partners (“Campaign Partners”). These third parties may include various non-profit organizations or other organizations whose goals and missions align with those of Clemens Schotte his Blog. Campaign Partners may collect information such as your name, address, zip code, email address, or phone number. In some cases, the personal information you share with Campaign Partners may be publicly disclosed. Please review the notices, disclosures, and privacy policies of all third party Campaign Partners prior to sharing any information with them. We have no control over, and are not liable or responsible for the privacy practices, terms of use, or content of Campaign Partner sites. For more information on the use of information by third party Campaign Partners, also see the “Linked sites” Section below.
-3. **User content.** If you submit User Content to any interactive portion of the Site, including, but not limited to, your Account profile page or user discussion sections of the Site, your User Content will be made publicly available to anyone who visits that area of the Site. Other users or the general public may access, re-post, or use User Content that you make publicly available through the Site. Even if you remove or delete your User Content, copies may remain in cached or archived areas of the Site. If you share User Content with Linked Sites, the content you share will be subject to that site’s privacy policy.
-4. **Legal requirements.** In some cases, we may disclose your information (1) as required by any applicable law or legal regulation; (2) if we believe disclosure is needed to protect our rights, property, or safety; (3) to government regulators or law enforcement authorities in connection with any judicial proceeding, court order, subpoena, or legal process served on us or the Site; and (4) to respond to a physical threat to you or another person.
-5. **Insolvency and business transitions.** If we should ever file for bankruptcy or engage in a business transition such as a merger with another company, or if we purchase, sell, or reorganize all or part of our business or assets, we may disclose your information, including personal information, to prospective or actual purchasers in connection with one of these transactions.
-6. **Disclaimer.** We cannot ensure that all of your information will never be disclosed in ways not otherwise described in this Policy. For example, a third party may unlawfully intercept or access transmissions or private communications, or other users of the Site may abuse or misuse your personal information. No transmission of data over the internet can be 100% secure.
+- your IP address;
+- the date and time of the request;
+- the requested URL and referring page;
+- browser and device information, including the user-agent string;
+- protocol, response status, performance, and security information; and
+- an Azure request identifier.
 
-## 5. Information security measures
+This data is used to provide the Site, maintain reliability, diagnose errors, prevent abuse, and protect the Site and its visitors. The legal basis is my legitimate interest in operating a secure and reliable website. Azure diagnostic-log retention depends on the hosting configuration; logs are retained only for as long as reasonably needed for security, troubleshooting, and legal obligations. Microsoft may retain limited internal security logs under its own policies.
 
-Keeping your information secure is of great concern to us. We exercise care in facilitating the transmission of information between your device or computer and our servers (or the third-party servers that operate and store information for the Site). Personally identifiable information collected by the Site is stored in operating environments with restricted access and are not available to the public. While we have mechanisms in place to safeguard your personal information after we receive it, no transmission of data over the internet can be guaranteed to be 100% secure.
+### Google Analytics 4
 
-## 6. “Do not track” settings
+Production pages include Google Analytics 4 (measurement ID `G-4RSBDP58C3`). Google Analytics helps me understand aggregate traffic and which content is useful. The tag can process page views and interactions, page URL and title, referrer, approximate location, browser and device characteristics, language, and a pseudonymous client identifier.
 
-Most browsers can be set to disable existing cookies, to automatically refuse cookies, or to notify you when you receive a cookie so you can choose whether or not to accept it. Please note that doing so may negatively impact your user experience on the Site, as some features such as those requiring “sign in” may not work properly when cookies are disabled. Depending on your mobile device and operating system, you may not be able to delete or block all cookies. You may also set your email options to prevent the automatic downloading of images that may contain technologies that would allow us to know whether you have accessed our email and performed certain functions with it. Although we do our best to honor the privacy preferences of our users, we are unable to respond to “Do not Track” signals from your browser at this time.
+Google Analytics normally sets first-party cookies such as `_ga` and `_ga_4RSBDP58C3`. The `_ga` cookie can last up to two years; exact names, expiry dates, and behavior may vary with Google or browser settings. Google states that GA4 uses an IP address at collection time for routing and approximate geolocation and does not log or store the IP address.
 
-## 7. Children’s privacy
+User-level and event-level retention in GA4 is controlled by the property setting and is generally two or fourteen months. Some aggregated reports are not subject to the same retention period.
 
-1. **This Site is not for or directed towards children.** Our primary audience is adults and young adults. We do not intend to and will not knowingly collect any personal information from children under the age of 13; children under the age of 13 are prohibited from using the Site without parent/guardian supervision. If we learn that we have collected information from a child under the age of 13, we will remove that information immediately and delete it from our servers (subject to applicable law and this Policy). If you believe User Content from a child under the age of 13 has been posted to the Site, please notify us by going to the "Contact" link at the bottom of our home page and using the inquiry form located there. We also recommend that children over the age of 13 ask their parents for permission before sending any information about themselves to anyone over the internet.
-2. **California minors.** If you are a California resident who is under age 18 and you are unable to remove publicly-available User Content that you have submitted to us, you may request removal by contacting us at: [clemens@navatron.com](mailto:clemens@navatron.com). When requesting removal, you must be specific about the information you want removed and provide us with specific information, such as the URL for each page where the information is located, so that we can find it. We are not required to remove any content or information that: (1) federal or state law requires us or a third party to maintain; (2) was not posted by you; (3) is anonymized so that you cannot be identified; (4) you don’t follow our instructions for removing or requesting removal; or (5) you received compensation or other consideration for providing the Content or information. Removal of your content or information from the site does not ensure complete or comprehensive removal of that content or information from our systems or the systems of our service providers. We are not required to delete the Content or information posted by you; our obligations under California law are satisfied so long as we anonymize the Content or information or render it invisible to other users and the public.
-3. **California Shine the Light law.** California Civil Code Section 1798.83 permits California residents to request and obtain from us once a year, free of charge, a list of the third parties to whom we have disclosed personal information (as defined under that statute) of that California resident, for direct marketing purposes in the preceding calendar year and the categories of that kind of personal information that was disclosed to them. If you are a California resident and you wish to make such a request, you may do so by contacting us as specified in Section 11 below.
-4. **Linked Sites.** The Site contains links to other sites (“Linked Sites”). We have no control over, and are not liable or responsible for the privacy practices, terms of use, or content of Linked Sites. The Linked Sites may collect personally identifiable information from you that is not subject to our control. The data collection practices of Linked Sites will be governed by that site's privacy policy. Please review the privacy policies of any Linked Sites you may access.
+The intended legal basis for non-essential analytics is your consent where applicable law requires it. In jurisdictions where consent is not required, the basis is my legitimate interest in understanding and improving the Site. The Google Analytics tag is currently included when a production page loads; vendor consent controls, browser settings, or extensions may limit what it stores or sends.
 
-## 8. Accessing, updating, or deleting your personal information
+For more information, see [Google's explanation of Analytics data safeguards](https://support.google.com/analytics/answer/6004245) and [Google's Privacy Policy](https://policies.google.com/privacy).
 
-If personal information that you have submitted to us changes or if you would like to remove your personal information, please contact us as specified in Section 11 below. We will make good faith efforts to resolve requests to remove information or correct inaccurate information except where the request is unreasonable, requires disproportionate technical effort or expense, jeopardizes the privacy of others, or would be impractical.
+### Microsoft Clarity
 
-## 9. Contact information and privacy questions
+Production pages also include Microsoft Clarity (project ID `8k4z1elga6`) to understand how visitors use and experience the Site. Clarity can collect page and navigation data, clicks, scrolling, pointer movement, performance information, browser and device details, approximate location derived from an IP address, and pseudonymous identifiers. It may create heatmaps and session replays. Form fields and other sensitive content are masked by default; the Site does not contain account, payment, or contact-form fields.
 
-If you have questions about this Policy or other matters that relate to it, you may contact us by e-mail at: [clemens@navatron.com](mailto:clemens@navatron.com).
+Clarity may use first-party cookies such as `_clck` and `_clsk` and Microsoft cookies such as `CLID`, `ANONCHK`, `MR`, `MUID`, and `SM`. Cookie availability and duration depend on consent, browser settings, region, and Microsoft configuration. Microsoft states that standard playback data is retained for 30 days, while click and heatmap data and labeled or favorited sessions may be retained for up to nine months.
+
+The intended legal basis for non-essential behavioral analytics is your consent where applicable law requires it. In jurisdictions where consent is not required, the basis is my legitimate interest in improving usability and diagnosing problems. Clarity is currently included when a production page loads. Microsoft limits cookie-based functionality in the EEA, United Kingdom, and Switzerland unless it receives a valid consent signal.
+
+For more information, see [Clarity's data collection information](https://learn.microsoft.com/clarity/setup-and-installation/clarity-data), [Clarity's cookie information](https://learn.microsoft.com/clarity/setup-and-installation/clarity-cookies), and the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
+
+### Comments through Giscus and GitHub
+
+Most article pages load a Giscus comment widget from `giscus.app`. Loading the widget creates a connection to Giscus and uses the page pathname to find the corresponding discussion in the public GitHub repository. Giscus states that it has no advertising or tracking and stores comments in GitHub Discussions.
+
+To comment or react, you must sign in to GitHub and authorize the Giscus app, or post directly in GitHub Discussions. Giscus and GitHub may process your GitHub identity, public profile, comment or reaction, authentication data, and ordinary technical request data. Your username, profile image, comment, reaction, and posting time may be public. Do not post personal or confidential information you do not want made public.
+
+The legal basis for loading the discussion feature is my legitimate interest in providing community discussion. Processing involved in signing in or posting occurs at your request. Public comments remain available until they are deleted through GitHub or removed through moderation, although copies may remain in backups or archives for a limited period. See the [Giscus project information](https://github.com/giscus/giscus) and [GitHub Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
+
+### Embedded YouTube videos
+
+Some articles contain YouTube videos. Hugo's privacy-enhanced mode serves these players from `youtube-nocookie.com`. When a page containing a player loads, your browser connects to YouTube and shares basic technical data needed to display and protect the player, such as your IP address, browser details, referring site, and the requested video. YouTube may collect additional usage and playback data when you interact with a video. The videos do not autoplay.
+
+The legal basis is your consent where applicable law requires it and, elsewhere, my legitimate interest in presenting relevant video content. Google processes this data under its [Privacy Policy](https://policies.google.com/privacy).
+
+### Theme preference and browser features
+
+If you switch between light and dark themes, the Site stores your choice under the key `theme` in your browser's local storage. The value is not transmitted to me and remains until you clear site data. This storage is used only to remember a feature you requested.
+
+The copy, share, and heading-link buttons use your browser's clipboard or native share feature when you activate them. The Site does not receive the contents of your clipboard or the destination you choose for sharing.
+
+### Email and external links
+
+If you email me, I receive your email address, name or other account details supplied by your email provider, your message, and any information you choose to include. I use it to respond, manage the correspondence, protect my legal interests, and take steps you request. I retain correspondence only while it remains relevant, or longer where required for security or legal reasons.
+
+Following an external link takes you to another service. That service receives data directly from your browser and is governed by its own privacy notice. Merely displaying a normal external link does not send the linked service your data.
+
+## 3. Cookies and your choices
+
+The Site uses browser storage for the theme preference and may use cookies or similar identifiers through Google Analytics, Microsoft Clarity, GitHub/Giscus, and YouTube as described above.
+
+You can delete or block cookies and local storage through your browser settings. Blocking them may reduce analytics or affect comments, embedded videos, and the remembered theme, but the articles remain readable. You can also use the [Google Analytics opt-out browser add-on](https://tools.google.com/dlpage/gaoptout) and Microsoft's [privacy choices](https://account.microsoft.com/privacy/ad-settings/).
+
+Browser "Do Not Track" signals do not have a single agreed technical meaning, so the Site does not respond to them directly. Individual providers may honor browser or account-level privacy controls, including Global Privacy Control, under their own policies.
+
+## 4. Sharing and international transfers
+
+I do not sell or rent personal data. Data is shared only as needed with the providers named in this Policy, when you direct a disclosure (for example, by posting a public comment), to protect the Site or others, or when required by law.
+
+The Site's Azure Blob Storage origin is hosted in Microsoft's West Europe region. Azure Front Door uses a global edge network, and Microsoft, Google, GitHub, and Giscus may process some data in countries outside the European Economic Area, including the United States. Where the GDPR requires safeguards, providers may rely on an adequacy decision, the EU-US Data Privacy Framework, Standard Contractual Clauses, or another lawful transfer mechanism. Their linked privacy notices contain current details.
+
+## 5. Your privacy rights
+
+Depending on the law that applies to you, you may have the right to:
+
+- obtain information about how your personal data is used and request access to it;
+- correct inaccurate or incomplete data;
+- request deletion or restriction of processing;
+- object to processing based on legitimate interests;
+- receive data you provided in a portable format where applicable; and
+- withdraw consent at any time, without affecting processing that occurred before withdrawal.
+
+There is no solely automated decision-making on the Site that produces legal or similarly significant effects.
+
+To exercise a right, email [clemens@navatron.com](mailto:clemens@navatron.com). I may need enough information to verify your identity and locate the relevant data. I normally respond within one month, although applicable law may permit an extension for a complex request. Data controlled directly by Google, Microsoft, GitHub, or Giscus may also need to be requested from that provider.
+
+You may lodge a complaint with the [Dutch Data Protection Authority (Autoriteit Persoonsgegevens)](https://autoriteitpersoonsgegevens.nl/en) or the supervisory authority in your country of residence or work.
+
+## 6. Children
+
+The Site is intended for a general technical audience and is not directed at children under 16. I do not knowingly ask children for personal data. If you believe a child has provided personal data through a comment or email, please contact me so that appropriate action can be taken.
+
+## 7. Security
+
+I use reasonable technical and organizational measures appropriate to a static public website. However, no internet transmission or storage system is completely secure. Public comments should be treated as public information.
+
+## 8. Changes to this Policy
+
+I may update this Policy when the Site, its providers, or the law changes. The `lastmod` date at the top of this page identifies the latest revision. Material changes will be presented on the Site where appropriate.
+
+## 9. Contact
+
+For privacy questions or requests, contact [clemens@navatron.com](mailto:clemens@navatron.com).
