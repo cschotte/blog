@@ -4,6 +4,9 @@ Disallow: /images/
 Disallow: /js/
 Disallow: /css/
 
+# Content usage preferences (https://contentsignals.org/)
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
 Allow: /llms.txt
 Allow: /llms-full.txt
 Allow: /person.json
