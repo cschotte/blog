@@ -143,6 +143,8 @@ h1, h2, h3, h4 {
 
 .anchor-link {
   position: relative;
+  display: inline-flex;
+  vertical-align: middle;
   color: var(--color-text-muted);
   text-decoration: none;
   font-weight: 400;

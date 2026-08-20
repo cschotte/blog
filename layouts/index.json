@@ -3,12 +3,13 @@
     {{- $pages := where .Site.RegularPages "Draft" "!=" true -}}
     {{- range $index, $page := $pages -}}
       {{- if $index -}},{{- end }}
+      {{- $cleanContent := $page.Content | replaceRE `\s*<a href="#[^"]*" class="anchor-link"[^>]*>[\s\S]*?</a>` "" -}}
       {
         "id": {{ $page.RelPermalink | jsonify }},
         "id_hash": {{ $page.RelPermalink | md5 | jsonify }},
         "title": {{ $page.Title | jsonify }},
         "description": {{ $page.Description | default $page.Summary | jsonify }},
-        "content": {{ $page.Content | plainify | jsonify }},
+        "content": {{ $cleanContent | plainify | jsonify }},
         "url": {{ $page.Permalink | jsonify }},
         "relative_url": {{ $page.RelPermalink | jsonify }},
         "date": {{ $page.Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
@@ -23,7 +24,7 @@
         "wordCount": {{ $page.WordCount }},
         "readingTime": {{ $page.ReadingTime }},
         "keywords": {{ delimit (union ($page.Params.tags | default slice) ($page.Params.categories | default slice)) "," | jsonify }},
-        "searchable_content": {{ printf "%s %s %s %s %s" $page.Title $page.Description ($page.Content | plainify) (delimit ($page.Params.tags | default slice) " ") (delimit ($page.Params.categories | default slice) " ") | jsonify }},
+        "searchable_content": {{ printf "%s %s %s %s %s" $page.Title $page.Description ($cleanContent | plainify) (delimit ($page.Params.tags | default slice) " ") (delimit ($page.Params.categories | default slice) " ") | jsonify }},
         "summary": {{ $page.Summary | plainify | jsonify }}
       }
     {{- end }}

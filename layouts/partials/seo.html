@@ -4,10 +4,16 @@
 {{- if eq $description "" }}{{ $description = site.Params.description }}{{ end -}}
 {{- $isPost := and .IsPage (eq .Section "posts") -}}
 {{- $image := "" -}}
+{{- $imageRes := .Resources.GetMatch "featured-image*" -}}
 {{- with .Params.featuredImage -}}
-  {{- with $.Resources.GetMatch . -}}{{ $image = .Permalink }}{{- end -}}
-{{- else -}}
-  {{- with .Resources.GetMatch "featured-image*" -}}{{ $image = .Permalink }}{{- end -}}
+  {{- with $.Resources.GetMatch . -}}{{ $imageRes = . }}{{- end -}}
+{{- end -}}
+{{- with $imageRes -}}
+  {{- if in (slice "image/jpeg" "image/png") .MediaType.String -}}
+    {{- $image = (.Fill "1200x630 jpg q80").Permalink -}}
+  {{- else -}}
+    {{- $image = .Permalink -}}
+  {{- end -}}
 {{- end -}}
 {{- if eq $image "" }}{{ $image = absURL site.Params.image }}{{ end -}}
 

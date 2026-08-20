@@ -64,8 +64,7 @@
     {
       "name": "NavaTron B.V.",
       "relationship": "Founder and current professional focus",
-      "url": null,
-      "todo": "Add canonical public NavaTron website URL if available."
+      "url": "https://navatron.com/"
     },
     {
       "name": "Microsoft",
@@ -108,18 +107,6 @@
       "name": "Personal AI Blog Assistant",
       "url": "https://clemens.ms/building-a-personal-ai-chat-assistant-with-semantic-search/",
       "repository": null
-    },
-    {
-      "name": "NavaTron Write",
-      "url": null,
-      "repository": null,
-      "todo": "Add canonical public project page and repository when available."
-    },
-    {
-      "name": "GeoLibre",
-      "url": null,
-      "repository": null,
-      "todo": "Confirm public status, project description, and repository before citing."
     }
   ],
   "websites": [

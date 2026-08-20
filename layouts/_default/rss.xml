@@ -21,7 +21,7 @@
       <author>{{ site.Params.author.email }} ({{ .Params.author | default site.Params.author.name }})</author>
       <guid isPermaLink="true">{{ .Permalink }}</guid>
       <description>{{ .Description | default .Summary | plainify | htmlUnescape }}</description>
-      {{- $body := .Content | replaceRE `(src|href)="/` (printf "${1}=\"%s/" site.BaseURL) }}
+      {{- $body := .Content | replaceRE `\s*<a href="#[^"]*" class="anchor-link"[^>]*>[\s\S]*?</a>` "" | replaceRE `(src|href)="/` (printf "${1}=\"%s/" site.BaseURL) }}
       <content:encoded>{{ printf "<![CDATA[%s]]>" $body | safeHTML }}</content:encoded>
     </item>
     {{- end }}
