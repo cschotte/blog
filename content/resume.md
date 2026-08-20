@@ -8,9 +8,7 @@ comment: false
 tags: ["Resume", "CV", "About", "Profile"]
 ---
 
-# Clemens Schotte
-
-Senior Product Leader | Program Manager | Technology Architect
+**Senior Product Leader | Program Manager | Technology Architect**
 
 The Hague, Netherlands | [clemens@navatron.com](mailto:clemens@navatron.com) | [Blog](https://clemens.ms/) | [LinkedIn](https://linkedin.com/in/cschotte/) | [GitHub](https://github.com/cschotte)
 

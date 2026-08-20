@@ -1,0 +1,26 @@
+{{- $page := . -}}
+<article class="post-card-featured">
+  {{- $image := $page.Resources.GetMatch "featured-image*" -}}
+  {{- with $page.Params.featuredImage -}}{{ with $page.Resources.GetMatch . }}{{ $image = . }}{{ end }}{{- end -}}
+  {{- with $image }}
+  <a class="post-card-featured-media" href="{{ $page.RelPermalink }}" tabindex="-1" aria-hidden="true">
+    {{- $thumb := . -}}
+    {{- if in (slice "image/jpeg" "image/png") .MediaType.String -}}
+      {{- $thumb = .Resize "1000x281 webp q75" -}}
+    {{- end -}}
+    <img src="{{ $thumb.RelPermalink }}" width="1000" height="281" loading="lazy" alt="">
+  </a>
+  {{- end }}
+  <div class="post-card-body">
+    <h2 class="post-card-title"><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h2>
+    {{- partial "article-meta.html" (dict "page" $page "compact" true) -}}
+    <p class="post-card-excerpt">{{ $page.Description | default $page.Summary | plainify | truncate 160 }}</p>
+    {{- with $page.Params.tags }}
+    <ul class="tag-list">
+      {{- range . }}
+      <li><a href="{{ (path.Join "/tags" . | urlize) | relLangURL }}">{{ . }}</a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+  </div>
+</article>

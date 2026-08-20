@@ -1,0 +1,35 @@
+{{- $d := hugo.Data.llms -}}
+# {{ site.Params.author.name }} / clemens.ms
+
+> clemens.ms is the personal technical blog and professional website of {{ site.Params.author.name }}.
+
+{{ $d.canonical_summary }}
+
+## Professional Background
+
+{{ $d.navatron }}
+{{ range $d.navatron_focus }}- {{ . }}
+{{ end }}
+## Technical Expertise
+
+{{ range $d.technical_expertise }}- {{ . }}
+{{ end }}
+## Projects
+
+{{ range $d.projects }}- {{ .name }}{{ with .url }} ({{ . }}){{ end }}: {{ .summary | plainify | truncate 220 }}
+{{ end }}
+## Blog Topics
+
+{{- $cats := slice }}{{ range site.Taxonomies.categories.Alphabetical }}{{ $cats = $cats | append .Page.Title }}{{ end }}
+clemens.ms publishes technical notes and articles about {{ delimit $cats ", " }}, plus AI agents, MCP, retro computing, and independent software projects. Full tag list: {{ "/tags/" | absLangURL }}
+
+## Key Links
+
+- Website: {{ "/" | absLangURL }}
+- About: {{ "/about/" | absLangURL }}
+- Resume: {{ "/resume/" | absLangURL }}
+- Blog posts: {{ "/posts/" | absLangURL }}
+{{- range $d.external_links }}
+- {{ .name }}: {{ .url }}
+{{- end }}
+- AI index: {{ "/ai-index.json" | absLangURL }}

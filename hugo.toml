@@ -1,404 +1,81 @@
 title = "Clemens Schotte"
 baseURL = "https://clemens.ms"
-theme = "LoveIt"
 
-# determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "en"
-# language code ["en", "zh-CN", "fr", "pl", ...]
-languageCode = "en"
-# language name ["English", "简体中文", "Français", "Polski", ...]
-languageName = "English"
-# whether to include Chinese/Japanese/Korean
-hasCJKLanguage = false
 
-# copyright description used only for seo schema
+[languages.en]
+label = "English"
+locale = "en-US"
+
 copyright = "Copyright by Clemens Schotte."
 
-# whether to use robots.txt
 enableRobotsTXT = true
-# whether to use git commit log
 enableGitInfo = false
-# whether to use emoji code
 enableEmoji = true
 
-# ignore some build errors
-ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
-
-# Pagination config
 [pagination]
-  disableAliases = false
   pagerSize = 12
   path = "page"
 
-# Menu config
 [menu]
   [[menu.main]]
     weight = 1
     identifier = "posts"
-    # you can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
-    post = ""
     name = "Posts"
     url = "/posts/"
-    # title will be shown when you hover on this menu link
-    title = ""
   [[menu.main]]
     weight = 2
     identifier = "tags"
-    pre = ""
-    post = ""
     name = "Tags"
     url = "/tags/"
-    title = ""
   [[menu.main]]
     weight = 3
     identifier = "categories"
-    pre = ""
-    post = ""
     name = "Categories"
     url = "/categories/"
-    title = ""
   [[menu.main]]
     weight = 4
     identifier = "about"
-    pre = ""
-    post = ""
     name = "About"
     url = "/about/"
-    title = ""
-  [[menu.main]]
-    weight = 5
-    identifier = "github"
-    pre = "<i class='fab fa-github fa-fw'></i>"
-    post = ""
-    name = ""
-    url = "https://github.com/cschotte"
-    title = ""
 
 [params]
-  # site default theme ["auto", "light", "dark"]
-  defaultTheme = "auto"
-  # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/cschotte/blog"
-  # which hash function used for SRI, when empty, no SRI is used
-  # ["sha256", "sha384", "sha512", "md5"]
-  fingerprint = "sha256"
-  # date format
-  dateFormat = "2006-01-02"
-  # website title for Open Graph and Twitter Cards
-  title = "Clemens"
-  # website description for RSS, SEO, Open Graph and Twitter Cards
-  description = "Clemens Schotte Blog about technology."
-  # website images for Open Graph and Twitter Cards
-  images = ["/icons/logo.png"]
+  title = "Clemens Schotte"
+  tagline = "Software engineering, cloud, and retro computing"
+  description = "Clemens Schotte's personal technical blog about Azure, AI, software engineering, and retro computing."
+  image = "/icons/logo.png"
+  since = 2020
 
-  # Author config
   [params.author]
     name = "Clemens Schotte"
     email = "clemens@navatron.com"
-    link = "https://clemens.ms/about/"
 
-  # Header config
-  [params.header]
-    # desktop header mode ["fixed", "normal", "auto"]
-    desktopMode = "fixed"
-    # mobile header mode ["fixed", "normal", "auto"]
-    mobileMode = "auto"
-    # Header title config
-    [params.header.title]
-      # URL of the LOGO
-      logo = ""
-      # title name
-      name = "Clemens Schotte"
-      # you can add extra information before the name (HTML format is supported), such as icons
-      pre = "<i class='fas fa-rocket fa-fw'></i>"
-      # you can add extra information after the name (HTML format is supported), such as icons
-      post = ""
-      # whether to use typeit animation for title name
-      typeit = false
-
-  # Footer config
-  [params.footer]
-    enable = true
-    # Custom content (HTML format is supported)
-    custom = ""
-    # whether to show Hugo and theme info
-    hugo = false
-    # whether to show copyright info
-    copyright = true
-    # whether to show the author
-    author = true
-    # site creation time
-    since = 2020
-    # ICP info only in China (HTML format is supported)
-    icp = ""
-    # license info (HTML format is supported)
-    license = ""
-
-  # Section (all posts) page config
-  [params.section]
-    # special amount of posts in each section page
-    paginate = 20
-    # date format (month and day)
-    dateFormat = "01-02"
-    # amount of RSS pages
-    rss = 50
-
-  # List (category or tag) page config
-  [params.list]
-    # special amount of posts in each list page
-    paginate = 20
-    # date format (month and day)
-    dateFormat = "01-02"
-    # amount of RSS pages
-    rss = 50
-
-  # App icon config
-  [params.app]
-    # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "Clemens"
-    # whether to omit favicon resource links
-    noFavicon = false
-    # modern SVG favicon to use in place of older style .png and .ico files
-    svgFavicon = ""
-    # Android browser theme color
-    themeColor = "#ffffff"
-    # Safari mask icon color
-    iconColor = "#5bbad5"
-    # Windows v8-11 tile color
-    tileColor = "#da532c"
-
-  # Search config
-  [params.search]
-    enable = false
-    # type of search engine ["lunr", "algolia"]
-    type = "algolia"
-    # max index length of the chunked content
-    contentLength = 4000
-    # placeholder of the search bar
-    placeholder = ""
-    # max number of results length
-    maxResultLength = 10
-    # snippet length of the result
-    snippetLength = 30
-    # HTML tag name of the highlight part in results
-    highlightTag = "em"
-    # whether to use the absolute URL based on the baseURL in search index
-    absoluteURL = false
-    [params.search.algolia]
-      index = "index"
-      appID = "IBNMVZGG2I"
-      searchKey = "01afc824e29be49172f7d2bbc7b950e9"
-
-  # Home page config
   [params.home]
-    # amount of RSS pages
-    rss = 50
-    # Home page profile
-    [params.home.profile]
-      enable = true
-      # Gravatar Email for preferred avatar in home page
-      gravatarEmail = ""
-      # URL of avatar shown in home page
-      avatarURL = "/images/clemens.jpg"
-      # title shown in home page (HTML format is supported)
-      title = "Hi! I'm Clemens Schotte,"
-      # subtitle shown in home page (HTML format is supported)
-      subtitle = "Enthusiastic storyteller with a passion for technology"
-      # whether to use typeit animation for subtitle
-      typeit = false
-      # whether to show social links
-      social = true
-      # disclaimer (HTML format is supported)
-      disclaimer = ""
-    # Home page posts
-    [params.home.posts]
-      enable = true
-      # special amount of posts in each home posts page
-      paginate = 6
-  # Social config in home page
-  [params.social]
-    GitHub = "cschotte"
-    Linkedin = "cschotte"
-    RSS = "https://clemens.ms/index.xml"
+    avatar = "/images/clemens.jpg"
+    title = "Hi! I'm Clemens Schotte,"
+    subtitle = "Enthusiastic storyteller with a passion for technology"
+    paginate = 6
 
-  # Page global config
-  [params.page]
-    # whether to hide a page from home page
-    hiddenFromHomePage = false
-    # whether to hide a page from search results
-    hiddenFromSearch = false
-    # whether to enable twemoji
-    twemoji = false
-    # whether to enable lightgallery
-    lightgallery = false
-    # whether to enable the ruby extended syntax
-    ruby = true
-    # whether to enable the fraction extended syntax
-    fraction = true
-    # whether to enable the fontawesome extended syntax
-    fontawesome = true
-    # whether to show link to Raw Markdown content of the content
-    linkToMarkdown = true
-    # whether to show the full text content in RSS
-    rssFullText = true
-    # Table of the contents config
-    [params.page.toc]
-      # whether to enable the table of the contents
-      enable = true
-      # whether to keep the static table of the contents in front of the post
-      keepStatic = false
-      # whether to make the table of the contents in the sidebar automatically collapsed
-      auto = true
-    # Code config
-    [params.page.code]
-      # whether to show the copy button of the code block
-      copy = true
-      # the maximum number of lines of displayed code by default
-      maxShownLines = 9999
-      [params.page.code.render]
-        goat = true
-        mermaid = true
-    # KaTeX mathematical formulas config (KaTeX https://katex.org/)
-    [params.page.math]
-      enable = true
-      # default inline delimiter is $ ... $ and \( ... \)
-      inlineLeftDelimiter = ""
-      inlineRightDelimiter = ""
-      # default block delimiter is $$ ... $$, \[ ... \], \begin{equation} ... \end{equation} and some other functions
-      blockLeftDelimiter = ""
-      blockRightDelimiter = ""
-      # KaTeX extension copy_tex
-      copyTex = true
-      # KaTeX extension mhchem
-      mhchem = true
+  [params.giscus]
+    repo = "cschotte/Blog"
+    repoId = "MDEwOlJlcG9zaXRvcnkyNjQxNDAwNjE="
+    category = "General"
+    categoryId = "DIC_kwDOD751Hc4Ctzrh"
 
-    # Social share links in post page
-    [params.page.share]
-      enable = true
-      X = false
-      Threads = false
-      Facebook = false
-      Linkedin = true
-      Whatsapp = true
-      Pinterest = false
-      Tumblr = false
-      HackerNews = false
-      Reddit = false
-      VK = false
-      Buffer = false
-      Xing = false
-      Line = false
-      Instapaper = false
-      Pocket = false
-      Flipboard = false
-      Weibo = false
-      Blogger = false
-      Baidu = false
-      Odnoklassniki = false
-      Evernote = false
-      Skype = false
-      Trello = false
-      Diaspora = false
-      Mix = false
-      Telegram = false
-    # Comment config
-    [params.page.comment]
-      enable = true
-      # giscus comment config (https://giscus.app/)
-      [params.page.comment.giscus]
-        # You can refer to the official documentation of giscus to use the following configuration.
-        enable = true
-        repo = "cschotte/Blog"
-        repoId = "MDEwOlJlcG9zaXRvcnkyNjQxNDAwNjE="  # Get this from giscus.app
-        category = "General"
-        categoryId = "DIC_kwDOD751Hc4Ctzrh"  # Get this from giscus.app
-        lang = "en"
-        mapping = "pathname"
-        reactionsEnabled = "1"
-        emitMetadata = "0"
-        inputPosition = "bottom"
-        lazyLoading = false
-        lightTheme = "light"
-        darkTheme = "dark"
-
-    # Page SEO config
-    [params.page.seo]
-      # image URL
-      images = []
-      # Publisher info
-      [params.page.seo.publisher]
-        name = "Clemens Schotte"
-        logoUrl = "/images/clemens.jpg"
-
-  # TypeIt config
-  [params.typeit]
-    # typing speed between each step (measured in milliseconds)
-    speed = 100
-    # blinking speed of the cursor (measured in milliseconds)
-    cursorSpeed = 1000
-    # character used for the cursor (HTML format is supported)
-    cursorChar = "|"
-    # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
-    duration = -1
-
-  # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
-  [params.verification]
-    google = ""
-    bing = ""
-
-  # Site SEO config
-  [params.seo]
-    # image URL
-    image = "/icons/logo.png"
-    # thumbnail URL
-    thumbnailUrl = "/icons/logo.png"
-
-  # Analytics config
   [params.analytics]
-    # Google Analytics
-    [params.analytics.google]
-      id = "G-4RSBDP58C3"
-      # whether to respect the browser’s “do not track” setting
-      respectDoNotTrack = false
+    googleId = "G-4RSBDP58C3"
+    clarityId = "8k4z1elga6"
 
-  # Cookie consent config
-  [params.cookieconsent]
-    enable = false
-    # text strings used for Cookie consent banner
-    [params.cookieconsent.content]
-      message = ""
-      dismiss = ""
-      link = ""
+[privacy]
+  [privacy.youtube]
+    privacyEnhanced = true
 
-  # CDN config for third-party library files
-  [params.cdn]
-    # CDN data file name, disabled by default
-    # ["jsdelivr.yml"]
-    # located in "themes/LoveIt/assets/data/cdn/" directory
-    # you can store your own data files in the same path under your project:
-    # "assets/data/cdn/"
-    data = "jsdelivr.yml"
-
-  # Compatibility config
-  [params.compatibility]
-    # whether to use Polyfill.io to be compatible with older browsers
-    polyfill = false
-    # whether to use object-fit-images to be compatible with older browsers
-    objectFit = false
-
-# Markup related configuration in Hugo
 [markup]
-  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
   [markup.highlight]
-    anchorLineNos = false
     codeFences = true
     guessSyntax = false
     lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-  # Goldmark is from Hugo 0.60 the default library used for Markdown
+    noClasses = false
   [markup.goldmark]
     [markup.goldmark.extensions]
       definitionList = true
@@ -409,53 +86,56 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       taskList = true
       typographer = true
     [markup.goldmark.renderer]
-      # whether to use HTML tags directly in the document
       unsafe = true
     [markup.goldmark.parser]
       attribute = true
       autoHeadingID = true
       autoHeadingIDType = "github"
       wrapStandAloneImageWithinParagraph = false
-  # Table Of Contents settings
   [markup.tableOfContents]
     startLevel = 2
-    endLevel = 6
+    endLevel = 3
 
-# Sitemap config
 [sitemap]
   changefreq = "daily"
   filename = "sitemap.xml"
   priority = 0.5
-  
-# Add robots.txt generation
-[params.robots]
-  enable = true
 
-# Permalinks config (https://gohugo.io/content-management/urls/#permalinks)
 [permalinks]
-  # posts = ":year/:month/:filename"
   posts = ":contentbasename"
 
-# Options to make output .md files
 [mediaTypes]
   [mediaTypes."text/plain"]
     suffixes = ["md"]
+  [mediaTypes."text/x-llms"]
+    suffixes = ["txt"]
 
-# Options to make output .md files
 [outputFormats.MarkDown]
   mediaType = "text/plain"
   isPlainText = true
   isHTML = false
 
-# Options to make hugo output files
+[outputFormats.LLMS]
+  mediaType = "text/x-llms"
+  baseName = "llms"
+  isPlainText = true
+  isHTML = false
+  notAlternative = true
+
+[outputFormats.LLMSFULL]
+  mediaType = "text/x-llms"
+  baseName = "llms-full"
+  isPlainText = true
+  isHTML = false
+  notAlternative = true
+
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "LLMS", "LLMSFULL", "ROBOTS"]
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   term = ["HTML", "RSS"]
 
-# Security config
 [security]
   enableInlineShortcodes = false
   [security.exec]

@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; {{ site.Params.since }}–{{ now.Format "2006" }} {{ site.Params.author.name }}</p>
+    <nav aria-label="Footer">
+      <a href="{{ "/about/" | relLangURL }}">About</a>
+      <a href="{{ "/resume/" | relLangURL }}">Resume</a>
+      <a href="{{ "/privacy-policy/" | relLangURL }}">Privacy</a>
+      <a href="{{ "/terms-of-use/" | relLangURL }}">Terms</a>
+      <a href="{{ "index.xml" | absLangURL }}">RSS</a>
+    </nav>
+  </div>
+</footer>

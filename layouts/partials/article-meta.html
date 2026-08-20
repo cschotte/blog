@@ -1,0 +1,17 @@
+{{- $page := .page -}}
+{{- $compact := .compact -}}
+<div class="meta-row">
+  <time datetime="{{ $page.Date.Format "2006-01-02" }}">{{ $page.Date.Format "Jan 2, 2006" }}</time>
+  {{- with index ($page.Params.categories | default slice) 0 }}
+  <span class="sep">&middot;</span>
+  <a class="category" href="{{ (path.Join "/categories" . | urlize) | relLangURL }}">{{ . }}</a>
+  {{- end -}}
+  {{- if not $compact }}
+  <span class="sep">&middot;</span>
+  <span>{{ $page.ReadingTime }} min read</span>
+  {{- if and (not $page.Lastmod.IsZero) (ne ($page.Lastmod.Format "2006-01-02") ($page.Date.Format "2006-01-02")) }}
+  <span class="sep">&middot;</span>
+  <span>Updated <time datetime="{{ $page.Lastmod.Format "2006-01-02" }}">{{ $page.Lastmod.Format "Jan 2, 2006" }}</time></span>
+  {{- end -}}
+  {{- end -}}
+</div>

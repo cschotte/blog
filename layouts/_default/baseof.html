@@ -1,54 +1,44 @@
-{{- partial "init.html" . -}}
-
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-
-        {{- partial "head/meta.html" . -}}
-        {{- partial "head/link.html" . -}}
-        {{- partial "head/seo.html" . -}}
-        {{- partial "head/ai-jsonld.html" . -}}
-    </head>
-    <body data-header-desktop="{{ .Site.Params.header.desktopMode }}" data-header-mobile="{{ .Site.Params.header.mobileMode }}">
-        {{- /* Check theme isDark before body rendering */ -}}
-        {{- $theme := .Site.Params.defaulttheme -}}
-        <script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('{{ $theme }}' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '{{ $theme }}' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
-
-        <div id="mask"></div>
-
-        {{- /* Body wrapper */ -}}
-        <div class="wrapper">
-            {{- partial "header.html" . -}}
-            <main class="main">
-                <div class="container">
-                    {{- block "content" . }}{{ end -}}
-                </div>
-            </main>
-            {{- partial "footer.html" . -}}
-        </div>
-
-        <div id="fixed-buttons">
-            {{- /* top button */ -}}
-            <a href="#" id="back-to-top" class="fixed-button" title="{{ T `backToTop` }}">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a>
-        </div>
-
-        <div id="fixed-buttons-hidden">
-            {{- /* comment button */ -}}
-            <a href="#" id="view-comments" class="fixed-button" title="{{ T `viewComments` }}">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div>
-
-        {{- /* Load JavaScript scripts and CSS */ -}}
-        {{- partial "assets.html" . -}}
-        
-        {{- /* n8n Chat Widget */ -}}
-        {{- partial "chat-widget.html" . -}}
-    </body>
+<!doctype html>
+<html lang="{{ site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          if (stored) document.documentElement.setAttribute("data-theme", stored);
+        } catch (e) {}
+      })();
+    </script>
+    {{- partial "head.html" . -}}
+    {{- partial "seo.html" . -}}
+    {{- partial "json-ld.html" . -}}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    {{- partial "header.html" . -}}
+    <main id="main">
+      <div class="container">
+        {{- block "main" . }}{{ end -}}
+      </div>
+    </main>
+    {{- partial "footer.html" . -}}
+    <script src="{{ (resources.Get "js/theme.js" | js.Build | fingerprint).RelPermalink }}" defer></script>
+    {{- if .Params.math }}
+      <link rel="stylesheet" href="/katex/katex.min.css">
+      <script defer src="/katex/katex.min.js"></script>
+      <script defer src="/katex/auto-render.min.js"></script>
+      <script defer>
+        document.addEventListener("DOMContentLoaded", function () {
+          renderMathInElement(document.body, {
+            delimiters: [
+              { left: "$$", right: "$$", display: true },
+              { left: "$", right: "$", display: false }
+            ]
+          });
+        });
+      </script>
+    {{- end }}
+  </body>
 </html>

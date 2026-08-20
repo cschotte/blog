@@ -9,6 +9,7 @@ categories: ["Cloud"]
 featuredImage: "featured-image.jpg"
 
 draft: false
+math: true
 
 ---
 

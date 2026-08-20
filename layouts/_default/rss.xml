@@ -1,0 +1,29 @@
+{{- $pages := .Pages -}}
+{{- if .IsHome }}{{ $pages = where site.RegularPages "Section" "posts" }}{{ end -}}
+{{- $pages = $pages.ByDate.Reverse -}}
+{{- $limit := 50 -}}
+{{- if ge $pages.Len $limit }}{{ $pages = $pages | first $limit }}{{ end -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ if .IsHome }}{{ site.Params.title }}{{ else }}{{ .Title }} on {{ site.Params.title }}{{ end }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ site.Params.description }}</description>
+    <generator>Hugo</generator>
+    <language>{{ site.Language.Lang }}</language>
+    <lastBuildDate>{{ with $pages }}{{ (index . 0).Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}{{ end }}</lastBuildDate>
+    <atom:link href="{{ .Permalink }}index.xml" rel="self" type="application/rss+xml"/>
+    {{- range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+      <author>{{ site.Params.author.email }} ({{ .Params.author | default site.Params.author.name }})</author>
+      <guid isPermaLink="true">{{ .Permalink }}</guid>
+      <description>{{ .Description | default .Summary | plainify | htmlUnescape }}</description>
+      {{- $body := .Content | replaceRE `(src|href)="/` (printf "${1}=\"%s/" site.BaseURL) }}
+      <content:encoded>{{ printf "<![CDATA[%s]]>" $body | safeHTML }}</content:encoded>
+    </item>
+    {{- end }}
+  </channel>
+</rss>

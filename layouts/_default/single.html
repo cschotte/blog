@@ -1,0 +1,68 @@
+{{ define "main" }}
+{{- $isPost := eq .Section "posts" -}}
+<article>
+  <header class="post-header">
+    {{- if $isPost }}
+    {{- with index (.Params.categories | default slice) 0 }}
+    <a class="category" href="{{ (path.Join "/categories" . | urlize) | relLangURL }}">{{ . }}</a>
+    {{- end }}
+    {{- end }}
+    <h1>{{ .Title }}</h1>
+    {{- if $isPost }}
+    {{ partial "article-meta.html" (dict "page" . "compact" false) }}
+    {{- else if not .Date.IsZero }}
+    <div class="meta-row"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></div>
+    {{- end }}
+  </header>
+
+  {{- if $isPost }}
+  {{- $image := .Resources.GetMatch "featured-image*" -}}
+  {{- with .Params.featuredImage -}}{{ with $.Resources.GetMatch . }}{{ $image = . }}{{ end }}{{- end -}}
+  {{- with $image }}
+  <p class="post-featured-image"><img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Title }}" loading="eager"></p>
+  {{- end }}
+
+  {{- if .TableOfContents }}
+  <details class="post-toc">
+    <summary>Contents</summary>
+    {{ .TableOfContents }}
+  </details>
+  {{- end }}
+  {{- end }}
+
+  <div class="post-body">
+    {{ .Content }}
+  </div>
+
+  {{- if $isPost }}
+  <footer class="post-footer">
+    {{- with .Params.tags }}
+    <ul class="tag-list">
+      {{- range . }}
+      <li><a href="{{ (path.Join "/tags" . | urlize) | relLangURL }}">{{ . }}</a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+    <p class="share-links">
+      <button type="button" data-share data-title="{{ .Title }}" data-url="{{ .Permalink }}">Share</button>
+      <a href="{{ .Permalink }}">Permalink</a>
+      {{- if .OutputFormats.Get "markdown" }}
+      <a href="{{ (.OutputFormats.Get "markdown").RelPermalink }}">View Markdown source</a>
+      {{- end }}
+    </p>
+    <nav class="post-nav">
+      {{- with .PrevInSection }}
+      <a href="{{ .RelPermalink }}"><span class="dir">&larr; Previous</span>{{ .Title }}</a>
+      {{- else }}<span></span>{{- end }}
+      {{- with .NextInSection }}
+      <a class="next" href="{{ .RelPermalink }}"><span class="dir">Next &rarr;</span>{{ .Title }}</a>
+      {{- else }}<span></span>{{- end }}
+    </nav>
+  </footer>
+  {{- end }}
+
+  {{- if ne .Params.comment false }}
+  {{ partial "comments.html" . }}
+  {{- end }}
+</article>
+{{ end }}

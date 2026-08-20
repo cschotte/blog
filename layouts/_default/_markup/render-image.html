@@ -1,0 +1,12 @@
+{{- $img := "" -}}
+{{- if not (urls.Parse .Destination).IsAbs -}}
+  {{- with .Page.Resources.GetMatch (.Destination | safeURL) -}}{{ $img = . }}{{- end -}}
+{{- end -}}
+{{- if .Title }}<figure>{{ end -}}
+{{- if $img -}}
+<img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ .PlainText }}" loading="lazy" decoding="async">
+{{- else -}}
+<img src="{{ .Destination | safeURL }}" alt="{{ .PlainText }}" loading="lazy" decoding="async">
+{{- end -}}
+{{- with .Title }}<figcaption>{{ . }}</figcaption>{{ end -}}
+{{- if .Title }}</figure>{{ end -}}

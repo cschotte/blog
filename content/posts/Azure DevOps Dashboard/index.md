@@ -12,7 +12,7 @@ draft: false
 
 ---
 
-# Introduction
+## Introduction
 
 When you are managing Azure DevOps in a large enterprise organization, and you are still using only one Azure DevOps organization account, you are probably hitting some limits or have potential performance issues. Microsoft's recommendation is to have around 300 projects in a single Azure DevOps organization account. I have seen Azure DevOps organizations with more than 600 projects that still work.
 
@@ -20,7 +20,7 @@ The solution is to set up a multi-organization structure. Move all the inactive 
 
 Next, you need some insights and automation on which projects have no activity anymore. The Azure DevOps Dashboard gives you the basic insights and an API to automate tasks like emailing the owners of inactive projects.
 
-# Azure DevOps Dashboard
+## Azure DevOps Dashboard
 
 This dashboard solution generates a simple overview of all the [Azure DevOps](https://dev.azure.com/) projects in your organization and calculates the last known activity in **days** on commits, work items, and the project itself. You can connect this dashboard (using the included endpoint) to [Microsoft Power Automate](https://flow.microsoft.com/) or Excel to automate tasks on project level.
 

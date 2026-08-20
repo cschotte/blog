@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ with .Content }}<div class="post-body">{{ . }}</div>{{ end }}
+
+{{- $pages := where .Pages "Section" "posts" -}}
+{{- $paginator := .Paginate $pages -}}
+<div class="post-list">
+  {{- range $paginator.Pages }}
+  {{ partial "article-card.html" . }}
+  {{- end }}
+</div>
+{{ partial "pagination.html" (dict "Paginator" $paginator) }}
+{{ end }}

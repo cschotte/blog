@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section class="profile">
+  <img src="{{ site.Params.home.avatar }}" width="80" height="80" alt="{{ site.Params.author.name }}" loading="eager">
+  <div>
+    <h1>{{ site.Params.home.title }}</h1>
+    <p>{{ site.Params.home.subtitle }}</p>
+    <p class="profile-links">
+      <a href="https://github.com/cschotte">GitHub</a>
+      <a href="https://www.linkedin.com/in/cschotte/">LinkedIn</a>
+      <a href="{{ "index.xml" | absLangURL }}">RSS</a>
+    </p>
+  </div>
+</section>
+
+{{- $posts := where site.RegularPages "Section" "posts" -}}
+{{- $paginator := .Paginate $posts site.Params.home.paginate -}}
+<div class="post-list">
+  {{- range $paginator.Pages }}
+  {{ partial "article-card-featured.html" . }}
+  {{- end }}
+</div>
+{{ partial "pagination.html" (dict "Paginator" $paginator) }}
+{{ end }}
