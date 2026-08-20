@@ -3,7 +3,7 @@ title: "Help customers find your business with the Azure Maps Store Locator"
 author: "Clemens Schotte"
 date: 2023-10-16
 
-tags: ["Azure", "Maps", "Store Locator", "Azure Maps"]
+tags: ["Azure", "Store Locator", "Azure Maps"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"

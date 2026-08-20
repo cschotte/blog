@@ -3,7 +3,7 @@ title: "Add a custom WebGL layer to Azure Maps"
 author: "Clemens Schotte"
 date: 2022-10-11
 
-tags: ["Azure", "Maps", "WebGL", "Azure Maps"]
+tags: ["Azure", "WebGL", "Azure Maps"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"

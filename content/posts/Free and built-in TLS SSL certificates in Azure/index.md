@@ -3,7 +3,7 @@ title: "Free and Built-In TLS/SSL certificates in Azure"
 author: "Clemens Schotte"
 date: 2020-06-18
 
-tags: ["Azure", "SSL", "TLS", "Free", "HTTPS"]
+tags: ["Azure", "TLS", "HTTPS"]
 categories: ["Cloud"]
 
 featuredImage: "featured-image.jpg"

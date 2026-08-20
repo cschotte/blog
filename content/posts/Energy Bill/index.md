@@ -3,7 +3,7 @@ title: "Lowering Your Energy Bill: How Combining Dynamic Pricing and Home Batter
 author: "Clemens Schotte"
 date: 2023-01-23
 
-tags: ["Energy", "Dynamic pricing", "Home battery", "Renewable energy"]
+tags: ["Energy", "Dynamic Pricing", "Home Battery", "Renewable Energy"]
 categories: ["Energy"]
 
 featuredImage: "featured-image.jpg"

@@ -4,7 +4,7 @@ description: "AI can generate code faster than ever, but speed without understan
 author: "Clemens Schotte"
 date: 2026-06-04
 
-tags: ["AI", "Software Engineering", "Architecture", "Technical Debt", "Development"]
+tags: ["AI", "Software Engineering", "Architecture", "Technical Debt"]
 categories: ["AI"]
 
 featuredImage: "featured-image.jpg"

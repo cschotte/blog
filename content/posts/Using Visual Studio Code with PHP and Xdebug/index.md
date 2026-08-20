@@ -3,7 +3,7 @@ title: "Using Visual Studio Code with PHP and Xdebug"
 author: "Clemens Schotte"
 date: 2020-06-08
 
-tags: ["PHP", "VSCode"]
+tags: ["PHP", "VSCode", "Debugging"]
 categories: ["Programming"]
 
 featuredImage: "featured-image.jpg"

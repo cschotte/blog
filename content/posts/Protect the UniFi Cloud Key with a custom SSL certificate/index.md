@@ -3,7 +3,7 @@ title: "Protect the UniFi Cloud Key with a custom SSL certificate"
 author: "Clemens Schotte"
 date: 2020-06-03
 
-tags: ["UniFi", "SSL", "CloudKey", "HTTPS"]
+tags: ["UniFi", "TLS", "CloudKey", "HTTPS"]
 categories: ["Network"]
 
 featuredImage: "featured-image.png"

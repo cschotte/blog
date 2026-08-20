@@ -3,7 +3,7 @@ title: "Do I get wet feet? Draw a flood map using Azure Maps Elevation"
 author: "Clemens Schotte"
 date: 2021-06-14
 
-tags: ["Azure", "Maps", "Elevation", "Azure Maps"]
+tags: ["Azure", "Elevation", "Azure Maps"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"

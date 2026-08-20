@@ -3,7 +3,7 @@ title: "Azure Maps REST SDKs"
 author: "Clemens Schotte"
 date: 2022-11-02
 
-tags: ["Azure", "Maps", "SDK", "REST", "Azure Maps"]
+tags: ["Azure", "SDK", "REST", "Azure Maps"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"

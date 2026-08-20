@@ -3,7 +3,7 @@ title: "Azure Maps Weather Services adds three new services"
 author: "Clemens Schotte"
 date: 2022-01-27
 
-tags: ["Azure", "Maps", "Weather", "Azure Maps"]
+tags: ["Azure", "Weather", "Azure Maps"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"

@@ -3,7 +3,7 @@ title: "Use Azure Maps to calculate an isochrone to reach your customers"
 author: "Clemens Schotte"
 date: 2021-09-21
 
-tags: ["Azure", "Maps", "Isochrone", "Azure Maps"]
+tags: ["Azure", "Isochrone", "Azure Maps"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"

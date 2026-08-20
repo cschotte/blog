@@ -3,7 +3,7 @@ title: "Calculate the availability and SLA for your Azure solution"
 author: "Clemens Schotte"
 date: 2020-06-09
 
-tags: ["Azure", "Availability", "SLA", "Website"]
+tags: ["Azure", "Availability", "SLA", "Web App"]
 categories: ["Cloud"]
 
 featuredImage: "featured-image.jpg"

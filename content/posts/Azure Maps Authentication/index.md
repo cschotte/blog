@@ -3,9 +3,8 @@ title: "Azure Maps Web Application Authentication"
 author: "Clemens Schotte"
 date: 2022-08-15
 
-tags: ["Azure", "Maps", "Authentication", "Managed Identities", "Azure Maps"]
-categories: ["Cloud", "Geospatial"]
-
+tags: ["Azure", "Authentication", "Managed Identities", "Azure Maps"]
+categories: ["Geospatial"]
 featuredImage: "featured-image.jpg"
 
 draft: false

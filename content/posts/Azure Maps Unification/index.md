@@ -3,7 +3,7 @@ title: "Introducing the Unified Azure Maps Experience"
 author: "Clemens Schotte"
 date: 2024-05-21
 
-tags: ["Azure", "Maps", "Bing", "Azure Maps"]
+tags: ["Azure", "Bing Maps", "Azure Maps"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"

@@ -3,7 +3,7 @@ title: "Infrastructure as Code"
 author: "Clemens Schotte"
 date: 2021-03-30
 
-tags: ["Azure", "DevOps", "IaC", "Infrastructure"]
+tags: ["Azure", "DevOps", "IaC"]
 categories: ["DevOps"]
 
 featuredImage: "featured-image.jpg"

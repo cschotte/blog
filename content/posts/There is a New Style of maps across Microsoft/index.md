@@ -3,7 +3,7 @@ title: "There is a New Style of Maps Across Microsoft"
 author: "Clemens Schotte"
 date: 2023-04-05
 
-tags: ["Azure", "Maps", "Azure Maps"]
+tags: ["Azure", "Azure Maps"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"

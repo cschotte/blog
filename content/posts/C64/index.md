@@ -3,7 +3,7 @@ title: "The Commodore 64 Ultimate Arrived"
 author: "Clemens Schotte"
 date: 2025-12-16
 
-tags: ["Commodore", "C64", "Retro Computing", "MOS"]
+tags: ["Commodore", "C64", "Retro Computing"]
 categories: ["Retro"]
 
 featuredImage: "featured-image.jpg"

@@ -3,7 +3,7 @@ title: "Introducing the Heat Map Layer in Azure Maps Visual for Power BI"
 author: "Clemens Schotte"
 date: 2021-10-11
 
-tags: ["Azure", "Maps", "Power BI", "Azure Maps"]
+tags: ["Azure", "Power BI", "Azure Maps"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
