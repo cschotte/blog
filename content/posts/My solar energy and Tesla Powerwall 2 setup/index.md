@@ -50,7 +50,7 @@ The combination of the solar and the Powerwall gives me an excellent performance
 | June 2020     | 44%    | 48%       | 92%   |
 | July 2020     | 42%    | 44%       | 86%   |
 | August 2020   | 41%    | 44%       | 85%   |
-| Setpember 2020 | 33%   | 35%       | 68%   |
+| September 2020 | 33%   | 35%       | 68%   |
 | October 2020  | 17%    | 6%        | 23%   |
 | November 2020 | 14%    | 8%        | 22%   |
 | December 2020 | 7%     | 2%        | 9%    |

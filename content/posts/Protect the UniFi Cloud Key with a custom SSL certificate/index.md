@@ -32,13 +32,13 @@ In the Cloud Key Controller, we can use a custom hostname (under *Controller set
 
 We can now access the Cloud Key with a custom hostname, but we also need to add a custom SSL certificate to the controller. The SSL certificate needs to have the same domain name associated as in the custom hostname field. I used the same wildcard SSL certificate I hold for my public domain name.
 
-My SSL certificate files are in a different format for what we need. We need to create a P12 bunded certificate archive and transfer this to the Cloud Key. To create a P12 bunded certificate archive, I use [OpenSSL](https://www.openssl.org/).
+My SSL certificate files are in a different format for what we need. We need to create a P12 bundled certificate archive and transfer this to the Cloud Key. To create a P12 bundled certificate archive, I use [OpenSSL](https://www.openssl.org/).
 
 > Under Windows 10, I use the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL) and Ubuntu. No need to install OpenSSL for Windows.
 
 ![certificate files in (linux) windows explorer](linux_in_windows_explorer.png)
 
-This will create a P12 bunded certificate archive with a temporary password we use later.
+This will create a P12 bundled certificate archive with a temporary password we use later.
 
 ```bash
 openssl pkcs12 -export -inkey certificate.key -in certificate.crt -out certificate.p12 -name ubnt -password pass:temppass
@@ -80,7 +80,7 @@ The next step is to remove the symbolic link and the reference to the built-in s
 rm /usr/lib/unifi/data/keystore
 ```
 
-And remove the following line "**UNIFI_SSL_KEYSTORE=/etc/ssl/private/unifi.keystore.jks**" from the file "/etc/default/unifi". It shoud be the last line in the file.
+And remove the following line "**UNIFI_SSL_KEYSTORE=/etc/ssl/private/unifi.keystore.jks**" from the file "/etc/default/unifi". It should be the last line in the file.
 
 ```bash
 mcedit /etc/default/unifi

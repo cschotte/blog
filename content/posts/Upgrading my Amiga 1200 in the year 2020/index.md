@@ -20,7 +20,7 @@ After all those years, my Amiga needs some care. Specialty the capacitors on the
 
 ## Workbench
 
-The **AmigaOS** is called **Workbench**. By default, the Amiga 1200 comes with version 3.0. When upgrading the AmigaOS, you need also to update the Kickstart ROM (this is what the Amiga starts). In 2018 [Workbench version 3.1.4](https://www.hyperion-entertainment.com/index.php/where-to-buy/direct-downloads/188-amigaos-314) came out, what adds new capabilities, like lager hard disks (4GB+), and fixes bugs from the past. So, I ordered this new version, including the Kickstart ROMs. In 2019 update 1 came out, so in the end, I now have **Workbench 3.1.4.1** running.
+The **AmigaOS** is called **Workbench**. By default, the Amiga 1200 comes with version 3.0. When upgrading the AmigaOS, you need also to update the Kickstart ROM (this is what the Amiga starts). In 2018 [Workbench version 3.1.4](https://www.hyperion-entertainment.com/index.php/where-to-buy/direct-downloads/188-amigaos-314) came out, what adds new capabilities, like larger hard disks (4GB+), and fixes bugs from the past. So, I ordered this new version, including the Kickstart ROMs. In 2019 update 1 came out, so in the end, I now have **Workbench 3.1.4.1** running.
 
 ![Workbench](workbench.jpg)
 

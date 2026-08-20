@@ -14,7 +14,7 @@ draft: false
 
 ## Introduction
 
-When you are working inside a building, like an office, factory, shopping mall, or something like a museum. There are probably a lot of sensors that can tell you information about that building, like what is the temperature and air quality per room, is there any door open or is there some alarm happening. When you in a big building and you want to know the fastest route to a specific room/store/painting, you probably apricate some help in navigating. These are all smart buildings.
+When you are working inside a building, like an office, factory, shopping mall, or something like a museum. There are probably a lot of sensors that can tell you information about that building, like what is the temperature and air quality per room, is there any door open or is there some alarm happening. When you in a big building and you want to know the fastest route to a specific room/store/painting, you probably appreciate some help in navigating. These are all smart buildings.
 
 > **Important:** As of 2024, Azure Maps Creator has been deprecated and is no longer available. Microsoft has discontinued this service. If you're looking for indoor mapping solutions, please refer to the [Azure Maps documentation](https://docs.microsoft.com/azure/azure-maps/) for current alternatives and migration guidance.
 

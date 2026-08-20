@@ -59,7 +59,7 @@ We are excited to announce that we have developed a **new and improved style** f
 
 If you want to explore the new style, visit our [Azure Maps Samples](https://samples.azuremaps.com/) or try out the [Azure Maps Demo site](https://demo.azuremaps.com/).
 
-Developers can also use the **Azure Maps V3 Web Control** in there applications by utilizing our **CDN endpoint** or the **[NPM package](https://www.npmjs.com/package/azure-maps-control)**.
+Developers can also use the **Azure Maps V3 Web Control** in their applications by utilizing our **CDN endpoint** or the **[NPM package](https://www.npmjs.com/package/azure-maps-control)**.
 
 ```javascript
 <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/3/atlas.min.css" type="text/css" />

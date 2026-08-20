@@ -236,7 +236,7 @@ az webapp deployment source config-zip -g rg-azuremaps -n web-azuremaps --src re
 
 ![Azure Maps Demo website](demo.png)
 
-2.12.	(Optional) We can also navigate to the token proxy API https://web-azuremaps.azurewebsites.net/api/GetAzureMapsToken, copy the token, and past this in the https://jwt.ms/ tool to decode and inspect the token.
+2.12.	(Optional) We can also navigate to the token proxy API https://web-azuremaps.azurewebsites.net/api/GetAzureMapsToken, copy the token, and paste this in the https://jwt.ms/ tool to decode and inspect the token.
 
 ## Step 3. Protecting the web application and the Azure Maps token proxy API
 

@@ -33,4 +33,4 @@ It should be easy and free to enable SSL/TSL certificates in Azure. This was the
 
 ## Use your own certificate
 
-There is also an option to use your own certificate, especially when you need a naked domain (without the "www"-prefix). This is not currently possible with the Build-In certificate option. See "[Hosting a Static Site on Azure using CDN and HTTPS](/hosting-a-static-site-on-azure-using-cdn-and-https/)" how to fix this.
+There is also an option to use your own certificate, especially when you need a naked domain (without the "www"-prefix). This is not currently possible with the built-in certificate option. See "[Hosting a Static Site on Azure using CDN and HTTPS](/hosting-a-static-site-on-azure-using-cdn-and-https/)" how to fix this.

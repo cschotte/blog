@@ -133,4 +133,4 @@ To automate tasks, you can use the API to connect to Excel, Microsoft Power Auto
 
 ## Source Code
 
-Alle source code can be found on [GitHub](https://github.com/cschotte/Azure-DevOps-Dashboard).
+All source code can be found on [GitHub](https://github.com/cschotte/Azure-DevOps-Dashboard).

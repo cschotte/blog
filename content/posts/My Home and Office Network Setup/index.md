@@ -12,7 +12,7 @@ draft: false
 
 ---
 
-Working from home, I use [Microsoft Teams](https://teams.microsoft.com/) for online meetings. Some of my colleges and customers have an unreliable Internet connection at their homes. Most of the time, the problems are with their Wi-Fi what results in audio or video dropouts during online meetings. In this blog post, I outline my home and office network and Internet setup for a fast and rock-solid connection.
+Working from home, I use [Microsoft Teams](https://teams.microsoft.com/) for online meetings. Some of my colleagues and customers have an unreliable Internet connection at their homes. Most of the time, the problems are with their Wi-Fi what results in audio or video dropouts during online meetings. In this blog post, I outline my home and office network and Internet setup for a fast and rock-solid connection.
 
 ## Internet
 
@@ -22,7 +22,7 @@ In the Netherlands we are blessed with fast and affordable internet, we have opt
 
 ## Networking equipment
 
-All my networking equipment is from [Ubiquiti](https://www.ui.com/), and I use their [UniFi](https://www.ui.com/products/#unifi) product line. My choice for Ubiquiti/UniFi comes from the experience I had in the past. UniFi gives me professional control over my network and still is easy to use. You need at least a Security Gateway (USG), a Switch with PoE (Power over Ethernet), and one or more Access Points (AP) to start. The control software you can run on your computer, but I recommend to use a Cloud Key (Gen2). All my access points are getting their power from the network cable, so no need to have additional power lines. I manage my network using the Cloud Key (Gen2) Plus. An extra benefit is that it gives me lots of insides, and it is easy to operate.
+All my networking equipment is from [Ubiquiti](https://www.ui.com/), and I use their [UniFi](https://www.ui.com/products/#unifi) product line. My choice for Ubiquiti/UniFi comes from the experience I had in the past. UniFi gives me professional control over my network and still is easy to use. You need at least a Security Gateway (USG), a Switch with PoE (Power over Ethernet), and one or more Access Points (AP) to start. The control software you can run on your computer, but I recommend to use a Cloud Key (Gen2). All my access points are getting their power from the network cable, so no need to have additional power lines. I manage my network using the Cloud Key (Gen2) Plus. An extra benefit is that it gives me lots of insights, and it is easy to operate.
 
 ![Network devices](UniFi_network_devices.png)
 

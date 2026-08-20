@@ -22,7 +22,7 @@ Azure Maps Creator is not just a product for efficient space management; it's a 
 
 Imagine a hybrid employee contemplating their commute to the office. With Azure Maps Creator, they can evaluate whether to attend a meeting in person or remotely via Microsoft Teams, consider the environmental and time implications of different travel options, and even check parking availability. This decision-making process is part of what Microsoft refers to as the "Green Commute" initiative, which aims to identify the most efficient commuting method in terms of both time and energy.
 
-Upon arrival at a Microsoft facility, employees are greeted by kiosks equipped with Azure Maps Creator's interactive maps. These maps not only display detailed floor plans but also provide navigational guidance to meeting locations, individuals, or specific areas within the building. For the health-conscious, the maps can suggest stair routes as an alternative to elevators. And for those unexpected meetings, this experinace enables the instant search and reservation of available meeting rooms, accessible via the kiosk or a mobile device.
+Upon arrival at a Microsoft facility, employees are greeted by kiosks equipped with Azure Maps Creator's interactive maps. These maps not only display detailed floor plans but also provide navigational guidance to meeting locations, individuals, or specific areas within the building. For the health-conscious, the maps can suggest stair routes as an alternative to elevators. And for those unexpected meetings, this experience enables the instant search and reservation of available meeting rooms, accessible via the kiosk or a mobile device.
 
 ![kiosks](kiosks.jpg)
 

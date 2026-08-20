@@ -43,7 +43,7 @@ In this example we are using an Anonymous HttpTrigger [Azure Function](https://a
 ```csharp
 public static class GetBingMapsKey
 {
-    private static readonly string[] allowd = { "https://samples.bingmapsportal.com/",
+    private static readonly string[] allowed = { "https://samples.bingmapsportal.com/",
                                                 "http://localhost"};
 
     [FunctionName("GetBingMapsKey")]
@@ -53,7 +53,7 @@ public static class GetBingMapsKey
         if (string.IsNullOrEmpty(referer))
             return new UnauthorizedResult();
 
-        string result = Array.Find(allowd, site => referer.StartsWith(site, StringComparison.OrdinalIgnoreCase));
+        string result = Array.Find(allowed, site => referer.StartsWith(site, StringComparison.OrdinalIgnoreCase));
         if (string.IsNullOrEmpty(result))
             return new UnauthorizedResult();
 

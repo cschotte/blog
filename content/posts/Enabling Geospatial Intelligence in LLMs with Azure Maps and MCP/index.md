@@ -32,7 +32,7 @@ With an MCP server acting as a bridge between the LLM and Azure Maps, the proces
 3.	**Azure Maps Execution:** The server makes the API call (e.g., reverse geocoding, route calculation, etc).
 4.	**LLM Response Generation:** The MCP server returns structured results to the LLM, which incorporates it into a coherent and accurate response.
 
-![Chat window in Vistual Studio Code](chat.png)
+![Chat window in Visual Studio Code](chat.png)
 
 Integrating Azure Maps into an MCP server is surprisingly straightforward, especially when using **.NET** and **Azure Functions**. In this blog, I’ll walk you through the core setup to expose Azure Maps as a tool to an LLM via MCP.
 

@@ -16,7 +16,7 @@ Most websites don’t need a dynamically generated page for every visitor; it is
 
 ## Headless CMS
 
-The solution for a static website is to make use of a headless CMS, like [Hugo](https://gohugo.io/) or [Jekyll](https://jekyllrb.com/). Basascly, you generate a static site from content and a template, similar to what this blog is doing.
+The solution for a static website is to make use of a headless CMS, like [Hugo](https://gohugo.io/) or [Jekyll](https://jekyllrb.com/). Basically, you generate a static site from content and a template, similar to what this blog is doing.
 
 ## A fast and scalable website
 
@@ -32,7 +32,7 @@ Next, we need to **enable the Static website option** in the storage account, an
 
 ![Storage Account Static Website](storage_static_website.png)
 
-Upload some test HTML content into the BLOB storage. I used the build-in Storage Explorer when uploading. Use the container **$web** (this was created by enabling the Static website option).
+Upload some test HTML content into the BLOB storage. I used the built-in Storage Explorer when uploading. Use the container **$web** (this was created by enabling the Static website option).
 
 Let’s test if the files are visible in the browser. Use the primary endpoint URL from the enable the Static website option. It looks something like: `https://«your unique name».z6.web.core.windows.net/`
 
@@ -40,7 +40,7 @@ Let’s test if the files are visible in the browser. Use the primary endpoint U
 
 ## Content Delivery Network (CDN)
 
-To make your website fast and responsive, host it closeby your visitors. Visitors from the US and Australia are far from West Europe, so by using a CDN, the content is as closeby as possible. Azure CDN has [130 point-of-presence (POP) locations](https://docs.microsoft.com/en-us/azure/cdn/cdn-pop-locations) worldwide.
+To make your website fast and responsive, host it close by your visitors. Visitors from the US and Australia are far from West Europe, so by using a CDN, the content is as close by as possible. Azure CDN has [130 point-of-presence (POP) locations](https://docs.microsoft.com/en-us/azure/cdn/cdn-pop-locations) worldwide.
 
 Creating an Azure CDN is easy, give it a unique name and point it to the primary endpoint URL from the Storage account we had created earlier.
 
@@ -62,8 +62,8 @@ If your website is not using HTTPS, most browsers warn you nowadays. To make the
 
 I don’t like the “www” prefix before my domain, but people still type this. To make it easy for people, I want to redirect traffic to the right URL.
 
-1. Trafic to “www” needs to go to my naked/root domain.
-2. Trafic that is not using HTTPS (encryption) needs to go to HTTPS.
+1. Traffic to “www” needs to go to my naked/root domain.
+2. Traffic that is not using HTTPS (encryption) needs to go to HTTPS.
 
 The Azure CDN Rules engine is more than capable of rewriting the URL, and I used HTTP 308 (permanent redirect) to redirect the traffic to the right place.
 

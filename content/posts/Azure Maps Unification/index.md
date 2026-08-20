@@ -29,7 +29,7 @@ Azure Maps has many of the same features that BME customers have come to rely on
 For customers that are using Bing Maps for Enterprise and are migrating over to Azure Maps, some development will be needed. To help you in this transition period, we have written [migration documents](https://learn.microsoft.com/en-us/azure/azure-maps/migrate-from-bing-maps) for our REST APIs and as well for the Azure Maps web control. Also, a good start is our [Azure Maps samples](https://samples.azuremaps.com) site where you can find not only samples for many scenarios, but also the source code.
 
 More resources about Azure Maps can be found here:
-*	[Azure Maps Documenation](https://docs.azuremaps.com)
+*	[Azure Maps Documentation](https://docs.azuremaps.com)
 *	[Azure Maps Samples](https://samples.azuremaps.com)
 *	[Azure Maps Blog](https://blog.azuremaps.com)
 *	[Microsoft Q&A for Azure Maps](https://learn.microsoft.com/en-us/answers/tags/209/azure-maps)

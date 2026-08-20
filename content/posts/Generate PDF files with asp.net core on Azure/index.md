@@ -13,7 +13,7 @@ draft: false
 
 There are many libraries and services to generate PDF files for asp.net core web applications. There are excellent commercial solutions out there, but if you need a free solution, it gets harder. Some libraries are hard to use, or others are limited in functionality. I need a free, easy to use, and quick solution to generate PDF files on an [Azure Web App](https://azure.microsoft.com/en-us/services/app-service/web/).
 
-## Can a View retrun a PDF?
+## Can a View return a PDF?
 
 What I need is a View that returns a PDF and not HTML what it usually does. The beauty of using a standard View is that I can use my web and asp.net core knowledge to design the View. In this case, I need to generate invoices. 
 

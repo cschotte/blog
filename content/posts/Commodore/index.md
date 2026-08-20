@@ -21,7 +21,7 @@ The first “computer” that really knocked on my brain wasn’t even called a 
 
 Back then a computer at home was a rare beast, the sort of thing you circled in a catalog and dreamed about. My dad heard coworkers talking about this “Commodore” machine and, after saving for ages, brought home a **Commodore 64C** with a tape drive, a color TV to borrow as a monitor, and one noble joystick that took more abuse than a drum kit. The original ad my dad marked up made it clear, this was an investment. For him it was “education.” For me and my brother, it was warp drive.
 
-![Commodore 64 advertismnt](ad.jpg)
+![Commodore 64 advertisement](ad.jpg)
 
 We fired it up and there it was, the blue screen that launched a million obsessions: **READY.** No OS like we think of today. Just the ROM, the kernel, and Commodore BASIC blinking at you like a dare. Our first flights were games, like [Chopper Hunt](https://www.lemon64.com/game/chopper-hunt) and the brutal [Fort Apocalypse](https://www.lemon64.com/game/fort-apocalypse), which taught me two things: one, helicopters are hard; two, loading from tape requires saintly patience.
 
@@ -52,7 +52,7 @@ It still blows my mind when I look at today’s software, how much stuff we slin
 
 At CCZ meetups I kept drifting toward a table that sounded different. The Commodore Amiga had color that didn’t just glow,  it danced. It had audio that wasn’t beeps, it was music. And it had a proper desktop, Workbench, that made the PC’s DOS prompt look like a gas station receipt. I did jobs, saved coins, begged grandparents, and eventually landed an Amiga 500. The built-in disk drive sounded like a tiny factory making joy.
 
-![Amiga advertismnt](amiga.jpg)
+![Amiga advertisement](amiga.jpg)
 
 I fell headfirst into [DeluxePaint](https://en.wikipedia.org/wiki/Deluxe_Paint) and lost countless evenings drawing pixels until they started to feel like atoms. Animations, palettes, and the delicious thunk of saving to disk, my creative loop clicked. And yes, I kept programming, this time with [Devpac 3 Assembler](https://en.wikipedia.org/wiki/HiSoft_Systems) and the Amiga ROM Kernel Reference Manuals. Nothing makes you feel more unstoppable than compiler warnings you finally understand.
 

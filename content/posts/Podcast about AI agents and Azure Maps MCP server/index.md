@@ -11,7 +11,7 @@ featuredImage: "featured-image.jpg"
 draft: false
 ---
 
-Last week I joined [Geospatial FM](https://www.youtube.com/@geospatialfm), the podcast hosted by [Wilfred Waters](https://www.linkedin.com/in/geospatialfm/), to talk about AI agents and the [Azure Maps MCP server](https://clemens.ms/enabling-geospatial-intelligence-in-llms-with-azure-maps-and-mcp/) I had created and bloged about.
+Last week I joined [Geospatial FM](https://www.youtube.com/@geospatialfm), the podcast hosted by [Wilfred Waters](https://www.linkedin.com/in/geospatialfm/), to talk about AI agents and the [Azure Maps MCP server](https://clemens.ms/enabling-geospatial-intelligence-in-llms-with-azure-maps-and-mcp/) I had created and blogged about.
 
 We touched on how Bing Maps is the familiar public-facing mapping service, while Azure Maps is the developer platform for bringing mapping, routing, traffic, and spatial analytics into enterprise and IoT apps. The heart of our conversation was about Model Context Protocol (MCP) and why it matters. MCP lets AI agents use tools and pull fresh data from APIs, so instead of guessing about roads, traffic, or places, an agent can call Azure Maps in real time.
 

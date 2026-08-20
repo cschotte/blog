@@ -12,7 +12,7 @@ draft: false
 
 ---
 
-**Azure Maps Creator** is a powerful product that transforms your static floor plans into dynamic, interactive indoor maps for your business locations. It allows you to overlay technical building plans ontop of Azure Maps, enabling the visualization of IoT data such as temperature, occupancy, and other location-based services. The onboarding process is streamlined, requiring only the preparation and uploading of your **DWG floorplan** files (the native file format for Autodesk's AutoCAD software) into [Azure Maps Creator](https://aka.ms/azuremapscreator).
+**Azure Maps Creator** is a powerful product that transforms your static floor plans into dynamic, interactive indoor maps for your business locations. It allows you to overlay technical building plans on top of Azure Maps, enabling the visualization of IoT data such as temperature, occupancy, and other location-based services. The onboarding process is streamlined, requiring only the preparation and uploading of your **DWG floorplan** files (the native file format for Autodesk's AutoCAD software) into [Azure Maps Creator](https://aka.ms/azuremapscreator).
 
 > **Important:** As of 2024, Azure Maps Creator has been deprecated and is no longer available. Microsoft has discontinued this service. If you're looking for indoor mapping solutions, please refer to the [Azure Maps documentation](https://docs.microsoft.com/azure/azure-maps/) for current alternatives and migration guidance.
 
