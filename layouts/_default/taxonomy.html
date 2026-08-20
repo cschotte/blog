@@ -1,6 +1,10 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-{{ with .Content }}<div class="post-body">{{ . }}</div>{{ end }}
+{{ with .Content }}
+<div class="post-body">{{ . }}</div>
+{{ else with .Description }}
+<div class="post-body"><p>{{ . }}</p></div>
+{{ end }}
 
 {{- if eq .Kind "taxonomy" }}
 <ul class="tag-list">

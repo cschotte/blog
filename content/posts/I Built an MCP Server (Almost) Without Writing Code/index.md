@@ -3,7 +3,7 @@ title: "I Built an MCP Server (Almost) Without Writing Code"
 author: "Clemens Schotte"
 date: 2025-08-11
 
-tags: ["AI", "MCP", "Azure Maps", "AI-Assisted Development", ".NET"]
+tags: ["AI", "MCP", "Azure Maps", "AI-Assisted Development", "Microsoft .NET"]
 categories: ["AI"]
 
 featuredImage: "featured-image.jpg"

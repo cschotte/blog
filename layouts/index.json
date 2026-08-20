@@ -23,7 +23,7 @@
         "wordCount": {{ $page.WordCount }},
         "readingTime": {{ $page.ReadingTime }},
         "keywords": {{ delimit (union ($page.Params.tags | default slice) ($page.Params.categories | default slice)) "," | jsonify }},
-        "searchable_content": {{ printf "%s %s %s %s" $page.Title $page.Description ($page.Content | plainify) (delimit ($page.Params.tags | default slice) " ") | jsonify }},
+        "searchable_content": {{ printf "%s %s %s %s %s" $page.Title $page.Description ($page.Content | plainify) (delimit ($page.Params.tags | default slice) " ") (delimit ($page.Params.categories | default slice) " ") | jsonify }},
         "summary": {{ $page.Summary | plainify | jsonify }}
       }
     {{- end }}

@@ -79,6 +79,23 @@
     {{- with $images -}}
         {{- $posting = merge $posting (dict "image" .) -}}
     {{- end -}}
+    {{- $about := slice -}}
+    {{- range (.Params.tags | default slice) -}}
+        {{- $tagName := . -}}
+        {{- $tagPath := printf "/tags/%s" (urlize $tagName) -}}
+        {{- $term := dict "@type" "DefinedTerm" "name" $tagName -}}
+        {{- with site.GetPage $tagPath -}}
+            {{- $term = merge $term (dict
+                "@id" (printf "%s#term" .Permalink)
+                "url" .Permalink
+                "description" .Description
+            ) -}}
+        {{- end -}}
+        {{- $about = $about | append $term -}}
+    {{- end -}}
+    {{- with $about -}}
+        {{- $posting = merge $posting (dict "about" .) -}}
+    {{- end -}}
     {{- $graph = $graph | append $posting -}}
     {{- if eq .Title "CaveRace" -}}
         {{- $software := dict
@@ -108,5 +125,66 @@
         -}}
         {{- $graph = $graph | append $creative -}}
     {{- end -}}
+{{- else if or (eq .Kind "taxonomy") (eq .Kind "term") -}}
+    {{- $description := .Description | default (.Summary | plainify) -}}
+    {{- $collection := dict
+        "@type" "CollectionPage"
+        "@id" (printf "%s#collection" .Permalink)
+        "name" .Title
+        "url" .Permalink
+        "description" $description
+        "isPartOf" (dict "@id" $websiteID)
+    -}}
+    {{- if eq .Kind "term" -}}
+        {{- $termSetURL := printf "/%s/" .Data.Plural | absURL -}}
+        {{- $definedTerm := dict
+            "@type" "DefinedTerm"
+            "@id" (printf "%s#term" .Permalink)
+            "name" .Title
+            "url" .Permalink
+            "description" $description
+            "inDefinedTermSet" (dict
+                "@type" "DefinedTermSet"
+                "name" (.Data.Plural | humanize | title)
+                "url" $termSetURL
+            )
+        -}}
+        {{- $items := slice -}}
+        {{- range $index, $page := .Pages -}}
+            {{- $items = $items | append (dict
+                "@type" "ListItem"
+                "position" (add $index 1)
+                "name" $page.Title
+                "url" $page.Permalink
+            ) -}}
+        {{- end -}}
+        {{- $collection = merge $collection (dict
+            "about" $definedTerm
+            "mainEntity" (dict
+                "@type" "ItemList"
+                "numberOfItems" (len $items)
+                "itemListElement" $items
+            )
+        ) -}}
+    {{- else -}}
+        {{- $terms := slice -}}
+        {{- range .Data.Terms.Alphabetical -}}
+            {{- $terms = $terms | append (dict
+                "@type" "DefinedTerm"
+                "name" .Page.Title
+                "url" .Page.Permalink
+                "description" .Page.Description
+            ) -}}
+        {{- end -}}
+        {{- $collection = merge $collection (dict
+            "mainEntity" (dict
+                "@type" "DefinedTermSet"
+                "name" .Title
+                "url" .Permalink
+                "hasDefinedTerm" $terms
+            )
+        ) -}}
+    {{- end -}}
+    {{- $graph = $graph | append $collection -}}
 {{- end -}}
 {{- dict "@context" "https://schema.org" "@graph" $graph | jsonify (dict "indent" "  ") | printf "<script type=\"application/ld+json\">%s</script>" | safeHTML -}}
