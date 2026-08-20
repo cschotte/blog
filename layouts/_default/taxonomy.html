@@ -4,7 +4,7 @@
 
 {{- if eq .Kind "taxonomy" }}
 <ul class="tag-list">
-  {{- range .Data.Terms.ByCount.Reverse }}
+  {{- range .Data.Terms.Alphabetical }}
   <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> <span class="meta">({{ .Count }})</span></li>
   {{- end }}
 </ul>
