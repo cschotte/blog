@@ -3,7 +3,7 @@ title: "Zero Touch Deployment"
 author: "Clemens Schotte"
 date: 2021-03-16
 
-tags: ["Azure", "DevOps", "ALM", "IaC"]
+tags: ["Azure", "DevOps", "Security", "Infrastructure as Code"]
 categories: ["DevOps"]
 
 featuredImage: "featured-image.jpg"

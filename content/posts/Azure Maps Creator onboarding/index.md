@@ -3,7 +3,7 @@ title: "Azure Maps Creator onboarding"
 author: "Clemens Schotte"
 date: 2023-03-27
 
-tags: ["Azure", "Indoor Maps", "Azure Maps"]
+tags: ["Azure Maps", "Indoor Maps", "Location Intelligence"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"

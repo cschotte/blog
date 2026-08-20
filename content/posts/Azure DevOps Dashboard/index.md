@@ -3,7 +3,7 @@ title: "Azure DevOps Dashboard"
 author: "Clemens Schotte"
 date: 2021-06-15
 
-tags: ["Azure", "DevOps", "Dashboard", "Web App"]
+tags: ["Azure", "DevOps", "Data Visualization"]
 categories: ["DevOps"]
 
 featuredImage: "featured-image.png"

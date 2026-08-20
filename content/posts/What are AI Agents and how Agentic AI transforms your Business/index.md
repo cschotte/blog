@@ -3,7 +3,7 @@ title: "What are AI Agents and how Agentic AI transforms your Business"
 author: "Clemens Schotte"
 date: 2025-07-24
 
-tags: ["AI", "MCP", "LLM", "Azure Maps"]
+tags: ["AI", "AI Agents", "MCP", "LLM"]
 categories: ["AI"]
 
 featuredImage: "featured-image.jpg"

@@ -3,7 +3,7 @@ title: "My Home and Office Network Setup"
 author: "Clemens Schotte"
 date: 2020-05-18
 
-tags: ["UniFi", "WiFi", "Internet"]
+tags: ["Networking", "UniFi", "WiFi", "Hardware"]
 categories: ["Network"]
 
 featuredImage: "featured-image.jpg"

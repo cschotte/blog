@@ -3,7 +3,7 @@ title: "What is it to be a Program Manager at Microsoft?"
 author: "Clemens Schotte"
 date: 2024-04-11
 
-tags: ["Program Manager", "Microsoft", "Product Development", "Azure Maps"]
+tags: ["Microsoft", "Product Management", "Software Engineering"]
 categories: ["Business"]
 
 featuredImage: "featured-image.jpg"

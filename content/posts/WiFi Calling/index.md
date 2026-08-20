@@ -3,7 +3,7 @@ title: "WiFi Calling"
 author: "Clemens Schotte"
 date: 2020-07-16
 
-tags: ["WiFi", "Mobile", "Phone"]
+tags: ["Networking", "WiFi"]
 categories: ["Network"]
 
 featuredImage: "featured-image.jpg"

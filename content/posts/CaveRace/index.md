@@ -4,7 +4,7 @@ author: "Clemens Schotte"
 date: 2020-06-04
 lastmod: 2026-08-13
 
-tags: ["Gaming", "MS-DOS", "Odin", "raylib", "Retro Computing", "Game Development"]
+tags: ["Game Development", "Retro Computing", "Odin", "raylib"]
 categories: ["Retro"]
 
 featuredImage: "featured-image.jpg"

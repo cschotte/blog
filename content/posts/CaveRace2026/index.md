@@ -4,7 +4,7 @@ author: "Clemens Schotte"
 date: 2026-08-05
 lastmod: 2026-08-13
 
-tags: ["Gaming", "macOS", "Odin", "raylib", "Retro Computing", "Game Development"]
+tags: ["Game Development", "Retro Computing", "Odin", "raylib", "macOS"]
 categories: ["Retro"]
 
 featuredImage: "featured-image.jpg"

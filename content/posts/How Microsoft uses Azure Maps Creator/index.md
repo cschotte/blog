@@ -3,7 +3,7 @@ title: "How Microsoft uses Azure Maps Creator"
 author: "Clemens Schotte"
 date: 2023-03-23
 
-tags: ["Azure", "Indoor Maps", "Azure Maps"]
+tags: ["Azure Maps", "Indoor Maps", "Location Intelligence", "Microsoft"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"

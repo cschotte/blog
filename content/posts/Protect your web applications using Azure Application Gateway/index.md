@@ -3,7 +3,7 @@ title: "Protect your web applications using Azure Application Gateway"
 author: "Clemens Schotte"
 date: 2021-04-06
 
-tags: ["Azure", "Web App", "Gateway", "Firewall"]
+tags: ["Azure", "Security", "Kubernetes", "Cloud Architecture", "Reliability"]
 categories: ["Cloud"]
 
 featuredImage: "featured-image.jpg"

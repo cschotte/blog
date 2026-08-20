@@ -3,7 +3,7 @@ title: "Building a personal AI chat assistant with semantic search"
 author: "Clemens Schotte"
 date: 2025-08-04
 
-tags: ["AI", "LLM", "n8n", "Azure"]
+tags: ["AI", "AI Agents", "LLM", "n8n", "Databases"]
 categories: ["AI"]
 
 featuredImage: "featured-image.jpg"

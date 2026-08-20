@@ -3,7 +3,7 @@ title: "Running n8n on Azure to power a AI chat agent"
 author: "Clemens Schotte"
 date: 2025-07-30
 
-tags: ["Azure", "AI", "n8n"]
+tags: ["AI", "n8n", "Cloud Architecture", "Databases"]
 categories: ["AI"]
 
 featuredImage: "featured-image.jpg"

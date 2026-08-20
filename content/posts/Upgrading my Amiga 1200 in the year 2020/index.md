@@ -3,7 +3,7 @@ title: "Upgrading my Amiga 1200 in the year 2020"
 author: "Clemens Schotte"
 date: 2020-06-17
 
-tags: ["Amiga", "A1200", "Workbench", "AmigaOS", "Retro Computing", "Commodore", "Kickstart"]
+tags: ["Amiga", "Commodore", "Retro Computing", "Hardware"]
 categories: ["Retro"]
 
 featuredImage: "featured-image.jpg"

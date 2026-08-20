@@ -3,7 +3,7 @@ title: "My solar energy and Tesla Powerwall 2 setup"
 author: "Clemens Schotte"
 date: 2020-06-11
 
-tags: ["Solar", "Tesla", "Powerwall", "Energy"]
+tags: ["Energy", "Home Battery", "Renewable Energy", "Hardware"]
 categories: ["Energy"]
 
 featuredImage: "featured-image.jpg"

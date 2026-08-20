@@ -3,7 +3,7 @@ title: "Protecting and Hiding your Bing Maps Key"
 author: "Clemens Schotte"
 date: 2022-04-05
 
-tags: ["Bing Maps", "Keys", "API"]
+tags: ["Bing Maps", "APIs", "Security"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"

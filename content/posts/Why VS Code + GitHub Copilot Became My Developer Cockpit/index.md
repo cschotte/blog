@@ -3,7 +3,7 @@ title: "Why VS Code + GitHub Copilot Became My Developer Cockpit"
 author: "Clemens Schotte"
 date: 2025-07-29
 
-tags: ["AI", "GitHub", "Copilot", "VSCode"]
+tags: ["AI", "GitHub", "Visual Studio Code", "AI-Assisted Development", "Software Engineering"]
 categories: ["Programming"]
 
 featuredImage: "featured-image.jpg"

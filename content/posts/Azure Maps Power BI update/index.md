@@ -3,7 +3,7 @@ title: "Azure Maps Power BI update"
 author: "Clemens Schotte"
 date: 2022-03-22
 
-tags: ["Azure", "Power BI", "Azure Maps"]
+tags: ["Azure Maps", "Power BI", "Data Visualization"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"

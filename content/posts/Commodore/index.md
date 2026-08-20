@@ -3,7 +3,7 @@ title: "Commodore"
 author: "Clemens Schotte"
 date: 2025-08-05
 
-tags: ["Commodore", "Amiga", "C64", "Retro Computing", "A1200"]
+tags: ["Commodore", "Amiga", "Retro Computing", "Hardware"]
 categories: ["Retro"]
 
 featuredImage: "featured-image.jpg"

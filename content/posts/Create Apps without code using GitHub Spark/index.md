@@ -3,7 +3,7 @@ title: "Create Apps without code using GitHub Spark"
 author: "Clemens Schotte"
 date: 2025-07-28
 
-tags: ["GitHub", "AI", "Web App", "Spark"]
+tags: ["AI", "AI-Assisted Development", "GitHub", "Web Development"]
 categories: ["AI"]
 
 featuredImage: "featured-image.jpg"

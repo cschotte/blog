@@ -3,7 +3,7 @@ title: "Enabling Geospatial Intelligence in LLMs with Azure Maps and MCP"
 author: "Clemens Schotte"
 date: 2025-07-21
 
-tags: ["AI", "MCP", "LLM", "Azure Maps"]
+tags: ["AI", "AI Agents", "MCP", "Azure Maps", "Location Intelligence"]
 categories: ["AI"]
 
 featuredImage: "featured-image.jpg"

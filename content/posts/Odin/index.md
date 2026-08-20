@@ -4,7 +4,7 @@ description: "While rewriting my old C game CaveRace in Odin, Raylib appeared to
 author: "Clemens Schotte"
 date: 2026-07-16
 
-tags: ["Odin", "raylib", "Git LFS", "macOS", "VSCode", "Game Development"]
+tags: ["Odin", "raylib", "Game Development", "macOS", "Visual Studio Code"]
 categories: ["Programming"]
 
 featuredImage: "featured-image.png"

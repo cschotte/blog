@@ -3,7 +3,7 @@ title: "Managed Identities for Azure Maps"
 author: "Clemens Schotte"
 date: 2021-10-31
 
-tags: ["Azure", "Authentication", "Azure Maps"]
+tags: ["Azure Maps", "Authentication", "Managed Identities", "Security"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"

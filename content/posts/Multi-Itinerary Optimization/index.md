@@ -3,7 +3,7 @@ title: "Enhancing Logistics with Azure Maps and NVIDIA cuOpt for Multi-Itinerary
 author: "Clemens Schotte"
 date: 2024-05-22
 
-tags: ["Azure", "Logistics", "Azure Maps"]
+tags: ["Azure Maps", "Routing", "Logistics", "Location Intelligence"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"

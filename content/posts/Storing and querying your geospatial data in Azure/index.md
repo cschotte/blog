@@ -3,7 +3,7 @@ title: "Storing and querying your geospatial data in Azure"
 author: "Clemens Schotte"
 date: 2023-01-20
 
-tags: ["Azure", "Database", "Azure Maps"]
+tags: ["Azure", "Geospatial Data", "Databases", "Location Intelligence"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"

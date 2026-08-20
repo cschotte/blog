@@ -3,7 +3,7 @@ title: "Azure Maps Authentication – My Updated Guide for 2025"
 author: "Clemens Schotte"
 date: 2025-08-13
 
-tags: ["Azure", "Authentication", "Managed Identities", "Azure Maps"]
+tags: ["Azure Maps", "Authentication", "Managed Identities", "Security"]
 categories: ["Geospatial"]
 featuredImage: "featured-image.jpg"
 

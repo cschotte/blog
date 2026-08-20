@@ -3,7 +3,7 @@ title: "Hosting a Static Site on Azure using CDN and HTTPS"
 author: "Clemens Schotte"
 date: 2020-05-28
 
-tags: ["Azure", "Web App", "CDN", "Storage Account"]
+tags: ["Azure", "Cloud Architecture", "Web Development", "HTTPS"]
 categories: ["Cloud"]
 
 featuredImage: "featured-image.png"

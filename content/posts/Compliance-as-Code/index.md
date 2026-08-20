@@ -3,7 +3,7 @@ title: "Compliance as Code"
 author: "Clemens Schotte"
 date: 2021-03-22
 
-tags: ["Azure", "DevOps", "IaC", "Testing"]
+tags: ["Azure", "DevOps", "Security", "Infrastructure as Code"]
 categories: ["DevOps"]
 
 featuredImage: "featured-image.jpg"
