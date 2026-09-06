@@ -1,4 +1,4 @@
 ---
 title: "Engineering Leadership"
-description: "Pages about technical leadership, engineering organizations, architecture, and team development."
+description: "Explore Clemens Schotte's background in engineering leadership, software architecture, product delivery, and helping teams build and modernize cloud platforms."
 ---

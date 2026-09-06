@@ -1,5 +1,5 @@
 ---
 title: "Databases"
-description: "Articles about relational, document, vector, and geospatial data storage and retrieval."
+description: "Read about storing and querying data with Azure Cosmos DB, SQL Database, and semantic search, with geospatial and AI application examples by Clemens Schotte."
 aliases: ["/tags/database/"]
 ---

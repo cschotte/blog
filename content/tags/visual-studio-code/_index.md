@@ -1,5 +1,5 @@
 ---
 title: "Visual Studio Code"
-description: "Articles about Visual Studio Code, extensions, debugging, AI assistance, and development workflows."
+description: "Explore Clemens Schotte's Visual Studio Code workflows for PHP debugging, Odin development, and GitHub Copilot, with setup guidance and practical code examples."
 aliases: ["/tags/vscode/"]
 ---

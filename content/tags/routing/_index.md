@@ -1,5 +1,5 @@
 ---
 title: "Routing"
-description: "Articles about travel-time analysis, isochrones, delivery routes, and itinerary optimization."
+description: "Explore travel-time analysis, isochrones, and delivery optimization through Clemens Schotte's Azure Maps articles, with examples of location-aware applications."
 aliases: ["/tags/isochrone/"]
 ---

@@ -1,4 +1,4 @@
 ---
 title: "MCP"
-description: "Articles about Model Context Protocol servers, tools, integrations, and AI agent capabilities."
+description: "Explore Model Context Protocol with Clemens Schotte's Azure Maps MCP server, covering tool design, AI agent integration, and lessons from building with Copilot."
 ---

@@ -1,4 +1,4 @@
 ---
 title: "AI Agents"
-description: "Articles about autonomous AI agents, tool use, orchestration, memory, and agentic workflows."
+description: "Read about AI agents that use tools, memory, and language models to perform tasks, with Azure Maps integrations and automation projects by Clemens Schotte."
 ---

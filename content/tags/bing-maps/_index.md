@@ -1,5 +1,5 @@
 ---
 title: "Bing Maps"
-description: "Articles about Bing Maps, API access, migration, and its relationship with Azure Maps."
+description: "Browse Clemens Schotte's Bing Maps articles on API keys, mapping services, and the transition to Azure Maps, with context for developers building location apps."
 aliases: ["/tags/bing/"]
 ---

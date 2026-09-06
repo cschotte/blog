@@ -1,4 +1,4 @@
 ---
 title: "Geospatial Data"
-description: "Articles about storing, querying, processing, and visualizing geographic and location data."
+description: "Explore storage, queries, and visualization for geographic data through Clemens Schotte's guides to Azure databases, mapping services, and location analytics."
 ---

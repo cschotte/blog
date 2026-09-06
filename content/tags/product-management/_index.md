@@ -1,5 +1,5 @@
 ---
 title: "Product Management"
-description: "Articles about product strategy, program execution, roadmaps, customers, and engineering collaboration."
+description: "Read Clemens Schotte's perspective on product and program management at Microsoft, connecting customer needs, engineering collaboration, and product decisions."
 aliases: ["/tags/product-development/", "/tags/program-manager/"]
 ---

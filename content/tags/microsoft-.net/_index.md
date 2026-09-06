@@ -1,5 +1,5 @@
 ---
 title: "Microsoft .NET"
-description: "Articles involving Microsoft .NET, ASP.NET Core, C#, Azure Functions, and application development."
+description: "Browse Clemens Schotte's .NET development articles on ASP.NET Core, PDF generation, Azure Maps authentication, and building services that connect AI with maps."
 aliases: ["/tags/.net/", "/tags/asp.net/"]
 ---

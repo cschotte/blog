@@ -1,4 +1,4 @@
 ---
 title: "raylib"
-description: "Articles about raylib graphics and game development with Odin on desktop platforms."
+description: "Explore Clemens Schotte's work with raylib and Odin, including library setup on macOS, graphics, game loops, and rebuilding CaveRace for modern desktop systems."
 ---

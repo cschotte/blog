@@ -1,5 +1,5 @@
 ---
 title: "AI-Assisted Development"
-description: "Articles about using AI tools to design, generate, review, and maintain software."
+description: "Explore Clemens Schotte's experience building software with AI, from GitHub Copilot and Spark to code review, engineering judgment, and comprehension debt."
 aliases: ["/tags/copilot/"]
 ---

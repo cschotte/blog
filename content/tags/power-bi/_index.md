@@ -1,4 +1,4 @@
 ---
 title: "Power BI"
-description: "Articles about Power BI, Azure Maps visuals, location analytics, and data visualization."
+description: "Explore Azure Maps visuals in Power BI with Clemens Schotte's articles on geocoding, pie chart layers, heat maps, and bringing location context to your data."
 ---

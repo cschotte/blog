@@ -1,4 +1,4 @@
 ---
 title: "CV"
-description: "Curriculum vitae information about Clemens Schotte's professional experience and expertise."
+description: "Review Clemens Schotte's career history and technical expertise, including product strategy, program management, cloud platforms, and software architecture."
 ---

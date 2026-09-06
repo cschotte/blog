@@ -1,5 +1,5 @@
 ---
 title: "Kubernetes"
-description: "Articles about Kubernetes, Azure Kubernetes Service, ingress, containers, and cloud-native platforms."
+description: "Explore Kubernetes and cloud-native architecture in Clemens Schotte's articles on containers, automation, application gateways, and modern development patterns."
 aliases: ["/tags/aks/"]
 ---

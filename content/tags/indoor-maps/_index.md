@@ -1,5 +1,5 @@
 ---
 title: "Indoor Maps"
-description: "Articles about floor plans, indoor location experiences, Azure Maps Creator, and wayfinding."
+description: "Browse Clemens Schotte's historical Azure Maps Creator guides on turning floor plans into indoor maps, visualizing building data, and managing workspaces."
 aliases: ["/tags/creator/"]
 ---

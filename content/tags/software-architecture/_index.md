@@ -1,4 +1,4 @@
 ---
 title: "Software Architecture"
-description: "Pages about designing software systems, technical strategy, modernization, and architecture leadership."
+description: "Learn about Clemens Schotte's software architecture background, spanning cloud platforms, modernization, technical strategy, and leadership in product delivery."
 ---

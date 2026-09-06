@@ -1,5 +1,5 @@
 ---
 title: "Renewable Energy"
-description: "Articles about solar generation, battery storage, energy efficiency, and electricity use."
+description: "Explore Clemens Schotte's solar energy and Tesla Powerwall projects, including installation, battery storage, performance monitoring, and home electricity use."
 aliases: ["/tags/solar/"]
 ---

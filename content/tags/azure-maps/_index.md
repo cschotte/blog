@@ -1,5 +1,5 @@
 ---
 title: "Azure Maps"
-description: "Articles about Azure Maps APIs, SDKs, visualization, authentication, routing, and location services."
+description: "Explore Clemens Schotte's Azure Maps guides on APIs, authentication, indoor maps, routing, spatial data, Power BI visuals, and integrations with AI agents."
 aliases: ["/tags/elevation/", "/tags/weather/"]
 ---

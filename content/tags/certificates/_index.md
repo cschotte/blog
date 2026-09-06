@@ -1,5 +1,5 @@
 ---
 title: "Certificates"
-description: "Articles about TLS certificates, certificate management, HTTPS, and secure cloud services."
+description: "Read Clemens Schotte's guides to TLS certificates, HTTPS, Azure certificate options, and securing UniFi controllers with custom hostnames and certificates."
 aliases: ["/tags/ssl/", "/tags/tls/"]
 ---

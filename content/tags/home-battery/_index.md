@@ -1,5 +1,5 @@
 ---
 title: "Home Battery"
-description: "Articles about residential battery storage, Tesla Powerwall, solar energy, and electricity costs."
+description: "Read about Clemens Schotte's Tesla Powerwall 2 setup, covering installation, solar energy storage, monitoring, and the role of batteries in electricity use."
 aliases: ["/tags/powerwall/", "/tags/tesla/"]
 ---

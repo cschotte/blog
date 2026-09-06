@@ -1,4 +1,4 @@
 ---
 title: "Managed Identities"
-description: "Articles about Azure managed identities, token-based access, authentication, and eliminating secrets."
+description: "Learn how Clemens Schotte uses Azure managed identities for Azure Maps authentication, token access, and web applications that avoid storing service secrets."
 ---

@@ -1,4 +1,4 @@
 ---
 title: "LLM"
-description: "Articles about large language models, grounding, semantic search, reasoning, and AI applications."
+description: "Explore how language models connect to tools and data through Clemens Schotte's work with AI agents, semantic search, Azure Maps, and Model Context Protocol."
 ---

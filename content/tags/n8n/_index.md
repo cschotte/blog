@@ -1,4 +1,4 @@
 ---
 title: "n8n"
-description: "Articles about n8n workflow automation, AI agents, orchestration, hosting, and integrations."
+description: "Follow Clemens Schotte's n8n projects on Azure, from deploying the workflow platform to orchestrating embeddings, semantic search, and a personal AI chat agent."
 ---

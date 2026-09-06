@@ -1,5 +1,5 @@
 ---
 title: "Cloud Architecture"
-description: "Articles about designing reliable, secure, and maintainable applications and platforms in the cloud."
+description: "Explore cloud architecture with Clemens Schotte's articles on Azure security, availability, application gateways, and patterns for building reliable platforms."
 aliases: ["/tags/cdn/", "/tags/gateway/", "/tags/infrastructure/", "/tags/microservices/", "/tags/storage-account/"]
 ---

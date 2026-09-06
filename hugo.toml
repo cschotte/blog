@@ -42,7 +42,7 @@ enableEmoji = true
 [params]
   title = "Clemens Schotte"
   tagline = "Software engineering, cloud, and retro computing"
-  description = "Clemens Schotte's personal technical blog about Azure, AI, software engineering, and retro computing."
+  description = "Clemens Schotte shares practical projects and insights on Azure, AI, software engineering, mapping, home networking, solar energy, and retro game development."
   image = "/icons/logo.png"
   since = 2020
 

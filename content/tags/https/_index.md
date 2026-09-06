@@ -1,5 +1,5 @@
 ---
 title: "HTTPS"
-description: "Articles about secure web traffic, TLS certificates, custom domains, and encrypted connections."
+description: "Explore HTTPS setup through Clemens Schotte's guides to Azure hosting, TLS certificates, custom domains, and protecting access to a UniFi Cloud Key controller."
 aliases: ["/tags/free/"]
 ---

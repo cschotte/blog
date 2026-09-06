@@ -1,4 +1,4 @@
 ---
 title: "Dynamic Pricing"
-description: "Articles about variable electricity prices, energy consumption, and cost optimization."
+description: "Explore Clemens Schotte's experience with dynamic electricity pricing, household energy costs, and using solar generation and battery storage more effectively."
 ---

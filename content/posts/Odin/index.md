@@ -1,6 +1,6 @@
 ---
 title: "Fixing Odin and Raylib on macOS: The Git LFS Problem"
-description: "While rewriting my old C game CaveRace in Odin, Raylib appeared to be missing. The real problem was an incomplete Git checkout caused by Git LFS."
+description: "Fix missing raylib libraries in an Odin setup on macOS by repairing Git LFS downloads, then test the installation and configure debugging in Visual Studio Code."
 author: "Clemens Schotte"
 date: 2026-07-16
 

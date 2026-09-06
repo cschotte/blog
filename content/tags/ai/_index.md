@@ -1,4 +1,4 @@
 ---
 title: "AI"
-description: "Articles about artificial intelligence, AI agents, automation, and AI-assisted software development."
+description: "Explore artificial intelligence through Clemens Schotte's projects with AI agents, semantic search, MCP servers, and practical AI-assisted software development."
 ---

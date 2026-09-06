@@ -1,4 +1,4 @@
 ---
 title: "Debugging"
-description: "Articles about debugging applications, developer tooling, breakpoints, and diagnostics."
+description: "Follow Clemens Schotte's debugging guides for PHP with Xdebug, Visual Studio Code, and Odin with raylib, including setup problems and practical fixes to try."
 ---

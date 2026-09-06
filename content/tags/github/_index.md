@@ -1,5 +1,5 @@
 ---
 title: "GitHub"
-description: "Articles about GitHub tools, GitHub Copilot, AI-assisted development, and application workflows."
+description: "Read Clemens Schotte's experiences with GitHub Copilot and Spark, covering AI-assisted development, application prototyping, and everyday engineering workflows."
 aliases: ["/tags/git-lfs/", "/tags/spark/"]
 ---

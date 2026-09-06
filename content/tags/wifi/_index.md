@@ -1,4 +1,4 @@
 ---
 title: "WiFi"
-description: "Articles about wireless networking, access points, WiFi calling, and reliable connectivity."
+description: "Explore Clemens Schotte's guides to WiFi calling, access points, and home networking, with useful advice for improving indoor coverage and connection quality."
 ---
