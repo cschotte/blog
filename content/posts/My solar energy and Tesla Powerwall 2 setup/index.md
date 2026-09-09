@@ -7,6 +7,7 @@ tags: ["Energy", "Home Battery", "Renewable Energy", "Hardware"]
 categories: ["Energy"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Close-up of the Tesla logo on the white casing of a Powerwall home battery."
 
 draft: false
 ---

@@ -7,6 +7,7 @@ tags: ["Bing Maps", "APIs", "Security"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Person viewing computer displays with code and data reflected in the glass."
 
 draft: false
 

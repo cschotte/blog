@@ -7,6 +7,7 @@ tags: ["Azure", "DevOps", "Security", "Infrastructure as Code"]
 categories: ["DevOps"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Person working at a desk with computer monitors behind the title Zero Touch Deployment."
 
 draft: false
 

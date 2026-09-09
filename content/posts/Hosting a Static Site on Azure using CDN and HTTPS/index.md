@@ -7,6 +7,7 @@ tags: ["Azure", "Cloud Architecture", "Web Development", "HTTPS"]
 categories: ["Cloud"]
 
 featuredImage: "featured-image.png"
+featuredImageAlt: "Illustration of city buildings connected by a cable to a cloud."
 
 draft: false
 

@@ -7,6 +7,7 @@ tags: ["Azure", "Cloud Architecture", "Reliability"]
 categories: ["Cloud"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Cloud illustration with service availability percentages behind the title Availability."
 
 draft: false
 math: true

@@ -7,6 +7,7 @@ tags: ["AI", "AI Agents", "MCP", "LLM"]
 categories: ["AI"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Illustration of a truck branded Microsoft Copilot with a robot in the driver seat."
 
 draft: false
 

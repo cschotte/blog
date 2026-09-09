@@ -8,7 +8,7 @@
     {{- if in (slice "image/jpeg" "image/png") .MediaType.String -}}
       {{- $thumb = .Fill "480x360 webp q75" -}}
     {{- end -}}
-    <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" loading="lazy" alt="">
+    <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" loading="lazy" alt="{{ $page.Params.featuredImageAlt | default $page.Title }}">
   </a>
   {{- end }}
   <div class="post-card-body">

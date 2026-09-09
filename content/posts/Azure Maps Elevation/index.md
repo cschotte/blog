@@ -7,6 +7,7 @@ tags: ["Azure Maps", "Data Visualization", "Location Intelligence"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Forested hills beneath the title Azure Maps Elevation."
 
 draft: false
 

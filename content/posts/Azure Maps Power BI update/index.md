@@ -7,6 +7,7 @@ tags: ["Azure Maps", "Power BI", "Data Visualization"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Azure Maps visualization of the United States with multicolored pie charts at locations across the country."
 
 draft: false
 

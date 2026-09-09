@@ -7,6 +7,7 @@ tags: ["AI", "GitHub", "Visual Studio Code", "AI-Assisted Development", "Softwar
 categories: ["Programming"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "GitHub Copilot logo and wordmark above a purple perspective grid."
 
 draft: false
 

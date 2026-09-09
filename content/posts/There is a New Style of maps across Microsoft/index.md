@@ -7,6 +7,7 @@ tags: ["Azure Maps", "Mapping", "Data Visualization"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Street map of central London showing roads, parks, and the River Thames in the updated Microsoft map style."
 
 draft: false
 

@@ -7,6 +7,7 @@ tags: ["Networking", "WiFi"]
 categories: ["Network"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Close-up of an iPhone status bar showing Sprint Wi-Fi calling above the home screen icons."
 
 draft: false
 

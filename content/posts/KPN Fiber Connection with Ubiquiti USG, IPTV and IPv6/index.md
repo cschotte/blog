@@ -7,6 +7,7 @@ tags: ["Networking", "UniFi", "IPv6"]
 categories: ["Network"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "White UniFi Security Gateway with Ethernet ports beside the product logo."
 
 draft: false
 

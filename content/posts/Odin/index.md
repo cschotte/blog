@@ -8,6 +8,7 @@ tags: ["Odin", "raylib", "Game Development", "macOS", "Visual Studio Code"]
 categories: ["Programming"]
 
 featuredImage: "featured-image.png"
+featuredImageAlt: "Odin programming language logo on a blue background with the tagline The Data-Oriented Language for Sane Software Development."
 
 draft: false
 ---

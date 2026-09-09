@@ -7,6 +7,7 @@ tags: ["Networking", "UniFi", "WiFi", "Hardware"]
 categories: ["Network"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "UniFi network equipment with Ethernet cables plugged into ports and green status lights."
 
 draft: false
 

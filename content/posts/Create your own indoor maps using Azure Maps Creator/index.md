@@ -7,6 +7,7 @@ tags: ["Azure Maps", "Indoor Maps", "Location Intelligence"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Dotted world map with connected points behind the title Azure Maps Creator."
 
 draft: false
 

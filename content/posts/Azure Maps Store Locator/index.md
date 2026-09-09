@@ -7,6 +7,7 @@ tags: ["Azure Maps", "Location Intelligence", "Web Development"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Microsoft storefront with the title Azure Maps Store Locator."
 
 draft: false
 

@@ -8,6 +8,7 @@ tags: ["Game Development", "Retro Computing", "Odin", "raylib"]
 categories: ["Retro"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "CaveRace title in pixel art above a forest and mountain landscape."
 
 draft: false
 

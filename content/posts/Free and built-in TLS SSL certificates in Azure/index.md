@@ -7,6 +7,7 @@ tags: ["Azure", "Security", "Certificates", "HTTPS"]
 categories: ["Cloud"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Close-up of a green browser security indicator with a padlock, the word Secure, and an HTTPS address."
 
 draft: false
 

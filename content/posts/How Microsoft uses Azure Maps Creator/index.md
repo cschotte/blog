@@ -7,6 +7,7 @@ tags: ["Azure Maps", "Indoor Maps", "Location Intelligence", "Microsoft"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Indoor office map with rooms, desks, and blue and pink location markers."
 
 draft: false
 

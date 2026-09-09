@@ -7,6 +7,7 @@ tags: ["Azure", "DevOps", "Security", "Infrastructure as Code"]
 categories: ["DevOps"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Arrow-shaped street sign reading Compliance in front of city buildings."
 
 draft: false
 

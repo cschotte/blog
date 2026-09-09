@@ -7,6 +7,7 @@ tags: ["Azure Maps", "Power BI", "Data Visualization"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Map of the United States with pink heat-map hotspots and the title Heat Map Layer in Azure Maps Visual for Power BI."
 
 draft: false
 

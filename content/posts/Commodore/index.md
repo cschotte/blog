@@ -7,6 +7,7 @@ tags: ["Commodore", "Amiga", "Retro Computing", "Hardware"]
 categories: ["Retro"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Commodore logo over a futuristic city skyline with the tagline The future we were promised."
 
 draft: false
 ---

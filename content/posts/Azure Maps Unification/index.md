@@ -7,6 +7,7 @@ tags: ["Azure Maps", "Bing Maps", "Mapping"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Bing Maps for Enterprise and Azure Maps logos connected by an arrow over a map of London."
 
 draft: false
 

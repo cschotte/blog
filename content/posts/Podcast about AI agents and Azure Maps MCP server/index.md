@@ -7,6 +7,7 @@ tags: ["AI", "MCP", "Azure Maps", "Podcast"]
 categories: ["AI"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Geospatial FM podcast logo repeated in turquoise, blue, and white on a black background."
 
 draft: false
 ---

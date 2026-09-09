@@ -7,6 +7,7 @@ tags: ["Visual Studio Code", "Web Development", "Debugging"]
 categories: ["Programming"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Visual Studio Code and PHP logos above a screenshot of PHP code in the editor."
 
 draft: false
 

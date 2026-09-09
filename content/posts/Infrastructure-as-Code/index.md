@@ -7,6 +7,7 @@ tags: ["Azure", "DevOps", "Infrastructure as Code", "Cloud Architecture"]
 categories: ["DevOps"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Building scaffolding against the sky behind the title Infrastructure as Code."
 
 draft: false
 

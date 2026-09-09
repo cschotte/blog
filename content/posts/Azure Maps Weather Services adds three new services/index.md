@@ -7,6 +7,7 @@ tags: ["Azure Maps", "APIs", "Location Intelligence"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Map showing a tropical storm track and red forecast areas near Florida and the Bahamas."
 
 draft: false
 

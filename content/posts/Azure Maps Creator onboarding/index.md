@@ -7,6 +7,7 @@ tags: ["Azure Maps", "Indoor Maps", "Location Intelligence"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Diagram showing a floor plan passing through the onboarding tool and Azure Maps Creator to an SDK or client app."
 
 draft: false
 

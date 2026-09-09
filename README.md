@@ -57,6 +57,19 @@ guideline, and existing article summaries may be longer.
 After publishing, use Bing Webmaster Tools' URL Inspection and Site Scan to verify the live metadata and
 monitor the warning after Bing recrawls the affected pages.
 
+## Image alt text
+
+Article thumbnails and featured images use the article title as their default alt
+text. Set `featuredImageAlt` in a post's YAML front matter when a more specific
+image description is useful; it applies to both cards and the article page:
+
+```yaml
+featuredImageAlt: "Solar panels on the roof of my house"
+```
+
+For images in article content, describe the image inside the Markdown brackets:
+`![Description of the image](photo.jpg)`.
+
 ## Deployment
 
 [Build and deploy blog](.github/workflows/deploy.yml) runs automatically on every

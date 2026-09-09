@@ -7,6 +7,7 @@ tags: ["Amiga", "Commodore", "Retro Computing", "Hardware"]
 categories: ["Retro"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Close-up of the Amiga name embossed above the keyboard of an Amiga 1200."
 
 draft: false
 

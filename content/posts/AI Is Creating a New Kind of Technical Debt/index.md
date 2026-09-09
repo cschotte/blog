@@ -8,6 +8,7 @@ tags: ["AI", "AI-Assisted Development", "Software Engineering", "Architecture"]
 categories: ["AI"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Illustration of a windsurfer beside lines of code, with the words Vibe Coding."
 
 draft: false
 ---

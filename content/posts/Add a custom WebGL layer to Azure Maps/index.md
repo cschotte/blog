@@ -7,6 +7,7 @@ tags: ["Azure Maps", "Data Visualization", "Web Development"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "3D wind turbines rendered over a satellite map using a custom WebGL layer in Azure Maps."
 
 draft: false
 

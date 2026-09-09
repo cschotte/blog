@@ -7,6 +7,7 @@ tags: ["AI", "AI Agents", "LLM", "n8n", "Databases"]
 categories: ["AI"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Illustration of a woman using an AI chat assistant with a semantic search interface."
 
 draft: false
 

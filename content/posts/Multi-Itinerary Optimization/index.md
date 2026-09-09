@@ -7,6 +7,7 @@ tags: ["Azure Maps", "Routing", "Logistics", "Location Intelligence"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Map with colored routes connecting warehouses and delivery locations beneath the title Multi-Itinerary Optimization."
 
 draft: false
 

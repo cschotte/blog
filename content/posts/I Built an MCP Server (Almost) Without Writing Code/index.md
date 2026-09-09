@@ -7,6 +7,7 @@ tags: ["AI", "MCP", "Azure Maps", "AI-Assisted Development", "Microsoft .NET"]
 categories: ["AI"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "GitHub Copilot banner reading AI that builds with you above a code editor preview."
 
 draft: false
 

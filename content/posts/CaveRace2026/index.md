@@ -8,6 +8,7 @@ tags: ["Game Development", "Retro Computing", "Odin", "raylib", "macOS"]
 categories: ["Retro"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Pixel art of a miner holding a lit bomb beside a blue, one-eyed monster in a cave."
 
 draft: false
 

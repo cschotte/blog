@@ -7,6 +7,7 @@ tags: ["Networking", "UniFi", "Certificates", "HTTPS"]
 categories: ["Network"]
 
 featuredImage: "featured-image.png"
+featuredImageAlt: "Terminal showing the UniFi CloudKey Plus welcome message and root shell prompt."
 
 draft: false
 

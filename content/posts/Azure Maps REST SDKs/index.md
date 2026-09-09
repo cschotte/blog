@@ -7,6 +7,7 @@ tags: ["Azure Maps", "APIs", "Software Engineering"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Illustrated .NET robot with speech bubbles labeled VB, F#, and C#."
 
 draft: false
 

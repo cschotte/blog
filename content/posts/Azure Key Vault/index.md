@@ -7,6 +7,7 @@ tags: ["Azure", "Security", "Certificates", "Cloud Architecture"]
 categories: ["Cloud"]
 
 featuredImage: "featured-image.png"
+featuredImageAlt: "Illustration of a yellow key inside a cloud, representing Azure Key Vault."
 
 draft: false
 

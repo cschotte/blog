@@ -7,6 +7,7 @@ tags: ["Azure Maps", "Location Intelligence", "Routing"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Map of Seattle with a green isochrone area and colored location pins beneath the title Calculate an Isochrone."
 
 draft: false
 

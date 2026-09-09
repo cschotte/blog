@@ -7,6 +7,7 @@ tags: ["AI", "AI Agents", "MCP", "Azure Maps", "Location Intelligence"]
 categories: ["AI"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Illustration of a robot tracing a route between map pins A and B, with the title LLMs with Azure Maps and MCP."
 
 draft: false
 

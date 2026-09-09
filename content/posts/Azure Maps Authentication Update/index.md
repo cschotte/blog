@@ -6,6 +6,7 @@ date: 2025-08-13
 tags: ["Azure Maps", "Authentication", "Managed Identities", "Security"]
 categories: ["Geospatial"]
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Monitors displaying a world map and charts behind the title Azure Maps Authentication, Update 2025."
 
 draft: true
 

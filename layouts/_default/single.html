@@ -26,7 +26,7 @@
     {{- $small = $display -}}
     {{- if ge .Width 640 -}}{{ $small = .Resize "640x webp q75" }}{{- end -}}
   {{- end -}}
-  <p class="post-featured-image"><img src="{{ $display.RelPermalink }}"{{ if ne $small.RelPermalink $display.RelPermalink }} srcset="{{ $small.RelPermalink }} 640w, {{ $display.RelPermalink }} {{ $display.Width }}w" sizes="(max-width: 48rem) calc(100vw - 2rem), 46rem"{{ end }} width="{{ $display.Width }}" height="{{ $display.Height }}" alt="{{ $.Title }}" loading="eager" decoding="async" fetchpriority="high"></p>
+  <p class="post-featured-image"><img src="{{ $display.RelPermalink }}"{{ if ne $small.RelPermalink $display.RelPermalink }} srcset="{{ $small.RelPermalink }} 640w, {{ $display.RelPermalink }} {{ $display.Width }}w" sizes="(max-width: 48rem) calc(100vw - 2rem), 46rem"{{ end }} width="{{ $display.Width }}" height="{{ $display.Height }}" alt="{{ $.Params.featuredImageAlt | default $.Title }}" loading="eager" decoding="async" fetchpriority="high"></p>
   {{- end }}
 
   {{- if .TableOfContents }}

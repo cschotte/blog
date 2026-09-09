@@ -8,6 +8,7 @@ tags: ["Game Development", "Retro Computing", "Odin", "raylib", "Indie Games"]
 categories: ["Retro"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "CaveRace 2 artwork with a miner, a green creature, mountains, and an erupting volcano."
 
 draft: false
 

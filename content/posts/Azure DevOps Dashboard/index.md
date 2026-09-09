@@ -7,6 +7,7 @@ tags: ["Azure", "DevOps", "Data Visualization"]
 categories: ["DevOps"]
 
 featuredImage: "featured-image.png"
+featuredImageAlt: "Microsoft logo above the Azure DevOps Dashboard title and a subtitle about viewing projects across an organization."
 
 draft: false
 

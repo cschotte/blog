@@ -6,6 +6,7 @@ date: 2020-06-04
 tags: ["Azure", "Microsoft .NET", "Web Development"]
 categories: ["Programming"]
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Red banner reading Generate PDF files with asp.net core on Azure."
 
 draft: false
 

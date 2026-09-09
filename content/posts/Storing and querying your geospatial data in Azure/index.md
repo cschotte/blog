@@ -7,6 +7,7 @@ tags: ["Azure", "Geospatial Data", "Databases", "Location Intelligence"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Azure architecture diagram showing geospatial data ingestion, preparation, storage, APIs, and visualization in Power BI and Azure Maps."
 
 draft: false
 

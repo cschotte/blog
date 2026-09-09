@@ -7,6 +7,7 @@ tags: ["Commodore", "Retro Computing", "Hardware"]
 categories: ["Retro"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Close-up of the Commodore 64 badge, rainbow stripe, and keyboard."
 
 draft: false
 ---

@@ -7,6 +7,7 @@ tags: ["Azure Maps", "Authentication", "Managed Identities", "Security"]
 categories: ["Geospatial"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Dark street map with a blue route and the title Managed identities for Azure Maps."
 
 draft: false
 

@@ -7,6 +7,7 @@ tags: ["AI", "AI-Assisted Development", "GitHub", "Web Development"]
 categories: ["AI"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "GitHub Spark logo above a preview of its app-building interface on a purple background."
 
 draft: false
 

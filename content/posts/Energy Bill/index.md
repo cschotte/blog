@@ -7,6 +7,7 @@ tags: ["Energy", "Dynamic Pricing", "Home Battery", "Renewable Energy"]
 categories: ["Energy"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Illustration of financial line and candlestick charts over a glowing world map."
 
 draft: false
 

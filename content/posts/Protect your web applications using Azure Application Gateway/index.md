@@ -7,6 +7,7 @@ tags: ["Azure", "Security", "Kubernetes", "Cloud Architecture", "Reliability"]
 categories: ["Cloud"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Illustration of a firewall between a laptop showing a skull and server racks, titled Azure Application Gateway."
 
 draft: false
 

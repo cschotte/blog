@@ -7,6 +7,7 @@ tags: ["Azure", "DevOps", "Kubernetes", "Cloud Architecture", "Software Engineer
 categories: ["DevOps"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Sunlight shining around white clouds beneath the words Cloud Native."
 
 draft: false
 

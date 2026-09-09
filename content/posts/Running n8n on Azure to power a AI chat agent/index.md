@@ -7,6 +7,7 @@ tags: ["AI", "n8n", "Cloud Architecture", "Databases"]
 categories: ["AI"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "n8n logo and the words Automate without limits beside a glowing lightning bolt."
 
 draft: false
 

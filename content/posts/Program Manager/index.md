@@ -7,6 +7,7 @@ tags: ["Microsoft", "Product Management", "Software Engineering"]
 categories: ["Business"]
 
 featuredImage: "featured-image.jpg"
+featuredImageAlt: "Microsoft wordmark and four-color square logo on a gray background."
 
 draft: false
 
