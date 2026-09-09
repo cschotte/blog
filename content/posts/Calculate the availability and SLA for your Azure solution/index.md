@@ -1,5 +1,6 @@
 ---
 title: "Calculate the availability and SLA for your Azure solution"
+seoTitle: "Calculate Azure Availability and Composite SLAs"
 author: "Clemens Schotte"
 date: 2020-06-09
 

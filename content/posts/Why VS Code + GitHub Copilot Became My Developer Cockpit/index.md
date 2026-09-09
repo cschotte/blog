@@ -1,5 +1,6 @@
 ---
 title: "Why VS Code + GitHub Copilot Became My Developer Cockpit"
+seoTitle: "VS Code and GitHub Copilot: My Developer Cockpit"
 author: "Clemens Schotte"
 date: 2025-07-29
 

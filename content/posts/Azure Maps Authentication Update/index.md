@@ -1,5 +1,6 @@
 ---
 title: "Azure Maps Authentication – My Updated Guide for 2025"
+seoTitle: "Azure Maps Authentication: Updated Guide for 2025"
 author: "Clemens Schotte"
 date: 2025-08-13
 

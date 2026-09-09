@@ -1,5 +1,6 @@
 ---
 title: "Create your own indoor maps using Azure Maps Creator"
+seoTitle: "Build Indoor Maps with Azure Maps Creator"
 author: "Clemens Schotte"
 date: 2021-06-07
 

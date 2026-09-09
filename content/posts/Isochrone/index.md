@@ -1,5 +1,6 @@
 ---
 title: "Use Azure Maps to calculate an isochrone to reach your customers"
+seoTitle: "Reach Customers with Azure Maps Isochrones"
 author: "Clemens Schotte"
 date: 2021-09-21
 

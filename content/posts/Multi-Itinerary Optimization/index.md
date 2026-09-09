@@ -1,5 +1,6 @@
 ---
 title: "Enhancing Logistics with Azure Maps and NVIDIA cuOpt for Multi-Itinerary Optimization"
+seoTitle: "Route Optimization with Azure Maps and NVIDIA cuOpt"
 author: "Clemens Schotte"
 date: 2024-05-22
 

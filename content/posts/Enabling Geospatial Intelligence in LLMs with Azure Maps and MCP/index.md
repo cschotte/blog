@@ -1,5 +1,6 @@
 ---
 title: "Enabling Geospatial Intelligence in LLMs with Azure Maps and MCP"
+seoTitle: "Geospatial AI with Azure Maps and MCP"
 author: "Clemens Schotte"
 date: 2025-07-21
 

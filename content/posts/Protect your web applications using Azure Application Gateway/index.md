@@ -1,5 +1,6 @@
 ---
 title: "Protect your web applications using Azure Application Gateway"
+seoTitle: "Secure Web Apps with Azure Application Gateway"
 author: "Clemens Schotte"
 date: 2021-04-06
 

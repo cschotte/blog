@@ -1,5 +1,6 @@
 ---
 title: "AI Is Creating a New Kind of Technical Debt: Comprehension Debt"
+seoTitle: "AI Coding and the Rise of Comprehension Debt"
 description: "AI can generate code faster than ever, but speed without understanding creates a hidden form of technical debt. Learn why comprehension debt may become one of the biggest engineering challenges of the AI era."
 author: "Clemens Schotte"
 date: 2026-06-04

@@ -1,5 +1,6 @@
 ---
 title: "Building CaveRace 2: From a Windows Phone Game to a Modern Indie Release"
+seoTitle: "CaveRace 2: From Windows Phone to Indie Release"
 author: "Clemens Schotte"
 date: 2026-08-21
 lastmod: 2026-08-21

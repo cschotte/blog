@@ -30,6 +30,14 @@ This is the source code for my personal blog hosted at [clemens.ms](https://clem
 └── README.md                # This file
 ```
 
+## Search titles
+
+Set `seoTitle` in an article's YAML front matter to give it a shorter search and
+social title while keeping its full `title` for the visible heading. The template
+appends ` — Clemens Schotte`, so keep `seoTitle` to 52 characters or fewer to make
+the complete title shorter than 70 characters. Omit it when the regular title
+already fits. Write a unique, relevant title rather than cutting it off midphrase.
+
 ## Meta descriptions
 
 Write a specific `description` in a page's YAML front matter, aiming for 150–160

@@ -1,5 +1,6 @@
 ---
 title: "Building a personal AI chat assistant with semantic search"
+seoTitle: "Building an AI Chat Assistant with Semantic Search"
 author: "Clemens Schotte"
 date: 2025-08-04
 

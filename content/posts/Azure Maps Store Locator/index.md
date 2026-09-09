@@ -1,5 +1,6 @@
 ---
 title: "Help customers find your business with the Azure Maps Store Locator"
+seoTitle: "Help Customers Find You with Azure Maps Locator"
 author: "Clemens Schotte"
 date: 2023-10-16
 

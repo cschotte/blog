@@ -1,5 +1,6 @@
 ---
 title: "Cloud-native development with containers and microservices"
+seoTitle: "Cloud-Native Containers and Microservices"
 author: "Clemens Schotte"
 date: 2021-03-18
 

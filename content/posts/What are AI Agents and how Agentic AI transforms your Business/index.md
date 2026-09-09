@@ -1,5 +1,6 @@
 ---
 title: "What are AI Agents and how Agentic AI transforms your Business"
+seoTitle: "AI Agents and Their Impact on Business"
 author: "Clemens Schotte"
 date: 2025-07-24
 

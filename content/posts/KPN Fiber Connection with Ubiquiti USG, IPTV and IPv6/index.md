@@ -1,5 +1,6 @@
 ---
 title: "KPN Fiber Connection with Ubiquiti USG, IPTV and IPv6"
+seoTitle: "KPN Fiber with UniFi USG, IPTV and IPv6"
 author: "Clemens Schotte"
 date: 2020-05-25
 
